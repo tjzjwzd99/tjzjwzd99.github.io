@@ -149,6 +149,104 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-关于毕设merkle树的一些启发" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/">关于毕设merkle树的一些启发</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/" class="archive-article-date">
+  	<time datetime="2020-04-20T04:54:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h1><p>区块链利用Merkle树的数据结构存放所有叶子节点的值<br>并以此为基础生成一个统的哈希值<br>Merkle树的叶子节点存储的是数据信息的哈希值<br>非叶子的节点存储的是对其下面所有叶子节点的组合进行哈希计算后得出的哈希值 </p>
+<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><p>减少交易量<br>只验证统一生成的哈希值 </p>
+<p>挖矿：创世区块解密SHA265，全网广播，其他节点验证，其他人放弃计算，将新的区块添加到创世区块后边，逐渐形成主链。 </p>
+<h3 id="重点-1"><a href="#重点-1" class="headerlink" title="重点"></a>重点</h3><p>加盖时间戳  </p>
+<p>所有交易的总结<br>二叉哈希树 ，汇总数据<br>顶部是根，底部是叶子，中间是非叶子节点。 </p>
+<p>一个区块中上千交易，将每个交易做一个哈希，最终形成一个哈希。 </p>
+<p> 优点、提供了证明数据完整性的/有效性的一个手段  </p>
+<p> 很少的内存/磁盘空间占用，并且计算简单快捷<br> 只需要下载一个哈希就行 </p>
+<p> Merkle树证明和管理只需要一个非常小而且很简单的信息通过网络传输<br> 偶数交易和奇数交易 </p>
+<p> Merkle和POW有很密切的关系 </p>
+<p> merkle树也用于WEB服务器的http的响应和验证 </p>
+<p> Merkle树遍历和算法的优化 </p>
+<p> 降低在遍历中遇到的时间复杂度和空间复杂度  </p>
+<p>利用默克尔树构建过程的特点提出了一种基于默克尔树的POW挖矿算法。 </p>
+<p>本算法利用默克尔树的结构特点设计了一种随机访间默克尔树每层节点的机制，这就使得<br>挖矿过程中必须要存储完整的默克尔树。为了挖矿算法的可靠性，也分析了默克尔树深<br>度的取值范围。该算法对于轻节点验证来说，只需要消耗较少的内存资源就能完成对区<br>块合法性的验证。最后，还在计算机上模拟了单次挖矿过程，实验数据和理论分析结果<br>完全一致。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">默克尔树挖矿算法Go语言代码</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">&quot; crypto&#x2F;sh a256&quot; </span><br><span class="line">&quot;fmt&quot;</span><br><span class="line">&quot; math&#x2F;rand&quot;</span><br><span class="line">&quot; time&quot;</span><br><span class="line">)</span><br><span class="line">const(</span><br><span class="line">depth&#x3D;20</span><br><span class="line">cacheLength&#x3D; 1 &lt;&lt; depth)</span><br><span class="line">&#x2F;&#x2F;Node is merkle node</span><br><span class="line">type Node struct &#123;</span><br><span class="line">value [32]byte</span><br><span class="line">&#125;</span><br><span class="line">type Hash struct &#123;</span><br><span class="line">value [321byte</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">&#x2F;&#x2F; GetMerkl eHash start</span><br><span class="line">t1 :&#x3D; time.Now0</span><br><span class="line">cache :&#x3D; m ake([]byte, cach eLength)</span><br><span class="line">fori :&#x3D;0; i &lt; cacheLength, 1++ &#123;</span><br><span class="line">cache[i]&#x3D; byte(rand Intn(256))</span><br><span class="line">&#125;</span><br><span class="line">merkletree : &#x3D; m ake([]Node, 2*cacheLength-1)</span><br><span class="line">fori :&#x3D; 0;1 &lt; cacheLength; i++ &#123;</span><br><span class="line">merkl etree[cacheLength-1+i]value &#x3D; sha256. Sum256(cache[i : i+1]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">tmp :&#x3D; m ake([]byte, 64)</span><br><span class="line">fori :&#x3D; cacheLength-2,1 &gt;&#x3D;0,1- &#123;</span><br><span class="line">copy(tmp[: 32], merkletree[2*i+1]value[: ])</span><br><span class="line">copy(tmp[32: ], merkl etree[2*+2] value[:])</span><br><span class="line">ah : &#x3D; sh a256 Sum 256(tmp[:])</span><br><span class="line">copy(merkletree[i]value[: ], ah[:])</span><br><span class="line">&#125;</span><br><span class="line">el apsed :&#x3D; time. Since(t1)</span><br><span class="line">I1 GetMerkl eHash end</span><br><span class="line">I1 MerkleMining start</span><br><span class="line">&#x2F;&#x2F;&#x3D;</span><br><span class="line">t2 &#x3D; time .Now0</span><br><span class="line">header :&#x3D; make([]byte, 80)</span><br><span class="line">hash : &#x3D; m ake([]Hash, depth+1)</span><br><span class="line">hash[Q].value &#x3D; sha256 Sum 256(header) </span><br><span class="line"></span><br><span class="line">fori &#x3D; 1;1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">divisor :&#x3D; pow(2, i)</span><br><span class="line">k :&#x3D; bigNumber(h[i-1]:value[: ]) % divisor</span><br><span class="line">c :&#x3D; int( divisor - 1)</span><br><span class="line">copy(tmp[:32], hash[i-1].value[:])</span><br><span class="line">copy(tmp[32: ], merkl etree[c+k]value[ ])</span><br><span class="line">hash[]value &#x3D; sha256.Sum 256(tmp[:])</span><br><span class="line">data :&#x3D; m ake ([ ]byte, (depth+ 1)*4)</span><br><span class="line">fori &#x3D; 0,1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">copy(data[i*4 (i+1)*4], hash[i].value[:]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">h :&#x3D; sh a256 Sum 256(data[: ])</span><br><span class="line">elaps edMining : &#x3D; time. Since(t2)</span><br><span class="line">&#x2F;1 MerkleMining end</span><br><span class="line">&#x2F;&#x2F;&#x3D;:</span><br><span class="line">fmt. Println(&quot;\nGetMerkl eHash: &quot;, elapsed)</span><br><span class="line">fmt.Printn(&quot;\nMerkle Mining: &quot;, elapsedMining)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
     <article id="post-merkle在线验证工具" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -704,71 +802,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/04/17/%E5%9F%BA%E4%BA%8EMerkle-tree%E7%9A%84%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
-    <article id="post-欢迎来到这里，我是微笑的风" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/">欢迎来到这里，我是微笑的风</a>
-    </h1>
-  
-
-        
-        <a href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/" class="archive-article-date">
-  	<time datetime="2020-04-16T03:25:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="初见Markdown"><a href="#初见Markdown" class="headerlink" title="初见Markdown"></a>初见Markdown</h1>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/">展开全文 >></a>
         </p>
       
 
