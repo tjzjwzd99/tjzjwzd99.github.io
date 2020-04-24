@@ -6,13 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Hexo</title>
+  <title>关于登录页面的设计流程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2020/page/2/index.html">
+  <meta name="description" content="登录退出页面的设计">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于登录页面的设计流程">
+<meta property="og:url" content="http://yoursite.com/2020/04/24/%E4%BA%8E%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="登录退出页面的设计">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-24T09:25:32.000Z">
+<meta property="article:modified_time" content="2020-04-24T12:04:16.686Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -147,295 +151,392 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-于登录页面的设计流程" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于登录页面的设计流程
+    </h1>
+  
+
+        
+        <a href="/2020/04/24/%E4%BA%8E%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B/" class="archive-article-date">
+  	<time datetime="2020-04-24T09:25:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-24</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="登录退出页面的设计"><a href="#登录退出页面的设计" class="headerlink" title="登录退出页面的设计"></a>登录退出页面的设计</h1><a id="more"></a> 
+
+<p>技术：http、cookie、session、token </p>
+<p>不跨域：sessiom——-  跨域：token  </p>
+<p>通过ajax访问服务器的数据、发起登录，生成token并返回、客户存储token、后续请求携带token、验证token </p>
+<p>数据绑定: </p>
+<pre><code>&lt;el-form ref=&quot;form&quot; :model=&quot;form&quot; label-width=&quot;80px&quot;&gt;
+&lt;el-form-item label=&quot;活动名称&quot;&gt;
+    &lt;el-input v-model=&quot;form.name&quot;&gt;&lt;/el-input&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动区域&quot;&gt;
+    &lt;el-select v-model=&quot;form.region&quot; placeholder=&quot;请选择活动区域&quot;&gt;
+      &lt;el-option label=&quot;区域一&quot; value=&quot;shanghai&quot;&gt;&lt;/el-option&gt;
+      &lt;el-option label=&quot;区域二&quot; value=&quot;beijing&quot;&gt;&lt;/el-option&gt;
+    &lt;/el-select&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动时间&quot;&gt;
+    &lt;el-col :span=&quot;11&quot;&gt;
+      &lt;el-date-picker type=&quot;date&quot; placeholder=&quot;选择日期&quot; v-model=&quot;form.date1&quot; style=&quot;width: 100%;&quot;&gt;&lt;/el-date-picker&gt;
+    &lt;/el-col&gt;
+    &lt;el-col class=&quot;line&quot; :span=&quot;2&quot;&gt;-&lt;/el-col&gt;
+    &lt;el-col :span=&quot;11&quot;&gt;
+      &lt;el-time-picker type=&quot;fixed-time&quot; placeholder=&quot;选择时间&quot; v-model=&quot;form.date2&quot; style=&quot;width: 100%;&quot;&gt;&lt;/el-time-picker&gt;
+    &lt;/el-col&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;即时配送&quot;&gt;
+    &lt;el-switch v-model=&quot;form.delivery&quot;&gt;&lt;/el-switch&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动性质&quot;&gt;
+    &lt;el-checkbox-group v-model=&quot;form.type&quot;&gt;
+      &lt;el-checkbox label=&quot;美食/餐厅线上活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;地推活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;线下主题活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;单纯品牌曝光&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+    &lt;/el-checkbox-group&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;特殊资源&quot;&gt;
+    &lt;el-radio-group v-model=&quot;form.resource&quot;&gt;
+      &lt;el-radio label=&quot;线上品牌商赞助&quot;&gt;&lt;/el-radio&gt;
+      &lt;el-radio label=&quot;线下场地免费&quot;&gt;&lt;/el-radio&gt;
+    &lt;/el-radio-group&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动形式&quot;&gt;
+    &lt;el-input type=&quot;textarea&quot; v-model=&quot;form.desc&quot;&gt;&lt;/el-input&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item&gt;
+    &lt;el-button type=&quot;primary&quot; @click=&quot;onSubmit&quot;&gt;立即创建&lt;/el-button&gt;
+    &lt;el-button&gt;取消&lt;/el-button&gt;
+  &lt;/el-form-item&gt;
+&lt;/el-form&gt;
+&lt;script&gt;
+  export default {
+    data() {
+      return {
+        form: {
+          name: &apos;&apos;,
+          region: &apos;&apos;,
+          date1: &apos;&apos;,
+          date2: &apos;&apos;,
+          delivery: false,
+          type: [],
+          resource: &apos;&apos;,
+          desc: &apos;&apos;
+        }
+      }
+    },
+    methods: {
+      onSubmit() {
+        console.log(&apos;submit!&apos;);
+      }
+    }
+  }
+&lt;/script&gt; </code></pre><p>如图所示，表单绑定了一个对象，这个对象叫form，定义在Data里<br>通过v-model绑定到form.data具体的属性里 </p>
+<p>用户名和密码绑定到具体的文本框上：双向绑定 </p>
+<p>绑定完成后，就需要验证。 </p>
+<pre><code>&lt;el-form :model=&quot;ruleForm&quot; :rules=&quot;rules&quot; ref=&quot;ruleForm&quot; label-width=&quot;100px&quot; class=&quot;demo-ruleForm&quot;&gt;
+  &lt;el-form-item label=&quot;活动名称&quot; prop=&quot;name&quot;&gt;
+    &lt;el-input v-model=&quot;ruleForm.name&quot;&gt;&lt;/el-input&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动区域&quot; prop=&quot;region&quot;&gt;
+    &lt;el-select v-model=&quot;ruleForm.region&quot; placeholder=&quot;请选择活动区域&quot;&gt;
+      &lt;el-option label=&quot;区域一&quot; value=&quot;shanghai&quot;&gt;&lt;/el-option&gt;
+      &lt;el-option label=&quot;区域二&quot; value=&quot;beijing&quot;&gt;&lt;/el-option&gt;
+    &lt;/el-select&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动时间&quot; required&gt;
+    &lt;el-col :span=&quot;11&quot;&gt;
+      &lt;el-form-item prop=&quot;date1&quot;&gt;
+        &lt;el-date-picker type=&quot;date&quot; placeholder=&quot;选择日期&quot; v-model=&quot;ruleForm.date1&quot; style=&quot;width: 100%;&quot;&gt;&lt;/el-date-picker&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-col&gt;
+    &lt;el-col class=&quot;line&quot; :span=&quot;2&quot;&gt;-&lt;/el-col&gt;
+    &lt;el-col :span=&quot;11&quot;&gt;
+      &lt;el-form-item prop=&quot;date2&quot;&gt;
+        &lt;el-time-picker type=&quot;fixed-time&quot; placeholder=&quot;选择时间&quot; v-model=&quot;ruleForm.date2&quot; style=&quot;width: 100%;&quot;&gt;&lt;/el-time-picker&gt;
+      &lt;/el-form-item&gt;
+    &lt;/el-col&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;即时配送&quot; prop=&quot;delivery&quot;&gt;
+    &lt;el-switch v-model=&quot;ruleForm.delivery&quot;&gt;&lt;/el-switch&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动性质&quot; prop=&quot;type&quot;&gt;
+    &lt;el-checkbox-group v-model=&quot;ruleForm.type&quot;&gt;
+      &lt;el-checkbox label=&quot;美食/餐厅线上活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;地推活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;线下主题活动&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+      &lt;el-checkbox label=&quot;单纯品牌曝光&quot; name=&quot;type&quot;&gt;&lt;/el-checkbox&gt;
+    &lt;/el-checkbox-group&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;特殊资源&quot; prop=&quot;resource&quot;&gt;
+    &lt;el-radio-group v-model=&quot;ruleForm.resource&quot;&gt;
+      &lt;el-radio label=&quot;线上品牌商赞助&quot;&gt;&lt;/el-radio&gt;
+      &lt;el-radio label=&quot;线下场地免费&quot;&gt;&lt;/el-radio&gt;
+    &lt;/el-radio-group&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item label=&quot;活动形式&quot; prop=&quot;desc&quot;&gt;
+    &lt;el-input type=&quot;textarea&quot; v-model=&quot;ruleForm.desc&quot;&gt;&lt;/el-input&gt;
+  &lt;/el-form-item&gt;
+  &lt;el-form-item&gt;
+    &lt;el-button type=&quot;primary&quot; @click=&quot;submitForm(&apos;ruleForm&apos;)&quot;&gt;立即创建&lt;/el-button&gt;
+    &lt;el-button @click=&quot;resetForm(&apos;ruleForm&apos;)&quot;&gt;重置&lt;/el-button&gt;
+  &lt;/el-form-item&gt;
+&lt;/el-form&gt;
+&lt;script&gt;
+  export default {
+    data() {
+      return {
+        ruleForm: {
+          name: &apos;&apos;,
+          region: &apos;&apos;,
+          date1: &apos;&apos;,
+          date2: &apos;&apos;,
+          delivery: false,
+          type: [],
+          resource: &apos;&apos;,
+          desc: &apos;&apos;
+        },
+        rules: {
+          name: [
+            { required: true, message: &apos;请输入活动名称&apos;, trigger: &apos;blur&apos; },
+            { min: 3, max: 5, message: &apos;长度在 3 到 5 个字符&apos;, trigger: &apos;blur&apos; }
+          ],
+          region: [
+            { required: true, message: &apos;请选择活动区域&apos;, trigger: &apos;change&apos; }
+          ],
+          date1: [
+            { type: &apos;date&apos;, required: true, message: &apos;请选择日期&apos;, trigger: &apos;change&apos; }
+          ],
+          date2: [
+            { type: &apos;date&apos;, required: true, message: &apos;请选择时间&apos;, trigger: &apos;change&apos; }
+          ],
+          type: [
+            { type: &apos;array&apos;, required: true, message: &apos;请至少选择一个活动性质&apos;, trigger: &apos;change&apos; }
+          ],
+          resource: [
+            { required: true, message: &apos;请选择活动资源&apos;, trigger: &apos;change&apos; }
+          ],
+          desc: [
+            { required: true, message: &apos;请填写活动形式&apos;, trigger: &apos;blur&apos; }
+          ]
+        }
+      };
+    },
+    methods: {
+      submitForm(formName) {
+        this.$refs[formName].validate((valid) =&gt; {
+          if (valid) {
+            alert(&apos;submit!&apos;);
+          } else {
+            console.log(&apos;error submit!!&apos;);
+            return false;
+          }
+        });
+      },
+      resetForm(formName) {
+        this.$refs[formName].resetFields();
+      }
+    }
+  }
+&lt;/script&gt; </code></pre><p>以上是Element的表单验证介绍<br>验证规则，、DATa定义校验对象有了验证规则之后要和数据对象做绑定来验证数据对象,prop进行验证<br>规则在D中定，将规则通过prop绑定到用户名表单项 </p>
+<p>重点：配置axios发起登录请求 </p>
+<p>先全局配置、导入、挂载原型、发起Ajax请求<br>设置请求路径：根据API进行请求 </p>
+<p>通过this发起post请求，把双向绑定的数据当作请求的参数，</p>
+<pre><code>
+this. $refs . loginFormRef . validate(valid =&gt; {
+if (!valid) return;
+this . $http . post(&quot;login&quot;, this . loginForm);
+I
+}); </code></pre><p>请求路径,请求方法,请求参数，需要提供对象,调用post方法，去请求地址 ，将参数拿回来，先打印出来。<br>await和async。<br>解构data. </p>
+<p>通过axios拦截器请求添加token </p>
+<pre><code>// axios请求拦截
+axios. interceptors. request .use (config =&gt; {
+1为请求头对象，添加Token验证的Authorization字段
+config. headers . Authorization = window. sessionStorage .getItem (&apos;token&apos;)
+return config
+}</code></pre><p>请求拦截器相当于预处理的过程，处理请求，</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/20/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/" class="archive-article-date">
-  	<time datetime="2020-04-20T02:15:07.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/20/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/">merkle在线验证工具</a>
-    </h1>
-  
+      
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/24/%E4%BA%8E%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%B5%81%E7%A8%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/20/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" class="archive-article-date">
-  	<time datetime="2020-04-20T00:30:13.108Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-20</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/21/Spring-Boot/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Spring Boot</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/20/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/">如何高效的找开源项目</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#登录退出页面的设计"><span class="toc-number">1.</span> <span class="toc-text">登录退出页面的设计</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/18/admin%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95/" class="archive-article-date">
-  	<time datetime="2020-04-18T11:57:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-18</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/18/admin%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95/">admin工具测试</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/18/pow%E5%AE%9E%E7%8E%B0/" class="archive-article-date">
-  	<time datetime="2020-04-18T09:02:13.438Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/18/pow%E5%AE%9E%E7%8E%B0/">pow实现</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/18/%E6%96%B0%E5%8C%BA%E5%BF%AB/" class="archive-article-date">
-  	<time datetime="2020-04-18T06:21:47.608Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/18/%E6%96%B0%E5%8C%BA%E5%BF%AB/">新区快</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/18/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/" class="archive-article-date">
-  	<time datetime="2020-04-18T03:11:35.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/18/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/">创世区块</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/17/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2020-04-17T12:46:19.657Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/17/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/">基于默克尔树的POW方案</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
+  
+      <section id="comments" class="comments">
+        <style>
+          .comments{margin:30px;padding:10px;background:#fff}
+          @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+        </style>
+        <div id="vcomment" class="comment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    new Valine({
+    av: AV,
+    el: '#vcomment',
+    notify: notify,
+    app_id: "nNDbCgzG3g0RUORKHzs1oNBo-gzGzoHsz",
+    app_key: "KqKm2KsXBMv8HCkseJ3vRKlk",
+    placeholder: "Just go go",
+    avatar: "mm",
+    });
+</script>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/17/%E7%BB%AA%E8%AE%BA/" class="archive-article-date">
-  	<time datetime="2020-04-17T10:44:21.026Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/17/%E7%BB%AA%E8%AE%BA/">绪论</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/17/%E5%9F%BA%E4%BA%8EMerkle-tree%E7%9A%84%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2020-04-17T09:05:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/17/%E5%9F%BA%E4%BA%8EMerkle-tree%E7%9A%84%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%BA%94%E7%94%A8/">基于Merkle tree的安全技术研究与应用</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/" class="archive-article-date">
-  	<time datetime="2020-04-16T03:25:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/">欢迎来到这里，我是微笑的风</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2020/">&amp;laquo; Prev</a><a class="page-number" href="/archives/2020/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2020/page/3/">3</a><a class="extend next" rel="next" href="/archives/2020/page/3/">Next &amp;raquo;</a>
-    </nav>
+    </section>
   
 
 
@@ -462,8 +563,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
