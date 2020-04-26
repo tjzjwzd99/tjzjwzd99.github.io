@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>微笑的风___wzd | Hexo</title>
+  <title>循环精灵图 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇博客">
+  <meta name="description" content="好玩的东西">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微笑的风___wzd">
-<meta property="og:url" content="http://yoursite.com/2020/04/16/hello-world/index.html">
+<meta property="og:title" content="循环精灵图">
+<meta property="og:url" content="http://yoursite.com/2020/04/26/%E7%8E%AF%E7%B2%BE%E7%81%B5%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="第一篇博客">
+<meta property="og:description" content="好玩的东西">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-16T00:03:00.000Z">
-<meta property="article:modified_time" content="2020-04-16T01:09:03.901Z">
+<meta property="article:published_time" content="2020-04-26T05:47:19.000Z">
+<meta property="article:modified_time" content="2020-04-26T06:03:21.602Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -155,27 +155,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-环精灵图" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      微笑的风___wzd
+      循环精灵图
     </h1>
   
 
         
-        <a href="/2020/04/16/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-16T00:03:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-16</time>
+        <a href="/2020/04/26/%E7%8E%AF%E7%B2%BE%E7%81%B5%E5%9B%BE/" class="archive-article-date">
+  	<time datetime="2020-04-26T05:47:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一篇博客</p>
+        <h1 id="好玩的东西"><a href="#好玩的东西" class="headerlink" title="好玩的东西"></a>好玩的东西</h1><a id="more"></a> 
+
+<p>for循环改变精灵图背景位置 </p>
+<p>坐标规律 </p>
+<p>1、获取元素 </p>
+<pre><code>var lis = document . querySelectorAll( &apos;li &apos;
+</code></pre><p>2、进行遍历  </p>
+<pre><code>for (var i = 0; i &lt; lis.length; i++) {
+//让索引号乘以44就是每个li的背景y坐标 index就是我们的y坐标
+varindex=i*
+44;
+lis [i] . style. backgroundPosition = &apos;0 -&apos; + index +
+px&apos;;I
+
+</code></pre><p>创建<br>1.documentwrite<br>2. innerHTML<br>3. createElement  </p>
+<hr>
+<p>增</p>
+<ol>
+<li>appendChild</li>
+<li>insertBefore </li>
+</ol>
+<hr>
+<p>删<br>1.removeChild </p>
+<hr>
+<p>改<br>主要修改dom的元素属性, dom元素的内容，属性表单的值等<br>1.修改元素属性: src. href, te等<br>2.修改普通元素内容: innerHTML. innerText<br>3.修改表单元素: value. type, disabled等<br>4.修改元素样式: style. className </p>
+<hr>
+<p>查<br>主要获取查询dom的元素</p>
+<ol>
+<li>DOM提供的API方法: getElementByld. getElementsByTagName 古老用法不太推荐</li>
+<li>H5提供的新方法: querySelector. querySelectorAll 提倡</li>
+<li>利用节点操作获取元素:父(parentNode)、孔(children), 兄(previousElementSibling.<br>nextElementSibling)提倡 </li>
+</ol>
+<hr>
+<p>属性操作<br>主要针对于自定义属性。</p>
+<ol>
+<li>setAtribute :设置dom的属性值</li>
+<li>gettribute :得到dom的属性值</li>
+<li>removeAttribute移除属性 </li>
+</ol>
+<hr>
 
       
 
@@ -255,7 +294,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/16/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/26/%E7%8E%AF%E7%B2%BE%E7%81%B5%E5%9B%BE/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -269,15 +308,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          欢迎来到这里，我是微笑的风
-        
-      </div>
-    </a>
   
+    <a href="/2020/04/25/%E5%92%8C%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">函数和方法的区别 </div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -302,7 +337,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#好玩的东西"><span class="toc-number">1.</span> <span class="toc-text">好玩的东西</span></a></li></ol>
                     </div>
                 </span>
             </div>
