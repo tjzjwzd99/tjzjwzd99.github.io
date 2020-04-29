@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Vue复习 | Hexo</title>
+  <title>vue复习 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue技术复习1、什么是VUE  MVVM渐进式框架  2、引入VUE.js库、创建实例 、HTML导入 1234567891011121314151617181920212223242526272829303132333435363738394041424344实例化VUEsss s n e d s di id &amp;#123;&amp;#123;&amp;#125;&amp;#125; di~~~  --- 3、数据绑定">
+  <meta name="description" content="1、什么是VUE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Vue复习">
-<meta property="og:url" content="http://yoursite.com/2020/04/29/ue%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:title" content="vue复习">
+<meta property="og:url" content="http://yoursite.com/2020/04/29/vue%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="vue技术复习1、什么是VUE  MVVM渐进式框架  2、引入VUE.js库、创建实例 、HTML导入 1234567891011121314151617181920212223242526272829303132333435363738394041424344实例化VUEsss s n e d s di id &amp;#123;&amp;#123;&amp;#125;&amp;#125; di~~~  --- 3、数据绑定">
+<meta property="og:description" content="1、什么是VUE">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-29T09:58:56.000Z">
-<meta property="article:modified_time" content="2020-04-29T10:34:16.726Z">
+<meta property="article:published_time" content="2020-04-29T12:03:20.000Z">
+<meta property="article:modified_time" content="2020-04-29T12:21:26.277Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -155,38 +155,160 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-ue复习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue复习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Vue复习
+      vue复习
     </h1>
   
 
         
-        <a href="/2020/04/29/ue%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-04-29T09:58:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
+        <a href="/2020/04/29/vue%E5%A4%8D%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2020-04-29T12:03:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="vue技术复习"><a href="#vue技术复习" class="headerlink" title="vue技术复习"></a>vue技术复习</h1><p>1、什么是VUE </p>
+        <p>1、什么是VUE  </p>
+<a id="more"></a>
+
 <p>MVVM渐进式框架 </p>
 <p>2、引入VUE.js库、创建实例 、HTML导入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">实例化VUE</span><br><span class="line">sss </span><br><span class="line">s n e d s </span><br><span class="line"></span><br><span class="line">di id &#123;&#123;&#125;&#125; di</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">--- </span><br><span class="line">3、数据绑定使用&#123;&#123;&#125;&#125; 或者V-text &#x2F;文本渲染指令&#x2F;文本语法</span><br><span class="line">~~~ </span><br><span class="line">span  &#123;&#123;&#125;&#125;  sapan </span><br><span class="line"></span><br><span class="line">span v-tx  &#x3D;   s </span><br><span class="line">双大括号会把html代码解释为普通文本</span><br><span class="line">为输真H，V-html</span><br><span class="line">~~~  </span><br><span class="line">属绑 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-bind </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">4、条件渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-if </span><br><span class="line">常用于登录组件</span><br><span class="line">v-show </span><br><span class="line">调整display属性，DOM已经加载，只是没有显示 </span><br><span class="line">vif判断是否加载，可以减轻服务器压力，v-show更流畅</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">5、列表渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">Vfor列表渲染，数组 </span><br><span class="line">对象循环输出，列表渲染索引 </span><br><span class="line">key,为了让vue更好的跟踪每个节点的身份</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">6、表单绑定</span><br></pre></td></tr></table></figure>
 <p>vm在表单input,textarea,select上创建双向数据绑定，它会根据控件类型自动选择正确方法更新元素</p>
 <p>表单和数据创建双绑 </p>
 <p>lazy，可以在change后更新</p>
-<pre><code>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">事件绑定 -监听 </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">监听事件</span><br><span class="line">可以用v-on指令监听DOM事件,并在触发时运行-些JavaScript代码。</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">&lt;button. v-on:click&#x3D; &quot;counter. +&#x3D; 1°&gt;加1&lt;&#x2F;button&gt;</span><br><span class="line">&lt;p&gt;按钮被点击了[&#123;&#123; counter &#125;&#125;次.&lt;&#x2F;p&gt; </span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var example1 . new Vue( 汇</span><br><span class="line">el :</span><br><span class="line">&quot;单ap&#39;</span><br><span class="line">data: &#123;</span><br><span class="line">counter : 0</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">事件处理方法</span><br></pre></td></tr></table></figure>
+
+<p>事件处理方法</p>
+<div id="app">
+<button v-on:clicke" greet">问候</button>
+</div>
+<script>
+var app . new Vue({
+el:。#app
+data: {
+name: 'Vue. js'
+methods: {
+greet: function(event) {
+// 'this'. 在方法里指向当前Vue实例
+alert( '你好+this. name+'!') ;
+1/ 'even' 是元生DOM事件
+iflevent ) {
+alert(event. target. tagName )
+}
+}
+})
+//也可以用JavaScript 直接调用
+app.greet( ) :
+</script>
+事件绑定简写方式
+<button :click="greet">问候</button>
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">事件修饰符 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">在事件处理程序中调用event.preventDefault( 或event.stopPropagation0是非常常见的需</span><br><span class="line">求</span><br><span class="line">为了解决这个问题, Vue.js 为v-on提供了事件修饰符。之前提过,修饰符是由点开头的指令</span><br><span class="line">后缀来表示的。</span><br><span class="line">。.stop</span><br><span class="line">， .prevent</span><br><span class="line">. .once</span><br><span class="line">&lt;!--</span><br><span class="line">阻止单击事件继续传播</span><br><span class="line">&lt;a v-on:click. stop&#x3D;&quot;doThis *&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;1--提交事件不再重载页面</span><br><span class="line">&lt;form v-on:submit .prevent&#x3D;”onSubmit&quot;&gt;&lt;&#x2F; form&gt;</span><br><span class="line">&lt;! --</span><br><span class="line">修饰符可以串联- -&gt;</span><br><span class="line">&lt;a v-on:click. stop.prevent&#x3D; &quot;doThat &quot;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;!--点击事件将只会触发一次- -&gt;</span><br><span class="line">&lt;a v-on:click. once&#x3D; &quot;doThis&quot;&gt;&lt;&#x2F; a&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">按键修饰符 </span><br><span class="line">~~~ </span><br><span class="line">div class&#x3D; &quot;explain&#39;&gt;</span><br><span class="line">在监听键盘事件时,我们经常需要检查详细的按键。Vue允许为v-on在监听键盘事件时添加</span><br><span class="line">按键修饰符:</span><br><span class="line">&lt;1--只有在、 key&#39;是、Enter’时调用、 vm. submit()”--&gt;</span><br><span class="line">&lt;input v-on:keyup. enter&#x3D;&quot; submit&quot; &gt;</span><br><span class="line">&lt;input v-on: keyup.page -down&#x3D;”onPageDown &#39;&gt;</span><br><span class="line">按键码</span><br><span class="line">使用keyCode特性也是允许的:</span><br><span class="line">&lt;input v-on:keyup.13-&quot; submit&#39;&gt;</span><br><span class="line">Vue提供了绝大多数常用的按键码的别名:</span><br><span class="line">●.enter</span><br><span class="line">.tab</span><br><span class="line">.delete (捕获&quot;删除&quot;和”退格“键)</span><br><span class="line">.esc</span><br><span class="line">.space</span><br><span class="line">.down</span><br><span class="line">.Jeft</span><br><span class="line">.right</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">计算与监听  </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">计算属性</span><br><span class="line">模板内的表达式非常便利,但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻</span><br><span class="line">辑会让模板过重且难以维护。例如:</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&#123;&#123;msg.split(&quot;&quot;).reverse(). join(&quot;&quot;) &#125;&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">, 这里是想要显示变量msg的翻转字符串。当你想要在模板中多次引用此处的翻转字符串</span><br><span class="line">时,就会更加难以处理。</span><br><span class="line">当你需要从现有数组得到新的数据这个时候你就需要计算了computed</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&lt;p&gt;原来的信息: &quot;&#123;&#123; msg &#125;&#125;*&lt;&#x2F;p&gt; </span><br><span class="line">&lt;p&gt;计算翻转的信息: &quot;&#123;&#123; rmsg 1&#125;*&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var vm。new Vue(&#123;</span><br><span class="line">e1: &#39; #example&#39;,</span><br><span class="line">data: t</span><br><span class="line">msg:</span><br><span class="line">&#39;He1l1o&#39;</span><br><span class="line">computed: C.</span><br><span class="line">&#x2F;&#x2F;计算属性的getter</span><br><span class="line">rmsg: function () &#123;</span><br><span class="line">&#x2F;&#x2F;、this指向vm实例</span><br><span class="line">return this.msg.split(&#39;&#39;).reverse(). join(&#39;&#39;)</span><br><span class="line">结果:</span><br><span class="line">原来的信息: &quot;hello&quot;</span><br><span class="line">计算翻转的信息: &quot;olleh&quot; </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">侦听器</span><br></pre></td></tr></table></figure>
+
+<p>Vue通过watch来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时,这<br>个方式是最有用的。</p>
+<div id=" app">
+<p>计数器: [{ num }}</p>
+<button click="num++">点我</button></div>
+<script>
+var vm。new Vue({
+el: ' #app'.
+data:{num:1}，
+watch: {
+'num': function(nval. oval) {
+console. log( 'num变化: + oval +，变为。+ nval + '1');
+}.
+})
+</script>
+每次点击按钮都会输出:
+num变化:1变为2!
+num变化:2变为3!
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对象变化的监听</span><br></pre></td></tr></table></figure>
+<p>我们需要监听对象的属性值是否发生改变用</p>
+<div id="app'>
+<p>
+计数器: </p> 
+<button click= " num. age++“>点我</div>
+<script>
+varvm=newVue({
+el: ' #app'.
+data: {
+num: {age:1}
+}。
+watch: {
+num': {
+handler: function(nval, oval) {
+console.1og( ' num变化:” + oval.age +”变为”+
+nval.age + '!')
+deep: true
+}):
+</script> 
+deep属性深度监听对象变化
 
 
 
-</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自定义指令</span><br></pre></td></tr></table></figure>
+<p>除了默认设置的核心指令( v-model和v-show ), Vue也允许注册自定义指令。下面我们注册<br>一个全局指令v-focus, 该指令的功能是在页面加载时,元素获得焦点</p>
+<div id="°app"">
+<p>
+页面载入时, input元素自动获取焦点: </p>
+<input v- focuse""></div>
+<script>
+11创建根实例
+new Vue({
+el: ' #app'
+directives: {
+//注册一个局部的自定义指令v- focus
+focus: {
+//指令的定义
+inserted: function (el) {
+//聚焦元素
+el. focus( )
+}
+})
+</script>
+一个指令定义对象可以提供如下几个钩子函数(均为可选) :
+bind:只调用一次，指令第一次绑定到元素时调用。在这里可以进行-次性的初始化设
+置。
+inserted :被绑定元素插入父节点时调用(仅保证父节点存在,但不一定已被插入文档
+中)。
+update :所在组件的VNode更新时调用,但是可能发生在其子VNode更新之前。指令的
+值可能发生了改变,也可能没有。但是你可以通过比较更新前后的值来忽略不必要的模板
+更新
+
+
+<p>指令的值数据-简写<br>p&gt;在很多时候,你可能想在bind和update时触发相同行为,而不关心其它的钩子</p>
+<div id=" app">
+<p>页面载入时，input元素自动获取焦点:</p>
+<input v- focusa" true ">
+</div>
+<script>
+11创建根实例
+new Vue( {
+el: ' #app'.
+directives :
+//注册一个局部的自定义指令v- focus
+focus: function (e1,data) {
+//聚焦元素
+//如果指令的值是t rue则获取焦点
+if(data. value==true ) {
+el. focus( )
+}
+}
+})
+</script>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line">类与样式  </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">类的绑定</span><br><span class="line">操作元素的class 列表和内联样式是数据绑定的- -个常见需求。因为它们都是属性,所以我</span><br><span class="line">们可以用v-bind处理它们</span><br><span class="line">Vue.js v-bind在处理class和style时。专门增强了它。表达式的结果类型除了字符串之</span><br><span class="line">外,还可以是对象或数组。</span><br><span class="line">我们可以传给v-bind:class一个对象,以动态地切换class :</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot; &#123; active: isActive &#125; &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">上面的语法表示active 这个class存在与否将取决于数据属性isActive的真假</span><br><span class="line"></span><br><span class="line">绑定多个class</span><br><span class="line">p&gt;你可以在对象中传入更多属性来动态切换多个class</span><br><span class="line">&lt;div class&#x3D;&quot; static&quot; v-bind:class&#x3D;&quot; &#123; active: isActive. &#39; text -</span><br><span class="line">danger&#39;: hasError &#125;&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">data如下</span><br><span class="line">data:</span><br><span class="line">isActive: true ，</span><br><span class="line">hasError: false</span><br><span class="line">渲染结果为</span><br><span class="line">&lt;div class&#x3D;&quot;static active&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">对象绑定</span><br><span class="line">绑定的数据对象不必内联定义在模板里:</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot;classObject &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">数据如下</span><br><span class="line">data: &#123;</span><br><span class="line">classObject: &#123;</span><br><span class="line">active: true 。</span><br><span class="line">&#39; text-danger&#39; : false</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">classObject对象可以通过计算动态获得</span><br></pre></td></tr></table></figure>
       
 
       
@@ -265,7 +387,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/29/ue%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/29/vue%E5%A4%8D%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -308,7 +430,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue技术复习"><span class="toc-number">1.</span> <span class="toc-text">vue技术复习</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
