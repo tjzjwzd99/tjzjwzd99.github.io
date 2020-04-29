@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>merkle在线验证工具 | Hexo</title>
+  <title>基于默克尔树的POW方案 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="验证工具[验证工具]（https:&#x2F;&#x2F;github.com&#x2F;alsenet-labs&#x2F;merklizer）">
+  <meta name="description" content="基于默克尔树的POW方案">
 <meta property="og:type" content="article">
-<meta property="og:title" content="merkle在线验证工具">
-<meta property="og:url" content="http://yoursite.com/2020/04/20/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/index.html">
+<meta property="og:title" content="基于默克尔树的POW方案">
+<meta property="og:url" content="http://yoursite.com/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="验证工具[验证工具]（https:&#x2F;&#x2F;github.com&#x2F;alsenet-labs&#x2F;merklizer）">
+<meta property="og:description" content="基于默克尔树的POW方案">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-20T02:15:07.912Z">
-<meta property="article:modified_time" content="2020-04-20T02:22:19.257Z">
+<meta property="article:published_time" content="2020-04-29T09:52:27.897Z">
+<meta property="article:modified_time" content="2020-04-17T16:54:42.007Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -67,7 +67,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 29
+			总文章数 30
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -155,28 +155,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-merkle在线验证工具" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-基于默克尔树的POW方案" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      merkle在线验证工具
+      基于默克尔树的POW方案
     </h1>
   
 
         
-        <a href="/2020/04/20/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/" class="archive-article-date">
-  	<time datetime="2020-04-20T02:15:07.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-20</time>
+        <a href="/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" class="archive-article-date">
+  	<time datetime="2020-04-29T09:52:27.897Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="验证工具"><a href="#验证工具" class="headerlink" title="验证工具"></a>验证工具</h2><p>[验证工具]（<a href="https://github.com/alsenet-labs/merklizer）" target="_blank" rel="noopener">https://github.com/alsenet-labs/merklizer）</a> </p>
+        <h2 id="基于默克尔树的POW方案"><a href="#基于默克尔树的POW方案" class="headerlink" title="基于默克尔树的POW方案"></a>基于默克尔树的POW方案</h2><a id="more"></a> 
+<h2 id="默克尔树"><a href="#默克尔树" class="headerlink" title="默克尔树"></a>默克尔树</h2><p>默克尔树包括生成过程和验证过程  </p>
+<h2 id="默克尔树的构建过程"><a href="#默克尔树的构建过程" class="headerlink" title="默克尔树的构建过程"></a>默克尔树的构建过程</h2><p> 默克尔树是一种深度为d的二叉树，总节点个数为2d+1- 1,其中叶子节点个数为2d。<br>为了得到根哈希no，首先将要验证的数据cache依次存入到默克尔树的叶子节点中，然<br>后选择–种单向哈希函数H计算出每个叶子节点的哈希值nzd-1,.，.n2d+1_2,然后内部<br>节点进行两两结合运算H(n2+1lln2:+2)得到n，最终得到一个树根no，这个树根叫做根<br>哈希。非叶子第i个节点的两个子节点分别为n2+1和n2i+2。默克尔树如图3.1所示。<br>构建默克尔树的输入值是一个伪随机数集合cache,而输出值是默克尔树的所有节<br>点值n,1…n.+-.,.2+1-2,2+<br>2。默克尔树计算根哈希函数GetMerkleHash()过程如表3 1<br>所示。</p>
+<p>第1<del>2步，首先填充默克尔树的所有叶子节点。由图1可以发现默克尔树的叶子节<br>点编号从2d- 1开始，共有20个叶子节点。将伪随机数集合cache的每个字节数据的哈<br>希值依次填充到叶子节点中。<br>第3</del>4步，计算内部节点的哈希值。因为编号为i的节点的子节点为n2i+1和n2i<br>2i+2，<br>则将子节点连接，然后作为哈希函数H的输入值得到相应的哈希值nio依次类推，注意，</p>
+<p>计算内部节点的时候先从较大编号的节点开始，这是因为首先要计算子节点才能计算父<br>节点。<br>第5步，返回计算完成的所有默克尔树节.点.,…+.-.,2+12.2 </p>
+<h2 id="POW工作量证明"><a href="#POW工作量证明" class="headerlink" title="POW工作量证明"></a>POW工作量证明</h2><p>实现一个简单的挖矿 </p>
+<p>哈希碰撞 </p>
 
       
 
@@ -256,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/20/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +275,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/04/29/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          关于毕设merkle树的一些启发
+          如何高效的找开源项目
         
       </div>
     </a>
   
   
-    <a href="/2020/04/20/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">如何高效的找开源项目</div>
+    <a href="/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">创世区块</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -308,7 +313,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#验证工具"><span class="toc-number">1.</span> <span class="toc-text">验证工具</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基于默克尔树的POW方案"><span class="toc-number">1.</span> <span class="toc-text">基于默克尔树的POW方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默克尔树"><span class="toc-number">2.</span> <span class="toc-text">默克尔树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默克尔树的构建过程"><span class="toc-number">3.</span> <span class="toc-text">默克尔树的构建过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#POW工作量证明"><span class="toc-number">4.</span> <span class="toc-text">POW工作量证明</span></a></li></ol>
                     </div>
                 </span>
             </div>

@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>基于默克尔树的POW方案 | Hexo</title>
+  <title>创世区块 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基于默克尔树的POW方案">
+  <meta name="description" content="创世区块">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基于默克尔树的POW方案">
-<meta property="og:url" content="http://yoursite.com/2020/04/17/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="创世区块">
+<meta property="og:url" content="http://yoursite.com/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="基于默克尔树的POW方案">
+<meta property="og:description" content="创世区块">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-17T12:46:19.657Z">
-<meta property="article:modified_time" content="2020-04-17T16:54:42.007Z">
+<meta property="article:published_time" content="2020-04-29T09:52:27.869Z">
+<meta property="article:modified_time" content="2020-04-18T04:47:56.684Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -67,7 +67,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 29
+			总文章数 30
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -155,34 +155,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-基于默克尔树的POW方案" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-创世区块" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      基于默克尔树的POW方案
+      创世区块
     </h1>
   
 
         
-        <a href="/2020/04/17/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" class="archive-article-date">
-  	<time datetime="2020-04-17T12:46:19.657Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-17</time>
+        <a href="/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/" class="archive-article-date">
+  	<time datetime="2020-04-29T09:52:27.869Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基于默克尔树的POW方案"><a href="#基于默克尔树的POW方案" class="headerlink" title="基于默克尔树的POW方案"></a>基于默克尔树的POW方案</h2><a id="more"></a> 
-<h2 id="默克尔树"><a href="#默克尔树" class="headerlink" title="默克尔树"></a>默克尔树</h2><p>默克尔树包括生成过程和验证过程  </p>
-<h2 id="默克尔树的构建过程"><a href="#默克尔树的构建过程" class="headerlink" title="默克尔树的构建过程"></a>默克尔树的构建过程</h2><p> 默克尔树是一种深度为d的二叉树，总节点个数为2d+1- 1,其中叶子节点个数为2d。<br>为了得到根哈希no，首先将要验证的数据cache依次存入到默克尔树的叶子节点中，然<br>后选择–种单向哈希函数H计算出每个叶子节点的哈希值nzd-1,.，.n2d+1_2,然后内部<br>节点进行两两结合运算H(n2+1lln2:+2)得到n，最终得到一个树根no，这个树根叫做根<br>哈希。非叶子第i个节点的两个子节点分别为n2+1和n2i+2。默克尔树如图3.1所示。<br>构建默克尔树的输入值是一个伪随机数集合cache,而输出值是默克尔树的所有节<br>点值n,1…n.+-.,.2+1-2,2+<br>2。默克尔树计算根哈希函数GetMerkleHash()过程如表3 1<br>所示。</p>
-<p>第1<del>2步，首先填充默克尔树的所有叶子节点。由图1可以发现默克尔树的叶子节<br>点编号从2d- 1开始，共有20个叶子节点。将伪随机数集合cache的每个字节数据的哈<br>希值依次填充到叶子节点中。<br>第3</del>4步，计算内部节点的哈希值。因为编号为i的节点的子节点为n2i+1和n2i<br>2i+2，<br>则将子节点连接，然后作为哈希函数H的输入值得到相应的哈希值nio依次类推，注意，</p>
-<p>计算内部节点的时候先从较大编号的节点开始，这是因为首先要计算子节点才能计算父<br>节点。<br>第5步，返回计算完成的所有默克尔树节.点.,…+.-.,2+12.2 </p>
-<h2 id="POW工作量证明"><a href="#POW工作量证明" class="headerlink" title="POW工作量证明"></a>POW工作量证明</h2><p>实现一个简单的挖矿 </p>
-<p>哈希碰撞 </p>
-
+        <h1 id="创世区块"><a href="#创世区块" class="headerlink" title="创世区块"></a>创世区块</h1><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">	Prehsh string</span><br><span class="line">	&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">	HashCode string</span><br><span class="line">	&#x2F;&#x2F;shi jian chuo</span><br><span class="line">	TimeStamp string</span><br><span class="line">	&#x2F;&#x2F;dang xian wang luo de nan du xi shu</span><br><span class="line">	&#x2F;&#x2F;kong zhi ha xi you ji ge qian dao ling</span><br><span class="line">	Diff int</span><br><span class="line">	&#x2F;&#x2F;cun jiao yi xin xi</span><br><span class="line">	Data string</span><br><span class="line">	&#x2F;&#x2F;qu kuai gao du</span><br><span class="line">	Index int</span><br><span class="line">	&#x2F;&#x2F;sui ji zhi</span><br><span class="line">	Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;chuang jian chuang shi qu kuai (lian zhong de di yi ge qukuai)</span><br><span class="line">func  GrnerateFirstBlock(data string)  Block &#123;</span><br><span class="line">	&#x2F;&#x2F;fangfa jiao yi xi xin fan hui yi ge qu kaui</span><br><span class="line">	&#x2F;&#x2F;sheng ming bing fu zhi yige kuai jiang di yi ge qukuai fanhui</span><br><span class="line">	&#x2F;&#x2F;创建第一个区块</span><br><span class="line">	var firstblock Block</span><br><span class="line">	firstblock.Prehsh&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">	firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">	firstblock.Diff&#x3D;4</span><br><span class="line">	firstblock.Data&#x3D;data</span><br><span class="line">	firstblock.Index&#x3D;1</span><br><span class="line">	firstblock.Nonce&#x3D;0</span><br><span class="line">	firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">	return firstblock</span><br><span class="line">	&#x2F;&#x2F;当前块的哈希</span><br><span class="line">	&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">	var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">		strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">	&#x2F;&#x2F;哈希算法</span><br><span class="line">	var sha  &#x3D; sha256.New()</span><br><span class="line">	sha.Write([]byte(hashdata))</span><br><span class="line">	hashed :&#x3D;sha.Sum(b：nil)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main ()</span><br><span class="line">&#x2F;&#x2F;创建创世区块</span><br><span class="line">firstBlock :&#x3D;GrnerateFirstBlock(data:&quot;创世区块&quot;)</span><br><span class="line">fmt.Println(firstBlock)</span><br><span class="line">fmt.Println(firstBlock.Data)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;crypto&#x2F;sha256&quot;</span><br><span class="line">	&quot;encoding&#x2F;hex&quot;</span><br><span class="line">	&quot;fmt&quot;</span><br><span class="line">	&quot;strconv&quot;</span><br><span class="line">	&quot;time&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">PreHash string</span><br><span class="line">&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">HashCode string</span><br><span class="line">&#x2F;&#x2F;时间戳</span><br><span class="line">TimeStamp string</span><br><span class="line">&#x2F;&#x2F;当前网络难度系数</span><br><span class="line">&#x2F;&#x2F;控制哈希有几个前导0</span><br><span class="line">Diff int</span><br><span class="line">&#x2F;&#x2F;存储交易信息</span><br><span class="line">Data string</span><br><span class="line">&#x2F;&#x2F;区块高度</span><br><span class="line">Index int</span><br><span class="line">&#x2F;&#x2F;随机值</span><br><span class="line">Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;创建创世区块(链中第一个区块)</span><br><span class="line">func  GenerateFirstBlock(data string)  Block &#123;</span><br><span class="line">&#x2F;&#x2F;创建第一个区块</span><br><span class="line">var firstblock Block</span><br><span class="line">firstblock.PreHash&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">firstblock.Diff&#x3D;4</span><br><span class="line">firstblock.Data&#x3D;data</span><br><span class="line">firstblock.Index&#x3D;1</span><br><span class="line">firstblock.Nonce&#x3D;0</span><br><span class="line">firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">return firstblock</span><br><span class="line">&#x2F;&#x2F;当前块的哈希</span><br><span class="line">&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">&#x2F;&#x2F;哈希算法</span><br><span class="line">var sha  &#x3D; sha256.New()</span><br><span class="line">sha.Write([]byte(hashdata))</span><br><span class="line">hashed :&#x3D; sha.Sum( nil)</span><br><span class="line">return hex.EncodeToString(hashed)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main () &#123;</span><br><span class="line">	&#x2F;&#x2F;创建创世区块</span><br><span class="line">	firstBlock :&#x3D;GenerateFirstBlock(&quot;创世区块&quot;)</span><br><span class="line"></span><br><span class="line">	fmt.Println(firstBlock)</span><br><span class="line">	fmt.Println(firstBlock.Data)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -261,7 +255,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/17/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -275,18 +269,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/04/18/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          创世区块
+          基于默克尔树的POW方案
         
       </div>
     </a>
   
   
-    <a href="/2020/04/17/%E7%BB%AA%E8%AE%BA/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">绪论</div>
+    <a href="/2020/04/29/pow%E5%AE%9E%E7%8E%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">pow实现</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -313,7 +307,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基于默克尔树的POW方案"><span class="toc-number">1.</span> <span class="toc-text">基于默克尔树的POW方案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默克尔树"><span class="toc-number">2.</span> <span class="toc-text">默克尔树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#默克尔树的构建过程"><span class="toc-number">3.</span> <span class="toc-text">默克尔树的构建过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#POW工作量证明"><span class="toc-number">4.</span> <span class="toc-text">POW工作量证明</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#创世区块"><span class="toc-number">1.</span> <span class="toc-text">创世区块</span></a></li></ol>
                     </div>
                 </span>
             </div>
