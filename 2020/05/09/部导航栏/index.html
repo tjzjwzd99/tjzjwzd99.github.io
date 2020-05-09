@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>路由跳转 | Hexo</title>
+  <title>底部导航栏 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1234567  &#x2F;&#x2F; 字符串this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)&#x2F;&#x2F; 对象this.$router.push(&amp;#123; path: &#39;&#x2F;home&#x2F;first&#39; &amp;#125;)&#x2F;&#x2F; 命名的路由this.$router.push(&amp;#12">
+  <meta name="description" content="底部导航栏&lt;!-- 底部导航栏 --&gt; &lt;van-tabbar route   v-model&#x3D;&quot;active&quot;   active-color&#x3D;&quot;#f44&quot;&gt;   &lt;van-tabbar-item replace     to&#x3D;&quot;&#x2F;home&quot;     icon&#x3D;&quot;home-o&quot;&gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="路由跳转">
-<meta property="og:url" content="http://yoursite.com/2020/05/08/%E7%94%B1%E8%B7%B3%E8%BD%AC/index.html">
+<meta property="og:title" content="底部导航栏">
+<meta property="og:url" content="http://yoursite.com/2020/05/09/%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1234567  &#x2F;&#x2F; 字符串this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)&#x2F;&#x2F; 对象this.$router.push(&amp;#123; path: &#39;&#x2F;home&#x2F;first&#39; &amp;#125;)&#x2F;&#x2F; 命名的路由this.$router.push(&amp;#12">
+<meta property="og:description" content="底部导航栏&lt;!-- 底部导航栏 --&gt; &lt;van-tabbar route   v-model&#x3D;&quot;active&quot;   active-color&#x3D;&quot;#f44&quot;&gt;   &lt;van-tabbar-item replace     to&#x3D;&quot;&#x2F;home&quot;     icon&#x3D;&quot;home-o&quot;&gt;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-05-08T08:48:57.000Z">
-<meta property="article:modified_time" content="2020-05-08T08:50:05.958Z">
+<meta property="article:published_time" content="2020-05-09T01:37:06.000Z">
+<meta property="article:modified_time" content="2020-05-09T01:37:34.012Z">
 <meta property="article:author" content="微笑的风">
 <meta name="twitter:card" content="summary">
   
@@ -67,7 +67,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 36
+			总文章数 40
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -155,27 +155,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-由跳转" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-部导航栏" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      路由跳转
+      底部导航栏
     </h1>
   
 
         
-        <a href="/2020/05/08/%E7%94%B1%E8%B7%B3%E8%BD%AC/" class="archive-article-date">
-  	<time datetime="2020-05-08T08:48:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-08</time>
+        <a href="/2020/05/09/%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F/" class="archive-article-date">
+  	<time datetime="2020-05-09T01:37:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-09</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> &#x2F;&#x2F; 字符串</span><br><span class="line">this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)</span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">this.$router.push(&#123; path: &#39;&#x2F;home&#x2F;first&#39; &#125;)</span><br><span class="line">&#x2F;&#x2F; 命名的路由</span><br><span class="line">this.$router.push(&#123; name: &#39;home&#39;, params: &#123; userId: wise &#125;&#125;)</span><br></pre></td></tr></table></figure>
+        <h1 id="底部导航栏"><a href="#底部导航栏" class="headerlink" title="底部导航栏"></a>底部导航栏</h1><pre><code>&lt;!-- 底部导航栏 --&gt;
+&lt;van-tabbar route
+  v-model=&quot;active&quot;
+  active-color=&quot;#f44&quot;&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/home&quot;
+    icon=&quot;home-o&quot;&gt;
+    首页
+  &lt;/van-tabbar-item&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/cart&quot;
+    icon=&quot;cart-o&quot;&gt;
+    购物车
+  &lt;/van-tabbar-item&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/user&quot;
+    icon=&quot;manager-o&quot;&gt;
+    我的
+  &lt;/van-tabbar-item&gt;
+&lt;/van-tabbar&gt;</code></pre>
       
 
       
@@ -254,7 +273,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/08/%E7%94%B1%E8%B7%B3%E8%BD%AC/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/09/%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,9 +287,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/05/09/tive/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          active
+        
+      </div>
+    </a>
   
-    <a href="/2020/05/08/map/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">amap</div>
+  
+    <a href="/2020/05/09/%E6%92%AD%E5%9B%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">轮播图</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -297,7 +325,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#底部导航栏"><span class="toc-number">1.</span> <span class="toc-text">底部导航栏</span></a></li></ol>
                     </div>
                 </span>
             </div>
