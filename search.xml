@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DOM</title>
+    <url>/2020/04/20/DOM/</url>
+    <content><![CDATA[<h1 id="关于DOM"><a href="#关于DOM" class="headerlink" title="关于DOM"></a>关于DOM</h1><a id="more"></a> 
+<p>什么是 DOM？<br>DOM 是 W3C（万维网联盟）的标准。</p>
+<p>DOM 定义了访问 HTML 和 XML 文档的标准：</p>
+<p>“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”<br>W3C DOM 标准被分为 3 个不同的部分：</p>
+<p>核心 DOM - 针对任何结构化文档的标准模型<br>XML DOM - 针对 XML 文档的标准模型<br>HTML DOM - 针对 HTML 文档的标准模型</p>
+]]></content>
+  </entry>
+  <entry>
     <title>v-row和van-col</title>
     <url>/2020/05/09/-row%E5%92%8Cvan-col/</url>
     <content><![CDATA[<p>van-row和van-col的区别是什么 </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class&#x3D;&quot;list&quot;&gt;</span><br><span class="line">      &lt;van-row&gt;</span><br><span class="line">         &lt;van-col span&#x3D;&quot;12&quot; v-for&#x3D;&quot;item in listKanjia&quot; :key&#x3D;&quot;item.id&quot;&gt;</span><br><span class="line">           &lt;div class&#x3D;&quot;list-item&quot; @click&#x3D;&quot;onDetailClick(item.id)&quot;&gt;</span><br><span class="line">             &lt;img class&#x3D;&quot;list-item-img&quot; :src&#x3D;&quot;item.pic&quot; :alt&#x3D;&quot;item.name&quot;&gt;</span><br><span class="line">             &lt;div class&#x3D;&quot;list-item-hd van-ellipsis&quot;&gt;&#123;&#123;item.name&#125;&#125;&lt;&#x2F;div&gt;</span><br><span class="line">             &lt;div class&#x3D;&quot;list-item-bd&quot;&gt;&lt;span class&#x3D;&quot;ui-c-red&quot;&gt;￥&#123;&#123;item.kanjiaPrice&#125;&#125;&lt;&#x2F;span&gt;&lt;span class&#x3D;&quot;ui-c-dark ui-text-deleted&quot;&gt;￥&#123;&#123;item.originalPrice&#125;&#125;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br><span class="line">           &lt;&#x2F;div&gt;</span><br><span class="line">         &lt;&#x2F;van-col&gt;</span><br><span class="line">      &lt;&#x2F;van-row&gt;</span><br><span class="line">     &lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>5.14</title>
-    <url>/2020/05/14/14/</url>
-    <content><![CDATA[<p><strong>欲买桂花同载酒，终不似，少年游</strong></p>
-]]></content>
   </entry>
   <entry>
     <title>CSS基础</title>
@@ -169,13 +173,34 @@ a:active {background-color:#FF704D;}
 ]]></content>
   </entry>
   <entry>
-    <title>DOM</title>
-    <url>/2020/04/20/DOM/</url>
-    <content><![CDATA[<h1 id="关于DOM"><a href="#关于DOM" class="headerlink" title="关于DOM"></a>关于DOM</h1><a id="more"></a> 
-<p>什么是 DOM？<br>DOM 是 W3C（万维网联盟）的标准。</p>
-<p>DOM 定义了访问 HTML 和 XML 文档的标准：</p>
-<p>“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”<br>W3C DOM 标准被分为 3 个不同的部分：</p>
-<p>核心 DOM - 针对任何结构化文档的标准模型<br>XML DOM - 针对 XML 文档的标准模型<br>HTML DOM - 针对 HTML 文档的标准模型</p>
+    <title>5.14</title>
+    <url>/2020/05/14/14/</url>
+    <content><![CDATA[<p><strong>欲买桂花同载酒，终不似，少年游</strong></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JAVA学习路线</title>
+    <url>/2020/05/20/JAVA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<hr>
+<p>title: Java学习<br>date: 2016-10-12 18:38:45<br>categories:<br>    - JAVA<br>    - 后端<br>tags:<br>    - 学习路线<br>    - 自学</p>
+<hr>
+<h1 id="Java学习路线"><a href="#Java学习路线" class="headerlink" title="Java学习路线"></a>Java学习路线</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">基础语法</span><br><span class="line">面向对象</span><br><span class="line">接口</span><br><span class="line">容器</span><br><span class="line">异常</span><br><span class="line">泛型</span><br><span class="line">反射</span><br><span class="line">注释</span><br><span class="line">IO</span><br><span class="line">图形化（Swing）</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">JVM </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">类加载机制 </span><br><span class="line">字节码执行机制</span><br><span class="line">JVM内存模型</span><br><span class="line">GC垃圾回收</span><br><span class="line">JVM性能监控与故障定位</span><br><span class="line">JVM调优</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">并发多线程  </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">并发编程基础</span><br><span class="line">线程池</span><br><span class="line">锁</span><br><span class="line">并发容器</span><br><span class="line">原子类</span><br><span class="line">JUC并发工具</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>vant导航条</title>
+    <url>/2020/05/09/ant%E5%AF%BC%E8%88%AA%E6%9D%A1/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;index-bd&quot;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;可拖拽悬浮按钮&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;icons&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;滚动导航&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;navbar&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;生成海报图&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;poster&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;返回浏览位置&quot; is-link to&#x3D;&quot;&#x2F;keepalive&#x2F;index&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  .index-bd &#123;</span><br><span class="line">    padding: 0 15px 800px;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>Leetcode跳转页面</title>
+    <url>/2020/04/25/eetcode%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="编程题库"><a href="#编程题库" class="headerlink" title="编程题库"></a>编程题库</h1><a id="more"></a> 
+
+<p>如题，这是个跳转到Leet的界面 </p>
+<p><a href="https://www.baidu.com/link?url=_zulnYMzklH48z_E4QUL7ldeguEIPtswoU2wmydFGEaw5WhWGkLOtglyM0eNZ9AY&wd=&eqid=fc8f818e000f21ee000000035ea3cabb" target="_blank" rel="noopener">编程题库</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -193,17 +218,6 @@ a:active {background-color:#FF704D;}
 <p><img src="http://p7.qhimg.com/bdm/384_237_0/t0198a45e705341d77c.jpg" alt></p>
 <p>然而并不能  </p>
 <p>还是需要感叹号正括号圆括号三部曲外加图片链接</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>JAVA学习路线</title>
-    <url>/2020/05/20/JAVA%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
-    <content><![CDATA[<hr>
-<p>title: Java学习<br>date: 2016-10-12 18:38:45<br>categories:<br>    - JAVA<br>    - 后端<br>tags:<br>    - 学习路线<br>    - 自学</p>
-<hr>
-<h1 id="Java学习路线"><a href="#Java学习路线" class="headerlink" title="Java学习路线"></a>Java学习路线</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">基础语法</span><br><span class="line">面向对象</span><br><span class="line">接口</span><br><span class="line">容器</span><br><span class="line">异常</span><br><span class="line">泛型</span><br><span class="line">反射</span><br><span class="line">注释</span><br><span class="line">IO</span><br><span class="line">图形化（Swing）</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">JVM </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">类加载机制 </span><br><span class="line">字节码执行机制</span><br><span class="line">JVM内存模型</span><br><span class="line">GC垃圾回收</span><br><span class="line">JVM性能监控与故障定位</span><br><span class="line">JVM调优</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">并发多线程  </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">并发编程基础</span><br><span class="line">线程池</span><br><span class="line">锁</span><br><span class="line">并发容器</span><br><span class="line">原子类</span><br><span class="line">JUC并发工具</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -264,20 +278,6 @@ element. inne rHTML
 </code></pre>]]></content>
   </entry>
   <entry>
-    <title>vant导航条</title>
-    <url>/2020/05/09/ant%E5%AF%BC%E8%88%AA%E6%9D%A1/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;index-bd&quot;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;可拖拽悬浮按钮&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;icons&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;滚动导航&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;navbar&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;生成海报图&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;poster&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;返回浏览位置&quot; is-link to&#x3D;&quot;&#x2F;keepalive&#x2F;index&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  .index-bd &#123;</span><br><span class="line">    padding: 0 15px 800px;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>Leetcode跳转页面</title>
-    <url>/2020/04/25/eetcode%E8%B7%B3%E8%BD%AC%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="编程题库"><a href="#编程题库" class="headerlink" title="编程题库"></a>编程题库</h1><a id="more"></a> 
-
-<p>如题，这是个跳转到Leet的界面 </p>
-<p><a href="https://www.baidu.com/link?url=_zulnYMzklH48z_E4QUL7ldeguEIPtswoU2wmydFGEaw5WhWGkLOtglyM0eNZ9AY&wd=&eqid=fc8f818e000f21ee000000035ea3cabb" target="_blank" rel="noopener">编程题库</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>微笑的风___wzd</title>
     <url>/2020/04/16/hello-world/</url>
     <content><![CDATA[<p>第一篇博客</p>
@@ -297,6 +297,22 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
+    <title>merkle在线验证工具</title>
+    <url>/2020/04/29/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<a id="more"></a>
+<h2 id="验证工具"><a href="#验证工具" class="headerlink" title="验证工具"></a>验证工具</h2><p>[验证工具]（<a href="https://github.com/alsenet-labs/merklizer）" target="_blank" rel="noopener">https://github.com/alsenet-labs/merklizer）</a> </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>lang-less</title>
+    <url>/2020/05/08/ng-less/</url>
+    <content><![CDATA[<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><a id="more"></a> 
+
+<pre><code>&lt;style lang=&quot;less&quot; scoped&gt;  
+</code></pre><p>css预处理器</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Home</title>
     <url>/2020/05/08/me/</url>
     <content><![CDATA[<p>代码  </p>
@@ -305,10 +321,9 @@ element. inne rHTML
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line"> * @Author: 极客James</span><br><span class="line"> * @Motto: 求知若渴,虚心若愚</span><br><span class="line"> * @Github: https:&#x2F;&#x2F;github.com&#x2F;Geek-James&#x2F;ddBuy</span><br><span class="line"> * @掘金: https:&#x2F;&#x2F;juejin.im&#x2F;user&#x2F;5c4ebc72e51d4511dc7306ce</span><br><span class="line"> * @LastEditTime: 2020-03-13 16:43:36</span><br><span class="line"> * @Description: Home 首页模块</span><br><span class="line"> * @FilePath: &#x2F;ddBuy-dev&#x2F;src&#x2F;views&#x2F;home&#x2F;Home.vue</span><br><span class="line">--&gt;</span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;home&quot;&gt;</span><br><span class="line">    &lt;!-- 骨架屏幕  数据未加载时显示占位--&gt;</span><br><span class="line">    &lt;Skeleton v-show&#x3D;&quot;isShowLoading&quot; &#x2F;&gt;</span><br><span class="line">    &lt;div v-if&#x3D;&quot;!isShowLoading&quot;&gt;</span><br><span class="line">      &lt;!-- 头部地理位置和搜索框 --&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;head&quot;&gt;</span><br><span class="line">        &lt;Header&gt;&lt;&#x2F;Header&gt;</span><br><span class="line">        &lt;!-- 轮播图 --&gt;</span><br><span class="line">        &lt;Sowing :sowing_list&#x3D;&quot;sowing_list&quot; &#x2F;&gt;</span><br><span class="line">        &lt;!-- tip --&gt;</span><br><span class="line">        &lt;Tip :home_ad&#x3D;&quot;home_ad&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;!-- Nav --&gt;</span><br><span class="line">      &lt;Nav :nav_list&#x3D;&quot;nav_list&quot; &#x2F;&gt;</span><br><span class="line">      &lt;!-- 跳转到会员界面 --&gt;</span><br><span class="line">      &lt;VipTip&gt;&lt;&#x2F;VipTip&gt;</span><br><span class="line">      &lt;!-- 限时抢购 --&gt;</span><br><span class="line">      &lt;FlashBuy :flash_sale_product_list&#x3D;&quot;flash_sale_product_list&quot; &#x2F;&gt;</span><br><span class="line">      &lt;!-- 特色专区 --&gt;</span><br><span class="line">      &lt;SpecialZone :specialZone&#x3D;&quot;specialZone&quot; &#x2F;&gt;</span><br><span class="line">      &lt;!--TabbarItem 商品 --&gt;</span><br><span class="line">      &lt;TabbarGoodsItem</span><br><span class="line">        :tabbar_all_product_list&#x3D;&quot;tabbar_all_product_list&quot;</span><br><span class="line">        :flash_sale_product_list&#x3D;&quot;flash_sale_product_list&quot;</span><br><span class="line">      &#x2F;&gt;</span><br><span class="line">      &lt;!-- 最底部 --&gt;</span><br><span class="line">      &lt;van-divider&gt;&#123;&#123; $t(&#39;home.bottomTip&#39;) &#125;&#125;&lt;&#x2F;van-divider&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 数据加载提示gif 骨架屏代替--&gt;</span><br><span class="line">    &lt;!-- &lt;Loading :show&#x3D;&quot;isShowLoading&quot; &#x2F;&gt; --&gt;</span><br><span class="line">    &lt;!-- 回到顶部按钮 --&gt;</span><br><span class="line">    &lt;v-top &#x2F;&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type&#x3D;&quot;text&#x2F;javascript&quot;&gt;</span><br><span class="line">import &#123; getHomeData &#125; from &#39;.&#x2F;..&#x2F;..&#x2F;serve&#x2F;api&#x2F;index.js&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 引入Vuex</span><br><span class="line">import &#123; mapMutations, mapState &#125; from &#39;vuex&#39;</span><br><span class="line"></span><br><span class="line">import &#123; ADD_TO_CART &#125; from &#39;.&#x2F;..&#x2F;..&#x2F;config&#x2F;pubsub_type.js&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 引入页面组件</span><br><span class="line">import Header from &#39;.&#x2F;components&#x2F;header&#x2F;Header&#39;</span><br><span class="line">import Sowing from &#39;.&#x2F;components&#x2F;sowing&#x2F;Sowing&#39;</span><br><span class="line">import Tip from &#39;.&#x2F;components&#x2F;tip&#x2F;Tip&#39;</span><br><span class="line">import Nav from &#39;.&#x2F;components&#x2F;nav&#x2F;Nav&#39;</span><br><span class="line">import VipTip from &#39;.&#x2F;components&#x2F;myVip&#x2F;VipTip&#39;</span><br><span class="line">import FlashBuy from &#39;.&#x2F;components&#x2F;flash&#x2F;FlashBuy&#39;</span><br><span class="line">import SpecialZone from &#39;.&#x2F;components&#x2F;special&#x2F;SpecialZone&#39;</span><br><span class="line">import TabbarGoodsItem from &#39;.&#x2F;components&#x2F;tabbar&#x2F;TabbarGoodsItem&#39;</span><br><span class="line">import Loading from &#39;..&#x2F;..&#x2F;components&#x2F;loading&#x2F;LoadingGif&#39;</span><br><span class="line">import Skeleton from &#39;..&#x2F;home&#x2F;components&#x2F;skeleton&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  computed: &#123;</span><br><span class="line">    ...mapState([&#39;userInfo&#39;])</span><br><span class="line">  &#125;,</span><br><span class="line">  created() &#123;</span><br><span class="line">    &#x2F;&#x2F; 0.数据初始化</span><br><span class="line">    this._initData()</span><br><span class="line">  &#125;,</span><br><span class="line">  mounted() &#123;&#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      sowing_list: [], &#x2F;&#x2F; 首页轮播图数据</span><br><span class="line">      isShowLoading: true, &#x2F;&#x2F; 是否加载动画</span><br><span class="line">      nav_list: [],</span><br><span class="line">      flash_sale_product_list: [], &#x2F;&#x2F; 限时抢购</span><br><span class="line">      tabbar_all_product_list: [],</span><br><span class="line">      specialZone: &#123;&#125;, &#x2F;&#x2F; 特色专区数据</span><br><span class="line">      home_ad: &#39;&#39; &#x2F;&#x2F; 首页广告</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    Header,</span><br><span class="line">    Sowing,</span><br><span class="line">    Tip,</span><br><span class="line">    Nav,</span><br><span class="line">    VipTip,</span><br><span class="line">    FlashBuy,</span><br><span class="line">    SpecialZone,</span><br><span class="line">    TabbarGoodsItem,</span><br><span class="line">    Loading,</span><br><span class="line">    Skeleton</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    &#x2F;&#x2F; Vuex中的方法</span><br><span class="line">    ...mapMutations([&#39;ADD_GOODS&#39;, &#39;ADD_TO_CART&#39;]),</span><br><span class="line">    &#x2F;&#x2F; 数据初始化</span><br><span class="line">    async _initData() &#123;</span><br><span class="line">      const response &#x3D; await getHomeData()</span><br><span class="line">      if (response.success) &#123;</span><br><span class="line">        const data &#x3D; response.data</span><br><span class="line">        &#x2F;&#x2F; 给轮播组件 sowing_list赋值</span><br><span class="line">        this.sowing_list &#x3D; data.list[0].icon_list</span><br><span class="line">        &#x2F;&#x2F; navList 赋值</span><br><span class="line">        this.nav_list &#x3D; data.list[2].icon_list</span><br><span class="line">        &#x2F;&#x2F; 给限时抢购赋值</span><br><span class="line">        this.flash_sale_product_list &#x3D; data.list[3].product_list</span><br><span class="line">        &#x2F;&#x2F; 给Tabbar 商品列表赋值</span><br><span class="line">        this.tabbar_all_product_list &#x3D; data.list[12].product_list</span><br><span class="line">        this.isShowLoading &#x3D; false</span><br><span class="line">        &#x2F;&#x2F; 给特色专区赋值</span><br><span class="line">        this.specialZone &#x3D; data.special_zone</span><br><span class="line">        &#x2F;&#x2F; 获取首页广告图</span><br><span class="line">        this.home_ad &#x3D; data.home_ad.image_url</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style lang&#x3D;&quot;less&quot; scoped&gt;</span><br><span class="line">#home &#123;</span><br><span class="line">  background-color: &#39;#f5f5f5&#39;;</span><br><span class="line">  padding-bottom: 3rem;</span><br><span class="line">  .head &#123;</span><br><span class="line">    margin-top: -3rem;</span><br><span class="line">    width: 100%;</span><br><span class="line">    background-image: url(&#39;http:&#x2F;&#x2F;518taole.7-orange.cn&#x2F;backImage.png&#39;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">.van-divider &#123;</span><br><span class="line">  background-color: #f5f5f5;</span><br><span class="line">  margin: 0;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>merkle在线验证工具</title>
-    <url>/2020/04/29/merkle%E5%9C%A8%E7%BA%BF%E9%AA%8C%E8%AF%81%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<a id="more"></a>
-<h2 id="验证工具"><a href="#验证工具" class="headerlink" title="验证工具"></a>验证工具</h2><p>[验证工具]（<a href="https://github.com/alsenet-labs/merklizer）" target="_blank" rel="noopener">https://github.com/alsenet-labs/merklizer）</a> </p>
+    <title>active</title>
+    <url>/2020/05/09/tive/</url>
+    <content><![CDATA[<p>疑问：active是什么</p>
 ]]></content>
   </entry>
   <entry>
@@ -329,12 +344,34 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
-    <title>lang-less</title>
-    <url>/2020/05/08/ng-less/</url>
-    <content><![CDATA[<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><a id="more"></a> 
+    <title>pow实现</title>
+    <url>/2020/04/29/pow%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h1 id="pow实现"><a href="#pow实现" class="headerlink" title="pow实现"></a>pow实现</h1><a id="more"></a>
+<p><del>~</del><br>package main</p>
+<p>import (<br>    “crypto/sha256”<br>    “encoding/hex”<br>    “fmt”<br>    _ “log”<br>    “strconv”<br>    “strings”<br>    “sync”<br>    “time”<br>)</p>
+<p>const difficulty =4<br>type Block struct {<br>    Index int<br>    Timestamp string<br>    BMP int<br>    HashCode string<br>    PreHash string<br>    Diff  int<br>    Nonce int</p>
+<p>}<br>//用数组去维护区块链<br>var Blockchain_ []Block<br>var mutex =&amp;sync.Mutex {}<br>//生成区块<br>func generateBlock(oldBlock Block, BMP int) Block {<br>    var newBlock Block<br>    newBlock.PreHash = oldBlock. HashCode<br>    newBlock.Timestamp=time.Now().String()<br>    newBlock.Index =oldBlock.Index + 1<br>    newBlock.BMP =BMP<br>    newBlock.Diff =difficulty<br>    for i:=0;;i++{<br>        newBlock.Nonce++<br>        hash :=calculateHash(newBlock)<br>        fmt.Println(hash)<br>        if isHashValid(hash,difficulty) {<br>            fmt.Println(“挖矿成功”)<br>            newBlock.HashCode =hash<br>            return newBlock</p>
+<pre><code>    }
+}
 
-<pre><code>&lt;style lang=&quot;less&quot; scoped&gt;  
-</code></pre><p>css预处理器</p>
+return Block{}</code></pre><p>}<br>func calculateHash(block Block)string{<br>    record := strconv.Itoa(block.Index)+ block.Timestamp+strconv.Itoa(block.Nonce)+strconv.Itoa(block.BMP)+block.PreHash<br>    sha := sha256.New()<br>    sha.Write([]byte(record))<br>    hashed := sha.Sum(nil)<br>    return hex.EncodeToString(hashed)</p>
+<p>}</p>
+<p>func isHashValid(hash string,difficulty int )bool{</p>
+<pre><code>prefix_ := strings.Repeat(&quot;0&quot;, difficulty)
+return strings.HasPrefix(hash,prefix_)</code></pre><p>}<br>func main()  {<br>    var firstBlock Block<br>    firstBlock.Diff=4<br>    firstBlock.Nonce =0<br>    firstBlock.PreHash =”0”<br>    firstBlock.BMP =1<br>    firstBlock.Index =0<br>    firstBlock.HashCode =”0”<br>    generateBlock(firstBlock,1)<br>}</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Vue_Router</title>
+    <url>/2020/04/29/ue-Router/</url>
+    <content><![CDATA[<p>路由</p>
+<a id="more"></a> 
+
+<p>路由是个网络工程里面的术语。<br>路由( routing )就是通过互联的网络把信息从源地址传输到目的地址的活动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在生活中,我们有没有听说过路由的概念呢?当然了,路由器嘛.</span><br><span class="line">路由器是做什么的?你有想过吗?</span><br><span class="line">路由器提供了两种机制:路由和转送.</span><br><span class="line">路由是决定数据包从来源到目的地的路径.</span><br><span class="line">转送将输入端的数据转移到合适的输出端.</span><br><span class="line">路由中有一个非常重要的概念叫路由表.</span><br><span class="line">路由表本质上就是-个映射表,决定了数据包的指向. </span><br><span class="line">~~~ </span><br><span class="line">前端渲染和后端渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">后端处理映射关系——后端路由 </span><br><span class="line"></span><br><span class="line">后端路由阶段</span><br><span class="line">早期的网站开发整个HTML页面是由服务器来渲染的.</span><br><span class="line">服务器直接生产渲染好对应的HTML页面,返回给客户端进行展示.</span><br><span class="line">但是,一个网站,这么多页面服务器如何处理呢?</span><br><span class="line">一个页面有自己对应的网址,也就是URL.</span><br><span class="line"> URL会发送到服务器,服务器会通过正则对该URL进行匹配,并且最后交给一个Controller进行处理.</span><br><span class="line">Controller进行各种处理,最终生成HTML或者数据,返回给前端.</span><br><span class="line">这就完成了一个IO操作.</span><br><span class="line">上面的这种操作,就是后端路由.</span><br><span class="line">当我们页面中需要请求不同的路径内容时,交给服务器来进行处理,服务器渲染好整个页面,并且将页面返回给客户顿.</span><br><span class="line">这种情况下渲染好的页面,不需要单独加载任何的js和css,可以直接交给浏览器展示，这样也有利于SEO的优化.</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">前端渲染 </span><br><span class="line">~~~ </span><br><span class="line">前端路由阶段</span><br><span class="line">前后端分离阶段:</span><br><span class="line">随着Ajax的出现,有了前后端分离的开发模式.</span><br><span class="line">后端只提供API来返回数据,前端通过Ajax获取数据,并且可以通过JavaScript将数据渲染到页面中.</span><br><span class="line">这样做最大的优点就是前后端责任的清晰,后端专注于数据上,前端专注于交互和可视化上.</span><br><span class="line">并且当移动端(iOS&#x2F;Android)出现后，后端不需要进行任何处理,依然使用之前的一套API即可.</span><br><span class="line">目前很多的网站依然采用这种模式开发.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">以下是个人理解： </span><br><span class="line"></span><br><span class="line">主要是用来进行资源定位，区别于后端。 </span><br><span class="line">[cdn](https:&#x2F;&#x2F;www.baidu.com&#x2F;link?url&#x3D;-TZZRFBFc_FFPtnXT2wRlON8D6iPkmT2AoyTWTke05swLRPzR49hnVQ7GY9dluz1&amp;wd&#x3D;&amp;eqid&#x3D;d0f5468b0005b5d6000000035ea8b5fe)</span><br></pre></td></tr></table></figure>
+<p>定义路由规则（数组），vue不知道这数组是路由规则，所以需要传参。将路由规则挂载到vue上。（嵌套规则需要记） </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">传参 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">静态变动态</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.bilibili.com/video/BV11x411J7pg?from=search&seid=2927631171341711551" target="_blank" rel="noopener">导航</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -451,30 +488,6 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
-    <title>active</title>
-    <url>/2020/05/09/tive/</url>
-    <content><![CDATA[<p>疑问：active是什么</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>pow实现</title>
-    <url>/2020/04/29/pow%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h1 id="pow实现"><a href="#pow实现" class="headerlink" title="pow实现"></a>pow实现</h1><a id="more"></a>
-<p><del>~</del><br>package main</p>
-<p>import (<br>    “crypto/sha256”<br>    “encoding/hex”<br>    “fmt”<br>    _ “log”<br>    “strconv”<br>    “strings”<br>    “sync”<br>    “time”<br>)</p>
-<p>const difficulty =4<br>type Block struct {<br>    Index int<br>    Timestamp string<br>    BMP int<br>    HashCode string<br>    PreHash string<br>    Diff  int<br>    Nonce int</p>
-<p>}<br>//用数组去维护区块链<br>var Blockchain_ []Block<br>var mutex =&amp;sync.Mutex {}<br>//生成区块<br>func generateBlock(oldBlock Block, BMP int) Block {<br>    var newBlock Block<br>    newBlock.PreHash = oldBlock. HashCode<br>    newBlock.Timestamp=time.Now().String()<br>    newBlock.Index =oldBlock.Index + 1<br>    newBlock.BMP =BMP<br>    newBlock.Diff =difficulty<br>    for i:=0;;i++{<br>        newBlock.Nonce++<br>        hash :=calculateHash(newBlock)<br>        fmt.Println(hash)<br>        if isHashValid(hash,difficulty) {<br>            fmt.Println(“挖矿成功”)<br>            newBlock.HashCode =hash<br>            return newBlock</p>
-<pre><code>    }
-}
-
-return Block{}</code></pre><p>}<br>func calculateHash(block Block)string{<br>    record := strconv.Itoa(block.Index)+ block.Timestamp+strconv.Itoa(block.Nonce)+strconv.Itoa(block.BMP)+block.PreHash<br>    sha := sha256.New()<br>    sha.Write([]byte(record))<br>    hashed := sha.Sum(nil)<br>    return hex.EncodeToString(hashed)</p>
-<p>}</p>
-<p>func isHashValid(hash string,difficulty int )bool{</p>
-<pre><code>prefix_ := strings.Repeat(&quot;0&quot;, difficulty)
-return strings.HasPrefix(hash,prefix_)</code></pre><p>}<br>func main()  {<br>    var firstBlock Block<br>    firstBlock.Diff=4<br>    firstBlock.Nonce =0<br>    firstBlock.PreHash =”0”<br>    firstBlock.BMP =1<br>    firstBlock.Index =0<br>    firstBlock.HashCode =”0”<br>    generateBlock(firstBlock,1)<br>}</p>
-]]></content>
-  </entry>
-  <entry>
     <title>vue入门</title>
     <url>/2020/04/20/vue%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h1 id="有关MVVM的一些理解"><a href="#有关MVVM的一些理解" class="headerlink" title="有关MVVM的一些理解"></a>有关MVVM的一些理解</h1><a id="more"></a>  
@@ -497,157 +510,6 @@ new Vue({
 &lt;/script&gt;
 
 当一个 Vue 实例被创建时，它向 Vue 的响应式系统中加入了其 data 对象中能找到的所有的属性。当这些属性的值发生改变时，html 视图将也会产生相应的变化。</code></pre>]]></content>
-  </entry>
-  <entry>
-    <title>Vue_Router</title>
-    <url>/2020/04/29/ue-Router/</url>
-    <content><![CDATA[<p>路由</p>
-<a id="more"></a> 
-
-<p>路由是个网络工程里面的术语。<br>路由( routing )就是通过互联的网络把信息从源地址传输到目的地址的活动</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在生活中,我们有没有听说过路由的概念呢?当然了,路由器嘛.</span><br><span class="line">路由器是做什么的?你有想过吗?</span><br><span class="line">路由器提供了两种机制:路由和转送.</span><br><span class="line">路由是决定数据包从来源到目的地的路径.</span><br><span class="line">转送将输入端的数据转移到合适的输出端.</span><br><span class="line">路由中有一个非常重要的概念叫路由表.</span><br><span class="line">路由表本质上就是-个映射表,决定了数据包的指向. </span><br><span class="line">~~~ </span><br><span class="line">前端渲染和后端渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">后端处理映射关系——后端路由 </span><br><span class="line"></span><br><span class="line">后端路由阶段</span><br><span class="line">早期的网站开发整个HTML页面是由服务器来渲染的.</span><br><span class="line">服务器直接生产渲染好对应的HTML页面,返回给客户端进行展示.</span><br><span class="line">但是,一个网站,这么多页面服务器如何处理呢?</span><br><span class="line">一个页面有自己对应的网址,也就是URL.</span><br><span class="line"> URL会发送到服务器,服务器会通过正则对该URL进行匹配,并且最后交给一个Controller进行处理.</span><br><span class="line">Controller进行各种处理,最终生成HTML或者数据,返回给前端.</span><br><span class="line">这就完成了一个IO操作.</span><br><span class="line">上面的这种操作,就是后端路由.</span><br><span class="line">当我们页面中需要请求不同的路径内容时,交给服务器来进行处理,服务器渲染好整个页面,并且将页面返回给客户顿.</span><br><span class="line">这种情况下渲染好的页面,不需要单独加载任何的js和css,可以直接交给浏览器展示，这样也有利于SEO的优化.</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">前端渲染 </span><br><span class="line">~~~ </span><br><span class="line">前端路由阶段</span><br><span class="line">前后端分离阶段:</span><br><span class="line">随着Ajax的出现,有了前后端分离的开发模式.</span><br><span class="line">后端只提供API来返回数据,前端通过Ajax获取数据,并且可以通过JavaScript将数据渲染到页面中.</span><br><span class="line">这样做最大的优点就是前后端责任的清晰,后端专注于数据上,前端专注于交互和可视化上.</span><br><span class="line">并且当移动端(iOS&#x2F;Android)出现后，后端不需要进行任何处理,依然使用之前的一套API即可.</span><br><span class="line">目前很多的网站依然采用这种模式开发.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">以下是个人理解： </span><br><span class="line"></span><br><span class="line">主要是用来进行资源定位，区别于后端。 </span><br><span class="line">[cdn](https:&#x2F;&#x2F;www.baidu.com&#x2F;link?url&#x3D;-TZZRFBFc_FFPtnXT2wRlON8D6iPkmT2AoyTWTke05swLRPzR49hnVQ7GY9dluz1&amp;wd&#x3D;&amp;eqid&#x3D;d0f5468b0005b5d6000000035ea8b5fe)</span><br></pre></td></tr></table></figure>
-<p>定义路由规则（数组），vue不知道这数组是路由规则，所以需要传参。将路由规则挂载到vue上。（嵌套规则需要记） </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">传参 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">静态变动态</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.bilibili.com/video/BV11x411J7pg?from=search&seid=2927631171341711551" target="_blank" rel="noopener">导航</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>vue复习</title>
-    <url>/2020/04/29/vue%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<p>1、什么是VUE  </p>
-<a id="more"></a>
-
-<p>MVVM渐进式框架 </p>
-<p>2、引入VUE.js库、创建实例 、HTML导入</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">实例化VUE</span><br><span class="line">sss </span><br><span class="line">s n e d s </span><br><span class="line"></span><br><span class="line">di id &#123;&#123;&#125;&#125; di</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">--- </span><br><span class="line">3、数据绑定使用&#123;&#123;&#125;&#125; 或者V-text &#x2F;文本渲染指令&#x2F;文本语法</span><br><span class="line">~~~ </span><br><span class="line">span  &#123;&#123;&#125;&#125;  sapan </span><br><span class="line"></span><br><span class="line">span v-tx  &#x3D;   s </span><br><span class="line">双大括号会把html代码解释为普通文本</span><br><span class="line">为输真H，V-html</span><br><span class="line">~~~  </span><br><span class="line">属绑 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-bind </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">4、条件渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-if </span><br><span class="line">常用于登录组件</span><br><span class="line">v-show </span><br><span class="line">调整display属性，DOM已经加载，只是没有显示 </span><br><span class="line">vif判断是否加载，可以减轻服务器压力，v-show更流畅</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">5、列表渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">Vfor列表渲染，数组 </span><br><span class="line">对象循环输出，列表渲染索引 </span><br><span class="line">key,为了让vue更好的跟踪每个节点的身份</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">6、表单绑定</span><br></pre></td></tr></table></figure>
-<p>vm在表单input,textarea,select上创建双向数据绑定，它会根据控件类型自动选择正确方法更新元素</p>
-<p>表单和数据创建双绑 </p>
-<p>lazy，可以在change后更新</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">事件绑定 -监听 </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">监听事件</span><br><span class="line">可以用v-on指令监听DOM事件,并在触发时运行-些JavaScript代码。</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">&lt;button. v-on:click&#x3D; &quot;counter. +&#x3D; 1°&gt;加1&lt;&#x2F;button&gt;</span><br><span class="line">&lt;p&gt;按钮被点击了[&#123;&#123; counter &#125;&#125;次.&lt;&#x2F;p&gt; </span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var example1 . new Vue( 汇</span><br><span class="line">el :</span><br><span class="line">&quot;单ap&#39;</span><br><span class="line">data: &#123;</span><br><span class="line">counter : 0</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">事件处理方法</span><br></pre></td></tr></table></figure>
-
-<p>事件处理方法</p>
-<div id="app">
-<button v-on:clicke" greet">问候</button>
-</div>
-<script>
-var app . new Vue({
-el:。#app
-data: {
-name: 'Vue. js'
-methods: {
-greet: function(event) {
-// 'this'. 在方法里指向当前Vue实例
-alert( '你好+this. name+'!') ;
-1/ 'even' 是元生DOM事件
-iflevent ) {
-alert(event. target. tagName )
-}
-}
-})
-//也可以用JavaScript 直接调用
-app.greet( ) :
-</script>
-事件绑定简写方式
-<button :click="greet">问候</button>
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">事件修饰符 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">在事件处理程序中调用event.preventDefault( 或event.stopPropagation0是非常常见的需</span><br><span class="line">求</span><br><span class="line">为了解决这个问题, Vue.js 为v-on提供了事件修饰符。之前提过,修饰符是由点开头的指令</span><br><span class="line">后缀来表示的。</span><br><span class="line">。.stop</span><br><span class="line">， .prevent</span><br><span class="line">. .once</span><br><span class="line">&lt;!--</span><br><span class="line">阻止单击事件继续传播</span><br><span class="line">&lt;a v-on:click. stop&#x3D;&quot;doThis *&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;1--提交事件不再重载页面</span><br><span class="line">&lt;form v-on:submit .prevent&#x3D;”onSubmit&quot;&gt;&lt;&#x2F; form&gt;</span><br><span class="line">&lt;! --</span><br><span class="line">修饰符可以串联- -&gt;</span><br><span class="line">&lt;a v-on:click. stop.prevent&#x3D; &quot;doThat &quot;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;!--点击事件将只会触发一次- -&gt;</span><br><span class="line">&lt;a v-on:click. once&#x3D; &quot;doThis&quot;&gt;&lt;&#x2F; a&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">按键修饰符 </span><br><span class="line">~~~ </span><br><span class="line">div class&#x3D; &quot;explain&#39;&gt;</span><br><span class="line">在监听键盘事件时,我们经常需要检查详细的按键。Vue允许为v-on在监听键盘事件时添加</span><br><span class="line">按键修饰符:</span><br><span class="line">&lt;1--只有在、 key&#39;是、Enter’时调用、 vm. submit()”--&gt;</span><br><span class="line">&lt;input v-on:keyup. enter&#x3D;&quot; submit&quot; &gt;</span><br><span class="line">&lt;input v-on: keyup.page -down&#x3D;”onPageDown &#39;&gt;</span><br><span class="line">按键码</span><br><span class="line">使用keyCode特性也是允许的:</span><br><span class="line">&lt;input v-on:keyup.13-&quot; submit&#39;&gt;</span><br><span class="line">Vue提供了绝大多数常用的按键码的别名:</span><br><span class="line">●.enter</span><br><span class="line">.tab</span><br><span class="line">.delete (捕获&quot;删除&quot;和”退格“键)</span><br><span class="line">.esc</span><br><span class="line">.space</span><br><span class="line">.down</span><br><span class="line">.Jeft</span><br><span class="line">.right</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">计算与监听  </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">计算属性</span><br><span class="line">模板内的表达式非常便利,但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻</span><br><span class="line">辑会让模板过重且难以维护。例如:</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&#123;&#123;msg.split(&quot;&quot;).reverse(). join(&quot;&quot;) &#125;&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">, 这里是想要显示变量msg的翻转字符串。当你想要在模板中多次引用此处的翻转字符串</span><br><span class="line">时,就会更加难以处理。</span><br><span class="line">当你需要从现有数组得到新的数据这个时候你就需要计算了computed</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&lt;p&gt;原来的信息: &quot;&#123;&#123; msg &#125;&#125;*&lt;&#x2F;p&gt; </span><br><span class="line">&lt;p&gt;计算翻转的信息: &quot;&#123;&#123; rmsg 1&#125;*&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var vm。new Vue(&#123;</span><br><span class="line">e1: &#39; #example&#39;,</span><br><span class="line">data: t</span><br><span class="line">msg:</span><br><span class="line">&#39;He1l1o&#39;</span><br><span class="line">computed: C.</span><br><span class="line">&#x2F;&#x2F;计算属性的getter</span><br><span class="line">rmsg: function () &#123;</span><br><span class="line">&#x2F;&#x2F;、this指向vm实例</span><br><span class="line">return this.msg.split(&#39;&#39;).reverse(). join(&#39;&#39;)</span><br><span class="line">结果:</span><br><span class="line">原来的信息: &quot;hello&quot;</span><br><span class="line">计算翻转的信息: &quot;olleh&quot; </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">侦听器</span><br></pre></td></tr></table></figure>
-
-<p>Vue通过watch来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时,这<br>个方式是最有用的。</p>
-<div id=" app">
-<p>计数器: [{ num }}</p>
-<button click="num++">点我</button></div>
-<script>
-var vm。new Vue({
-el: ' #app'.
-data:{num:1}，
-watch: {
-'num': function(nval. oval) {
-console. log( 'num变化: + oval +，变为。+ nval + '1');
-}.
-})
-</script>
-每次点击按钮都会输出:
-num变化:1变为2!
-num变化:2变为3!
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象变化的监听</span><br></pre></td></tr></table></figure>
-<p>我们需要监听对象的属性值是否发生改变用</p>
-<div id="app'>
-<p>
-计数器: </p> 
-<button click= " num. age++“>点我</div>
-<script>
-varvm=newVue({
-el: ' #app'.
-data: {
-num: {age:1}
-}。
-watch: {
-num': {
-handler: function(nval, oval) {
-console.1og( ' num变化:” + oval.age +”变为”+
-nval.age + '!')
-deep: true
-}):
-</script> 
-deep属性深度监听对象变化
-
-
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">自定义指令</span><br></pre></td></tr></table></figure>
-<p>除了默认设置的核心指令( v-model和v-show ), Vue也允许注册自定义指令。下面我们注册<br>一个全局指令v-focus, 该指令的功能是在页面加载时,元素获得焦点</p>
-<div id="°app"">
-<p>
-页面载入时, input元素自动获取焦点: </p>
-<input v- focuse""></div>
-<script>
-11创建根实例
-new Vue({
-el: ' #app'
-directives: {
-//注册一个局部的自定义指令v- focus
-focus: {
-//指令的定义
-inserted: function (el) {
-//聚焦元素
-el. focus( )
-}
-})
-</script>
-一个指令定义对象可以提供如下几个钩子函数(均为可选) :
-bind:只调用一次，指令第一次绑定到元素时调用。在这里可以进行-次性的初始化设
-置。
-inserted :被绑定元素插入父节点时调用(仅保证父节点存在,但不一定已被插入文档
-中)。
-update :所在组件的VNode更新时调用,但是可能发生在其子VNode更新之前。指令的
-值可能发生了改变,也可能没有。但是你可以通过比较更新前后的值来忽略不必要的模板
-更新
-
-
-<p>指令的值数据-简写<br>p&gt;在很多时候,你可能想在bind和update时触发相同行为,而不关心其它的钩子</p>
-<div id=" app">
-<p>页面载入时，input元素自动获取焦点:</p>
-<input v- focusa" true ">
-</div>
-<script>
-11创建根实例
-new Vue( {
-el: ' #app'.
-directives :
-//注册一个局部的自定义指令v- focus
-focus: function (e1,data) {
-//聚焦元素
-//如果指令的值是t rue则获取焦点
-if(data. value==true ) {
-el. focus( )
-}
-}
-})
-</script>
-
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">类与样式  </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">类的绑定</span><br><span class="line">操作元素的class 列表和内联样式是数据绑定的- -个常见需求。因为它们都是属性,所以我</span><br><span class="line">们可以用v-bind处理它们</span><br><span class="line">Vue.js v-bind在处理class和style时。专门增强了它。表达式的结果类型除了字符串之</span><br><span class="line">外,还可以是对象或数组。</span><br><span class="line">我们可以传给v-bind:class一个对象,以动态地切换class :</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot; &#123; active: isActive &#125; &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">上面的语法表示active 这个class存在与否将取决于数据属性isActive的真假</span><br><span class="line"></span><br><span class="line">绑定多个class</span><br><span class="line">p&gt;你可以在对象中传入更多属性来动态切换多个class</span><br><span class="line">&lt;div class&#x3D;&quot; static&quot; v-bind:class&#x3D;&quot; &#123; active: isActive. &#39; text -</span><br><span class="line">danger&#39;: hasError &#125;&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">data如下</span><br><span class="line">data:</span><br><span class="line">isActive: true ，</span><br><span class="line">hasError: false</span><br><span class="line">渲染结果为</span><br><span class="line">&lt;div class&#x3D;&quot;static active&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">对象绑定</span><br><span class="line">绑定的数据对象不必内联定义在模板里:</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot;classObject &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">数据如下</span><br><span class="line">data: &#123;</span><br><span class="line">classObject: &#123;</span><br><span class="line">active: true 。</span><br><span class="line">&#39; text-danger&#39; : false</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">classObject对象可以通过计算动态获得</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>vue开发网易云播放器</title>
@@ -675,71 +537,6 @@ el. focus( )
 <p>对象简化赋值</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果属性名和变量名相同，可以简写 </span><br><span class="line">方法可以省略 fuction等关键字 </span><br><span class="line"></span><br><span class="line">let name &#x3D;&quot;小黑</span><br><span class="line">let city &#x3D;&quot;深圳&quot;</span><br><span class="line">let person &#x3D;&#123; </span><br><span class="line">&#x2F;*name : *&#x2F;name，</span><br><span class="line">&#x2F;*city :*&#x2F;city</span><br><span class="line">&#125;</span><br><span class="line">console .1og(person) </span><br><span class="line"></span><br><span class="line">sayHello: function()&#123;</span><br><span class="line">console. log( &#39;你好吗! &#39;) </span><br><span class="line">&#125;</span><br><span class="line">console .1og(person) </span><br><span class="line">person . sayHe11o( )</span><br><span class="line">上边可以改成sayhello()&#123;consol.log()&#125;</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">箭头函数化简</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">function省略掉，替换为&#x3D;&gt;</span><br><span class="line">参数只有一个时，可以省略( )</span><br><span class="line">函数体只有一行时，可以省略&#123; &#125;</span><br><span class="line">函数体只有一行,并且有返回值时，如果省略了&#123;),必须省略return </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line">箭头函数this</span><br></pre></td></tr></table></figure>
 <dl><dt>创建时的this是谁，运行的时候this就是谁<br>let person =<br>name :</dt><dd>“花姐”<br>food: ‘西兰花’<br>sayHi(){<br>// console.log(this)<br>setTimeout( function(){<br>console. log(this)<br>}; 100)</dd></dl><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">简化播放器  </span><br><span class="line">1、挂载</span><br><span class="line">2、双向数据绑定 </span><br><span class="line">~~~ </span><br><span class="line">&#x2F;*</span><br><span class="line">需求:</span><br><span class="line">1.回车搜歌</span><br><span class="line">接口1:歌曲搜索</span><br><span class="line">地址: https :&#x2F;&#x2F; autumnfish . cn&#x2F;search</span><br><span class="line">方法:get</span><br><span class="line">参数:keywords搜 索关键字</span><br><span class="line">2.列表渲染</span><br><span class="line">3.</span><br><span class="line">点击播放</span><br><span class="line">接口2:获取歌曲播放地址</span><br><span class="line">地址:https :&#x2F;&#x2F; autumnfish . cn&#x2F; song&#x2F;url </span><br><span class="line">方法:get</span><br><span class="line">参数:id歌 曲id</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">APP.vue </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;top &#x2F;&gt;</span><br><span class="line">    &lt;index &#x2F;&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import top from &#39;.&#x2F;components&#x2F;01.top.vue&#39;; </span><br><span class="line">  &#x2F;&#x2F;导入这个组件，并注册</span><br><span class="line">import index from &#39;.&#x2F;components&#x2F;02.index.vue&#39;;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;app&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    top,</span><br><span class="line">    index</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style &gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">01top.vue </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;top-container&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;left-box&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;icon-wrapper&quot;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-home&quot; @click&#x3D;&quot;toHomeClick()&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;!-- &lt;span class&#x3D;&quot;iconfont icon-sami-select&quot;&gt;&lt;&#x2F;span&gt; --&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-full-screen&quot; @click&#x3D;&quot;getFullCreeen(btnStatus)&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;!-- &lt;div class&#x3D;&quot;history-wrapper&quot;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-arrow-lift&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-arrow-right&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt; --&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;right-box&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;el-input el-input--small el-input--prefix&quot;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;text&quot; autocomplete&#x3D;&quot;off&quot; placeholder&#x3D;&quot;搜索&quot; v-model&#x3D;&quot;inputVal&quot; @keyup.enter&#x3D;&quot;toResult&quot; class&#x3D;&quot;el-input__inner&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;el-input__prefix&quot;&gt;</span><br><span class="line">          &lt;i class&#x3D;&quot;el-input__icon el-icon-search&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;top&#39;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      query: &#39;&#39;,</span><br><span class="line">      inputVal: &#39;&#39;,</span><br><span class="line">      n: 0,</span><br><span class="line">      btnStatus: 0</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    toResult() &#123;</span><br><span class="line">      if (this.inputVal &#x3D;&#x3D;&#x3D; &#39;&#39;) &#123;</span><br><span class="line">        &#x2F;&#x2F; 提示用户</span><br><span class="line">        this.$message.warning(&#39;请输入内容!&#39;)</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        &#x2F;&#x2F; 携带数据去搜索页面</span><br><span class="line">        this.$router.push(&#96;&#x2F;result?q&#x3D;$&#123;this.inputVal&#125;&#96;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    toHomeClick() &#123;</span><br><span class="line">      if (&#39;&#x2F;discovery&#39; &#x3D;&#x3D;&#x3D; this.$route.path) &#123;</span><br><span class="line">        return</span><br><span class="line">      &#125;</span><br><span class="line">      this.$router.push(&#96;&#x2F;discovery&#96;)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F;  点击实现全屏和退出全屏</span><br><span class="line">    getFullCreeen(btnStatus) &#123;</span><br><span class="line">      this.btnStatus &#x3D; this.btnStatus &#x3D;&#x3D;&#x3D; 0 ? 1 : 0</span><br><span class="line">      this.n++</span><br><span class="line">      this.n % 2 &#x3D;&#x3D; 0 ? this.outFullCreeen(document) : this.inFullCreeen(document.documentElement)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    inFullCreeen(element) &#123;</span><br><span class="line">      let el &#x3D; element</span><br><span class="line">      let rfs &#x3D; el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen</span><br><span class="line">      if (typeof rfs !&#x3D; &#39;undefined&#39; &amp;&amp; rfs) &#123;</span><br><span class="line">        rfs.call(el)</span><br><span class="line">      &#125; else if (typeof window.ActiveXObject !&#x3D; &#39;undefined&#39;) &#123;</span><br><span class="line">        let wscript &#x3D; new ActiveXObject(&#39;WScript.Shell&#39;)</span><br><span class="line">        if (wscript !&#x3D; null) &#123;</span><br><span class="line">          wscript.SendKeys(&#39;&#123;F11&#125;&#39;)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    outFullCreeen(element) &#123;</span><br><span class="line">      let el &#x3D; element</span><br><span class="line">      let cfs &#x3D; el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen</span><br><span class="line">      if (typeof cfs !&#x3D; &#39;undefined&#39; &amp;&amp; cfs) &#123;</span><br><span class="line">        cfs.call(el)</span><br><span class="line">      &#125; else if (typeof window.ActiveXObject !&#x3D; &#39;undefined&#39;) &#123;</span><br><span class="line">        let wscript &#x3D; new ActiveXObject(&#39;WScript.Shell&#39;)</span><br><span class="line">        if (wscript !&#x3D; null) &#123;</span><br><span class="line">          wscript.SendKeys(&#39;&#123;F11&#125;&#39;)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style scoped&gt;&lt;&#x2F;style&gt;</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">02top </span><br><span class="line">~~~ </span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;index-container&quot;&gt;</span><br><span class="line">    &lt;!-- 导航区域 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;nav&quot;&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;discovery&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-find-music&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            发现音乐</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;playlists&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-music-list&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            推荐歌单</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;songs&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-music&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            最新音乐</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;mvs&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-mv&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            最新MV</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">      &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 主体区域 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;main&quot;&gt;</span><br><span class="line">      &lt;router-view&gt;&lt;&#x2F;router-view&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 播放标签 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;player&quot;&gt;</span><br><span class="line">      &lt;audio :src&#x3D;&quot;musicUrl&quot; autoplay controls id&#x3D;&quot;music&quot;&gt;&lt;&#x2F;audio&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;index&#39;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      musicUrl: &#39;&#39;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  mounted() &#123;</span><br><span class="line">    &#x2F;&#x2F;订阅消息</span><br><span class="line">    this.$pubSub.subscribe(&#39;pauseAudio&#39;, msg &#x3D;&gt; &#123;</span><br><span class="line">      var audio &#x3D; document.getElementById(&#39;music&#39;)</span><br><span class="line">      audio.pause()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style &gt;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>关于JS和Jquery和AJAX的关系</title>
-    <url>/2020/04/25/%E4%BA%8EJS%E5%92%8CJquery%E5%92%8CAJAX%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
-    <content><![CDATA[<h1 id="如题"><a href="#如题" class="headerlink" title="如题"></a>如题</h1><a id="more"></a> 
-
-<p>简单总结： </p>
-<p>1、JS是一门前端语言。<br>2、Ajax是一门技术，它提供了异步更新的机制，使用客户端与服务器间交换数据而非整个页面文档，实现页面的局部更新。<br>3、jQuery是一个框架，它对JS进行了封装，使其更方便使用。jQuery使得JS与Ajax的使用更方便</p>
-<p>关系比喻：<br>若把js比作木头，那么jquery就是木板（半成品）<br>jQuery与ajax都是js的一个框架，各有各的功能，若js是父亲的话，jquery与ajax就是两个儿子 </p>
-<p>详细情况：<br>1.javascript是一种在客户端执行的脚本语言。ajax是基于javascript的一种技术，它主要用途是提供异步刷新（只刷新页面的一部分，而不是整个页面都刷新）。一个是语言,一个是技术,两者有本质区别.<br>2.javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。<br>1、JavaScript<br> javaScript的简写形式就是JS，一种广泛用于客户端Web开发的脚本语言，常用来给HTML网页添加动态功能（其编写的程序可以被嵌入到HTML或XML页面中，并直接在浏览器中解释执行）。</p>
-<p>组成部分：<br>             核心（ECMAScript）、文档对象模型（Document Object Model，简称DOM）、浏览器对象模型（Browser Object Model，简称BOM） </p>
-<pre><code>        描述：
-
-
- Javascript就是适应动态网页制作的需要而诞生的一种新的编程语言，如今越来越广泛地使用于Internet网页制作上。
-
-Javascript的出现使得网页和用户之间实现了一种实时性的、动态的、交互性的关系，使网页包含更多活跃的元素和更加精彩的内容。
-
- Javascript短小精悍，又是在客户机上执行的，大大提高了网页的浏览速度和交互能力。同时它又是专门为制作Web网页而量身定做的一种简单的编程语言。</code></pre><p>2、Ajax<br>         AJAX即“Asynchronous JavaScript and XML”（异步JavaScript和XML)，AJAX并非缩写词，而是由Jesse James Gaiiett创造的名词，是指一种创建交互式网页应用的网页开发技术。</p>
-<p>组成：<br>            基于XHTML和CSS标准的表示；</p>
-<pre><code>使用Document Object Model进行动态显示和交互；
-
-使用XML和XSLT做数据交互和操作；
-
-使用XML HttpRequest与服务器进行异步通信；
-
-使用JavaScript绑定一切。</code></pre><p>描述：<br>            Ajax是结合了Java技术、XML以及JavaScript等编程技术，可以让开发人员构建基于Java技术的Web应用，并打破了使用页面重载的管理。</p>
-<pre><code> Ajax技术使用非同步的HTTP请求，在Browser和Web Server之间传递数据，使Browser只更新部分网页内容而不重新载入整个网页。
-
-Ajax是使用客户端脚本与Web服务器交换数据的Web应用开发方法。这样，Web页面不用打断交互流程进行重新加裁，就可以动态地更新。使用Ajax，用户可以创建接近本地桌面应用的直接、高可用、更丰富、更动态的Web用户界面</code></pre><p>3、jQuery<br>jQuery是一个快速的，简洁的javaScript库，使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。</p>
-<p>特点：<br>           jQuery是当前很流行的一个JavaScript框架，使用类似于CSS的选择器，可以方便的操作HTML元素，拥有很好的可扩展性，拥有不少插件。 </p>
-<p>描述：<br>            对于程序员来说，简化javascript和ajax编程，能够使程序员从设计和书写繁杂的JS应用中解脱出来，将关注点转向功能需求而非实现细节上，从而提高项目的开发速度。</p>
-<pre><code> 对于用户来说，改善了页面的视觉效果，增强了与页面的交互性，体验更绚丽的网页物资。
-
-javaScript框架实际上是一系列工具和函数。 
-
-  javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，主要组合JS、CSS、XML三种技术的新技术，是用于创建交互式网页应用的网页开发技术。jQuery是JS的框架，基于JS语言，集合Ajax技术开发出来的JS库，封装JS和Ajax的功能，提供函数接口，大大简化了Ajax，JS的操作。</code></pre><p>项目中用jQuery比较多，具体讲讲他。</p>
-<p>jQuery能大大简化JavaScript程序的编写</p>
-<p>要使用jQuery，首先要在HTML代码最前面加上对jQuery库的引用，比如：</p>
-<script language="javascript" src="/js/jquery.min.js"></script>   //引用
-
-<p>库文件既可以放在本地，也可以直接使用知名公司的CDN（CDN加载jquery的好处），好处是这些大公司的CDN比较流行，用户访问你网站之前很可能在访问别的网站时已经缓存在浏览器中了，所以能加快网站的打开速度。另外一个好处是显而易见的，节省了网站的流量带宽。</p>
-<p>Google提供的</p>
-<p><a href="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" target="_blank" rel="noopener">http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js</a></p>
-<p>jQuery官方的</p>
-<p><a href="http://code.jquery.com/jquery-1.6.min.js" target="_blank" rel="noopener">http://code.jquery.com/jquery-1.6.min.js</a></p>
-<p>jQuery代码具体的写法和原生的Javascript写法在执行常见操作时的区别如下：</p>
-<p>1 定位元素<br>JS<br>document.getElementById(“abc”) </p>
-<p>jQuery<br>$(“#abc”) 通过id定位<br>$(“.abc”) 通过class定位<br>$(“div”) 通过标签定位 </p>
-<p>需要注意的是JS返回的结果是这个元素，jQuery返回的结果是一个JS的对象。以下例子中假设已经定位了元素abc。 </p>
-<p>2 改变元素的内容<br>JS<br>abc.innerHTML = “test”;                //现在的项目中有用到<br>jQuery<br>abc.html(“test”); </p>
-<p>3 显示隐藏元素<br>JS<br>abc.style.display = “none”;              //现在的项目中有用到<br>abc.style.display = “block”; </p>
-<p>jQuery<br>abc.hide();<br>abc.show();</p>
-<p>abc.toggle();         //在显示和隐藏之间切换、</p>
-<p>4 获得焦点 </p>
-<p>JS和jQuery是一样的，都是abc.focus(); </p>
-<p>5 为表单赋值<br>JS<br>abc.value = “test”;<br>jQuery<br>abc.val(“test”); </p>
-<p>6 获得表单的值<br>JS<br>alert(abc.value);<br>jQuery<br>alert(abc.val()); </p>
-<p>7 设置元素不可用<br>JS<br>abc.disabled = true;<br>jQuery<br>abc.attr(“disabled”, true);</p>
-<p>8 修改元素样式<br>JS<br>abc.style.fontSize=size;<br>jQuery<br>abc.css(‘font-size’, 20);</p>
-<p>JS<br>abc.className=”test”;<br>JQuery<br>abc.removeClass();<br>abc.addClass(“test”);</p>
-<p>9 判断复选框是否选中</p>
-<p>jQuery<br>if(abc.attr(“checked”) == “checked”)<br>注意：网上说的.attr(“checked”) == true实际上不能用，上面这个测试过能用 </p>
-<p><img src="https://img-blog.csdn.net/20140731101457124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVkaWFlbF9sdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=".."></p>
-]]></content>
   </entry>
   <entry>
     <title>关于登录页面的设计流程</title>
@@ -951,6 +748,71 @@ return config
 ]]></content>
   </entry>
   <entry>
+    <title>关于JS和Jquery和AJAX的关系</title>
+    <url>/2020/04/25/%E4%BA%8EJS%E5%92%8CJquery%E5%92%8CAJAX%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+    <content><![CDATA[<h1 id="如题"><a href="#如题" class="headerlink" title="如题"></a>如题</h1><a id="more"></a> 
+
+<p>简单总结： </p>
+<p>1、JS是一门前端语言。<br>2、Ajax是一门技术，它提供了异步更新的机制，使用客户端与服务器间交换数据而非整个页面文档，实现页面的局部更新。<br>3、jQuery是一个框架，它对JS进行了封装，使其更方便使用。jQuery使得JS与Ajax的使用更方便</p>
+<p>关系比喻：<br>若把js比作木头，那么jquery就是木板（半成品）<br>jQuery与ajax都是js的一个框架，各有各的功能，若js是父亲的话，jquery与ajax就是两个儿子 </p>
+<p>详细情况：<br>1.javascript是一种在客户端执行的脚本语言。ajax是基于javascript的一种技术，它主要用途是提供异步刷新（只刷新页面的一部分，而不是整个页面都刷新）。一个是语言,一个是技术,两者有本质区别.<br>2.javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。<br>1、JavaScript<br> javaScript的简写形式就是JS，一种广泛用于客户端Web开发的脚本语言，常用来给HTML网页添加动态功能（其编写的程序可以被嵌入到HTML或XML页面中，并直接在浏览器中解释执行）。</p>
+<p>组成部分：<br>             核心（ECMAScript）、文档对象模型（Document Object Model，简称DOM）、浏览器对象模型（Browser Object Model，简称BOM） </p>
+<pre><code>        描述：
+
+
+ Javascript就是适应动态网页制作的需要而诞生的一种新的编程语言，如今越来越广泛地使用于Internet网页制作上。
+
+Javascript的出现使得网页和用户之间实现了一种实时性的、动态的、交互性的关系，使网页包含更多活跃的元素和更加精彩的内容。
+
+ Javascript短小精悍，又是在客户机上执行的，大大提高了网页的浏览速度和交互能力。同时它又是专门为制作Web网页而量身定做的一种简单的编程语言。</code></pre><p>2、Ajax<br>         AJAX即“Asynchronous JavaScript and XML”（异步JavaScript和XML)，AJAX并非缩写词，而是由Jesse James Gaiiett创造的名词，是指一种创建交互式网页应用的网页开发技术。</p>
+<p>组成：<br>            基于XHTML和CSS标准的表示；</p>
+<pre><code>使用Document Object Model进行动态显示和交互；
+
+使用XML和XSLT做数据交互和操作；
+
+使用XML HttpRequest与服务器进行异步通信；
+
+使用JavaScript绑定一切。</code></pre><p>描述：<br>            Ajax是结合了Java技术、XML以及JavaScript等编程技术，可以让开发人员构建基于Java技术的Web应用，并打破了使用页面重载的管理。</p>
+<pre><code> Ajax技术使用非同步的HTTP请求，在Browser和Web Server之间传递数据，使Browser只更新部分网页内容而不重新载入整个网页。
+
+Ajax是使用客户端脚本与Web服务器交换数据的Web应用开发方法。这样，Web页面不用打断交互流程进行重新加裁，就可以动态地更新。使用Ajax，用户可以创建接近本地桌面应用的直接、高可用、更丰富、更动态的Web用户界面</code></pre><p>3、jQuery<br>jQuery是一个快速的，简洁的javaScript库，使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。</p>
+<p>特点：<br>           jQuery是当前很流行的一个JavaScript框架，使用类似于CSS的选择器，可以方便的操作HTML元素，拥有很好的可扩展性，拥有不少插件。 </p>
+<p>描述：<br>            对于程序员来说，简化javascript和ajax编程，能够使程序员从设计和书写繁杂的JS应用中解脱出来，将关注点转向功能需求而非实现细节上，从而提高项目的开发速度。</p>
+<pre><code> 对于用户来说，改善了页面的视觉效果，增强了与页面的交互性，体验更绚丽的网页物资。
+
+javaScript框架实际上是一系列工具和函数。 
+
+  javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，主要组合JS、CSS、XML三种技术的新技术，是用于创建交互式网页应用的网页开发技术。jQuery是JS的框架，基于JS语言，集合Ajax技术开发出来的JS库，封装JS和Ajax的功能，提供函数接口，大大简化了Ajax，JS的操作。</code></pre><p>项目中用jQuery比较多，具体讲讲他。</p>
+<p>jQuery能大大简化JavaScript程序的编写</p>
+<p>要使用jQuery，首先要在HTML代码最前面加上对jQuery库的引用，比如：</p>
+<script language="javascript" src="/js/jquery.min.js"></script>   //引用
+
+<p>库文件既可以放在本地，也可以直接使用知名公司的CDN（CDN加载jquery的好处），好处是这些大公司的CDN比较流行，用户访问你网站之前很可能在访问别的网站时已经缓存在浏览器中了，所以能加快网站的打开速度。另外一个好处是显而易见的，节省了网站的流量带宽。</p>
+<p>Google提供的</p>
+<p><a href="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" target="_blank" rel="noopener">http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js</a></p>
+<p>jQuery官方的</p>
+<p><a href="http://code.jquery.com/jquery-1.6.min.js" target="_blank" rel="noopener">http://code.jquery.com/jquery-1.6.min.js</a></p>
+<p>jQuery代码具体的写法和原生的Javascript写法在执行常见操作时的区别如下：</p>
+<p>1 定位元素<br>JS<br>document.getElementById(“abc”) </p>
+<p>jQuery<br>$(“#abc”) 通过id定位<br>$(“.abc”) 通过class定位<br>$(“div”) 通过标签定位 </p>
+<p>需要注意的是JS返回的结果是这个元素，jQuery返回的结果是一个JS的对象。以下例子中假设已经定位了元素abc。 </p>
+<p>2 改变元素的内容<br>JS<br>abc.innerHTML = “test”;                //现在的项目中有用到<br>jQuery<br>abc.html(“test”); </p>
+<p>3 显示隐藏元素<br>JS<br>abc.style.display = “none”;              //现在的项目中有用到<br>abc.style.display = “block”; </p>
+<p>jQuery<br>abc.hide();<br>abc.show();</p>
+<p>abc.toggle();         //在显示和隐藏之间切换、</p>
+<p>4 获得焦点 </p>
+<p>JS和jQuery是一样的，都是abc.focus(); </p>
+<p>5 为表单赋值<br>JS<br>abc.value = “test”;<br>jQuery<br>abc.val(“test”); </p>
+<p>6 获得表单的值<br>JS<br>alert(abc.value);<br>jQuery<br>alert(abc.val()); </p>
+<p>7 设置元素不可用<br>JS<br>abc.disabled = true;<br>jQuery<br>abc.attr(“disabled”, true);</p>
+<p>8 修改元素样式<br>JS<br>abc.style.fontSize=size;<br>jQuery<br>abc.css(‘font-size’, 20);</p>
+<p>JS<br>abc.className=”test”;<br>JQuery<br>abc.removeClass();<br>abc.addClass(“test”);</p>
+<p>9 判断复选框是否选中</p>
+<p>jQuery<br>if(abc.attr(“checked”) == “checked”)<br>注意：网上说的.attr(“checked”) == true实际上不能用，上面这个测试过能用 </p>
+<p><img src="https://img-blog.csdn.net/20140731101457124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVkaWFlbF9sdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=".."></p>
+]]></content>
+  </entry>
+  <entry>
     <title>关于微信小程序开发</title>
     <url>/2020/04/21/%E5%85%B3%E4%BA%8E%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</url>
     <content><![CDATA[<h1 id="小程序"><a href="#小程序" class="headerlink" title="小程序"></a>小程序</h1><a id="more"></a>
@@ -981,12 +843,6 @@ return config
 <p>利用默克尔树构建过程的特点提出了一种基于默克尔树的POW挖矿算法。 </p>
 <p>本算法利用默克尔树的结构特点设计了一种随机访间默克尔树每层节点的机制，这就使得<br>挖矿过程中必须要存储完整的默克尔树。为了挖矿算法的可靠性，也分析了默克尔树深<br>度的取值范围。该算法对于轻节点验证来说，只需要消耗较少的内存资源就能完成对区<br>块合法性的验证。最后，还在计算机上模拟了单次挖矿过程，实验数据和理论分析结果<br>完全一致。 </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">默克尔树挖矿算法Go语言代码</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">&quot; crypto&#x2F;sh a256&quot; </span><br><span class="line">&quot;fmt&quot;</span><br><span class="line">&quot; math&#x2F;rand&quot;</span><br><span class="line">&quot; time&quot;</span><br><span class="line">)</span><br><span class="line">const(</span><br><span class="line">depth&#x3D;20</span><br><span class="line">cacheLength&#x3D; 1 &lt;&lt; depth)</span><br><span class="line">&#x2F;&#x2F;Node is merkle node</span><br><span class="line">type Node struct &#123;</span><br><span class="line">value [32]byte</span><br><span class="line">&#125;</span><br><span class="line">type Hash struct &#123;</span><br><span class="line">value [321byte</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">&#x2F;&#x2F; GetMerkl eHash start</span><br><span class="line">t1 :&#x3D; time.Now0</span><br><span class="line">cache :&#x3D; m ake([]byte, cach eLength)</span><br><span class="line">fori :&#x3D;0; i &lt; cacheLength, 1++ &#123;</span><br><span class="line">cache[i]&#x3D; byte(rand Intn(256))</span><br><span class="line">&#125;</span><br><span class="line">merkletree : &#x3D; m ake([]Node, 2*cacheLength-1)</span><br><span class="line">fori :&#x3D; 0;1 &lt; cacheLength; i++ &#123;</span><br><span class="line">merkl etree[cacheLength-1+i]value &#x3D; sha256. Sum256(cache[i : i+1]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">tmp :&#x3D; m ake([]byte, 64)</span><br><span class="line">fori :&#x3D; cacheLength-2,1 &gt;&#x3D;0,1- &#123;</span><br><span class="line">copy(tmp[: 32], merkletree[2*i+1]value[: ])</span><br><span class="line">copy(tmp[32: ], merkl etree[2*+2] value[:])</span><br><span class="line">ah : &#x3D; sh a256 Sum 256(tmp[:])</span><br><span class="line">copy(merkletree[i]value[: ], ah[:])</span><br><span class="line">&#125;</span><br><span class="line">el apsed :&#x3D; time. Since(t1)</span><br><span class="line">I1 GetMerkl eHash end</span><br><span class="line">I1 MerkleMining start</span><br><span class="line">&#x2F;&#x2F;&#x3D;</span><br><span class="line">t2 &#x3D; time .Now0</span><br><span class="line">header :&#x3D; make([]byte, 80)</span><br><span class="line">hash : &#x3D; m ake([]Hash, depth+1)</span><br><span class="line">hash[Q].value &#x3D; sha256 Sum 256(header) </span><br><span class="line"></span><br><span class="line">fori &#x3D; 1;1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">divisor :&#x3D; pow(2, i)</span><br><span class="line">k :&#x3D; bigNumber(h[i-1]:value[: ]) % divisor</span><br><span class="line">c :&#x3D; int( divisor - 1)</span><br><span class="line">copy(tmp[:32], hash[i-1].value[:])</span><br><span class="line">copy(tmp[32: ], merkl etree[c+k]value[ ])</span><br><span class="line">hash[]value &#x3D; sha256.Sum 256(tmp[:])</span><br><span class="line">data :&#x3D; m ake ([ ]byte, (depth+ 1)*4)</span><br><span class="line">fori &#x3D; 0,1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">copy(data[i*4 (i+1)*4], hash[i].value[:]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">h :&#x3D; sh a256 Sum 256(data[: ])</span><br><span class="line">elaps edMining : &#x3D; time. Since(t2)</span><br><span class="line">&#x2F;1 MerkleMining end</span><br><span class="line">&#x2F;&#x2F;&#x3D;:</span><br><span class="line">fmt. Println(&quot;\nGetMerkl eHash: &quot;, elapsed)</span><br><span class="line">fmt.Printn(&quot;\nMerkle Mining: &quot;, elapsedMining)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>创世区块</title>
-    <url>/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/</url>
-    <content><![CDATA[<h1 id="创世区块"><a href="#创世区块" class="headerlink" title="创世区块"></a>创世区块</h1><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package main</span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">	Prehsh string</span><br><span class="line">	&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">	HashCode string</span><br><span class="line">	&#x2F;&#x2F;shi jian chuo</span><br><span class="line">	TimeStamp string</span><br><span class="line">	&#x2F;&#x2F;dang xian wang luo de nan du xi shu</span><br><span class="line">	&#x2F;&#x2F;kong zhi ha xi you ji ge qian dao ling</span><br><span class="line">	Diff int</span><br><span class="line">	&#x2F;&#x2F;cun jiao yi xin xi</span><br><span class="line">	Data string</span><br><span class="line">	&#x2F;&#x2F;qu kuai gao du</span><br><span class="line">	Index int</span><br><span class="line">	&#x2F;&#x2F;sui ji zhi</span><br><span class="line">	Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;chuang jian chuang shi qu kuai (lian zhong de di yi ge qukuai)</span><br><span class="line">func  GrnerateFirstBlock(data string)  Block &#123;</span><br><span class="line">	&#x2F;&#x2F;fangfa jiao yi xi xin fan hui yi ge qu kaui</span><br><span class="line">	&#x2F;&#x2F;sheng ming bing fu zhi yige kuai jiang di yi ge qukuai fanhui</span><br><span class="line">	&#x2F;&#x2F;创建第一个区块</span><br><span class="line">	var firstblock Block</span><br><span class="line">	firstblock.Prehsh&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">	firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">	firstblock.Diff&#x3D;4</span><br><span class="line">	firstblock.Data&#x3D;data</span><br><span class="line">	firstblock.Index&#x3D;1</span><br><span class="line">	firstblock.Nonce&#x3D;0</span><br><span class="line">	firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">	return firstblock</span><br><span class="line">	&#x2F;&#x2F;当前块的哈希</span><br><span class="line">	&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">	var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">		strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">	&#x2F;&#x2F;哈希算法</span><br><span class="line">	var sha  &#x3D; sha256.New()</span><br><span class="line">	sha.Write([]byte(hashdata))</span><br><span class="line">	hashed :&#x3D;sha.Sum(b：nil)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main ()</span><br><span class="line">&#x2F;&#x2F;创建创世区块</span><br><span class="line">firstBlock :&#x3D;GrnerateFirstBlock(data:&quot;创世区块&quot;)</span><br><span class="line">fmt.Println(firstBlock)</span><br><span class="line">fmt.Println(firstBlock.Data)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;crypto&#x2F;sha256&quot;</span><br><span class="line">	&quot;encoding&#x2F;hex&quot;</span><br><span class="line">	&quot;fmt&quot;</span><br><span class="line">	&quot;strconv&quot;</span><br><span class="line">	&quot;time&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">PreHash string</span><br><span class="line">&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">HashCode string</span><br><span class="line">&#x2F;&#x2F;时间戳</span><br><span class="line">TimeStamp string</span><br><span class="line">&#x2F;&#x2F;当前网络难度系数</span><br><span class="line">&#x2F;&#x2F;控制哈希有几个前导0</span><br><span class="line">Diff int</span><br><span class="line">&#x2F;&#x2F;存储交易信息</span><br><span class="line">Data string</span><br><span class="line">&#x2F;&#x2F;区块高度</span><br><span class="line">Index int</span><br><span class="line">&#x2F;&#x2F;随机值</span><br><span class="line">Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;创建创世区块(链中第一个区块)</span><br><span class="line">func  GenerateFirstBlock(data string)  Block &#123;</span><br><span class="line">&#x2F;&#x2F;创建第一个区块</span><br><span class="line">var firstblock Block</span><br><span class="line">firstblock.PreHash&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">firstblock.Diff&#x3D;4</span><br><span class="line">firstblock.Data&#x3D;data</span><br><span class="line">firstblock.Index&#x3D;1</span><br><span class="line">firstblock.Nonce&#x3D;0</span><br><span class="line">firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">return firstblock</span><br><span class="line">&#x2F;&#x2F;当前块的哈希</span><br><span class="line">&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">&#x2F;&#x2F;哈希算法</span><br><span class="line">var sha  &#x3D; sha256.New()</span><br><span class="line">sha.Write([]byte(hashdata))</span><br><span class="line">hashed :&#x3D; sha.Sum( nil)</span><br><span class="line">return hex.EncodeToString(hashed)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main () &#123;</span><br><span class="line">	&#x2F;&#x2F;创建创世区块</span><br><span class="line">	firstBlock :&#x3D;GenerateFirstBlock(&quot;创世区块&quot;)</span><br><span class="line"></span><br><span class="line">	fmt.Println(firstBlock)</span><br><span class="line">	fmt.Println(firstBlock.Data)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>函数和方法的区别 </title>
@@ -1032,6 +888,12 @@ print(&quot;这一块写函数的内容&quot;)</code></pre><p> 2.方法定义的
 <p>函数和对象无关。</p>
 <p>Java中只有方法，C中只有函数，而C++里取决于是否在类中。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>创世区块</title>
+    <url>/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/</url>
+    <content><![CDATA[<h1 id="创世区块"><a href="#创世区块" class="headerlink" title="创世区块"></a>创世区块</h1><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package main</span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">	Prehsh string</span><br><span class="line">	&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">	HashCode string</span><br><span class="line">	&#x2F;&#x2F;shi jian chuo</span><br><span class="line">	TimeStamp string</span><br><span class="line">	&#x2F;&#x2F;dang xian wang luo de nan du xi shu</span><br><span class="line">	&#x2F;&#x2F;kong zhi ha xi you ji ge qian dao ling</span><br><span class="line">	Diff int</span><br><span class="line">	&#x2F;&#x2F;cun jiao yi xin xi</span><br><span class="line">	Data string</span><br><span class="line">	&#x2F;&#x2F;qu kuai gao du</span><br><span class="line">	Index int</span><br><span class="line">	&#x2F;&#x2F;sui ji zhi</span><br><span class="line">	Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;chuang jian chuang shi qu kuai (lian zhong de di yi ge qukuai)</span><br><span class="line">func  GrnerateFirstBlock(data string)  Block &#123;</span><br><span class="line">	&#x2F;&#x2F;fangfa jiao yi xi xin fan hui yi ge qu kaui</span><br><span class="line">	&#x2F;&#x2F;sheng ming bing fu zhi yige kuai jiang di yi ge qukuai fanhui</span><br><span class="line">	&#x2F;&#x2F;创建第一个区块</span><br><span class="line">	var firstblock Block</span><br><span class="line">	firstblock.Prehsh&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">	firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">	firstblock.Diff&#x3D;4</span><br><span class="line">	firstblock.Data&#x3D;data</span><br><span class="line">	firstblock.Index&#x3D;1</span><br><span class="line">	firstblock.Nonce&#x3D;0</span><br><span class="line">	firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">	return firstblock</span><br><span class="line">	&#x2F;&#x2F;当前块的哈希</span><br><span class="line">	&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">	var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">		strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">	&#x2F;&#x2F;哈希算法</span><br><span class="line">	var sha  &#x3D; sha256.New()</span><br><span class="line">	sha.Write([]byte(hashdata))</span><br><span class="line">	hashed :&#x3D;sha.Sum(b：nil)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main ()</span><br><span class="line">&#x2F;&#x2F;创建创世区块</span><br><span class="line">firstBlock :&#x3D;GrnerateFirstBlock(data:&quot;创世区块&quot;)</span><br><span class="line">fmt.Println(firstBlock)</span><br><span class="line">fmt.Println(firstBlock.Data)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;crypto&#x2F;sha256&quot;</span><br><span class="line">	&quot;encoding&#x2F;hex&quot;</span><br><span class="line">	&quot;fmt&quot;</span><br><span class="line">	&quot;strconv&quot;</span><br><span class="line">	&quot;time&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">PreHash string</span><br><span class="line">&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">HashCode string</span><br><span class="line">&#x2F;&#x2F;时间戳</span><br><span class="line">TimeStamp string</span><br><span class="line">&#x2F;&#x2F;当前网络难度系数</span><br><span class="line">&#x2F;&#x2F;控制哈希有几个前导0</span><br><span class="line">Diff int</span><br><span class="line">&#x2F;&#x2F;存储交易信息</span><br><span class="line">Data string</span><br><span class="line">&#x2F;&#x2F;区块高度</span><br><span class="line">Index int</span><br><span class="line">&#x2F;&#x2F;随机值</span><br><span class="line">Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;创建创世区块(链中第一个区块)</span><br><span class="line">func  GenerateFirstBlock(data string)  Block &#123;</span><br><span class="line">&#x2F;&#x2F;创建第一个区块</span><br><span class="line">var firstblock Block</span><br><span class="line">firstblock.PreHash&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">firstblock.Diff&#x3D;4</span><br><span class="line">firstblock.Data&#x3D;data</span><br><span class="line">firstblock.Index&#x3D;1</span><br><span class="line">firstblock.Nonce&#x3D;0</span><br><span class="line">firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">return firstblock</span><br><span class="line">&#x2F;&#x2F;当前块的哈希</span><br><span class="line">&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">&#x2F;&#x2F;哈希算法</span><br><span class="line">var sha  &#x3D; sha256.New()</span><br><span class="line">sha.Write([]byte(hashdata))</span><br><span class="line">hashed :&#x3D; sha.Sum( nil)</span><br><span class="line">return hex.EncodeToString(hashed)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main () &#123;</span><br><span class="line">	&#x2F;&#x2F;创建创世区块</span><br><span class="line">	firstBlock :&#x3D;GenerateFirstBlock(&quot;创世区块&quot;)</span><br><span class="line"></span><br><span class="line">	fmt.Println(firstBlock)</span><br><span class="line">	fmt.Println(firstBlock.Data)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>图片插件测试</title>
@@ -1113,6 +975,153 @@ print(&quot;这一块写函数的内容&quot;)</code></pre><p> 2.方法定义的
     <title>轮播图</title>
     <url>/2020/05/09/%E6%92%AD%E5%9B%BE/</url>
     <content><![CDATA[<h1 id="轮播图"><a href="#轮播图" class="headerlink" title="轮播图"></a>轮播图</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    &lt;van-swipe  :autoplay&#x3D;&quot;3000&quot; indicator-color&#x3D;&quot;red&quot; class&#x3D;&quot;home-swiper&quot;&gt;</span><br><span class="line">      &lt;van-swipe-item v-for&#x3D;&quot;item in banner&quot; :key&#x3D;&quot;item.id&quot;&gt;</span><br><span class="line">        &lt;img :src&#x3D;&quot;item.picUrl&quot; :alt&#x3D;&quot;item.title&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;van-swipe-item&gt;</span><br><span class="line">    &lt;&#x2F;van-swipe&gt; </span><br><span class="line">    </span><br><span class="line">    .home-swiper,.home-swiper img &#123;</span><br><span class="line">  width: 100%;</span><br><span class="line">  height: 188px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>vue复习</title>
+    <url>/2020/04/29/vue%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<p>1、什么是VUE  </p>
+<a id="more"></a>
+
+<p>MVVM渐进式框架 </p>
+<p>2、引入VUE.js库、创建实例 、HTML导入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">实例化VUE</span><br><span class="line">sss </span><br><span class="line">s n e d s </span><br><span class="line"></span><br><span class="line">di id &#123;&#123;&#125;&#125; di</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">--- </span><br><span class="line">3、数据绑定使用&#123;&#123;&#125;&#125; 或者V-text &#x2F;文本渲染指令&#x2F;文本语法</span><br><span class="line">~~~ </span><br><span class="line">span  &#123;&#123;&#125;&#125;  sapan </span><br><span class="line"></span><br><span class="line">span v-tx  &#x3D;   s </span><br><span class="line">双大括号会把html代码解释为普通文本</span><br><span class="line">为输真H，V-html</span><br><span class="line">~~~  </span><br><span class="line">属绑 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-bind </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">4、条件渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">v-if </span><br><span class="line">常用于登录组件</span><br><span class="line">v-show </span><br><span class="line">调整display属性，DOM已经加载，只是没有显示 </span><br><span class="line">vif判断是否加载，可以减轻服务器压力，v-show更流畅</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">5、列表渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">Vfor列表渲染，数组 </span><br><span class="line">对象循环输出，列表渲染索引 </span><br><span class="line">key,为了让vue更好的跟踪每个节点的身份</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">6、表单绑定</span><br></pre></td></tr></table></figure>
+<p>vm在表单input,textarea,select上创建双向数据绑定，它会根据控件类型自动选择正确方法更新元素</p>
+<p>表单和数据创建双绑 </p>
+<p>lazy，可以在change后更新</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">事件绑定 -监听 </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">监听事件</span><br><span class="line">可以用v-on指令监听DOM事件,并在触发时运行-些JavaScript代码。</span><br><span class="line">&lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">&lt;button. v-on:click&#x3D; &quot;counter. +&#x3D; 1°&gt;加1&lt;&#x2F;button&gt;</span><br><span class="line">&lt;p&gt;按钮被点击了[&#123;&#123; counter &#125;&#125;次.&lt;&#x2F;p&gt; </span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var example1 . new Vue( 汇</span><br><span class="line">el :</span><br><span class="line">&quot;单ap&#39;</span><br><span class="line">data: &#123;</span><br><span class="line">counter : 0</span><br><span class="line">&#125;</span><br><span class="line">&#125;)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">事件处理方法</span><br></pre></td></tr></table></figure>
+
+<p>事件处理方法</p>
+<div id="app">
+<button v-on:clicke" greet">问候</button>
+</div>
+<script>
+var app . new Vue({
+el:。#app
+data: {
+name: 'Vue. js'
+methods: {
+greet: function(event) {
+// 'this'. 在方法里指向当前Vue实例
+alert( '你好+this. name+'!') ;
+1/ 'even' 是元生DOM事件
+iflevent ) {
+alert(event. target. tagName )
+}
+}
+})
+//也可以用JavaScript 直接调用
+app.greet( ) :
+</script>
+事件绑定简写方式
+<button :click="greet">问候</button>
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">事件修饰符 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">在事件处理程序中调用event.preventDefault( 或event.stopPropagation0是非常常见的需</span><br><span class="line">求</span><br><span class="line">为了解决这个问题, Vue.js 为v-on提供了事件修饰符。之前提过,修饰符是由点开头的指令</span><br><span class="line">后缀来表示的。</span><br><span class="line">。.stop</span><br><span class="line">， .prevent</span><br><span class="line">. .once</span><br><span class="line">&lt;!--</span><br><span class="line">阻止单击事件继续传播</span><br><span class="line">&lt;a v-on:click. stop&#x3D;&quot;doThis *&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;1--提交事件不再重载页面</span><br><span class="line">&lt;form v-on:submit .prevent&#x3D;”onSubmit&quot;&gt;&lt;&#x2F; form&gt;</span><br><span class="line">&lt;! --</span><br><span class="line">修饰符可以串联- -&gt;</span><br><span class="line">&lt;a v-on:click. stop.prevent&#x3D; &quot;doThat &quot;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;!--点击事件将只会触发一次- -&gt;</span><br><span class="line">&lt;a v-on:click. once&#x3D; &quot;doThis&quot;&gt;&lt;&#x2F; a&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">按键修饰符 </span><br><span class="line">~~~ </span><br><span class="line">div class&#x3D; &quot;explain&#39;&gt;</span><br><span class="line">在监听键盘事件时,我们经常需要检查详细的按键。Vue允许为v-on在监听键盘事件时添加</span><br><span class="line">按键修饰符:</span><br><span class="line">&lt;1--只有在、 key&#39;是、Enter’时调用、 vm. submit()”--&gt;</span><br><span class="line">&lt;input v-on:keyup. enter&#x3D;&quot; submit&quot; &gt;</span><br><span class="line">&lt;input v-on: keyup.page -down&#x3D;”onPageDown &#39;&gt;</span><br><span class="line">按键码</span><br><span class="line">使用keyCode特性也是允许的:</span><br><span class="line">&lt;input v-on:keyup.13-&quot; submit&#39;&gt;</span><br><span class="line">Vue提供了绝大多数常用的按键码的别名:</span><br><span class="line">●.enter</span><br><span class="line">.tab</span><br><span class="line">.delete (捕获&quot;删除&quot;和”退格“键)</span><br><span class="line">.esc</span><br><span class="line">.space</span><br><span class="line">.down</span><br><span class="line">.Jeft</span><br><span class="line">.right</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">计算与监听  </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">计算属性</span><br><span class="line">模板内的表达式非常便利,但是设计它们的初衷是用于简单运算的。在模板中放入太多的逻</span><br><span class="line">辑会让模板过重且难以维护。例如:</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&#123;&#123;msg.split(&quot;&quot;).reverse(). join(&quot;&quot;) &#125;&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">, 这里是想要显示变量msg的翻转字符串。当你想要在模板中多次引用此处的翻转字符串</span><br><span class="line">时,就会更加难以处理。</span><br><span class="line">当你需要从现有数组得到新的数据这个时候你就需要计算了computed</span><br><span class="line">&lt;div id&#x3D;&#39;example&quot;&gt;</span><br><span class="line">&lt;p&gt;原来的信息: &quot;&#123;&#123; msg &#125;&#125;*&lt;&#x2F;p&gt; </span><br><span class="line">&lt;p&gt;计算翻转的信息: &quot;&#123;&#123; rmsg 1&#125;*&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line">var vm。new Vue(&#123;</span><br><span class="line">e1: &#39; #example&#39;,</span><br><span class="line">data: t</span><br><span class="line">msg:</span><br><span class="line">&#39;He1l1o&#39;</span><br><span class="line">computed: C.</span><br><span class="line">&#x2F;&#x2F;计算属性的getter</span><br><span class="line">rmsg: function () &#123;</span><br><span class="line">&#x2F;&#x2F;、this指向vm实例</span><br><span class="line">return this.msg.split(&#39;&#39;).reverse(). join(&#39;&#39;)</span><br><span class="line">结果:</span><br><span class="line">原来的信息: &quot;hello&quot;</span><br><span class="line">计算翻转的信息: &quot;olleh&quot; </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">侦听器</span><br></pre></td></tr></table></figure>
+
+<p>Vue通过watch来响应数据的变化。当需要在数据变化时执行异步或开销较大的操作时,这<br>个方式是最有用的。</p>
+<div id=" app">
+<p>计数器: [{ num }}</p>
+<button click="num++">点我</button></div>
+<script>
+var vm。new Vue({
+el: ' #app'.
+data:{num:1}，
+watch: {
+'num': function(nval. oval) {
+console. log( 'num变化: + oval +，变为。+ nval + '1');
+}.
+})
+</script>
+每次点击按钮都会输出:
+num变化:1变为2!
+num变化:2变为3!
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">对象变化的监听</span><br></pre></td></tr></table></figure>
+<p>我们需要监听对象的属性值是否发生改变用</p>
+<div id="app'>
+<p>
+计数器: </p> 
+<button click= " num. age++“>点我</div>
+<script>
+varvm=newVue({
+el: ' #app'.
+data: {
+num: {age:1}
+}。
+watch: {
+num': {
+handler: function(nval, oval) {
+console.1og( ' num变化:” + oval.age +”变为”+
+nval.age + '!')
+deep: true
+}):
+</script> 
+deep属性深度监听对象变化
+
+
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">自定义指令</span><br></pre></td></tr></table></figure>
+<p>除了默认设置的核心指令( v-model和v-show ), Vue也允许注册自定义指令。下面我们注册<br>一个全局指令v-focus, 该指令的功能是在页面加载时,元素获得焦点</p>
+<div id="°app"">
+<p>
+页面载入时, input元素自动获取焦点: </p>
+<input v- focuse""></div>
+<script>
+11创建根实例
+new Vue({
+el: ' #app'
+directives: {
+//注册一个局部的自定义指令v- focus
+focus: {
+//指令的定义
+inserted: function (el) {
+//聚焦元素
+el. focus( )
+}
+})
+</script>
+一个指令定义对象可以提供如下几个钩子函数(均为可选) :
+bind:只调用一次，指令第一次绑定到元素时调用。在这里可以进行-次性的初始化设
+置。
+inserted :被绑定元素插入父节点时调用(仅保证父节点存在,但不一定已被插入文档
+中)。
+update :所在组件的VNode更新时调用,但是可能发生在其子VNode更新之前。指令的
+值可能发生了改变,也可能没有。但是你可以通过比较更新前后的值来忽略不必要的模板
+更新
+
+
+<p>指令的值数据-简写<br>p&gt;在很多时候,你可能想在bind和update时触发相同行为,而不关心其它的钩子</p>
+<div id=" app">
+<p>页面载入时，input元素自动获取焦点:</p>
+<input v- focusa" true ">
+</div>
+<script>
+11创建根实例
+new Vue( {
+el: ' #app'.
+directives :
+//注册一个局部的自定义指令v- focus
+focus: function (e1,data) {
+//聚焦元素
+//如果指令的值是t rue则获取焦点
+if(data. value==true ) {
+el. focus( )
+}
+}
+})
+</script>
+
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  </span><br><span class="line">类与样式  </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">类的绑定</span><br><span class="line">操作元素的class 列表和内联样式是数据绑定的- -个常见需求。因为它们都是属性,所以我</span><br><span class="line">们可以用v-bind处理它们</span><br><span class="line">Vue.js v-bind在处理class和style时。专门增强了它。表达式的结果类型除了字符串之</span><br><span class="line">外,还可以是对象或数组。</span><br><span class="line">我们可以传给v-bind:class一个对象,以动态地切换class :</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot; &#123; active: isActive &#125; &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">上面的语法表示active 这个class存在与否将取决于数据属性isActive的真假</span><br><span class="line"></span><br><span class="line">绑定多个class</span><br><span class="line">p&gt;你可以在对象中传入更多属性来动态切换多个class</span><br><span class="line">&lt;div class&#x3D;&quot; static&quot; v-bind:class&#x3D;&quot; &#123; active: isActive. &#39; text -</span><br><span class="line">danger&#39;: hasError &#125;&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">data如下</span><br><span class="line">data:</span><br><span class="line">isActive: true ，</span><br><span class="line">hasError: false</span><br><span class="line">渲染结果为</span><br><span class="line">&lt;div class&#x3D;&quot;static active&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">对象绑定</span><br><span class="line">绑定的数据对象不必内联定义在模板里:</span><br><span class="line">&lt;div v-bind:class&#x3D;&quot;classObject &quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">数据如下</span><br><span class="line">data: &#123;</span><br><span class="line">classObject: &#123;</span><br><span class="line">active: true 。</span><br><span class="line">&#39; text-danger&#39; : false</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">classObject对象可以通过计算动态获得</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>测试3</title>
+    <url>/2020/05/20/%E6%B5%8B%E8%AF%953/</url>
+    <content><![CDATA[<hr>
+<p>title: My awesome title<br>date: 2016-10-12 18:38:45<br>categories:<br>    - 分类1<br>    - 分类2<br>tags:<br>    - 标签1<br>    - 标签2<br>mp3: <a href="http://domain.com/awesome.mp3" target="_blank" rel="noopener">http://domain.com/awesome.mp3</a><br>cover: <a href="http://domain.com/awesome.jpg" target="_blank" rel="noopener">http://domain.com/awesome.jpg</a></p>
+<hr>
+<h1 id="最后一次测试，还不行就算了"><a href="#最后一次测试，还不行就算了" class="headerlink" title="最后一次测试，还不行就算了"></a>最后一次测试，还不行就算了</h1><p>无</p>
+]]></content>
   </entry>
   <entry>
     <title>新区快</title>
@@ -1285,15 +1294,6 @@ func pow(diff int,block *Block) string {
 ]]></content>
   </entry>
   <entry>
-    <title>测试3</title>
-    <url>/2020/05/20/%E6%B5%8B%E8%AF%953/</url>
-    <content><![CDATA[<hr>
-<p>title: My awesome title<br>date: 2016-10-12 18:38:45<br>categories:<br>    - 分类1<br>    - 分类2<br>tags:<br>    - 标签1<br>    - 标签2<br>mp3: <a href="http://domain.com/awesome.mp3" target="_blank" rel="noopener">http://domain.com/awesome.mp3</a><br>cover: <a href="http://domain.com/awesome.jpg" target="_blank" rel="noopener">http://domain.com/awesome.jpg</a></p>
-<hr>
-<h1 id="最后一次测试，还不行就算了"><a href="#最后一次测试，还不行就算了" class="headerlink" title="最后一次测试，还不行就算了"></a>最后一次测试，还不行就算了</h1><p>无</p>
-]]></content>
-  </entry>
-  <entry>
     <title>比特币毕设</title>
     <url>/2020/04/27/%E7%89%B9%E5%B8%81%E6%AF%95%E8%AE%BE/</url>
     <content><![CDATA[<h1 id="比特币毕设"><a href="#比特币毕设" class="headerlink" title="比特币毕设"></a>比特币毕设</h1><a id="more"></a>
@@ -1324,6 +1324,11 @@ func pow(diff int,block *Block) string {
 <hr>
 <p> 引入数据库</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>悬浮窗</title>
+    <url>/2020/05/09/%E7%AA%97/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;van-list v-model&#x3D;&quot;loading&quot; :finished&#x3D;&quot;finished&quot; finished-text&#x3D;&quot;没有更多了&quot; @load&#x3D;&quot;onLoad&quot;&gt;</span><br><span class="line">        &lt;van-cell v-for&#x3D;&quot;item in list&quot; :key&#x3D;&quot;item&quot; :title&#x3D;&quot;&#96;我是你的小仙女，爱你第$&#123;item&#125;遍&#96;&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;van-list&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;float-icons padding&#x3D;&quot;6 10 60 10&quot; class&#x3D;&quot;icons-warp&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;home-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;home&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;首页&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;cart-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;cart&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;购物车&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;float-icons&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import FloatIcons from &#39;@&#x2F;components&#x2F;s-icons&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;Icons&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    &#39;float-icons&#39;: FloatIcons</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      loading: false,</span><br><span class="line">      finished: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  computed: &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  mounted() &#123;</span><br><span class="line">    console.log(&#39;222&#39;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  methods: &#123;</span><br><span class="line">    onLoad() &#123;</span><br><span class="line">      &#x2F;&#x2F; 异步更新数据</span><br><span class="line">      setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">        for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">          this.list.push(this.list.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 加载状态结束</span><br><span class="line">        this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">        if (this.list.length &gt;&#x3D; 40) &#123;</span><br><span class="line">          this.finished &#x3D; true</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 500)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F; 点击按钮</span><br><span class="line">    handleIcons(router) &#123;</span><br><span class="line">      console.log(&#39;router&#39;, router)</span><br><span class="line">      this.$router.push(router)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">h1 &#123;</span><br><span class="line">  background: red;</span><br><span class="line">  width: 375px;</span><br><span class="line">&#125;</span><br><span class="line">.icons-warp &#123;</span><br><span class="line">  border-radius: 25px;</span><br><span class="line">  .float-icon-item &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: column;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    img &#123;</span><br><span class="line">      width: 25px;</span><br><span class="line">      height: 25px;</span><br><span class="line">      margin-bottom: 3px;</span><br><span class="line">    &#125;</span><br><span class="line">    span &#123;</span><br><span class="line">      font-size: 9px;</span><br><span class="line">      color: #666666;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>循环精灵图</title>
@@ -1371,9 +1376,17 @@ px&apos;;I
 ]]></content>
   </entry>
   <entry>
-    <title>悬浮窗</title>
-    <url>/2020/05/09/%E7%AA%97/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;van-list v-model&#x3D;&quot;loading&quot; :finished&#x3D;&quot;finished&quot; finished-text&#x3D;&quot;没有更多了&quot; @load&#x3D;&quot;onLoad&quot;&gt;</span><br><span class="line">        &lt;van-cell v-for&#x3D;&quot;item in list&quot; :key&#x3D;&quot;item&quot; :title&#x3D;&quot;&#96;我是你的小仙女，爱你第$&#123;item&#125;遍&#96;&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;van-list&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;float-icons padding&#x3D;&quot;6 10 60 10&quot; class&#x3D;&quot;icons-warp&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;home-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;home&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;首页&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;cart-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;cart&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;购物车&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;float-icons&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import FloatIcons from &#39;@&#x2F;components&#x2F;s-icons&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;Icons&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    &#39;float-icons&#39;: FloatIcons</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      loading: false,</span><br><span class="line">      finished: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  computed: &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  mounted() &#123;</span><br><span class="line">    console.log(&#39;222&#39;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  methods: &#123;</span><br><span class="line">    onLoad() &#123;</span><br><span class="line">      &#x2F;&#x2F; 异步更新数据</span><br><span class="line">      setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">        for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">          this.list.push(this.list.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 加载状态结束</span><br><span class="line">        this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">        if (this.list.length &gt;&#x3D; 40) &#123;</span><br><span class="line">          this.finished &#x3D; true</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 500)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F; 点击按钮</span><br><span class="line">    handleIcons(router) &#123;</span><br><span class="line">      console.log(&#39;router&#39;, router)</span><br><span class="line">      this.$router.push(router)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">h1 &#123;</span><br><span class="line">  background: red;</span><br><span class="line">  width: 375px;</span><br><span class="line">&#125;</span><br><span class="line">.icons-warp &#123;</span><br><span class="line">  border-radius: 25px;</span><br><span class="line">  .float-icon-item &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: column;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    img &#123;</span><br><span class="line">      width: 25px;</span><br><span class="line">      height: 25px;</span><br><span class="line">      margin-bottom: 3px;</span><br><span class="line">    &#125;</span><br><span class="line">    span &#123;</span><br><span class="line">      font-size: 9px;</span><br><span class="line">      color: #666666;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>拖动菜单显示列表</title>
+    <url>/2020/05/09/%E8%8F%9C%E5%8D%95%E6%98%BE%E7%A4%BA%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">methods: &#123;</span><br><span class="line">  onLoad() &#123;</span><br><span class="line">    &#x2F;&#x2F; 异步更新数据</span><br><span class="line">    setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">      for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">        this.list.push(this.list.length + 1)</span><br><span class="line">      &#125;</span><br><span class="line">      &#x2F;&#x2F; 加载状态结束</span><br><span class="line">      this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">      &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">      if (this.list.length &gt;&#x3D; 210) &#123;</span><br><span class="line">        this.finished &#x3D; true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;, 500)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>路由跳转</title>
+    <url>/2020/05/08/%E8%B7%B3%E8%BD%AC/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"> &#x2F;&#x2F; 字符串</span><br><span class="line">this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)</span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">this.$router.push(&#123; path: &#39;&#x2F;home&#x2F;first&#39; &#125;)</span><br><span class="line">&#x2F;&#x2F; 命名的路由</span><br><span class="line">this.$router.push(&#123; name: &#39;home&#39;, params: &#123; userId: wise &#125;&#125;)</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>绪论</title>
@@ -1407,19 +1420,6 @@ px&apos;;I
 <h3 id="1-4-本文的文章结构（论文结构）"><a href="#1-4-本文的文章结构（论文结构）" class="headerlink" title="1.4 本文的文章结构（论文结构）"></a>1.4 本文的文章结构（论文结构）</h3><p>本章介绍了基于工作量证明机制的区块链挖矿算法的研究目的和意义，和以太坊智<br>能合约的应用前景，以及本文的研究内容及章节安排。<br>第2章介绍了区块链技术和应用过程中所涉及的相关区块链基础知识，其中主要介<br>绍了单向散列函数，51%攻击，典型工作量证明机制下的挖矿算法过程，以及挖矿设备.<br>的进化历程。<br>第3章介绍了默克尔树的构造过程和验证过程，分析了默克尔树的特点。根据默克<br>尔树的构造特点，提出了基于默克尔树的POW挖矿算法。该挖矿算法在构造挖矿默克<br>尔树的过程中需要生成大量的伪随机数，这个伪随机数填充到默克尔树的叶子节点中,.<br>继而逐层构建默克尔树。基于此，通过每层随机选择-一个节点，进而在挖矿过程中需要 </p>
 <p>占用大量的内存空间。经过分析，该方案在工作量验证过程中的时间复杂度和空间复杂<br>度小于单次挖矿的过程。因此，该方案满足工作量证明挖矿算法的要求。<br>第4章介绍了布隆过滤器的的特点，分析了布隆过滤器的特点。根据布隆过滤器的<br>特点，提出了基于布隆过滤器的POW挖矿算法。该挖矿算法在挖矿过程中根据一定的<br>概率挖矿成功。经过分析，该方案在工作量轻节点验证过程中的时间复杂度和空间复杂<br>度均小于单次挖矿的过程。因此，该方案可以作为工作量证明挖矿算法。<br>第5章介绍了以太坊智能合约的特点，介绍了传统的公钥证书发放过程可能产生的<br>问题。结合以太坊智能合约去中心化的特点，在此基础上提出了–种新的公钥证书发放<br>方案。用户和证书发布机构可以在不安全的网络环境中安全的传输用户证书。并且，使<br>用区块链登记公钥证书，可以有效的隐藏用户和证书发布机构的位置，保护隐私，降低<br>攻击者攻击的概率。<br>第.6章总结了全文的工作，并对未来工作进行展望。</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>拖动菜单显示列表</title>
-    <url>/2020/05/09/%E8%8F%9C%E5%8D%95%E6%98%BE%E7%A4%BA%E5%88%97%E8%A1%A8/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">methods: &#123;</span><br><span class="line">  onLoad() &#123;</span><br><span class="line">    &#x2F;&#x2F; 异步更新数据</span><br><span class="line">    setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">      for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">        this.list.push(this.list.length + 1)</span><br><span class="line">      &#125;</span><br><span class="line">      &#x2F;&#x2F; 加载状态结束</span><br><span class="line">      this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">      &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">      if (this.list.length &gt;&#x3D; 210) &#123;</span><br><span class="line">        this.finished &#x3D; true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;, 500)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
-
-
-]]></content>
-  </entry>
-  <entry>
-    <title>路由跳转</title>
-    <url>/2020/05/08/%E8%B7%B3%E8%BD%AC/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"> &#x2F;&#x2F; 字符串</span><br><span class="line">this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)</span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">this.$router.push(&#123; path: &#39;&#x2F;home&#x2F;first&#39; &#125;)</span><br><span class="line">&#x2F;&#x2F; 命名的路由</span><br><span class="line">this.$router.push(&#123; name: &#39;home&#39;, params: &#123; userId: wise &#125;&#125;)</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>底部导航栏</title>
