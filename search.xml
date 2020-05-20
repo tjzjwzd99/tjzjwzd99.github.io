@@ -7,6 +7,22 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div class&#x3D;&quot;list&quot;&gt;</span><br><span class="line">      &lt;van-row&gt;</span><br><span class="line">         &lt;van-col span&#x3D;&quot;12&quot; v-for&#x3D;&quot;item in listKanjia&quot; :key&#x3D;&quot;item.id&quot;&gt;</span><br><span class="line">           &lt;div class&#x3D;&quot;list-item&quot; @click&#x3D;&quot;onDetailClick(item.id)&quot;&gt;</span><br><span class="line">             &lt;img class&#x3D;&quot;list-item-img&quot; :src&#x3D;&quot;item.pic&quot; :alt&#x3D;&quot;item.name&quot;&gt;</span><br><span class="line">             &lt;div class&#x3D;&quot;list-item-hd van-ellipsis&quot;&gt;&#123;&#123;item.name&#125;&#125;&lt;&#x2F;div&gt;</span><br><span class="line">             &lt;div class&#x3D;&quot;list-item-bd&quot;&gt;&lt;span class&#x3D;&quot;ui-c-red&quot;&gt;￥&#123;&#123;item.kanjiaPrice&#125;&#125;&lt;&#x2F;span&gt;&lt;span class&#x3D;&quot;ui-c-dark ui-text-deleted&quot;&gt;￥&#123;&#123;item.originalPrice&#125;&#125;&lt;&#x2F;span&gt;&lt;&#x2F;div&gt;</span><br><span class="line">           &lt;&#x2F;div&gt;</span><br><span class="line">         &lt;&#x2F;van-col&gt;</span><br><span class="line">      &lt;&#x2F;van-row&gt;</span><br><span class="line">     &lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
+    <title>5.14</title>
+    <url>/2020/05/14/14/</url>
+    <content><![CDATA[<p><strong>欲买桂花同载酒，终不似，少年游</strong></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>DOM</title>
+    <url>/2020/04/20/DOM/</url>
+    <content><![CDATA[<h1 id="关于DOM"><a href="#关于DOM" class="headerlink" title="关于DOM"></a>关于DOM</h1><a id="more"></a> 
+<p>什么是 DOM？<br>DOM 是 W3C（万维网联盟）的标准。</p>
+<p>DOM 定义了访问 HTML 和 XML 文档的标准：</p>
+<p>“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”<br>W3C DOM 标准被分为 3 个不同的部分：</p>
+<p>核心 DOM - 针对任何结构化文档的标准模型<br>XML DOM - 针对 XML 文档的标准模型<br>HTML DOM - 针对 HTML 文档的标准模型</p>
+]]></content>
+  </entry>
+  <entry>
     <title>CSS基础</title>
     <url>/2020/04/20/CSS%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<h1 id="css基础"><a href="#css基础" class="headerlink" title="css基础"></a>css基础</h1><a id="more"></a> 
@@ -163,25 +179,26 @@ a:active {background-color:#FF704D;}
 ]]></content>
   </entry>
   <entry>
-    <title>DOM</title>
-    <url>/2020/04/20/DOM/</url>
-    <content><![CDATA[<h1 id="关于DOM"><a href="#关于DOM" class="headerlink" title="关于DOM"></a>关于DOM</h1><a id="more"></a> 
-<p>什么是 DOM？<br>DOM 是 W3C（万维网联盟）的标准。</p>
-<p>DOM 定义了访问 HTML 和 XML 文档的标准：</p>
-<p>“W3C 文档对象模型 （DOM） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。”<br>W3C DOM 标准被分为 3 个不同的部分：</p>
-<p>核心 DOM - 针对任何结构化文档的标准模型<br>XML DOM - 针对 XML 文档的标准模型<br>HTML DOM - 针对 HTML 文档的标准模型</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>5.14</title>
-    <url>/2020/05/14/14/</url>
-    <content><![CDATA[<p><strong>欲买桂花同载酒，终不似，少年游</strong></p>
-]]></content>
-  </entry>
-  <entry>
     <title>vant导航条</title>
     <url>/2020/05/09/ant%E5%AF%BC%E8%88%AA%E6%9D%A1/</url>
     <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;index-bd&quot;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;可拖拽悬浮按钮&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;icons&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;滚动导航&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;navbar&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;生成海报图&quot; is-link to&#x3D;&quot;&#x2F;example&#x2F;poster&quot; &#x2F;&gt;</span><br><span class="line">      &lt;van-cell title&#x3D;&quot;返回浏览位置&quot; is-link to&#x3D;&quot;&#x2F;keepalive&#x2F;index&quot; &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  .index-bd &#123;</span><br><span class="line">    padding: 0 15px 800px;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>admin工具测试</title>
+    <url>/2020/04/18/admin%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<h3 id="本文主要是Admin测试"><a href="#本文主要是Admin测试" class="headerlink" title="本文主要是Admin测试"></a>本文主要是Admin测试</h3><a id="more"></a>
+
+<p>不需要空格 </p>
+<hr>
+<p>分割线 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">这里是代码块</span><br></pre></td></tr></table></figure>
+
+<p><strong><em>加粗</em></strong>  </p>
+<p>听说可以直接插入图片？</p>
+<p><img src="http://p7.qhimg.com/bdm/384_237_0/t0198a45e705341d77c.jpg" alt></p>
+<p>然而并不能  </p>
+<p>还是需要感叹号正括号圆括号三部曲外加图片链接</p>
+]]></content>
   </entry>
   <entry>
     <title>Web api</title>
@@ -256,16 +273,16 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
-    <title>v-if和v-show</title>
-    <url>/2020/05/08/if%E5%92%8Cv-show/</url>
-    <content><![CDATA[<p>v-if不生成代码，v-show隐藏代码</p>
-]]></content>
-  </entry>
-  <entry>
     <title>amap</title>
     <url>/2020/05/08/map/</url>
     <content><![CDATA[<p>vue-amap </p>
 <p><a href="https://elemefe.github.io/vue-amap/#/zh-cn/introduction/install" target="_blank" rel="noopener">vueamap</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>v-if和v-show</title>
+    <url>/2020/05/08/if%E5%92%8Cv-show/</url>
+    <content><![CDATA[<p>v-if不生成代码，v-show隐藏代码</p>
 ]]></content>
   </entry>
   <entry>
@@ -284,15 +301,6 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
-    <title>lang-less</title>
-    <url>/2020/05/08/ng-less/</url>
-    <content><![CDATA[<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><a id="more"></a> 
-
-<pre><code>&lt;style lang=&quot;less&quot; scoped&gt;  
-</code></pre><p>css预处理器</p>
-]]></content>
-  </entry>
-  <entry>
     <title>merkle桥</title>
     <url>/2020/05/06/merkle%E6%A1%A5/</url>
     <content><![CDATA[<h1 id="merkle桥"><a href="#merkle桥" class="headerlink" title="merkle桥"></a>merkle桥</h1><a id="more"></a>  
@@ -307,6 +315,33 @@ element. inne rHTML
 <h2 id="编译和热重载"><a href="#编译和热重载" class="headerlink" title="编译和热重载"></a>编译和热重载</h2><p>yarn run serve </p>
 <h2 id="编译和创建"><a href="#编译和创建" class="headerlink" title="编译和创建"></a>编译和创建</h2><p>yarn build </p>
 <hr>
+]]></content>
+  </entry>
+  <entry>
+    <title>pow实现</title>
+    <url>/2020/04/29/pow%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<h1 id="pow实现"><a href="#pow实现" class="headerlink" title="pow实现"></a>pow实现</h1><a id="more"></a>
+<p><del>~</del><br>package main</p>
+<p>import (<br>    “crypto/sha256”<br>    “encoding/hex”<br>    “fmt”<br>    _ “log”<br>    “strconv”<br>    “strings”<br>    “sync”<br>    “time”<br>)</p>
+<p>const difficulty =4<br>type Block struct {<br>    Index int<br>    Timestamp string<br>    BMP int<br>    HashCode string<br>    PreHash string<br>    Diff  int<br>    Nonce int</p>
+<p>}<br>//用数组去维护区块链<br>var Blockchain_ []Block<br>var mutex =&amp;sync.Mutex {}<br>//生成区块<br>func generateBlock(oldBlock Block, BMP int) Block {<br>    var newBlock Block<br>    newBlock.PreHash = oldBlock. HashCode<br>    newBlock.Timestamp=time.Now().String()<br>    newBlock.Index =oldBlock.Index + 1<br>    newBlock.BMP =BMP<br>    newBlock.Diff =difficulty<br>    for i:=0;;i++{<br>        newBlock.Nonce++<br>        hash :=calculateHash(newBlock)<br>        fmt.Println(hash)<br>        if isHashValid(hash,difficulty) {<br>            fmt.Println(“挖矿成功”)<br>            newBlock.HashCode =hash<br>            return newBlock</p>
+<pre><code>    }
+}
+
+return Block{}</code></pre><p>}<br>func calculateHash(block Block)string{<br>    record := strconv.Itoa(block.Index)+ block.Timestamp+strconv.Itoa(block.Nonce)+strconv.Itoa(block.BMP)+block.PreHash<br>    sha := sha256.New()<br>    sha.Write([]byte(record))<br>    hashed := sha.Sum(nil)<br>    return hex.EncodeToString(hashed)</p>
+<p>}</p>
+<p>func isHashValid(hash string,difficulty int )bool{</p>
+<pre><code>prefix_ := strings.Repeat(&quot;0&quot;, difficulty)
+return strings.HasPrefix(hash,prefix_)</code></pre><p>}<br>func main()  {<br>    var firstBlock Block<br>    firstBlock.Diff=4<br>    firstBlock.Nonce =0<br>    firstBlock.PreHash =”0”<br>    firstBlock.BMP =1<br>    firstBlock.Index =0<br>    firstBlock.HashCode =”0”<br>    generateBlock(firstBlock,1)<br>}</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>lang-less</title>
+    <url>/2020/05/08/ng-less/</url>
+    <content><![CDATA[<h1 id="style"><a href="#style" class="headerlink" title="style"></a>style</h1><a id="more"></a> 
+
+<pre><code>&lt;style lang=&quot;less&quot; scoped&gt;  
+</code></pre><p>css预处理器</p>
 ]]></content>
   </entry>
   <entry>
@@ -429,21 +464,16 @@ element. inne rHTML
 ]]></content>
   </entry>
   <entry>
-    <title>pow实现</title>
-    <url>/2020/04/29/pow%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<h1 id="pow实现"><a href="#pow实现" class="headerlink" title="pow实现"></a>pow实现</h1><a id="more"></a>
-<p><del>~</del><br>package main</p>
-<p>import (<br>    “crypto/sha256”<br>    “encoding/hex”<br>    “fmt”<br>    _ “log”<br>    “strconv”<br>    “strings”<br>    “sync”<br>    “time”<br>)</p>
-<p>const difficulty =4<br>type Block struct {<br>    Index int<br>    Timestamp string<br>    BMP int<br>    HashCode string<br>    PreHash string<br>    Diff  int<br>    Nonce int</p>
-<p>}<br>//用数组去维护区块链<br>var Blockchain_ []Block<br>var mutex =&amp;sync.Mutex {}<br>//生成区块<br>func generateBlock(oldBlock Block, BMP int) Block {<br>    var newBlock Block<br>    newBlock.PreHash = oldBlock. HashCode<br>    newBlock.Timestamp=time.Now().String()<br>    newBlock.Index =oldBlock.Index + 1<br>    newBlock.BMP =BMP<br>    newBlock.Diff =difficulty<br>    for i:=0;;i++{<br>        newBlock.Nonce++<br>        hash :=calculateHash(newBlock)<br>        fmt.Println(hash)<br>        if isHashValid(hash,difficulty) {<br>            fmt.Println(“挖矿成功”)<br>            newBlock.HashCode =hash<br>            return newBlock</p>
-<pre><code>    }
-}
+    <title>Vue_Router</title>
+    <url>/2020/04/29/ue-Router/</url>
+    <content><![CDATA[<p>路由</p>
+<a id="more"></a> 
 
-return Block{}</code></pre><p>}<br>func calculateHash(block Block)string{<br>    record := strconv.Itoa(block.Index)+ block.Timestamp+strconv.Itoa(block.Nonce)+strconv.Itoa(block.BMP)+block.PreHash<br>    sha := sha256.New()<br>    sha.Write([]byte(record))<br>    hashed := sha.Sum(nil)<br>    return hex.EncodeToString(hashed)</p>
-<p>}</p>
-<p>func isHashValid(hash string,difficulty int )bool{</p>
-<pre><code>prefix_ := strings.Repeat(&quot;0&quot;, difficulty)
-return strings.HasPrefix(hash,prefix_)</code></pre><p>}<br>func main()  {<br>    var firstBlock Block<br>    firstBlock.Diff=4<br>    firstBlock.Nonce =0<br>    firstBlock.PreHash =”0”<br>    firstBlock.BMP =1<br>    firstBlock.Index =0<br>    firstBlock.HashCode =”0”<br>    generateBlock(firstBlock,1)<br>}</p>
+<p>路由是个网络工程里面的术语。<br>路由( routing )就是通过互联的网络把信息从源地址传输到目的地址的活动</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在生活中,我们有没有听说过路由的概念呢?当然了,路由器嘛.</span><br><span class="line">路由器是做什么的?你有想过吗?</span><br><span class="line">路由器提供了两种机制:路由和转送.</span><br><span class="line">路由是决定数据包从来源到目的地的路径.</span><br><span class="line">转送将输入端的数据转移到合适的输出端.</span><br><span class="line">路由中有一个非常重要的概念叫路由表.</span><br><span class="line">路由表本质上就是-个映射表,决定了数据包的指向. </span><br><span class="line">~~~ </span><br><span class="line">前端渲染和后端渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">后端处理映射关系——后端路由 </span><br><span class="line"></span><br><span class="line">后端路由阶段</span><br><span class="line">早期的网站开发整个HTML页面是由服务器来渲染的.</span><br><span class="line">服务器直接生产渲染好对应的HTML页面,返回给客户端进行展示.</span><br><span class="line">但是,一个网站,这么多页面服务器如何处理呢?</span><br><span class="line">一个页面有自己对应的网址,也就是URL.</span><br><span class="line"> URL会发送到服务器,服务器会通过正则对该URL进行匹配,并且最后交给一个Controller进行处理.</span><br><span class="line">Controller进行各种处理,最终生成HTML或者数据,返回给前端.</span><br><span class="line">这就完成了一个IO操作.</span><br><span class="line">上面的这种操作,就是后端路由.</span><br><span class="line">当我们页面中需要请求不同的路径内容时,交给服务器来进行处理,服务器渲染好整个页面,并且将页面返回给客户顿.</span><br><span class="line">这种情况下渲染好的页面,不需要单独加载任何的js和css,可以直接交给浏览器展示，这样也有利于SEO的优化.</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">前端渲染 </span><br><span class="line">~~~ </span><br><span class="line">前端路由阶段</span><br><span class="line">前后端分离阶段:</span><br><span class="line">随着Ajax的出现,有了前后端分离的开发模式.</span><br><span class="line">后端只提供API来返回数据,前端通过Ajax获取数据,并且可以通过JavaScript将数据渲染到页面中.</span><br><span class="line">这样做最大的优点就是前后端责任的清晰,后端专注于数据上,前端专注于交互和可视化上.</span><br><span class="line">并且当移动端(iOS&#x2F;Android)出现后，后端不需要进行任何处理,依然使用之前的一套API即可.</span><br><span class="line">目前很多的网站依然采用这种模式开发.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">以下是个人理解： </span><br><span class="line"></span><br><span class="line">主要是用来进行资源定位，区别于后端。 </span><br><span class="line">[cdn](https:&#x2F;&#x2F;www.baidu.com&#x2F;link?url&#x3D;-TZZRFBFc_FFPtnXT2wRlON8D6iPkmT2AoyTWTke05swLRPzR49hnVQ7GY9dluz1&amp;wd&#x3D;&amp;eqid&#x3D;d0f5468b0005b5d6000000035ea8b5fe)</span><br></pre></td></tr></table></figure>
+<p>定义路由规则（数组），vue不知道这数组是路由规则，所以需要传参。将路由规则挂载到vue上。（嵌套规则需要记） </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">传参 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">静态变动态</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.bilibili.com/video/BV11x411J7pg?from=search&seid=2927631171341711551" target="_blank" rel="noopener">导航</a></p>
 ]]></content>
   </entry>
   <entry>
@@ -471,19 +501,6 @@ new Vue({
 当一个 Vue 实例被创建时，它向 Vue 的响应式系统中加入了其 data 对象中能找到的所有的属性。当这些属性的值发生改变时，html 视图将也会产生相应的变化。</code></pre>]]></content>
   </entry>
   <entry>
-    <title>Vue_Router</title>
-    <url>/2020/04/29/ue-Router/</url>
-    <content><![CDATA[<p>路由</p>
-<a id="more"></a> 
-
-<p>路由是个网络工程里面的术语。<br>路由( routing )就是通过互联的网络把信息从源地址传输到目的地址的活动</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">在生活中,我们有没有听说过路由的概念呢?当然了,路由器嘛.</span><br><span class="line">路由器是做什么的?你有想过吗?</span><br><span class="line">路由器提供了两种机制:路由和转送.</span><br><span class="line">路由是决定数据包从来源到目的地的路径.</span><br><span class="line">转送将输入端的数据转移到合适的输出端.</span><br><span class="line">路由中有一个非常重要的概念叫路由表.</span><br><span class="line">路由表本质上就是-个映射表,决定了数据包的指向. </span><br><span class="line">~~~ </span><br><span class="line">前端渲染和后端渲染 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">后端处理映射关系——后端路由 </span><br><span class="line"></span><br><span class="line">后端路由阶段</span><br><span class="line">早期的网站开发整个HTML页面是由服务器来渲染的.</span><br><span class="line">服务器直接生产渲染好对应的HTML页面,返回给客户端进行展示.</span><br><span class="line">但是,一个网站,这么多页面服务器如何处理呢?</span><br><span class="line">一个页面有自己对应的网址,也就是URL.</span><br><span class="line"> URL会发送到服务器,服务器会通过正则对该URL进行匹配,并且最后交给一个Controller进行处理.</span><br><span class="line">Controller进行各种处理,最终生成HTML或者数据,返回给前端.</span><br><span class="line">这就完成了一个IO操作.</span><br><span class="line">上面的这种操作,就是后端路由.</span><br><span class="line">当我们页面中需要请求不同的路径内容时,交给服务器来进行处理,服务器渲染好整个页面,并且将页面返回给客户顿.</span><br><span class="line">这种情况下渲染好的页面,不需要单独加载任何的js和css,可以直接交给浏览器展示，这样也有利于SEO的优化.</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">前端渲染 </span><br><span class="line">~~~ </span><br><span class="line">前端路由阶段</span><br><span class="line">前后端分离阶段:</span><br><span class="line">随着Ajax的出现,有了前后端分离的开发模式.</span><br><span class="line">后端只提供API来返回数据,前端通过Ajax获取数据,并且可以通过JavaScript将数据渲染到页面中.</span><br><span class="line">这样做最大的优点就是前后端责任的清晰,后端专注于数据上,前端专注于交互和可视化上.</span><br><span class="line">并且当移动端(iOS&#x2F;Android)出现后，后端不需要进行任何处理,依然使用之前的一套API即可.</span><br><span class="line">目前很多的网站依然采用这种模式开发.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">以下是个人理解： </span><br><span class="line"></span><br><span class="line">主要是用来进行资源定位，区别于后端。 </span><br><span class="line">[cdn](https:&#x2F;&#x2F;www.baidu.com&#x2F;link?url&#x3D;-TZZRFBFc_FFPtnXT2wRlON8D6iPkmT2AoyTWTke05swLRPzR49hnVQ7GY9dluz1&amp;wd&#x3D;&amp;eqid&#x3D;d0f5468b0005b5d6000000035ea8b5fe)</span><br></pre></td></tr></table></figure>
-<p>定义路由规则（数组），vue不知道这数组是路由规则，所以需要传参。将路由规则挂载到vue上。（嵌套规则需要记） </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">传参 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">静态变动态</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.bilibili.com/video/BV11x411J7pg?from=search&seid=2927631171341711551" target="_blank" rel="noopener">导航</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>vue开发网易云播放器</title>
     <url>/2020/04/20/vue%E5%BC%80%E5%8F%91%E7%BD%91%E6%98%93%E4%BA%91%E6%92%AD%E6%94%BE%E5%99%A8/</url>
     <content><![CDATA[<h1 id="vue开发网易云"><a href="#vue开发网易云" class="headerlink" title="vue开发网易云"></a>vue开发网易云</h1><a id="more"></a> 
@@ -509,71 +526,6 @@ new Vue({
 <p>对象简化赋值</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">如果属性名和变量名相同，可以简写 </span><br><span class="line">方法可以省略 fuction等关键字 </span><br><span class="line"></span><br><span class="line">let name &#x3D;&quot;小黑</span><br><span class="line">let city &#x3D;&quot;深圳&quot;</span><br><span class="line">let person &#x3D;&#123; </span><br><span class="line">&#x2F;*name : *&#x2F;name，</span><br><span class="line">&#x2F;*city :*&#x2F;city</span><br><span class="line">&#125;</span><br><span class="line">console .1og(person) </span><br><span class="line"></span><br><span class="line">sayHello: function()&#123;</span><br><span class="line">console. log( &#39;你好吗! &#39;) </span><br><span class="line">&#125;</span><br><span class="line">console .1og(person) </span><br><span class="line">person . sayHe11o( )</span><br><span class="line">上边可以改成sayhello()&#123;consol.log()&#125;</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">箭头函数化简</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">function省略掉，替换为&#x3D;&gt;</span><br><span class="line">参数只有一个时，可以省略( )</span><br><span class="line">函数体只有一行时，可以省略&#123; &#125;</span><br><span class="line">函数体只有一行,并且有返回值时，如果省略了&#123;),必须省略return </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line">箭头函数this</span><br></pre></td></tr></table></figure>
 <dl><dt>创建时的this是谁，运行的时候this就是谁<br>let person =<br>name :</dt><dd>“花姐”<br>food: ‘西兰花’<br>sayHi(){<br>// console.log(this)<br>setTimeout( function(){<br>console. log(this)<br>}; 100)</dd></dl><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">简化播放器  </span><br><span class="line">1、挂载</span><br><span class="line">2、双向数据绑定 </span><br><span class="line">~~~ </span><br><span class="line">&#x2F;*</span><br><span class="line">需求:</span><br><span class="line">1.回车搜歌</span><br><span class="line">接口1:歌曲搜索</span><br><span class="line">地址: https :&#x2F;&#x2F; autumnfish . cn&#x2F;search</span><br><span class="line">方法:get</span><br><span class="line">参数:keywords搜 索关键字</span><br><span class="line">2.列表渲染</span><br><span class="line">3.</span><br><span class="line">点击播放</span><br><span class="line">接口2:获取歌曲播放地址</span><br><span class="line">地址:https :&#x2F;&#x2F; autumnfish . cn&#x2F; song&#x2F;url </span><br><span class="line">方法:get</span><br><span class="line">参数:id歌 曲id</span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">APP.vue </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div id&#x3D;&quot;app&quot;&gt;</span><br><span class="line">    &lt;top &#x2F;&gt;</span><br><span class="line">    &lt;index &#x2F;&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import top from &#39;.&#x2F;components&#x2F;01.top.vue&#39;; </span><br><span class="line">  &#x2F;&#x2F;导入这个组件，并注册</span><br><span class="line">import index from &#39;.&#x2F;components&#x2F;02.index.vue&#39;;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;app&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    top,</span><br><span class="line">    index</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style &gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">01top.vue </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;top-container&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;left-box&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;icon-wrapper&quot;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-home&quot; @click&#x3D;&quot;toHomeClick()&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;!-- &lt;span class&#x3D;&quot;iconfont icon-sami-select&quot;&gt;&lt;&#x2F;span&gt; --&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-full-screen&quot; @click&#x3D;&quot;getFullCreeen(btnStatus)&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;!-- &lt;div class&#x3D;&quot;history-wrapper&quot;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-arrow-lift&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;iconfont icon-arrow-right&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt; --&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;right-box&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;el-input el-input--small el-input--prefix&quot;&gt;</span><br><span class="line">        &lt;input type&#x3D;&quot;text&quot; autocomplete&#x3D;&quot;off&quot; placeholder&#x3D;&quot;搜索&quot; v-model&#x3D;&quot;inputVal&quot; @keyup.enter&#x3D;&quot;toResult&quot; class&#x3D;&quot;el-input__inner&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;el-input__prefix&quot;&gt;</span><br><span class="line">          &lt;i class&#x3D;&quot;el-input__icon el-icon-search&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;top&#39;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      query: &#39;&#39;,</span><br><span class="line">      inputVal: &#39;&#39;,</span><br><span class="line">      n: 0,</span><br><span class="line">      btnStatus: 0</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    toResult() &#123;</span><br><span class="line">      if (this.inputVal &#x3D;&#x3D;&#x3D; &#39;&#39;) &#123;</span><br><span class="line">        &#x2F;&#x2F; 提示用户</span><br><span class="line">        this.$message.warning(&#39;请输入内容!&#39;)</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        &#x2F;&#x2F; 携带数据去搜索页面</span><br><span class="line">        this.$router.push(&#96;&#x2F;result?q&#x3D;$&#123;this.inputVal&#125;&#96;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    toHomeClick() &#123;</span><br><span class="line">      if (&#39;&#x2F;discovery&#39; &#x3D;&#x3D;&#x3D; this.$route.path) &#123;</span><br><span class="line">        return</span><br><span class="line">      &#125;</span><br><span class="line">      this.$router.push(&#96;&#x2F;discovery&#96;)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F;  点击实现全屏和退出全屏</span><br><span class="line">    getFullCreeen(btnStatus) &#123;</span><br><span class="line">      this.btnStatus &#x3D; this.btnStatus &#x3D;&#x3D;&#x3D; 0 ? 1 : 0</span><br><span class="line">      this.n++</span><br><span class="line">      this.n % 2 &#x3D;&#x3D; 0 ? this.outFullCreeen(document) : this.inFullCreeen(document.documentElement)</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    inFullCreeen(element) &#123;</span><br><span class="line">      let el &#x3D; element</span><br><span class="line">      let rfs &#x3D; el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullScreen</span><br><span class="line">      if (typeof rfs !&#x3D; &#39;undefined&#39; &amp;&amp; rfs) &#123;</span><br><span class="line">        rfs.call(el)</span><br><span class="line">      &#125; else if (typeof window.ActiveXObject !&#x3D; &#39;undefined&#39;) &#123;</span><br><span class="line">        let wscript &#x3D; new ActiveXObject(&#39;WScript.Shell&#39;)</span><br><span class="line">        if (wscript !&#x3D; null) &#123;</span><br><span class="line">          wscript.SendKeys(&#39;&#123;F11&#125;&#39;)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    outFullCreeen(element) &#123;</span><br><span class="line">      let el &#x3D; element</span><br><span class="line">      let cfs &#x3D; el.cancelFullScreen || el.webkitCancelFullScreen || el.mozCancelFullScreen || el.exitFullScreen</span><br><span class="line">      if (typeof cfs !&#x3D; &#39;undefined&#39; &amp;&amp; cfs) &#123;</span><br><span class="line">        cfs.call(el)</span><br><span class="line">      &#125; else if (typeof window.ActiveXObject !&#x3D; &#39;undefined&#39;) &#123;</span><br><span class="line">        let wscript &#x3D; new ActiveXObject(&#39;WScript.Shell&#39;)</span><br><span class="line">        if (wscript !&#x3D; null) &#123;</span><br><span class="line">          wscript.SendKeys(&#39;&#123;F11&#125;&#39;)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style scoped&gt;&lt;&#x2F;style&gt;</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">02top </span><br><span class="line">~~~ </span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;index-container&quot;&gt;</span><br><span class="line">    &lt;!-- 导航区域 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;nav&quot;&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;discovery&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-find-music&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            发现音乐</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;playlists&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-music-list&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            推荐歌单</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;songs&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-music&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            最新音乐</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">        &lt;li&gt;</span><br><span class="line">          &lt;router-link to&#x3D;&quot;&#x2F;mvs&quot;&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;iconfont icon-mv&quot;&gt;&lt;&#x2F;span&gt;</span><br><span class="line">            最新MV</span><br><span class="line">          &lt;&#x2F;router-link&gt;</span><br><span class="line">        &lt;&#x2F;li&gt;</span><br><span class="line">      &lt;&#x2F;ul&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 主体区域 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;main&quot;&gt;</span><br><span class="line">      &lt;router-view&gt;&lt;&#x2F;router-view&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;!-- 播放标签 --&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;player&quot;&gt;</span><br><span class="line">      &lt;audio :src&#x3D;&quot;musicUrl&quot; autoplay controls id&#x3D;&quot;music&quot;&gt;&lt;&#x2F;audio&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;index&#39;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      musicUrl: &#39;&#39;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  mounted() &#123;</span><br><span class="line">    &#x2F;&#x2F;订阅消息</span><br><span class="line">    this.$pubSub.subscribe(&#39;pauseAudio&#39;, msg &#x3D;&gt; &#123;</span><br><span class="line">      var audio &#x3D; document.getElementById(&#39;music&#39;)</span><br><span class="line">      audio.pause()</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style &gt;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>关于JS和Jquery和AJAX的关系</title>
-    <url>/2020/04/25/%E4%BA%8EJS%E5%92%8CJquery%E5%92%8CAJAX%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
-    <content><![CDATA[<h1 id="如题"><a href="#如题" class="headerlink" title="如题"></a>如题</h1><a id="more"></a> 
-
-<p>简单总结： </p>
-<p>1、JS是一门前端语言。<br>2、Ajax是一门技术，它提供了异步更新的机制，使用客户端与服务器间交换数据而非整个页面文档，实现页面的局部更新。<br>3、jQuery是一个框架，它对JS进行了封装，使其更方便使用。jQuery使得JS与Ajax的使用更方便</p>
-<p>关系比喻：<br>若把js比作木头，那么jquery就是木板（半成品）<br>jQuery与ajax都是js的一个框架，各有各的功能，若js是父亲的话，jquery与ajax就是两个儿子 </p>
-<p>详细情况：<br>1.javascript是一种在客户端执行的脚本语言。ajax是基于javascript的一种技术，它主要用途是提供异步刷新（只刷新页面的一部分，而不是整个页面都刷新）。一个是语言,一个是技术,两者有本质区别.<br>2.javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。<br>1、JavaScript<br> javaScript的简写形式就是JS，一种广泛用于客户端Web开发的脚本语言，常用来给HTML网页添加动态功能（其编写的程序可以被嵌入到HTML或XML页面中，并直接在浏览器中解释执行）。</p>
-<p>组成部分：<br>             核心（ECMAScript）、文档对象模型（Document Object Model，简称DOM）、浏览器对象模型（Browser Object Model，简称BOM） </p>
-<pre><code>        描述：
-
-
- Javascript就是适应动态网页制作的需要而诞生的一种新的编程语言，如今越来越广泛地使用于Internet网页制作上。
-
-Javascript的出现使得网页和用户之间实现了一种实时性的、动态的、交互性的关系，使网页包含更多活跃的元素和更加精彩的内容。
-
- Javascript短小精悍，又是在客户机上执行的，大大提高了网页的浏览速度和交互能力。同时它又是专门为制作Web网页而量身定做的一种简单的编程语言。</code></pre><p>2、Ajax<br>         AJAX即“Asynchronous JavaScript and XML”（异步JavaScript和XML)，AJAX并非缩写词，而是由Jesse James Gaiiett创造的名词，是指一种创建交互式网页应用的网页开发技术。</p>
-<p>组成：<br>            基于XHTML和CSS标准的表示；</p>
-<pre><code>使用Document Object Model进行动态显示和交互；
-
-使用XML和XSLT做数据交互和操作；
-
-使用XML HttpRequest与服务器进行异步通信；
-
-使用JavaScript绑定一切。</code></pre><p>描述：<br>            Ajax是结合了Java技术、XML以及JavaScript等编程技术，可以让开发人员构建基于Java技术的Web应用，并打破了使用页面重载的管理。</p>
-<pre><code> Ajax技术使用非同步的HTTP请求，在Browser和Web Server之间传递数据，使Browser只更新部分网页内容而不重新载入整个网页。
-
-Ajax是使用客户端脚本与Web服务器交换数据的Web应用开发方法。这样，Web页面不用打断交互流程进行重新加裁，就可以动态地更新。使用Ajax，用户可以创建接近本地桌面应用的直接、高可用、更丰富、更动态的Web用户界面</code></pre><p>3、jQuery<br>jQuery是一个快速的，简洁的javaScript库，使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。</p>
-<p>特点：<br>           jQuery是当前很流行的一个JavaScript框架，使用类似于CSS的选择器，可以方便的操作HTML元素，拥有很好的可扩展性，拥有不少插件。 </p>
-<p>描述：<br>            对于程序员来说，简化javascript和ajax编程，能够使程序员从设计和书写繁杂的JS应用中解脱出来，将关注点转向功能需求而非实现细节上，从而提高项目的开发速度。</p>
-<pre><code> 对于用户来说，改善了页面的视觉效果，增强了与页面的交互性，体验更绚丽的网页物资。
-
-javaScript框架实际上是一系列工具和函数。 
-
-  javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，主要组合JS、CSS、XML三种技术的新技术，是用于创建交互式网页应用的网页开发技术。jQuery是JS的框架，基于JS语言，集合Ajax技术开发出来的JS库，封装JS和Ajax的功能，提供函数接口，大大简化了Ajax，JS的操作。</code></pre><p>项目中用jQuery比较多，具体讲讲他。</p>
-<p>jQuery能大大简化JavaScript程序的编写</p>
-<p>要使用jQuery，首先要在HTML代码最前面加上对jQuery库的引用，比如：</p>
-<script language="javascript" src="/js/jquery.min.js"></script>   //引用
-
-<p>库文件既可以放在本地，也可以直接使用知名公司的CDN（CDN加载jquery的好处），好处是这些大公司的CDN比较流行，用户访问你网站之前很可能在访问别的网站时已经缓存在浏览器中了，所以能加快网站的打开速度。另外一个好处是显而易见的，节省了网站的流量带宽。</p>
-<p>Google提供的</p>
-<p><a href="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" target="_blank" rel="noopener">http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js</a></p>
-<p>jQuery官方的</p>
-<p><a href="http://code.jquery.com/jquery-1.6.min.js" target="_blank" rel="noopener">http://code.jquery.com/jquery-1.6.min.js</a></p>
-<p>jQuery代码具体的写法和原生的Javascript写法在执行常见操作时的区别如下：</p>
-<p>1 定位元素<br>JS<br>document.getElementById(“abc”) </p>
-<p>jQuery<br>$(“#abc”) 通过id定位<br>$(“.abc”) 通过class定位<br>$(“div”) 通过标签定位 </p>
-<p>需要注意的是JS返回的结果是这个元素，jQuery返回的结果是一个JS的对象。以下例子中假设已经定位了元素abc。 </p>
-<p>2 改变元素的内容<br>JS<br>abc.innerHTML = “test”;                //现在的项目中有用到<br>jQuery<br>abc.html(“test”); </p>
-<p>3 显示隐藏元素<br>JS<br>abc.style.display = “none”;              //现在的项目中有用到<br>abc.style.display = “block”; </p>
-<p>jQuery<br>abc.hide();<br>abc.show();</p>
-<p>abc.toggle();         //在显示和隐藏之间切换、</p>
-<p>4 获得焦点 </p>
-<p>JS和jQuery是一样的，都是abc.focus(); </p>
-<p>5 为表单赋值<br>JS<br>abc.value = “test”;<br>jQuery<br>abc.val(“test”); </p>
-<p>6 获得表单的值<br>JS<br>alert(abc.value);<br>jQuery<br>alert(abc.val()); </p>
-<p>7 设置元素不可用<br>JS<br>abc.disabled = true;<br>jQuery<br>abc.attr(“disabled”, true);</p>
-<p>8 修改元素样式<br>JS<br>abc.style.fontSize=size;<br>jQuery<br>abc.css(‘font-size’, 20);</p>
-<p>JS<br>abc.className=”test”;<br>JQuery<br>abc.removeClass();<br>abc.addClass(“test”);</p>
-<p>9 判断复选框是否选中</p>
-<p>jQuery<br>if(abc.attr(“checked”) == “checked”)<br>注意：网上说的.attr(“checked”) == true实际上不能用，上面这个测试过能用 </p>
-<p><img src="https://img-blog.csdn.net/20140731101457124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVkaWFlbF9sdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=".."></p>
-]]></content>
   </entry>
   <entry>
     <title>vue复习</title>
@@ -719,6 +671,71 @@ el. focus( )
     <content><![CDATA[ <a id="more"></a> 
 
 <p> 首先需要自己写出来HTML文件和CSS，这是最基本的。<br>其次就是需要写JS脚本<br>之后的就是掌握一种框架<br>学到这里差不多可以做一些其他的东西了。<br>可以找一些开源网站的API来做一些实践，比如网易云音乐和天气小程序 ，其他的比如bootstrap和es6语法AJAX，前后端各种技术都需要更仔细的学习。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>关于JS和Jquery和AJAX的关系</title>
+    <url>/2020/04/25/%E4%BA%8EJS%E5%92%8CJquery%E5%92%8CAJAX%E7%9A%84%E5%85%B3%E7%B3%BB/</url>
+    <content><![CDATA[<h1 id="如题"><a href="#如题" class="headerlink" title="如题"></a>如题</h1><a id="more"></a> 
+
+<p>简单总结： </p>
+<p>1、JS是一门前端语言。<br>2、Ajax是一门技术，它提供了异步更新的机制，使用客户端与服务器间交换数据而非整个页面文档，实现页面的局部更新。<br>3、jQuery是一个框架，它对JS进行了封装，使其更方便使用。jQuery使得JS与Ajax的使用更方便</p>
+<p>关系比喻：<br>若把js比作木头，那么jquery就是木板（半成品）<br>jQuery与ajax都是js的一个框架，各有各的功能，若js是父亲的话，jquery与ajax就是两个儿子 </p>
+<p>详细情况：<br>1.javascript是一种在客户端执行的脚本语言。ajax是基于javascript的一种技术，它主要用途是提供异步刷新（只刷新页面的一部分，而不是整个页面都刷新）。一个是语言,一个是技术,两者有本质区别.<br>2.javascript是一种在浏览器端执行的脚本语言，Ajax是一种创建交互式网页应用的开发技术 ，它是利用了一系列相关的技术其中就包括javascript。<br>1、JavaScript<br> javaScript的简写形式就是JS，一种广泛用于客户端Web开发的脚本语言，常用来给HTML网页添加动态功能（其编写的程序可以被嵌入到HTML或XML页面中，并直接在浏览器中解释执行）。</p>
+<p>组成部分：<br>             核心（ECMAScript）、文档对象模型（Document Object Model，简称DOM）、浏览器对象模型（Browser Object Model，简称BOM） </p>
+<pre><code>        描述：
+
+
+ Javascript就是适应动态网页制作的需要而诞生的一种新的编程语言，如今越来越广泛地使用于Internet网页制作上。
+
+Javascript的出现使得网页和用户之间实现了一种实时性的、动态的、交互性的关系，使网页包含更多活跃的元素和更加精彩的内容。
+
+ Javascript短小精悍，又是在客户机上执行的，大大提高了网页的浏览速度和交互能力。同时它又是专门为制作Web网页而量身定做的一种简单的编程语言。</code></pre><p>2、Ajax<br>         AJAX即“Asynchronous JavaScript and XML”（异步JavaScript和XML)，AJAX并非缩写词，而是由Jesse James Gaiiett创造的名词，是指一种创建交互式网页应用的网页开发技术。</p>
+<p>组成：<br>            基于XHTML和CSS标准的表示；</p>
+<pre><code>使用Document Object Model进行动态显示和交互；
+
+使用XML和XSLT做数据交互和操作；
+
+使用XML HttpRequest与服务器进行异步通信；
+
+使用JavaScript绑定一切。</code></pre><p>描述：<br>            Ajax是结合了Java技术、XML以及JavaScript等编程技术，可以让开发人员构建基于Java技术的Web应用，并打破了使用页面重载的管理。</p>
+<pre><code> Ajax技术使用非同步的HTTP请求，在Browser和Web Server之间传递数据，使Browser只更新部分网页内容而不重新载入整个网页。
+
+Ajax是使用客户端脚本与Web服务器交换数据的Web应用开发方法。这样，Web页面不用打断交互流程进行重新加裁，就可以动态地更新。使用Ajax，用户可以创建接近本地桌面应用的直接、高可用、更丰富、更动态的Web用户界面</code></pre><p>3、jQuery<br>jQuery是一个快速的，简洁的javaScript库，使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。</p>
+<p>特点：<br>           jQuery是当前很流行的一个JavaScript框架，使用类似于CSS的选择器，可以方便的操作HTML元素，拥有很好的可扩展性，拥有不少插件。 </p>
+<p>描述：<br>            对于程序员来说，简化javascript和ajax编程，能够使程序员从设计和书写繁杂的JS应用中解脱出来，将关注点转向功能需求而非实现细节上，从而提高项目的开发速度。</p>
+<pre><code> 对于用户来说，改善了页面的视觉效果，增强了与页面的交互性，体验更绚丽的网页物资。
+
+javaScript框架实际上是一系列工具和函数。 
+
+  javaScript是用于Web客户端开发的脚本语言，Ajax是基于JS语言，主要组合JS、CSS、XML三种技术的新技术，是用于创建交互式网页应用的网页开发技术。jQuery是JS的框架，基于JS语言，集合Ajax技术开发出来的JS库，封装JS和Ajax的功能，提供函数接口，大大简化了Ajax，JS的操作。</code></pre><p>项目中用jQuery比较多，具体讲讲他。</p>
+<p>jQuery能大大简化JavaScript程序的编写</p>
+<p>要使用jQuery，首先要在HTML代码最前面加上对jQuery库的引用，比如：</p>
+<script language="javascript" src="/js/jquery.min.js"></script>   //引用
+
+<p>库文件既可以放在本地，也可以直接使用知名公司的CDN（CDN加载jquery的好处），好处是这些大公司的CDN比较流行，用户访问你网站之前很可能在访问别的网站时已经缓存在浏览器中了，所以能加快网站的打开速度。另外一个好处是显而易见的，节省了网站的流量带宽。</p>
+<p>Google提供的</p>
+<p><a href="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" target="_blank" rel="noopener">http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js</a></p>
+<p>jQuery官方的</p>
+<p><a href="http://code.jquery.com/jquery-1.6.min.js" target="_blank" rel="noopener">http://code.jquery.com/jquery-1.6.min.js</a></p>
+<p>jQuery代码具体的写法和原生的Javascript写法在执行常见操作时的区别如下：</p>
+<p>1 定位元素<br>JS<br>document.getElementById(“abc”) </p>
+<p>jQuery<br>$(“#abc”) 通过id定位<br>$(“.abc”) 通过class定位<br>$(“div”) 通过标签定位 </p>
+<p>需要注意的是JS返回的结果是这个元素，jQuery返回的结果是一个JS的对象。以下例子中假设已经定位了元素abc。 </p>
+<p>2 改变元素的内容<br>JS<br>abc.innerHTML = “test”;                //现在的项目中有用到<br>jQuery<br>abc.html(“test”); </p>
+<p>3 显示隐藏元素<br>JS<br>abc.style.display = “none”;              //现在的项目中有用到<br>abc.style.display = “block”; </p>
+<p>jQuery<br>abc.hide();<br>abc.show();</p>
+<p>abc.toggle();         //在显示和隐藏之间切换、</p>
+<p>4 获得焦点 </p>
+<p>JS和jQuery是一样的，都是abc.focus(); </p>
+<p>5 为表单赋值<br>JS<br>abc.value = “test”;<br>jQuery<br>abc.val(“test”); </p>
+<p>6 获得表单的值<br>JS<br>alert(abc.value);<br>jQuery<br>alert(abc.val()); </p>
+<p>7 设置元素不可用<br>JS<br>abc.disabled = true;<br>jQuery<br>abc.attr(“disabled”, true);</p>
+<p>8 修改元素样式<br>JS<br>abc.style.fontSize=size;<br>jQuery<br>abc.css(‘font-size’, 20);</p>
+<p>JS<br>abc.className=”test”;<br>JQuery<br>abc.removeClass();<br>abc.addClass(“test”);</p>
+<p>9 判断复选框是否选中</p>
+<p>jQuery<br>if(abc.attr(“checked”) == “checked”)<br>注意：网上说的.attr(“checked”) == true实际上不能用，上面这个测试过能用 </p>
+<p><img src="https://img-blog.csdn.net/20140731101457124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamVkaWFlbF9sdQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt=".."></p>
 ]]></content>
   </entry>
   <entry>
@@ -934,44 +951,6 @@ return config
 <h1 id="这个是有关小程序的一些截图"><a href="#这个是有关小程序的一些截图" class="headerlink" title="这个是有关小程序的一些截图"></a>这个是有关小程序的一些截图</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">这个是APP.json的代码，这个没什么可以注意的，微信写小程序必续经历的一步</span><br><span class="line">&#123;</span><br><span class="line">  &quot;pages&quot;: [</span><br><span class="line">    &quot;pages&#x2F;index&#x2F;index&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;window&quot;: &#123;</span><br><span class="line">    &quot;navigationBarBackgroundColor&quot;: &quot;#66ccff&quot;,</span><br><span class="line">    &quot;navigationBarTextStyle&quot;: &quot;black&quot;,</span><br><span class="line">    &quot;navigationBarTitleText&quot;: &quot;天气查询&quot;,</span><br><span class="line">    &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,</span><br><span class="line">    &quot;backgroundTextStyle&quot;: &quot;light&quot;,</span><br><span class="line">    &quot;enablePullDownRefresh&quot;: false</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;sitemapLocation&quot;: &quot;sitemap37.json&quot;</span><br><span class="line">&#125;</span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">index.wxss </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">这个就是微信的样式文件</span><br><span class="line">.container</span><br><span class="line">&#123;</span><br><span class="line">  height: 100vh;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-direction: column;</span><br><span class="line">  align-items: center;</span><br><span class="line">  justify-content: space-around;</span><br><span class="line">&#125;</span><br><span class="line">.detail</span><br><span class="line">&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-direction: column;</span><br><span class="line">  width: 100%;</span><br><span class="line">&#125;</span><br><span class="line">.bar</span><br><span class="line">&#123;</span><br><span class="line">  display: flex;</span><br><span class="line">  flex-direction: row;</span><br><span class="line">  margin: 20rpx 0;  </span><br><span class="line">&#125;</span><br><span class="line">.box</span><br><span class="line">&#123;</span><br><span class="line">  width: 33.3%;</span><br><span class="line">  text-align: center;</span><br><span class="line">&#125;</span><br><span class="line">image&#123;</span><br><span class="line">  width: 220rpx;</span><br><span class="line">&#125;</span><br><span class="line">text&#123;</span><br><span class="line">  font-size: 80rpx;</span><br><span class="line">  color: #3C5F81;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">界面设计代码  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">这个就是界面的设计</span><br><span class="line">&lt;view class&#x3D;&#39;container&#39;&gt;</span><br><span class="line">  &lt;!-- 区域1：地区选择器 --&gt;</span><br><span class="line">  &lt;picker mode&#x3D;&#39;region&#39; bindchange&#x3D;&#39;changeRegion&#39;&gt;</span><br><span class="line">    &lt;view&gt;&#123;&#123;region&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">  &lt;&#x2F;picker&gt;</span><br><span class="line">  &lt;!-- 区域2：文本区域 --&gt;</span><br><span class="line">  &lt;text&gt;&#123;&#123;now.tmp&#125;&#125;℃ &#123;&#123;now.cond_txt&#125;&#125;&lt;&#x2F;text&gt;</span><br><span class="line">  &lt;!-- 区域3：图片区域 --&gt;</span><br><span class="line">  &lt;image src&#x3D;&#39;&#x2F;images&#x2F;&#123;&#123;now.cond_code&#125;&#125;.png&#39;&gt;&lt;&#x2F;image&gt;</span><br><span class="line">  &lt;!-- 区域4：多行天气信息 --&gt;</span><br><span class="line">  &lt;view class&#x3D;&#39;detail&#39;&gt;</span><br><span class="line">    &lt;view class&#x3D;&#39;bar&#39;&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;湿度&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;气压&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;能见度&lt;&#x2F;view&gt;</span><br><span class="line">    &lt;&#x2F;view&gt;</span><br><span class="line">    &lt;view class&#x3D;&#39;bar&#39;&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.hum&#125;&#125;%&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.pres&#125;&#125;hPa&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.vis&#125;&#125;Km&lt;&#x2F;view&gt;</span><br><span class="line">    &lt;&#x2F;view&gt;</span><br><span class="line">    &lt;view class&#x3D;&#39;bar&#39;&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;风向&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;风速&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;风力&lt;&#x2F;view&gt;</span><br><span class="line">    &lt;&#x2F;view&gt;</span><br><span class="line">    &lt;view class&#x3D;&#39;bar&#39;&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.wind_dir&#125;&#125;&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.wind_spd&#125;&#125; Km&#x2F;h&lt;&#x2F;view&gt;</span><br><span class="line">      &lt;view class&#x3D;&#39;box&#39;&gt;&#123;&#123;now.wind_sc&#125;&#125; 级&lt;&#x2F;view&gt;</span><br><span class="line">    &lt;&#x2F;view&gt;</span><br><span class="line">  &lt;&#x2F;view&gt;</span><br><span class="line">&lt;&#x2F;view&gt;</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">~~~  </span><br><span class="line"></span><br><span class="line">这部分就是最重要的JS文件，里面设置了初始化了生命周期函数等等 </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; pages&#x2F;index&#x2F;index.js</span><br><span class="line">Page(&#123;</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 页面的初始数据</span><br><span class="line">   *&#x2F;</span><br><span class="line">  data: &#123;</span><br><span class="line">    region:[&#39;浙江省&#39;,&#39;嘉兴市&#39;,&#39;南湖区&#39;],</span><br><span class="line">    now:&#39;&#39;</span><br><span class="line">  &#125;,</span><br><span class="line">  changeRegion:function(e)&#123;</span><br><span class="line">    this.setData(&#123;</span><br><span class="line">      region:e.detail.value</span><br><span class="line">    &#125;)</span><br><span class="line">    this.getWeater();</span><br><span class="line">  &#125;,</span><br><span class="line">  getWeater:function()&#123;</span><br><span class="line">    var that&#x3D;this; </span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: &#39;https:&#x2F;&#x2F;free-api.heweather.net&#x2F;s6&#x2F;weather&#x2F;now?&#39;,</span><br><span class="line">      data:&#123;</span><br><span class="line">        location:that.data.region[1],</span><br><span class="line">        key:&#39;df1686060a674f4fa87357c2796f88e7&#39;</span><br><span class="line">      &#125;,</span><br><span class="line">      success:function(res)&#123;</span><br><span class="line">        that.setData(&#123;now:res.data.HeWeather6[0].now&#125;)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 生命周期函数--监听页面加载</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onLoad: function (options) &#123;</span><br><span class="line">this.getWeater();</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 生命周期函数--监听页面初次渲染完成</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onReady: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 生命周期函数--监听页面显示</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onShow: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 生命周期函数--监听页面隐藏</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onHide: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 生命周期函数--监听页面卸载</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onUnload: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 页面相关事件处理函数--监听用户下拉动作</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onPullDownRefresh: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 页面上拉触底事件的处理函数</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onReachBottom: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  &#x2F;**</span><br><span class="line">   * 用户点击右上角分享</span><br><span class="line">   *&#x2F;</span><br><span class="line">  onShareAppMessage: function () &#123;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>admin工具测试</title>
-    <url>/2020/04/18/admin%E5%B7%A5%E5%85%B7%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<h3 id="本文主要是Admin测试"><a href="#本文主要是Admin测试" class="headerlink" title="本文主要是Admin测试"></a>本文主要是Admin测试</h3><a id="more"></a>
-
-<p>不需要空格 </p>
-<hr>
-<p>分割线 </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">这里是代码块</span><br></pre></td></tr></table></figure>
-
-<p><strong><em>加粗</em></strong>  </p>
-<p>听说可以直接插入图片？</p>
-<p><img src="http://p7.qhimg.com/bdm/384_237_0/t0198a45e705341d77c.jpg" alt></p>
-<p>然而并不能  </p>
-<p>还是需要感叹号正括号圆括号三部曲外加图片链接</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>关于毕设merkle树的一些启发</title>
-    <url>/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/</url>
-    <content><![CDATA[<h1 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h1><a id="more"></a>
-<p>区块链利用Merkle树的数据结构存放所有叶子节点的值<br>并以此为基础生成一个统的哈希值<br>Merkle树的叶子节点存储的是数据信息的哈希值<br>非叶子的节点存储的是对其下面所有叶子节点的组合进行哈希计算后得出的哈希值 </p>
-<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><p>减少交易量<br>只验证统一生成的哈希值 </p>
-<p>挖矿：创世区块解密SHA265，全网广播，其他节点验证，其他人放弃计算，将新的区块添加到创世区块后边，逐渐形成主链。 </p>
-<h3 id="重点-1"><a href="#重点-1" class="headerlink" title="重点"></a>重点</h3><p>加盖时间戳  </p>
-<p>所有交易的总结<br>二叉哈希树 ，汇总数据<br>顶部是根，底部是叶子，中间是非叶子节点。 </p>
-<p>一个区块中上千交易，将每个交易做一个哈希，最终形成一个哈希。 </p>
-<p> 优点、提供了证明数据完整性的/有效性的一个手段  </p>
-<p> 很少的内存/磁盘空间占用，并且计算简单快捷<br> 只需要下载一个哈希就行 </p>
-<p> Merkle树证明和管理只需要一个非常小而且很简单的信息通过网络传输<br> 偶数交易和奇数交易 </p>
-<p> Merkle和POW有很密切的关系 </p>
-<p> merkle树也用于WEB服务器的http的响应和验证 </p>
-<p> Merkle树遍历和算法的优化 </p>
-<p> 降低在遍历中遇到的时间复杂度和空间复杂度  </p>
-<p>利用默克尔树构建过程的特点提出了一种基于默克尔树的POW挖矿算法。 </p>
-<p>本算法利用默克尔树的结构特点设计了一种随机访间默克尔树每层节点的机制，这就使得<br>挖矿过程中必须要存储完整的默克尔树。为了挖矿算法的可靠性，也分析了默克尔树深<br>度的取值范围。该算法对于轻节点验证来说，只需要消耗较少的内存资源就能完成对区<br>块合法性的验证。最后，还在计算机上模拟了单次挖矿过程，实验数据和理论分析结果<br>完全一致。 </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">默克尔树挖矿算法Go语言代码</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">&quot; crypto&#x2F;sh a256&quot; </span><br><span class="line">&quot;fmt&quot;</span><br><span class="line">&quot; math&#x2F;rand&quot;</span><br><span class="line">&quot; time&quot;</span><br><span class="line">)</span><br><span class="line">const(</span><br><span class="line">depth&#x3D;20</span><br><span class="line">cacheLength&#x3D; 1 &lt;&lt; depth)</span><br><span class="line">&#x2F;&#x2F;Node is merkle node</span><br><span class="line">type Node struct &#123;</span><br><span class="line">value [32]byte</span><br><span class="line">&#125;</span><br><span class="line">type Hash struct &#123;</span><br><span class="line">value [321byte</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">&#x2F;&#x2F; GetMerkl eHash start</span><br><span class="line">t1 :&#x3D; time.Now0</span><br><span class="line">cache :&#x3D; m ake([]byte, cach eLength)</span><br><span class="line">fori :&#x3D;0; i &lt; cacheLength, 1++ &#123;</span><br><span class="line">cache[i]&#x3D; byte(rand Intn(256))</span><br><span class="line">&#125;</span><br><span class="line">merkletree : &#x3D; m ake([]Node, 2*cacheLength-1)</span><br><span class="line">fori :&#x3D; 0;1 &lt; cacheLength; i++ &#123;</span><br><span class="line">merkl etree[cacheLength-1+i]value &#x3D; sha256. Sum256(cache[i : i+1]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">tmp :&#x3D; m ake([]byte, 64)</span><br><span class="line">fori :&#x3D; cacheLength-2,1 &gt;&#x3D;0,1- &#123;</span><br><span class="line">copy(tmp[: 32], merkletree[2*i+1]value[: ])</span><br><span class="line">copy(tmp[32: ], merkl etree[2*+2] value[:])</span><br><span class="line">ah : &#x3D; sh a256 Sum 256(tmp[:])</span><br><span class="line">copy(merkletree[i]value[: ], ah[:])</span><br><span class="line">&#125;</span><br><span class="line">el apsed :&#x3D; time. Since(t1)</span><br><span class="line">I1 GetMerkl eHash end</span><br><span class="line">I1 MerkleMining start</span><br><span class="line">&#x2F;&#x2F;&#x3D;</span><br><span class="line">t2 &#x3D; time .Now0</span><br><span class="line">header :&#x3D; make([]byte, 80)</span><br><span class="line">hash : &#x3D; m ake([]Hash, depth+1)</span><br><span class="line">hash[Q].value &#x3D; sha256 Sum 256(header) </span><br><span class="line"></span><br><span class="line">fori &#x3D; 1;1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">divisor :&#x3D; pow(2, i)</span><br><span class="line">k :&#x3D; bigNumber(h[i-1]:value[: ]) % divisor</span><br><span class="line">c :&#x3D; int( divisor - 1)</span><br><span class="line">copy(tmp[:32], hash[i-1].value[:])</span><br><span class="line">copy(tmp[32: ], merkl etree[c+k]value[ ])</span><br><span class="line">hash[]value &#x3D; sha256.Sum 256(tmp[:])</span><br><span class="line">data :&#x3D; m ake ([ ]byte, (depth+ 1)*4)</span><br><span class="line">fori &#x3D; 0,1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">copy(data[i*4 (i+1)*4], hash[i].value[:]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">h :&#x3D; sh a256 Sum 256(data[: ])</span><br><span class="line">elaps edMining : &#x3D; time. Since(t2)</span><br><span class="line">&#x2F;1 MerkleMining end</span><br><span class="line">&#x2F;&#x2F;&#x3D;:</span><br><span class="line">fmt. Println(&quot;\nGetMerkl eHash: &quot;, elapsed)</span><br><span class="line">fmt.Printn(&quot;\nMerkle Mining: &quot;, elapsedMining)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>函数和方法的区别 </title>
     <url>/2020/04/25/%E5%92%8C%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
     <content><![CDATA[<h1 id="函数和方法的区别"><a href="#函数和方法的区别" class="headerlink" title="函数和方法的区别"></a>函数和方法的区别</h1><a id="more"></a> 
@@ -1017,9 +996,31 @@ print(&quot;这一块写函数的内容&quot;)</code></pre><p> 2.方法定义的
 ]]></content>
   </entry>
   <entry>
-    <title>封面图的设计</title>
-    <url>/2020/05/09/%E5%9B%BE%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
-    <content><![CDATA[  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  &lt;div class&#x3D;&quot;index-page&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;index-hd&quot;&gt;</span><br><span class="line">      &lt;img class&#x3D;&quot;index-logo&quot; src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;logo.png&quot; &gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;title-text&quot;&gt;Sol 商城组件&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;  </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    &lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">.index-page &#123;</span><br><span class="line">  background: #f8f8f8;</span><br><span class="line">  min-height: 100vh;</span><br><span class="line">  .index-hd &#123;</span><br><span class="line">    padding: 80px 10px;</span><br><span class="line">    text-align: center;</span><br><span class="line">    .index-logo &#123;</span><br><span class="line">      width: 40px;</span><br><span class="line">      height: 40px;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">    &#125;</span><br><span class="line">    .title-text &#123;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">      font-size: 28px;</span><br><span class="line">      margin-left: 12px;</span><br><span class="line">      font-weight: 400;</span><br><span class="line">      font-family: &#39;Dosis&#39;, &#39;Source Sans Pro&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <title>创世区块</title>
+    <url>/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/</url>
+    <content><![CDATA[<h1 id="创世区块"><a href="#创世区块" class="headerlink" title="创世区块"></a>创世区块</h1><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package main</span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">	Prehsh string</span><br><span class="line">	&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">	HashCode string</span><br><span class="line">	&#x2F;&#x2F;shi jian chuo</span><br><span class="line">	TimeStamp string</span><br><span class="line">	&#x2F;&#x2F;dang xian wang luo de nan du xi shu</span><br><span class="line">	&#x2F;&#x2F;kong zhi ha xi you ji ge qian dao ling</span><br><span class="line">	Diff int</span><br><span class="line">	&#x2F;&#x2F;cun jiao yi xin xi</span><br><span class="line">	Data string</span><br><span class="line">	&#x2F;&#x2F;qu kuai gao du</span><br><span class="line">	Index int</span><br><span class="line">	&#x2F;&#x2F;sui ji zhi</span><br><span class="line">	Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;chuang jian chuang shi qu kuai (lian zhong de di yi ge qukuai)</span><br><span class="line">func  GrnerateFirstBlock(data string)  Block &#123;</span><br><span class="line">	&#x2F;&#x2F;fangfa jiao yi xi xin fan hui yi ge qu kaui</span><br><span class="line">	&#x2F;&#x2F;sheng ming bing fu zhi yige kuai jiang di yi ge qukuai fanhui</span><br><span class="line">	&#x2F;&#x2F;创建第一个区块</span><br><span class="line">	var firstblock Block</span><br><span class="line">	firstblock.Prehsh&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">	firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">	firstblock.Diff&#x3D;4</span><br><span class="line">	firstblock.Data&#x3D;data</span><br><span class="line">	firstblock.Index&#x3D;1</span><br><span class="line">	firstblock.Nonce&#x3D;0</span><br><span class="line">	firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">	return firstblock</span><br><span class="line">	&#x2F;&#x2F;当前块的哈希</span><br><span class="line">	&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">	var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">		strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">	&#x2F;&#x2F;哈希算法</span><br><span class="line">	var sha  &#x3D; sha256.New()</span><br><span class="line">	sha.Write([]byte(hashdata))</span><br><span class="line">	hashed :&#x3D;sha.Sum(b：nil)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main ()</span><br><span class="line">&#x2F;&#x2F;创建创世区块</span><br><span class="line">firstBlock :&#x3D;GrnerateFirstBlock(data:&quot;创世区块&quot;)</span><br><span class="line">fmt.Println(firstBlock)</span><br><span class="line">fmt.Println(firstBlock.Data)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;crypto&#x2F;sha256&quot;</span><br><span class="line">	&quot;encoding&#x2F;hex&quot;</span><br><span class="line">	&quot;fmt&quot;</span><br><span class="line">	&quot;strconv&quot;</span><br><span class="line">	&quot;time&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">PreHash string</span><br><span class="line">&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">HashCode string</span><br><span class="line">&#x2F;&#x2F;时间戳</span><br><span class="line">TimeStamp string</span><br><span class="line">&#x2F;&#x2F;当前网络难度系数</span><br><span class="line">&#x2F;&#x2F;控制哈希有几个前导0</span><br><span class="line">Diff int</span><br><span class="line">&#x2F;&#x2F;存储交易信息</span><br><span class="line">Data string</span><br><span class="line">&#x2F;&#x2F;区块高度</span><br><span class="line">Index int</span><br><span class="line">&#x2F;&#x2F;随机值</span><br><span class="line">Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;创建创世区块(链中第一个区块)</span><br><span class="line">func  GenerateFirstBlock(data string)  Block &#123;</span><br><span class="line">&#x2F;&#x2F;创建第一个区块</span><br><span class="line">var firstblock Block</span><br><span class="line">firstblock.PreHash&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">firstblock.Diff&#x3D;4</span><br><span class="line">firstblock.Data&#x3D;data</span><br><span class="line">firstblock.Index&#x3D;1</span><br><span class="line">firstblock.Nonce&#x3D;0</span><br><span class="line">firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">return firstblock</span><br><span class="line">&#x2F;&#x2F;当前块的哈希</span><br><span class="line">&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">&#x2F;&#x2F;哈希算法</span><br><span class="line">var sha  &#x3D; sha256.New()</span><br><span class="line">sha.Write([]byte(hashdata))</span><br><span class="line">hashed :&#x3D; sha.Sum( nil)</span><br><span class="line">return hex.EncodeToString(hashed)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main () &#123;</span><br><span class="line">	&#x2F;&#x2F;创建创世区块</span><br><span class="line">	firstBlock :&#x3D;GenerateFirstBlock(&quot;创世区块&quot;)</span><br><span class="line"></span><br><span class="line">	fmt.Println(firstBlock)</span><br><span class="line">	fmt.Println(firstBlock.Data)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>关于毕设merkle树的一些启发</title>
+    <url>/2020/04/20/%E5%85%B3%E4%BA%8E%E6%AF%95%E8%AE%BEmerkle%E6%A0%91%E7%9A%84%E4%B8%80%E4%BA%9B%E5%90%AF%E5%8F%91/</url>
+    <content><![CDATA[<h1 id="是什么"><a href="#是什么" class="headerlink" title="是什么"></a>是什么</h1><a id="more"></a>
+<p>区块链利用Merkle树的数据结构存放所有叶子节点的值<br>并以此为基础生成一个统的哈希值<br>Merkle树的叶子节点存储的是数据信息的哈希值<br>非叶子的节点存储的是对其下面所有叶子节点的组合进行哈希计算后得出的哈希值 </p>
+<h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><p>减少交易量<br>只验证统一生成的哈希值 </p>
+<p>挖矿：创世区块解密SHA265，全网广播，其他节点验证，其他人放弃计算，将新的区块添加到创世区块后边，逐渐形成主链。 </p>
+<h3 id="重点-1"><a href="#重点-1" class="headerlink" title="重点"></a>重点</h3><p>加盖时间戳  </p>
+<p>所有交易的总结<br>二叉哈希树 ，汇总数据<br>顶部是根，底部是叶子，中间是非叶子节点。 </p>
+<p>一个区块中上千交易，将每个交易做一个哈希，最终形成一个哈希。 </p>
+<p> 优点、提供了证明数据完整性的/有效性的一个手段  </p>
+<p> 很少的内存/磁盘空间占用，并且计算简单快捷<br> 只需要下载一个哈希就行 </p>
+<p> Merkle树证明和管理只需要一个非常小而且很简单的信息通过网络传输<br> 偶数交易和奇数交易 </p>
+<p> Merkle和POW有很密切的关系 </p>
+<p> merkle树也用于WEB服务器的http的响应和验证 </p>
+<p> Merkle树遍历和算法的优化 </p>
+<p> 降低在遍历中遇到的时间复杂度和空间复杂度  </p>
+<p>利用默克尔树构建过程的特点提出了一种基于默克尔树的POW挖矿算法。 </p>
+<p>本算法利用默克尔树的结构特点设计了一种随机访间默克尔树每层节点的机制，这就使得<br>挖矿过程中必须要存储完整的默克尔树。为了挖矿算法的可靠性，也分析了默克尔树深<br>度的取值范围。该算法对于轻节点验证来说，只需要消耗较少的内存资源就能完成对区<br>块合法性的验证。最后，还在计算机上模拟了单次挖矿过程，实验数据和理论分析结果<br>完全一致。 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">默克尔树挖矿算法Go语言代码</span><br><span class="line">package main</span><br><span class="line">import (</span><br><span class="line">&quot; crypto&#x2F;sh a256&quot; </span><br><span class="line">&quot;fmt&quot;</span><br><span class="line">&quot; math&#x2F;rand&quot;</span><br><span class="line">&quot; time&quot;</span><br><span class="line">)</span><br><span class="line">const(</span><br><span class="line">depth&#x3D;20</span><br><span class="line">cacheLength&#x3D; 1 &lt;&lt; depth)</span><br><span class="line">&#x2F;&#x2F;Node is merkle node</span><br><span class="line">type Node struct &#123;</span><br><span class="line">value [32]byte</span><br><span class="line">&#125;</span><br><span class="line">type Hash struct &#123;</span><br><span class="line">value [321byte</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">&#x2F;&#x2F; GetMerkl eHash start</span><br><span class="line">t1 :&#x3D; time.Now0</span><br><span class="line">cache :&#x3D; m ake([]byte, cach eLength)</span><br><span class="line">fori :&#x3D;0; i &lt; cacheLength, 1++ &#123;</span><br><span class="line">cache[i]&#x3D; byte(rand Intn(256))</span><br><span class="line">&#125;</span><br><span class="line">merkletree : &#x3D; m ake([]Node, 2*cacheLength-1)</span><br><span class="line">fori :&#x3D; 0;1 &lt; cacheLength; i++ &#123;</span><br><span class="line">merkl etree[cacheLength-1+i]value &#x3D; sha256. Sum256(cache[i : i+1]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">tmp :&#x3D; m ake([]byte, 64)</span><br><span class="line">fori :&#x3D; cacheLength-2,1 &gt;&#x3D;0,1- &#123;</span><br><span class="line">copy(tmp[: 32], merkletree[2*i+1]value[: ])</span><br><span class="line">copy(tmp[32: ], merkl etree[2*+2] value[:])</span><br><span class="line">ah : &#x3D; sh a256 Sum 256(tmp[:])</span><br><span class="line">copy(merkletree[i]value[: ], ah[:])</span><br><span class="line">&#125;</span><br><span class="line">el apsed :&#x3D; time. Since(t1)</span><br><span class="line">I1 GetMerkl eHash end</span><br><span class="line">I1 MerkleMining start</span><br><span class="line">&#x2F;&#x2F;&#x3D;</span><br><span class="line">t2 &#x3D; time .Now0</span><br><span class="line">header :&#x3D; make([]byte, 80)</span><br><span class="line">hash : &#x3D; m ake([]Hash, depth+1)</span><br><span class="line">hash[Q].value &#x3D; sha256 Sum 256(header) </span><br><span class="line"></span><br><span class="line">fori &#x3D; 1;1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">divisor :&#x3D; pow(2, i)</span><br><span class="line">k :&#x3D; bigNumber(h[i-1]:value[: ]) % divisor</span><br><span class="line">c :&#x3D; int( divisor - 1)</span><br><span class="line">copy(tmp[:32], hash[i-1].value[:])</span><br><span class="line">copy(tmp[32: ], merkl etree[c+k]value[ ])</span><br><span class="line">hash[]value &#x3D; sha256.Sum 256(tmp[:])</span><br><span class="line">data :&#x3D; m ake ([ ]byte, (depth+ 1)*4)</span><br><span class="line">fori &#x3D; 0,1 &lt;&#x3D; depth;, i++ &#123;</span><br><span class="line">copy(data[i*4 (i+1)*4], hash[i].value[:]) </span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">h :&#x3D; sh a256 Sum 256(data[: ])</span><br><span class="line">elaps edMining : &#x3D; time. Since(t2)</span><br><span class="line">&#x2F;1 MerkleMining end</span><br><span class="line">&#x2F;&#x2F;&#x3D;:</span><br><span class="line">fmt. Println(&quot;\nGetMerkl eHash: &quot;, elapsed)</span><br><span class="line">fmt.Printn(&quot;\nMerkle Mining: &quot;, elapsedMining)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>图片插件测试</title>
@@ -1031,27 +1032,9 @@ print(&quot;这一块写函数的内容&quot;)</code></pre><p> 2.方法定义的
 ]]></content>
   </entry>
   <entry>
-    <title>基于默克尔树的POW方案</title>
-    <url>/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<h2 id="基于默克尔树的POW方案"><a href="#基于默克尔树的POW方案" class="headerlink" title="基于默克尔树的POW方案"></a>基于默克尔树的POW方案</h2><a id="more"></a> 
-<h2 id="默克尔树"><a href="#默克尔树" class="headerlink" title="默克尔树"></a>默克尔树</h2><p>默克尔树包括生成过程和验证过程  </p>
-<h2 id="默克尔树的构建过程"><a href="#默克尔树的构建过程" class="headerlink" title="默克尔树的构建过程"></a>默克尔树的构建过程</h2><p> 默克尔树是一种深度为d的二叉树，总节点个数为2d+1- 1,其中叶子节点个数为2d。<br>为了得到根哈希no，首先将要验证的数据cache依次存入到默克尔树的叶子节点中，然<br>后选择–种单向哈希函数H计算出每个叶子节点的哈希值nzd-1,.，.n2d+1_2,然后内部<br>节点进行两两结合运算H(n2+1lln2:+2)得到n，最终得到一个树根no，这个树根叫做根<br>哈希。非叶子第i个节点的两个子节点分别为n2+1和n2i+2。默克尔树如图3.1所示。<br>构建默克尔树的输入值是一个伪随机数集合cache,而输出值是默克尔树的所有节<br>点值n,1…n.+-.,.2+1-2,2+<br>2。默克尔树计算根哈希函数GetMerkleHash()过程如表3 1<br>所示。</p>
-<p>第1<del>2步，首先填充默克尔树的所有叶子节点。由图1可以发现默克尔树的叶子节<br>点编号从2d- 1开始，共有20个叶子节点。将伪随机数集合cache的每个字节数据的哈<br>希值依次填充到叶子节点中。<br>第3</del>4步，计算内部节点的哈希值。因为编号为i的节点的子节点为n2i+1和n2i<br>2i+2，<br>则将子节点连接，然后作为哈希函数H的输入值得到相应的哈希值nio依次类推，注意，</p>
-<p>计算内部节点的时候先从较大编号的节点开始，这是因为首先要计算子节点才能计算父<br>节点。<br>第5步，返回计算完成的所有默克尔树节.点.,…+.-.,2+12.2 </p>
-<h2 id="POW工作量证明"><a href="#POW工作量证明" class="headerlink" title="POW工作量证明"></a>POW工作量证明</h2><p>实现一个简单的挖矿 </p>
-<p>哈希碰撞 </p>
-]]></content>
-  </entry>
-  <entry>
-    <title>如何高效的找开源项目</title>
-    <url>/2020/04/29/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h2 id="开源项目查找"><a href="#开源项目查找" class="headerlink" title="开源项目查找"></a>开源项目查找</h2><a id="more"></a>
-<p>In:name xxxx </p>
-<p>In:name xxxx stras:&gt;xxx forks:&gt;xxxx </p>
-<p>in:readme xxxx </p>
-<p>in :description languang:java pushed:&gt;2019-01-03</p>
-<p><img src="/.com//%5Cimages%5Cpasted-2.png" alt="upload successful"></p>
-]]></content>
+    <title>封面图的设计</title>
+    <url>/2020/05/09/%E5%9B%BE%E7%9A%84%E8%AE%BE%E8%AE%A1/</url>
+    <content><![CDATA[  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  &lt;div class&#x3D;&quot;index-page&quot;&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;index-hd&quot;&gt;</span><br><span class="line">      &lt;img class&#x3D;&quot;index-logo&quot; src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;logo.png&quot; &gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;title-text&quot;&gt;Sol 商城组件&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;  </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    &lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">.index-page &#123;</span><br><span class="line">  background: #f8f8f8;</span><br><span class="line">  min-height: 100vh;</span><br><span class="line">  .index-hd &#123;</span><br><span class="line">    padding: 80px 10px;</span><br><span class="line">    text-align: center;</span><br><span class="line">    .index-logo &#123;</span><br><span class="line">      width: 40px;</span><br><span class="line">      height: 40px;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">    &#125;</span><br><span class="line">    .title-text &#123;</span><br><span class="line">      display: inline-block;</span><br><span class="line">      vertical-align: middle;</span><br><span class="line">      font-size: 28px;</span><br><span class="line">      margin-left: 12px;</span><br><span class="line">      font-weight: 400;</span><br><span class="line">      font-family: &#39;Dosis&#39;, &#39;Source Sans Pro&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>基于Merkle tree的安全技术研究与应用</title>
@@ -1090,6 +1073,29 @@ print(&quot;这一块写函数的内容&quot;)</code></pre><p> 2.方法定义的
 <p>8    资料收集，整理软件设计数据与图表    05.15-05.20 </p>
 <p>9    撰写毕业论文、英文翻译    05.20-05.28 </p>
 <p>10    论文答辩    05.28-06.05</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>基于默克尔树的POW方案</title>
+    <url>/2020/04/29/%E5%9F%BA%E4%BA%8E%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%E7%9A%84POW%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="基于默克尔树的POW方案"><a href="#基于默克尔树的POW方案" class="headerlink" title="基于默克尔树的POW方案"></a>基于默克尔树的POW方案</h2><a id="more"></a> 
+<h2 id="默克尔树"><a href="#默克尔树" class="headerlink" title="默克尔树"></a>默克尔树</h2><p>默克尔树包括生成过程和验证过程  </p>
+<h2 id="默克尔树的构建过程"><a href="#默克尔树的构建过程" class="headerlink" title="默克尔树的构建过程"></a>默克尔树的构建过程</h2><p> 默克尔树是一种深度为d的二叉树，总节点个数为2d+1- 1,其中叶子节点个数为2d。<br>为了得到根哈希no，首先将要验证的数据cache依次存入到默克尔树的叶子节点中，然<br>后选择–种单向哈希函数H计算出每个叶子节点的哈希值nzd-1,.，.n2d+1_2,然后内部<br>节点进行两两结合运算H(n2+1lln2:+2)得到n，最终得到一个树根no，这个树根叫做根<br>哈希。非叶子第i个节点的两个子节点分别为n2+1和n2i+2。默克尔树如图3.1所示。<br>构建默克尔树的输入值是一个伪随机数集合cache,而输出值是默克尔树的所有节<br>点值n,1…n.+-.,.2+1-2,2+<br>2。默克尔树计算根哈希函数GetMerkleHash()过程如表3 1<br>所示。</p>
+<p>第1<del>2步，首先填充默克尔树的所有叶子节点。由图1可以发现默克尔树的叶子节<br>点编号从2d- 1开始，共有20个叶子节点。将伪随机数集合cache的每个字节数据的哈<br>希值依次填充到叶子节点中。<br>第3</del>4步，计算内部节点的哈希值。因为编号为i的节点的子节点为n2i+1和n2i<br>2i+2，<br>则将子节点连接，然后作为哈希函数H的输入值得到相应的哈希值nio依次类推，注意，</p>
+<p>计算内部节点的时候先从较大编号的节点开始，这是因为首先要计算子节点才能计算父<br>节点。<br>第5步，返回计算完成的所有默克尔树节.点.,…+.-.,2+12.2 </p>
+<h2 id="POW工作量证明"><a href="#POW工作量证明" class="headerlink" title="POW工作量证明"></a>POW工作量证明</h2><p>实现一个简单的挖矿 </p>
+<p>哈希碰撞 </p>
+]]></content>
+  </entry>
+  <entry>
+    <title>如何高效的找开源项目</title>
+    <url>/2020/04/29/%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E7%9A%84%E6%89%BE%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<h2 id="开源项目查找"><a href="#开源项目查找" class="headerlink" title="开源项目查找"></a>开源项目查找</h2><a id="more"></a>
+<p>In:name xxxx </p>
+<p>In:name xxxx stras:&gt;xxx forks:&gt;xxxx </p>
+<p>in:readme xxxx </p>
+<p>in :description languang:java pushed:&gt;2019-01-03</p>
+<p><img src="/.com//%5Cimages%5Cpasted-2.png" alt="upload successful"></p>
 ]]></content>
   </entry>
   <entry>
@@ -1202,112 +1208,6 @@ func pow(diff int,block *Block) string {
 </code></pre>]]></content>
   </entry>
   <entry>
-    <title>创世区块</title>
-    <url>/2020/04/29/%E5%88%9B%E4%B8%96%E5%8C%BA%E5%9D%97/</url>
-    <content><![CDATA[<h1 id="创世区块"><a href="#创世区块" class="headerlink" title="创世区块"></a>创世区块</h1><a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">package main</span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">	Prehsh string</span><br><span class="line">	&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">	HashCode string</span><br><span class="line">	&#x2F;&#x2F;shi jian chuo</span><br><span class="line">	TimeStamp string</span><br><span class="line">	&#x2F;&#x2F;dang xian wang luo de nan du xi shu</span><br><span class="line">	&#x2F;&#x2F;kong zhi ha xi you ji ge qian dao ling</span><br><span class="line">	Diff int</span><br><span class="line">	&#x2F;&#x2F;cun jiao yi xin xi</span><br><span class="line">	Data string</span><br><span class="line">	&#x2F;&#x2F;qu kuai gao du</span><br><span class="line">	Index int</span><br><span class="line">	&#x2F;&#x2F;sui ji zhi</span><br><span class="line">	Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;chuang jian chuang shi qu kuai (lian zhong de di yi ge qukuai)</span><br><span class="line">func  GrnerateFirstBlock(data string)  Block &#123;</span><br><span class="line">	&#x2F;&#x2F;fangfa jiao yi xi xin fan hui yi ge qu kaui</span><br><span class="line">	&#x2F;&#x2F;sheng ming bing fu zhi yige kuai jiang di yi ge qukuai fanhui</span><br><span class="line">	&#x2F;&#x2F;创建第一个区块</span><br><span class="line">	var firstblock Block</span><br><span class="line">	firstblock.Prehsh&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">	firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">	firstblock.Diff&#x3D;4</span><br><span class="line">	firstblock.Data&#x3D;data</span><br><span class="line">	firstblock.Index&#x3D;1</span><br><span class="line">	firstblock.Nonce&#x3D;0</span><br><span class="line">	firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">	return firstblock</span><br><span class="line">	&#x2F;&#x2F;当前块的哈希</span><br><span class="line">	&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">	var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">		strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">	&#x2F;&#x2F;哈希算法</span><br><span class="line">	var sha  &#x3D; sha256.New()</span><br><span class="line">	sha.Write([]byte(hashdata))</span><br><span class="line">	hashed :&#x3D;sha.Sum(b：nil)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main ()</span><br><span class="line">&#x2F;&#x2F;创建创世区块</span><br><span class="line">firstBlock :&#x3D;GrnerateFirstBlock(data:&quot;创世区块&quot;)</span><br><span class="line">fmt.Println(firstBlock)</span><br><span class="line">fmt.Println(firstBlock.Data)</span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line">~~~ </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">package main</span><br><span class="line"></span><br><span class="line">import (</span><br><span class="line">	&quot;crypto&#x2F;sha256&quot;</span><br><span class="line">	&quot;encoding&#x2F;hex&quot;</span><br><span class="line">	&quot;fmt&quot;</span><br><span class="line">	&quot;strconv&quot;</span><br><span class="line">	&quot;time&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;Type结构体</span><br><span class="line">&#x2F;&#x2F;声明区块的结构体 Block名称</span><br><span class="line">type Block struct &#123;</span><br><span class="line">&#x2F;&#x2F; 上一个区块的哈希</span><br><span class="line">PreHash string</span><br><span class="line">&#x2F;&#x2F;当前区块的哈希</span><br><span class="line">HashCode string</span><br><span class="line">&#x2F;&#x2F;时间戳</span><br><span class="line">TimeStamp string</span><br><span class="line">&#x2F;&#x2F;当前网络难度系数</span><br><span class="line">&#x2F;&#x2F;控制哈希有几个前导0</span><br><span class="line">Diff int</span><br><span class="line">&#x2F;&#x2F;存储交易信息</span><br><span class="line">Data string</span><br><span class="line">&#x2F;&#x2F;区块高度</span><br><span class="line">Index int</span><br><span class="line">&#x2F;&#x2F;随机值</span><br><span class="line">Nonce int</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;创建创世区块(链中第一个区块)</span><br><span class="line">func  GenerateFirstBlock(data string)  Block &#123;</span><br><span class="line">&#x2F;&#x2F;创建第一个区块</span><br><span class="line">var firstblock Block</span><br><span class="line">firstblock.PreHash&#x3D;&quot;&#39;0&#39;&quot;</span><br><span class="line">firstblock.TimeStamp&#x3D;time.Now().String()</span><br><span class="line">firstblock.Diff&#x3D;4</span><br><span class="line">firstblock.Data&#x3D;data</span><br><span class="line">firstblock.Index&#x3D;1</span><br><span class="line">firstblock.Nonce&#x3D;0</span><br><span class="line">firstblock.HashCode &#x3D;GenerationHashValue(firstblock)</span><br><span class="line">return firstblock</span><br><span class="line">&#x2F;&#x2F;当前块的哈希</span><br><span class="line">&#x2F;&#x2F;用SHA256算一个真正的哈希</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;生成区块的哈希值</span><br><span class="line">func GenerationHashValue(block Block)string &#123;</span><br><span class="line">var hashdata &#x3D; strconv.Itoa(block.Index) + strconv.Itoa(block.Nonce) +</span><br><span class="line">strconv.Itoa(block.Diff) +block.TimeStamp</span><br><span class="line">&#x2F;&#x2F;哈希算法</span><br><span class="line">var sha  &#x3D; sha256.New()</span><br><span class="line">sha.Write([]byte(hashdata))</span><br><span class="line">hashed :&#x3D; sha.Sum( nil)</span><br><span class="line">return hex.EncodeToString(hashed)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">func main () &#123;</span><br><span class="line">	&#x2F;&#x2F;创建创世区块</span><br><span class="line">	firstBlock :&#x3D;GenerateFirstBlock(&quot;创世区块&quot;)</span><br><span class="line"></span><br><span class="line">	fmt.Println(firstBlock)</span><br><span class="line">	fmt.Println(firstBlock.Data)</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>My awesome title</title>
-    <url>/2016/10/12/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>分类1</category>
-        <category>分类2</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>循环精灵图</title>
-    <url>/2020/04/26/%E7%8E%AF%E7%B2%BE%E7%81%B5%E5%9B%BE/</url>
-    <content><![CDATA[<h1 id="好玩的东西"><a href="#好玩的东西" class="headerlink" title="好玩的东西"></a>好玩的东西</h1><a id="more"></a> 
-
-<p>for循环改变精灵图背景位置 </p>
-<p>坐标规律 </p>
-<p>1、获取元素 </p>
-<pre><code>var lis = document . querySelectorAll( &apos;li &apos;
-</code></pre><p>2、进行遍历  </p>
-<pre><code>for (var i = 0; i &lt; lis.length; i++) {
-//让索引号乘以44就是每个li的背景y坐标 index就是我们的y坐标
-varindex=i*
-44;
-lis [i] . style. backgroundPosition = &apos;0 -&apos; + index +
-px&apos;;I
-
-</code></pre><p>创建<br>1.documentwrite<br>2. innerHTML<br>3. createElement  </p>
-<hr>
-<p>增</p>
-<ol>
-<li>appendChild</li>
-<li>insertBefore </li>
-</ol>
-<hr>
-<p>删<br>1.removeChild </p>
-<hr>
-<p>改<br>主要修改dom的元素属性, dom元素的内容，属性表单的值等<br>1.修改元素属性: src. href, te等<br>2.修改普通元素内容: innerHTML. innerText<br>3.修改表单元素: value. type, disabled等<br>4.修改元素样式: style. className </p>
-<hr>
-<p>查<br>主要获取查询dom的元素</p>
-<ol>
-<li>DOM提供的API方法: getElementByld. getElementsByTagName 古老用法不太推荐</li>
-<li>H5提供的新方法: querySelector. querySelectorAll 提倡</li>
-<li>利用节点操作获取元素:父(parentNode)、孔(children), 兄(previousElementSibling.<br>nextElementSibling)提倡 </li>
-</ol>
-<hr>
-<p>属性操作<br>主要针对于自定义属性。</p>
-<ol>
-<li>setAtribute :设置dom的属性值</li>
-<li>gettribute :得到dom的属性值</li>
-<li>removeAttribute移除属性 </li>
-</ol>
-<hr>
-]]></content>
-  </entry>
-  <entry>
-    <title>比特币毕设</title>
-    <url>/2020/04/27/%E7%89%B9%E5%B8%81%E6%AF%95%E8%AE%BE/</url>
-    <content><![CDATA[<h1 id="比特币毕设"><a href="#比特币毕设" class="headerlink" title="比特币毕设"></a>比特币毕设</h1><a id="more"></a>
-
-<p>main函数里放所有功能 </p>
-<p>打印区块  </p>
-<p>生成哈希 </p>
-<p>一个区块完了写另一个区块，完成区块链  </p>
-<p>区块链完成了，添加区块  </p>
-<p>将main函数拆分 </p>
-<p>把区块和区块链进行拆分 </p>
-<p>在区块里添加功能 </p>
-<p>补充区块字段、更新函数  </p>
-<p>工具文件 </p>
-<p>序列化  </p>
-<p> 主函数功能：<br> 生成一个区块、添加一个区块、For循环打印 </p>
-<p> 和Block和BlockChain配合  </p>
-<hr>
-<p> 工作量证明是在区块里的，进行哈希计算 </p>
-<p> 挖矿 不断更新哈希函数进行不断计算 </p>
-<p> 算哈希，比较Nonce,校验 </p>
-<p> 定义一个工作量证明结构 </p>
-<p> 目标值 </p>
-<p> 创建POW函数 </p>
-<p> 将POW功能写人Block </p>
-<p> 校验哈希 </p>
-<p> 补充字段打印难度 </p>
-<hr>
-<p> 引入数据库</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>悬浮窗</title>
-    <url>/2020/05/09/%E7%AA%97/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;van-list v-model&#x3D;&quot;loading&quot; :finished&#x3D;&quot;finished&quot; finished-text&#x3D;&quot;没有更多了&quot; @load&#x3D;&quot;onLoad&quot;&gt;</span><br><span class="line">        &lt;van-cell v-for&#x3D;&quot;item in list&quot; :key&#x3D;&quot;item&quot; :title&#x3D;&quot;&#96;我是你的小仙女，爱你第$&#123;item&#125;遍&#96;&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;van-list&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;float-icons padding&#x3D;&quot;6 10 60 10&quot; class&#x3D;&quot;icons-warp&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;home-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;home&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;首页&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;cart-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;cart&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;购物车&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;float-icons&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import FloatIcons from &#39;@&#x2F;components&#x2F;s-icons&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;Icons&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    &#39;float-icons&#39;: FloatIcons</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      loading: false,</span><br><span class="line">      finished: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  computed: &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  mounted() &#123;</span><br><span class="line">    console.log(&#39;222&#39;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  methods: &#123;</span><br><span class="line">    onLoad() &#123;</span><br><span class="line">      &#x2F;&#x2F; 异步更新数据</span><br><span class="line">      setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">        for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">          this.list.push(this.list.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 加载状态结束</span><br><span class="line">        this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">        if (this.list.length &gt;&#x3D; 40) &#123;</span><br><span class="line">          this.finished &#x3D; true</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 500)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F; 点击按钮</span><br><span class="line">    handleIcons(router) &#123;</span><br><span class="line">      console.log(&#39;router&#39;, router)</span><br><span class="line">      this.$router.push(router)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">h1 &#123;</span><br><span class="line">  background: red;</span><br><span class="line">  width: 375px;</span><br><span class="line">&#125;</span><br><span class="line">.icons-warp &#123;</span><br><span class="line">  border-radius: 25px;</span><br><span class="line">  .float-icon-item &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: column;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    img &#123;</span><br><span class="line">      width: 25px;</span><br><span class="line">      height: 25px;</span><br><span class="line">      margin-bottom: 3px;</span><br><span class="line">    &#125;</span><br><span class="line">    span &#123;</span><br><span class="line">      font-size: 9px;</span><br><span class="line">      color: #666666;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>路由跳转</title>
-    <url>/2020/05/08/%E8%B7%B3%E8%BD%AC/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"> &#x2F;&#x2F; 字符串</span><br><span class="line">this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)</span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">this.$router.push(&#123; path: &#39;&#x2F;home&#x2F;first&#39; &#125;)</span><br><span class="line">&#x2F;&#x2F; 命名的路由</span><br><span class="line">this.$router.push(&#123; name: &#39;home&#39;, params: &#123; userId: wise &#125;&#125;)</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>欢迎来到这里，我是微笑的风</title>
     <url>/2020/04/16/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E8%BF%99%E9%87%8C%EF%BC%8C%E6%88%91%E6%98%AF%E5%BE%AE%E7%AC%91%E7%9A%84%E9%A3%8E/</url>
     <content><![CDATA[<h1 id="初见Markdown"><a href="#初见Markdown" class="headerlink" title="初见Markdown"></a>初见Markdown</h1><a id="more"></a>
@@ -1374,35 +1274,98 @@ px&apos;;I
 ]]></content>
   </entry>
   <entry>
-    <title>底部导航栏</title>
-    <url>/2020/05/09/%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F/</url>
-    <content><![CDATA[<h1 id="底部导航栏"><a href="#底部导航栏" class="headerlink" title="底部导航栏"></a>底部导航栏</h1><pre><code>&lt;!-- 底部导航栏 --&gt;
-&lt;van-tabbar route
-  v-model=&quot;active&quot;
-  active-color=&quot;#f44&quot;&gt;
-  &lt;van-tabbar-item replace
-    to=&quot;/home&quot;
-    icon=&quot;home-o&quot;&gt;
-    首页
-  &lt;/van-tabbar-item&gt;
-  &lt;van-tabbar-item replace
-    to=&quot;/cart&quot;
-    icon=&quot;cart-o&quot;&gt;
-    购物车
-  &lt;/van-tabbar-item&gt;
-  &lt;van-tabbar-item replace
-    to=&quot;/user&quot;
-    icon=&quot;manager-o&quot;&gt;
-    我的
-  &lt;/van-tabbar-item&gt;
-&lt;/van-tabbar&gt;</code></pre>]]></content>
+    <title>My awesome title</title>
+    <url>/2016/10/12/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>分类1</category>
+        <category>分类2</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
   </entry>
   <entry>
-    <title>拖动菜单显示列表</title>
-    <url>/2020/05/09/%E8%8F%9C%E5%8D%95%E6%98%BE%E7%A4%BA%E5%88%97%E8%A1%A8/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">methods: &#123;</span><br><span class="line">  onLoad() &#123;</span><br><span class="line">    &#x2F;&#x2F; 异步更新数据</span><br><span class="line">    setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">      for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">        this.list.push(this.list.length + 1)</span><br><span class="line">      &#125;</span><br><span class="line">      &#x2F;&#x2F; 加载状态结束</span><br><span class="line">      this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">      &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">      if (this.list.length &gt;&#x3D; 210) &#123;</span><br><span class="line">        this.finished &#x3D; true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;, 500)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+    <title>比特币毕设</title>
+    <url>/2020/04/27/%E7%89%B9%E5%B8%81%E6%AF%95%E8%AE%BE/</url>
+    <content><![CDATA[<h1 id="比特币毕设"><a href="#比特币毕设" class="headerlink" title="比特币毕设"></a>比特币毕设</h1><a id="more"></a>
 
+<p>main函数里放所有功能 </p>
+<p>打印区块  </p>
+<p>生成哈希 </p>
+<p>一个区块完了写另一个区块，完成区块链  </p>
+<p>区块链完成了，添加区块  </p>
+<p>将main函数拆分 </p>
+<p>把区块和区块链进行拆分 </p>
+<p>在区块里添加功能 </p>
+<p>补充区块字段、更新函数  </p>
+<p>工具文件 </p>
+<p>序列化  </p>
+<p> 主函数功能：<br> 生成一个区块、添加一个区块、For循环打印 </p>
+<p> 和Block和BlockChain配合  </p>
+<hr>
+<p> 工作量证明是在区块里的，进行哈希计算 </p>
+<p> 挖矿 不断更新哈希函数进行不断计算 </p>
+<p> 算哈希，比较Nonce,校验 </p>
+<p> 定义一个工作量证明结构 </p>
+<p> 目标值 </p>
+<p> 创建POW函数 </p>
+<p> 将POW功能写人Block </p>
+<p> 校验哈希 </p>
+<p> 补充字段打印难度 </p>
+<hr>
+<p> 引入数据库</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>悬浮窗</title>
+    <url>/2020/05/09/%E7%AA%97/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;van-list v-model&#x3D;&quot;loading&quot; :finished&#x3D;&quot;finished&quot; finished-text&#x3D;&quot;没有更多了&quot; @load&#x3D;&quot;onLoad&quot;&gt;</span><br><span class="line">        &lt;van-cell v-for&#x3D;&quot;item in list&quot; :key&#x3D;&quot;item&quot; :title&#x3D;&quot;&#96;我是你的小仙女，爱你第$&#123;item&#125;遍&#96;&quot; &#x2F;&gt;</span><br><span class="line">      &lt;&#x2F;van-list&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;float-icons padding&#x3D;&quot;6 10 60 10&quot; class&#x3D;&quot;icons-warp&quot;&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;home-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;home&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;首页&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;float-icon-item&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;..&#x2F;..&#x2F;assets&#x2F;images&#x2F;cart-icon.png&quot; alt&#x3D;&quot;&quot; @click&#x3D;&quot;handleIcons(&#39;&#x2F;cart&#39;)&quot; &#x2F;&gt;</span><br><span class="line">        &lt;span&gt;购物车&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;float-icons&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import FloatIcons from &#39;@&#x2F;components&#x2F;s-icons&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;Icons&#39;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    &#39;float-icons&#39;: FloatIcons</span><br><span class="line">  &#125;,</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      list: [],</span><br><span class="line">      loading: false,</span><br><span class="line">      finished: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  computed: &#123;&#125;,</span><br><span class="line"></span><br><span class="line">  mounted() &#123;</span><br><span class="line">    console.log(&#39;222&#39;)</span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  methods: &#123;</span><br><span class="line">    onLoad() &#123;</span><br><span class="line">      &#x2F;&#x2F; 异步更新数据</span><br><span class="line">      setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">        for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">          this.list.push(this.list.length + 1)</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F; 加载状态结束</span><br><span class="line">        this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">        if (this.list.length &gt;&#x3D; 40) &#123;</span><br><span class="line">          this.finished &#x3D; true</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;, 500)</span><br><span class="line">    &#125;,</span><br><span class="line">    &#x2F;&#x2F; 点击按钮</span><br><span class="line">    handleIcons(router) &#123;</span><br><span class="line">      console.log(&#39;router&#39;, router)</span><br><span class="line">      this.$router.push(router)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;style lang&#x3D;&quot;scss&quot; scoped&gt;</span><br><span class="line">h1 &#123;</span><br><span class="line">  background: red;</span><br><span class="line">  width: 375px;</span><br><span class="line">&#125;</span><br><span class="line">.icons-warp &#123;</span><br><span class="line">  border-radius: 25px;</span><br><span class="line">  .float-icon-item &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">    flex-direction: column;</span><br><span class="line">    align-items: center;</span><br><span class="line">    justify-content: center;</span><br><span class="line">    position: relative;</span><br><span class="line">    width: 50px;</span><br><span class="line">    height: 50px;</span><br><span class="line">    img &#123;</span><br><span class="line">      width: 25px;</span><br><span class="line">      height: 25px;</span><br><span class="line">      margin-bottom: 3px;</span><br><span class="line">    &#125;</span><br><span class="line">    span &#123;</span><br><span class="line">      font-size: 9px;</span><br><span class="line">      color: #666666;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>循环精灵图</title>
+    <url>/2020/04/26/%E7%8E%AF%E7%B2%BE%E7%81%B5%E5%9B%BE/</url>
+    <content><![CDATA[<h1 id="好玩的东西"><a href="#好玩的东西" class="headerlink" title="好玩的东西"></a>好玩的东西</h1><a id="more"></a> 
 
+<p>for循环改变精灵图背景位置 </p>
+<p>坐标规律 </p>
+<p>1、获取元素 </p>
+<pre><code>var lis = document . querySelectorAll( &apos;li &apos;
+</code></pre><p>2、进行遍历  </p>
+<pre><code>for (var i = 0; i &lt; lis.length; i++) {
+//让索引号乘以44就是每个li的背景y坐标 index就是我们的y坐标
+varindex=i*
+44;
+lis [i] . style. backgroundPosition = &apos;0 -&apos; + index +
+px&apos;;I
+
+</code></pre><p>创建<br>1.documentwrite<br>2. innerHTML<br>3. createElement  </p>
+<hr>
+<p>增</p>
+<ol>
+<li>appendChild</li>
+<li>insertBefore </li>
+</ol>
+<hr>
+<p>删<br>1.removeChild </p>
+<hr>
+<p>改<br>主要修改dom的元素属性, dom元素的内容，属性表单的值等<br>1.修改元素属性: src. href, te等<br>2.修改普通元素内容: innerHTML. innerText<br>3.修改表单元素: value. type, disabled等<br>4.修改元素样式: style. className </p>
+<hr>
+<p>查<br>主要获取查询dom的元素</p>
+<ol>
+<li>DOM提供的API方法: getElementByld. getElementsByTagName 古老用法不太推荐</li>
+<li>H5提供的新方法: querySelector. querySelectorAll 提倡</li>
+<li>利用节点操作获取元素:父(parentNode)、孔(children), 兄(previousElementSibling.<br>nextElementSibling)提倡 </li>
+</ol>
+<hr>
+<p>属性操作<br>主要针对于自定义属性。</p>
+<ol>
+<li>setAtribute :设置dom的属性值</li>
+<li>gettribute :得到dom的属性值</li>
+<li>removeAttribute移除属性 </li>
+</ol>
+<hr>
 ]]></content>
   </entry>
   <entry>
@@ -1437,6 +1400,43 @@ px&apos;;I
 <h3 id="1-4-本文的文章结构（论文结构）"><a href="#1-4-本文的文章结构（论文结构）" class="headerlink" title="1.4 本文的文章结构（论文结构）"></a>1.4 本文的文章结构（论文结构）</h3><p>本章介绍了基于工作量证明机制的区块链挖矿算法的研究目的和意义，和以太坊智<br>能合约的应用前景，以及本文的研究内容及章节安排。<br>第2章介绍了区块链技术和应用过程中所涉及的相关区块链基础知识，其中主要介<br>绍了单向散列函数，51%攻击，典型工作量证明机制下的挖矿算法过程，以及挖矿设备.<br>的进化历程。<br>第3章介绍了默克尔树的构造过程和验证过程，分析了默克尔树的特点。根据默克<br>尔树的构造特点，提出了基于默克尔树的POW挖矿算法。该挖矿算法在构造挖矿默克<br>尔树的过程中需要生成大量的伪随机数，这个伪随机数填充到默克尔树的叶子节点中,.<br>继而逐层构建默克尔树。基于此，通过每层随机选择-一个节点，进而在挖矿过程中需要 </p>
 <p>占用大量的内存空间。经过分析，该方案在工作量验证过程中的时间复杂度和空间复杂<br>度小于单次挖矿的过程。因此，该方案满足工作量证明挖矿算法的要求。<br>第4章介绍了布隆过滤器的的特点，分析了布隆过滤器的特点。根据布隆过滤器的<br>特点，提出了基于布隆过滤器的POW挖矿算法。该挖矿算法在挖矿过程中根据一定的<br>概率挖矿成功。经过分析，该方案在工作量轻节点验证过程中的时间复杂度和空间复杂<br>度均小于单次挖矿的过程。因此，该方案可以作为工作量证明挖矿算法。<br>第5章介绍了以太坊智能合约的特点，介绍了传统的公钥证书发放过程可能产生的<br>问题。结合以太坊智能合约去中心化的特点，在此基础上提出了–种新的公钥证书发放<br>方案。用户和证书发布机构可以在不安全的网络环境中安全的传输用户证书。并且，使<br>用区块链登记公钥证书，可以有效的隐藏用户和证书发布机构的位置，保护隐私，降低<br>攻击者攻击的概率。<br>第.6章总结了全文的工作，并对未来工作进行展望。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>路由跳转</title>
+    <url>/2020/05/08/%E8%B7%B3%E8%BD%AC/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"> &#x2F;&#x2F; 字符串</span><br><span class="line">this.$router.push(&#39;&#x2F;home&#x2F;first&#39;)</span><br><span class="line">&#x2F;&#x2F; 对象</span><br><span class="line">this.$router.push(&#123; path: &#39;&#x2F;home&#x2F;first&#39; &#125;)</span><br><span class="line">&#x2F;&#x2F; 命名的路由</span><br><span class="line">this.$router.push(&#123; name: &#39;home&#39;, params: &#123; userId: wise &#125;&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>拖动菜单显示列表</title>
+    <url>/2020/05/09/%E8%8F%9C%E5%8D%95%E6%98%BE%E7%A4%BA%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">methods: &#123;</span><br><span class="line">  onLoad() &#123;</span><br><span class="line">    &#x2F;&#x2F; 异步更新数据</span><br><span class="line">    setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">      for (let i &#x3D; 0; i &lt; 10; i++) &#123;</span><br><span class="line">        this.list.push(this.list.length + 1)</span><br><span class="line">      &#125;</span><br><span class="line">      &#x2F;&#x2F; 加载状态结束</span><br><span class="line">      this.loading &#x3D; false</span><br><span class="line"></span><br><span class="line">      &#x2F;&#x2F; 数据全部加载完成</span><br><span class="line">      if (this.list.length &gt;&#x3D; 210) &#123;</span><br><span class="line">        this.finished &#x3D; true</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;, 500)</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>底部导航栏</title>
+    <url>/2020/05/09/%E9%83%A8%E5%AF%BC%E8%88%AA%E6%A0%8F/</url>
+    <content><![CDATA[<h1 id="底部导航栏"><a href="#底部导航栏" class="headerlink" title="底部导航栏"></a>底部导航栏</h1><pre><code>&lt;!-- 底部导航栏 --&gt;
+&lt;van-tabbar route
+  v-model=&quot;active&quot;
+  active-color=&quot;#f44&quot;&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/home&quot;
+    icon=&quot;home-o&quot;&gt;
+    首页
+  &lt;/van-tabbar-item&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/cart&quot;
+    icon=&quot;cart-o&quot;&gt;
+    购物车
+  &lt;/van-tabbar-item&gt;
+  &lt;van-tabbar-item replace
+    to=&quot;/user&quot;
+    icon=&quot;manager-o&quot;&gt;
+    我的
+  &lt;/van-tabbar-item&gt;
+&lt;/van-tabbar&gt;</code></pre>]]></content>
   </entry>
   <entry>
     <title>Spring Boot</title>
