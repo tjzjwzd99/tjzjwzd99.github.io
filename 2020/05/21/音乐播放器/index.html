@@ -563,7 +563,7 @@ export default {
       multiple
       @change=&quot;handleChange&quot;
     /&gt;
-  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
 .disk {
   position: relative;
   padding-top: 100%;
@@ -587,7 +587,7 @@ export default {
   background-position: center;
 }
 .disk_cover::after {
-  content: &#39;&#39;;
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -615,7 +615,160 @@ export default {
     transform: rotate(360deg);
   }
 }
-    &lt;/style&gt;</code></pre>
+    </style></code></pre>
+<h3 id="不懂的部分"><a href="#不懂的部分" class="headerlink" title="不懂的部分"></a>不懂的部分</h3><pre class=" language-vue"><code class="language-vue"><script>
+import { mapState, mapMutations } from 'vuex'
+
+export default {
+  data () {
+    return {
+      stopMatrix: ''
+    }
+  },
+  computed: {
+    ...mapState(['isPlaying', 'coverUrl'])
+  },
+  watch: {
+    isPlaying (val) {
+      if (!val) {
+        this.stopMatrix = window.getComputedStyle(this.$refs.cover).transform
+      } else {
+        const matrix = this.stopMatrix
+        this.stopMatrix = ''
+        const match = matrix.match(/^matrix\(([^,]+),([^,]+)/)
+        const [, sin, cos] = match || [0, 0, 0]
+        const deg = ((Math.atan2(cos, sin) / 2 / Math.PI) * 360) % 360
+        const styles = [...document.styleSheets]
+        styles.forEach(style => {
+          const rules = [...style.cssRules]
+          rules.forEach(rule => {
+            if (rule.type === rule.KEYFRAMES_RULE && rule.name === 'rotate') {
+              rule.cssRules[0].style.transform = `rotate(${deg}deg)`
+              rule.cssRules[1].style.transform = `rotate(${deg + 360}deg)`
+            }
+          })
+        })
+      }
+    }
+  },
+  methods: {
+    ...mapMutations(['togglePlay', 'changeCover']),
+    async handleChange () {
+        }
+      }
+
+</script></code></pre>
+<h2 id="编写player-js"><a href="#编写player-js" class="headerlink" title="编写player.js"></a>编写player.js</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Dispatcher</span> <span class="token punctuation">{</span>
+  constructor <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+
+  listen <span class="token punctuation">(</span>handler<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handlers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>handler<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  emit <span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handlers<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>handler <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      <span class="token function">handler</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Player</span> <span class="token punctuation">{</span>
+  constructor <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>audioContext <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AudioContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>playList <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>playIndex <span class="token operator">=</span> <span class="token number">0</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>emptyNode <span class="token operator">=</span> <span class="token punctuation">{</span>
+      file<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      offset<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+      start<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      source<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      buffer<span class="token punctuation">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onPlay <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dispatcher</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onPause <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dispatcher</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onChange <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dispatcher</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onReady <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Dispatcher</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">async</span> readAudioBuffer <span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      <span class="token punctuation">}</span>
+
+
+  <span class="token keyword">async</span> append <span class="token punctuation">(</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+
+  pause <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  stop <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  next <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+
+  prev <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+
+  <span class="token keyword">get</span> isEmpty <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">get</span> current <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">get</span> position <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">set</span> position <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">get</span> duration <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> player <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Player</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<h3 id="导入这个JS到DISK里"><a href="#导入这个JS到DISK里" class="headerlink" title="导入这个JS到DISK里"></a>导入这个JS到DISK里</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> player <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../player'</span></code></pre>
+<h3 id="写方法（DISK）"><a href="#写方法（DISK）" class="headerlink" title="写方法（DISK）"></a>写方法（DISK）</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">const</span> target <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>file
+      <span class="token keyword">const</span> files <span class="token operator">=</span> target<span class="token punctuation">.</span>files <span class="token operator">?</span> target<span class="token punctuation">.</span>files <span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>files<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> files<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">await</span> player<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>files<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+      target<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mounted <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    player<span class="token punctuation">.</span>onReady<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">changeCover</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    player<span class="token punctuation">.</span>onChange<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">changeCover</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    player<span class="token punctuation">.</span>onPlay<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">togglePlay</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    player<span class="token punctuation">.</span>onPause<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">togglePlay</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
             </div>
             <hr/>
 
