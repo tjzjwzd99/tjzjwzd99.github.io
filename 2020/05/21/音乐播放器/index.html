@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="typora-vue-theme Theme introduction, Hexo">
+    <meta name="keywords" content="音乐播放器, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>typora-vue-theme Theme introduction | Hexo</title>
+    <title>音乐播放器 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">typora-vue-theme Theme introduction</h1>
+                    <h1 class="description center-align post-title">音乐播放器</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
                             </a>
                         
-                            <a href="/tags/%E5%90%8E%E7%AB%AF/">
-                                <span class="chip bg-color">后端</span>
+                            <a href="/tags/api/">
+                                <span class="chip bg-color">api</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/JAVA/" class="post-category">
-                                JAVA
+                            <a href="/categories/vue/" class="post-category">
+                                vue
                             </a>
                         
                     </div>
@@ -475,30 +475,147 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>
+                <h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre><code>&lt;template&gt;
+  &lt;div class=&quot;home&quot;&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+.home {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffedff;
+}
+&lt;/style&gt;</code></pre><h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h3 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h3><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
+<p>在Home界面中导入写好的组件（此处关于vue组件的复用可以查阅资料）</p>
+<pre><code>&lt;script&gt;
+import Player from &#39;../components/Player.vue&#39;
+export default {
+  components: {
+    Player
+  }
+}
+&lt;/script&gt;</code></pre><h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre><code>&lt;template&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;div class=&quot;player_disk&quot;&gt;  &lt;/div&gt;
+    &lt;div class=&quot;player_control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;player_progress&quot;&gt; &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+.player {
+  position: relative;
+  display: flex;
+  max-width: 300px;
+  max-height: 75px;
+  width: 300px;
+  height: 75px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12),
+    0 20px 20px rgba(95, 23, 101, 0.2);
+}
+.player_disk {
+  flex: 1.2;
+  padding: 12px;
+}
+.player_control {
+  flex: 2;
+  padding: 12px 0;
+  padding-right: 12px;
+}
+.player_progress {
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  top: 0;
+  bottom: 25px;
+  z-index: -1;
+}
+&lt;/style&gt;</code></pre><h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre><code>&lt;template&gt;
+  &lt;div class=&quot;disk&quot;&gt;   
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre><code>&lt;script&gt;
+import Disk from &#39;./Disk.vue&#39;
+export default {
+  components: {
+    Disk,
+  }
+}
+&lt;/script&gt;</code></pre><h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre class=" language-vue"><code class="language-vue">  <disk /></code></pre>
+<h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre><code> &lt;div class=&quot;disk&quot;// :class=&quot;{ disk__playing: isPlaying }&quot;&gt;
+    &lt;label
+      class=&quot;disk_cover&quot;
+      ref=&quot;cover&quot;
+      for=&quot;file&quot;
+      :style=&quot;{
+        transform: stopMatrix,
+        backgroundImage: coverUrl ? `url(${coverUrl})` : &#39;&#39;
+      }&quot;
+    /&gt;
+    &lt;input
+      id=&quot;file&quot;
+      ref=&quot;file&quot;
+      type=&quot;file&quot;
+      accept=&quot;.mp3&quot;
+      multiple
+      @change=&quot;handleChange&quot;
+    /&gt;
+  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+.disk {
+  position: relative;
+  padding-top: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  transform: translateY(-50%) scale(0.88);
+  transform-origin: center bottom;
+  transition: all 0.6s ease;
+}
+.disk input {
+  display: none;
+}
+.disk_cover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background-image: radial-gradient(circle, #444 0%, #333 100%);
+  background-size: cover;
+  background-position: center;
+}
+.disk_cover::after {
+  content: &#39;&#39;;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-image: linear-gradient(45deg, white, #dabad1);
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.disk__playing {
+  transform: translateY(-50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
+    0 20px 20px -10px rgba(108, 29, 171, 0.3);
+}
+.disk__playing .disk_cover {
+  animation: rotate infinite 6s linear;
+}
+    @keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+    &lt;/style&gt;</code></pre>
             </div>
             <hr/>
 
@@ -523,7 +640,7 @@ JUC并发工具 </code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/">http://yoursite.com/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</a>
+                    <a href="http://yoursite.com/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">http://yoursite.com/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -561,12 +678,12 @@ JUC并发工具 </code></pre>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
                                 </a>
                             
-                                <a href="/tags/%E5%90%8E%E7%AB%AF/">
-                                    <span class="chip bg-color">后端</span>
+                                <a href="/tags/api/">
+                                    <span class="chip bg-color">api</span>
                                 </a>
                             
                         </div>
@@ -734,9 +851,10 @@ JUC并发工具 </code></pre>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">
                     <div class="card-image">
@@ -754,9 +872,9 @@ JUC并发工具 </code></pre>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -769,6 +887,7 @@ JUC并发工具 </code></pre>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -791,31 +910,31 @@ JUC并发工具 </code></pre>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/20/s%E6%98%AF%E4%B8%8D%E6%98%AF%E6%88%90%E5%8A%9F%E4%BA%86/">
+                <a href="/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="s是不是成功了">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="typora-vue-theme Theme introduction">
                         
-                        <span class="card-title">s是不是成功了</span>
+                        <span class="card-title">typora-vue-theme Theme introduction</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            This is the content of y
+                            本篇讲述了Java后端学习的路线
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/twst/" class="post-category">
-                                    twst
+                            <a href="/categories/JAVA/" class="post-category">
+                                    JAVA
                                 </a>
                             
                             
@@ -825,16 +944,12 @@ JUC并发工具 </code></pre>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
                     </a>
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/Sucess/">
-                        <span class="chip bg-color">Sucess</span>
+                    <a href="/tags/%E5%90%8E%E7%AB%AF/">
+                        <span class="chip bg-color">后端</span>
                     </a>
                     
                 </div>
