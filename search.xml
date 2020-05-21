@@ -1,13 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>BlinkFox常用配置</title>
+    <url>/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<pre><code>---
+ 标题：typora-vue-theme主题介绍
+日期：2018-09-07 09:25:00 
+作者：Qi Qi 
+img：/source/images/xxx.jpg 
+顶部：真实
+封面：真实
+封面图片
+：/ images / 1 .jpg 密码：8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 
+toc：错误
+mathjax：错误
+摘要：这是您的自定义帖子摘要的内容。如果此属性有一个值，则明信片摘要将显示文本，否则程序将自动截取部分帖子内容作为摘要。
+类别：Markdown 
+标签：
+  - Typora 
+  - 降价 
+---</code></pre><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">源码地址</a></p>
+]]></content>
+      <categories>
+        <category>Theme</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java学习路线（一）</title>
+    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<pre><code>基础语法
+面向对象
+接口
+容器
+异常
+泛型
+反射
+注释
+IO
+图形化（Swing）</code></pre><p>JVM </p>
+<pre><code>类加载机制 
+字节码执行机制
+JVM内存模型
+GC垃圾回收
+JVM性能监控与故障定位
+JVM调优</code></pre><p>并发多线程  </p>
+<pre><code>并发编程基础
+线程池
+锁
+并发容器
+原子类
+JUC并发工具 </code></pre>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>后端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>音乐播放器</title>
     <url>/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre class=" language-vue"><code class="language-vue"><template>
-  <div class="home">
-  </div>
-</template></code></pre>
-<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
+    <content><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre><code>&lt;template&gt;
+  &lt;div class=&quot;home&quot;&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
 .home {
   position: relative;
   z-index: 0;
@@ -18,25 +81,22 @@
   height: 100%;
   background-color: #ffedff;
 }
-</style></code></pre>
-<h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h2 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h2><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
+&lt;/style&gt;</code></pre><h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h2 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h2><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
 <p>在Home界面中导入写好的组件（此处关于vue组件的复用可以查阅资料）</p>
-<pre class=" language-vue"><code class="language-vue"><script>
-import Player from '../components/Player.vue'
+<pre><code>&lt;script&gt;
+import Player from &#39;../components/Player.vue&#39;
 export default {
   components: {
     Player
   }
 }
-</script></code></pre>
-<h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre class=" language-vue"><code class="language-vue"><template>
-  <div class="player">
-    <div class="player_disk">  </div>
-    <div class="player_control"></div>
-    <div class="player_progress"> </div>
-  </div>
-</template></code></pre>
-<h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
+&lt;/script&gt;</code></pre><h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre><code>&lt;template&gt;
+  &lt;div class=&quot;player&quot;&gt;
+    &lt;div class=&quot;player_disk&quot;&gt;  &lt;/div&gt;
+    &lt;div class=&quot;player_control&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;player_progress&quot;&gt; &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
 .player {
   position: relative;
   display: flex;
@@ -66,12 +126,10 @@ export default {
   bottom: 25px;
   z-index: -1;
 }
-</style></code></pre>
-<h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre class=" language-vue"><code class="language-vue"><template>
-  <div class="disk">   
-  </div>
-</template></code></pre>
-<h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre class=" language-vue"><code class="language-vue"><script>
+&lt;/style&gt;</code></pre><h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre><code>&lt;template&gt;
+  &lt;div class=&quot;disk&quot;&gt;   
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre><h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre class=" language-vue"><code class="language-vue"><script>
 import Disk from './Disk.vue'
 export default {
   components: {
@@ -79,8 +137,7 @@ export default {
   }
 }
 </script></code></pre>
-<h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre class=" language-vue"><code class="language-vue">  <disk /></code></pre>
-<h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre><code> &lt;div class=&quot;disk&quot;// :class=&quot;{ disk__playing: isPlaying }&quot;&gt;
+<h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre><code>  &lt;disk /&gt;</code></pre><h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre><code> &lt;div class=&quot;disk&quot;// :class=&quot;{ disk__playing: isPlaying }&quot;&gt;
     &lt;label
       class=&quot;disk_cover&quot;
       ref=&quot;cover&quot;
@@ -98,7 +155,7 @@ export default {
       multiple
       @change=&quot;handleChange&quot;
     /&gt;
-  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
+  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
 .disk {
   position: relative;
   padding-top: 100%;
@@ -122,7 +179,7 @@ export default {
   background-position: center;
 }
 .disk_cover::after {
-  content: '';
+  content: &#39;&#39;;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -150,18 +207,17 @@ export default {
     transform: rotate(360deg);
   }
 }
-    </style></code></pre>
-<h3 id="不懂的部分"><a href="#不懂的部分" class="headerlink" title="不懂的部分"></a>不懂的部分</h3><pre class=" language-vue"><code class="language-vue"><script>
-import { mapState, mapMutations } from 'vuex'
+    &lt;/style&gt;</code></pre><h3 id="不懂的部分"><a href="#不懂的部分" class="headerlink" title="不懂的部分"></a>不懂的部分</h3><pre><code>&lt;script&gt;
+import { mapState, mapMutations } from &#39;vuex&#39;
 
 export default {
   data () {
     return {
-      stopMatrix: ''
+      stopMatrix: &#39;&#39;
     }
   },
   computed: {
-    ...mapState(['isPlaying', 'coverUrl'])
+    ...mapState([&#39;isPlaying&#39;, &#39;coverUrl&#39;])
   },
   watch: {
     isPlaying (val) {
@@ -169,15 +225,15 @@ export default {
         this.stopMatrix = window.getComputedStyle(this.$refs.cover).transform
       } else {
         const matrix = this.stopMatrix
-        this.stopMatrix = ''
+        this.stopMatrix = &#39;&#39;
         const match = matrix.match(/^matrix\(([^,]+),([^,]+)/)
         const [, sin, cos] = match || [0, 0, 0]
         const deg = ((Math.atan2(cos, sin) / 2 / Math.PI) * 360) % 360
         const styles = [...document.styleSheets]
-        styles.forEach(style => {
+        styles.forEach(style =&gt; {
           const rules = [...style.cssRules]
-          rules.forEach(rule => {
-            if (rule.type === rule.KEYFRAMES_RULE && rule.name === 'rotate') {
+          rules.forEach(rule =&gt; {
+            if (rule.type === rule.KEYFRAMES_RULE &amp;&amp; rule.name === &#39;rotate&#39;) {
               rule.cssRules[0].style.transform = `rotate(${deg}deg)`
               rule.cssRules[1].style.transform = `rotate(${deg + 360}deg)`
             }
@@ -187,13 +243,12 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['togglePlay', 'changeCover']),
+    ...mapMutations([&#39;togglePlay&#39;, &#39;changeCover&#39;]),
     async handleChange () {
         }
       }
 
-</script></code></pre>
-<h2 id="编写player-js"><a href="#编写player-js" class="headerlink" title="编写player.js"></a>编写player.js</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Dispatcher</span> <span class="token punctuation">{</span>
+&lt;/script&gt;</code></pre><h2 id="编写player-js"><a href="#编写player-js" class="headerlink" title="编写player.js"></a>编写player.js</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Dispatcher</span> <span class="token punctuation">{</span>
   constructor <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
   <span class="token punctuation">}</span>
@@ -303,6 +358,8 @@ export default {
     <span class="token punctuation">}</span><span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code></pre>
+<p><a href="https://github.com/lizzz0523/limni/tree/master/music-player" target="_blank" rel="noopener">源代码</a></p>
+<p><a href="https://www.bilibili.com/video/BV1xE411Y7TA" target="_blank" rel="noopener">教学</a></p>
 ]]></content>
       <categories>
         <category>vue</category>
@@ -310,41 +367,6 @@ export default {
       <tags>
         <tag>api</tag>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java学习路线（一）</title>
-    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>后端</tag>
       </tags>
   </entry>
 </search>
