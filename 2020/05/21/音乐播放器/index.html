@@ -475,10 +475,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre><code>&lt;template&gt;
-  &lt;div class=&quot;home&quot;&gt;
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+                <h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre class=" language-vue"><code class="language-vue"><template>
+  <div class="home">
+  </div>
+</template></code></pre>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
 .home {
   position: relative;
   z-index: 0;
@@ -489,22 +490,25 @@
   height: 100%;
   background-color: #ffedff;
 }
-&lt;/style&gt;</code></pre><h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h3 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h3><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
+</style></code></pre>
+<h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h2 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h2><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
 <p>在Home界面中导入写好的组件（此处关于vue组件的复用可以查阅资料）</p>
-<pre><code>&lt;script&gt;
-import Player from &#39;../components/Player.vue&#39;
+<pre class=" language-vue"><code class="language-vue"><script>
+import Player from '../components/Player.vue'
 export default {
   components: {
     Player
   }
 }
-&lt;/script&gt;</code></pre><h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre><code>&lt;template&gt;
-  &lt;div class=&quot;player&quot;&gt;
-    &lt;div class=&quot;player_disk&quot;&gt;  &lt;/div&gt;
-    &lt;div class=&quot;player_control&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;player_progress&quot;&gt; &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+</script></code></pre>
+<h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre class=" language-vue"><code class="language-vue"><template>
+  <div class="player">
+    <div class="player_disk">  </div>
+    <div class="player_control"></div>
+    <div class="player_progress"> </div>
+  </div>
+</template></code></pre>
+<h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre class=" language-vue"><code class="language-vue"><style lang="scss">
 .player {
   position: relative;
   display: flex;
@@ -534,17 +538,20 @@ export default {
   bottom: 25px;
   z-index: -1;
 }
-&lt;/style&gt;</code></pre><h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre><code>&lt;template&gt;
-  &lt;div class=&quot;disk&quot;&gt;   
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre><code>&lt;script&gt;
-import Disk from &#39;./Disk.vue&#39;
+</style></code></pre>
+<h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre class=" language-vue"><code class="language-vue"><template>
+  <div class="disk">   
+  </div>
+</template></code></pre>
+<h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre class=" language-vue"><code class="language-vue"><script>
+import Disk from './Disk.vue'
 export default {
   components: {
     Disk,
   }
 }
-&lt;/script&gt;</code></pre><h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre class=" language-vue"><code class="language-vue">  <disk /></code></pre>
+</script></code></pre>
+<h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre class=" language-vue"><code class="language-vue">  <disk /></code></pre>
 <h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre><code> &lt;div class=&quot;disk&quot;// :class=&quot;{ disk__playing: isPlaying }&quot;&gt;
     &lt;label
       class=&quot;disk_cover&quot;
