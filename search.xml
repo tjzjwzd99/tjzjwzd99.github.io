@@ -1,76 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>BlinkFox常用配置</title>
-    <url>/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<pre><code>---
- 标题：typora-vue-theme主题介绍
-日期：2018-09-07 09:25:00 
-作者：Qi Qi 
-img：/source/images/xxx.jpg 
-顶部：真实
-封面：真实
-封面图片
-：/ images / 1 .jpg 密码：8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 
-toc：错误
-mathjax：错误
-摘要：这是您的自定义帖子摘要的内容。如果此属性有一个值，则明信片摘要将显示文本，否则程序将自动截取部分帖子内容作为摘要。
-类别：Markdown 
-标签：
-  - Typora 
-  - 降价 
----</code></pre><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">源码地址</a></p>
-]]></content>
-      <categories>
-        <category>Theme</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java学习路线（一）</title>
-    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>后端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>音乐播放器</title>
     <url>/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre><code>&lt;template&gt;
-  &lt;div class=&quot;home&quot;&gt;
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
+    <content><![CDATA[<h1 id="First"><a href="#First" class="headerlink" title="First"></a>First</h1><h2 id="Home页面初始化"><a href="#Home页面初始化" class="headerlink" title="Home页面初始化"></a>Home页面初始化</h2><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"home"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></code></pre>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
 .home {
   position: relative;
   z-index: 0;
@@ -83,172 +20,180 @@ JUC并发工具 </code></pre>]]></content>
 }
 &lt;/style&gt;</code></pre><h1 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h1><h2 id="从View切换到Componet"><a href="#从View切换到Componet" class="headerlink" title="从View切换到Componet"></a>从View切换到Componet</h2><h3 id="编写player组件"><a href="#编写player组件" class="headerlink" title="编写player组件"></a>编写player组件</h3><p><del>此处只写一个template标签，随后切换回View/home</del></p>
 <p>在Home界面中导入写好的组件（此处关于vue组件的复用可以查阅资料）</p>
-<pre><code>&lt;script&gt;
-import Player from &#39;../components/Player.vue&#39;
-export default {
-  components: {
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> Player <span class="token keyword">from</span> <span class="token string">'../components/Player.vue'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     Player
-  }
-}
-&lt;/script&gt;</code></pre><h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre><code>&lt;template&gt;
-  &lt;div class=&quot;player&quot;&gt;
-    &lt;div class=&quot;player_disk&quot;&gt;  &lt;/div&gt;
-    &lt;div class=&quot;player_control&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;player_progress&quot;&gt; &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
-.player {
-  position: relative;
-  display: flex;
-  max-width: 300px;
-  max-height: 75px;
-  width: 300px;
-  height: 75px;
-  border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12),
-    0 20px 20px rgba(95, 23, 101, 0.2);
-}
-.player_disk {
-  flex: 1.2;
-  padding: 12px;
-}
-.player_control {
-  flex: 2;
-  padding: 12px 0;
-  padding-right: 12px;
-}
-.player_progress {
-  position: absolute;
-  left: 9px;
-  right: 9px;
-  top: 0;
-  bottom: 25px;
-  z-index: -1;
-}
-&lt;/style&gt;</code></pre><h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre><code>&lt;template&gt;
-  &lt;div class=&quot;disk&quot;&gt;   
-  &lt;/div&gt;
-&lt;/template&gt;</code></pre><h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre class=" language-vue"><code class="language-vue"><script>
-import Disk from './Disk.vue'
-export default {
-  components: {
-    Disk,
-  }
-}
-</script></code></pre>
-<h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre><code>  &lt;disk /&gt;</code></pre><h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre><code> &lt;div class=&quot;disk&quot;// :class=&quot;{ disk__playing: isPlaying }&quot;&gt;
-    &lt;label
-      class=&quot;disk_cover&quot;
-      ref=&quot;cover&quot;
-      for=&quot;file&quot;
-      :style=&quot;{
-        transform: stopMatrix,
-        backgroundImage: coverUrl ? `url(${coverUrl})` : &#39;&#39;
-      }&quot;
-    /&gt;
-    &lt;input
-      id=&quot;file&quot;
-      ref=&quot;file&quot;
-      type=&quot;file&quot;
-      accept=&quot;.mp3&quot;
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<h2 id="返回编写Player组件"><a href="#返回编写Player组件" class="headerlink" title="返回编写Player组件"></a>返回编写Player组件</h2><h3 id="First-盒子"><a href="#First-盒子" class="headerlink" title="First-盒子"></a>First-盒子</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"player"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"player_disk"</span><span class="token operator">></span>  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"player_control"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"player_progress"</span><span class="token operator">></span> <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></code></pre>
+<h3 id="Second-样式"><a href="#Second-样式" class="headerlink" title="Second-样式"></a>Second-样式</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>style lang<span class="token operator">=</span><span class="token string">"scss"</span><span class="token operator">></span>
+<span class="token punctuation">.</span>player <span class="token punctuation">{</span>
+  position<span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  display<span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+  max<span class="token operator">-</span>width<span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  max<span class="token operator">-</span>height<span class="token punctuation">:</span> 75px<span class="token punctuation">;</span>
+  width<span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  height<span class="token punctuation">:</span> 75px<span class="token punctuation">;</span>
+  border<span class="token operator">-</span>radius<span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+  background<span class="token operator">-</span>color<span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+  box<span class="token operator">-</span>shadow<span class="token punctuation">:</span> <span class="token number">0</span> 30px 60px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.12</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token number">0</span> 20px 20px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">95</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">101</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>player_disk <span class="token punctuation">{</span>
+  flex<span class="token punctuation">:</span> <span class="token number">1.2</span><span class="token punctuation">;</span>
+  padding<span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>player_control <span class="token punctuation">{</span>
+  flex<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  padding<span class="token punctuation">:</span> 12px <span class="token number">0</span><span class="token punctuation">;</span>
+  padding<span class="token operator">-</span>right<span class="token punctuation">:</span> 12px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>player_progress <span class="token punctuation">{</span>
+  position<span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  left<span class="token punctuation">:</span> 9px<span class="token punctuation">;</span>
+  right<span class="token punctuation">:</span> 9px<span class="token punctuation">;</span>
+  top<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  bottom<span class="token punctuation">:</span> 25px<span class="token punctuation">;</span>
+  z<span class="token operator">-</span>index<span class="token punctuation">:</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span></code></pre>
+<h3 id="跳转到Compent中编写Disk组件"><a href="#跳转到Compent中编写Disk组件" class="headerlink" title="跳转到Compent中编写Disk组件"></a>跳转到Compent中编写Disk组件</h3><h4 id="先写template"><a href="#先写template" class="headerlink" title="先写template"></a>先写template</h4><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"disk"</span><span class="token operator">></span>   
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></code></pre>
+<h6 id="把Disk导入到Player中"><a href="#把Disk导入到Player中" class="headerlink" title="把Disk导入到Player中"></a>把Disk导入到Player中</h6><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> Disk <span class="token keyword">from</span> <span class="token string">'./Disk.vue'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    Disk<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<h1 id="插入Disk组件"><a href="#插入Disk组件" class="headerlink" title="插入Disk组件"></a>插入Disk组件</h1><pre class=" language-js"><code class="language-js">  <span class="token operator">&lt;</span>disk <span class="token operator">/</span><span class="token operator">></span></code></pre>
+<h1 id="不懂的部分-上传文件"><a href="#不懂的部分-上传文件" class="headerlink" title="不懂的部分-上传文件"></a>不懂的部分-上传文件</h1><pre class=" language-js"><code class="language-js"> <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"disk"</span><span class="token comment" spellcheck="true">// :class="{ disk__playing: isPlaying }"></span>
+    <span class="token operator">&lt;</span>label
+      <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"disk_cover"</span>
+      ref<span class="token operator">=</span><span class="token string">"cover"</span>
+      <span class="token keyword">for</span><span class="token operator">=</span><span class="token string">"file"</span>
+      <span class="token punctuation">:</span>style<span class="token operator">=</span>"<span class="token punctuation">{</span>
+        transform<span class="token punctuation">:</span> stopMatrix<span class="token punctuation">,</span>
+        backgroundImage<span class="token punctuation">:</span> coverUrl <span class="token operator">?</span> <span class="token template-string"><span class="token string">`url(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>coverUrl<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">)`</span></span> <span class="token punctuation">:</span> <span class="token string">''</span>
+      <span class="token punctuation">}</span>"
+    <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>input
+      id<span class="token operator">=</span><span class="token string">"file"</span>
+      ref<span class="token operator">=</span><span class="token string">"file"</span>
+      type<span class="token operator">=</span><span class="token string">"file"</span>
+      accept<span class="token operator">=</span><span class="token string">".mp3"</span>
       multiple
-      @change=&quot;handleChange&quot;
-    /&gt;
-  &lt;/div&gt;</code></pre><h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre><code>&lt;style lang=&quot;scss&quot;&gt;
-.disk {
-  position: relative;
-  padding-top: 100%;
-  border-radius: 100%;
-  overflow: hidden;
-  transform: translateY(-50%) scale(0.88);
-  transform-origin: center bottom;
-  transition: all 0.6s ease;
-}
-.disk input {
-  display: none;
-}
-.disk_cover {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  background-image: radial-gradient(circle, #444 0%, #333 100%);
-  background-size: cover;
-  background-position: center;
-}
-.disk_cover::after {
-  content: &#39;&#39;;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -8px;
-  margin-top: -8px;
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  background-image: linear-gradient(45deg, white, #dabad1);
-  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-.disk__playing {
-  transform: translateY(-50%);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
-    0 20px 20px -10px rgba(108, 29, 171, 0.3);
-}
-.disk__playing .disk_cover {
-  animation: rotate infinite 6s linear;
-}
-    @keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-    &lt;/style&gt;</code></pre><h3 id="不懂的部分"><a href="#不懂的部分" class="headerlink" title="不懂的部分"></a>不懂的部分</h3><pre><code>&lt;script&gt;
-import { mapState, mapMutations } from &#39;vuex&#39;
+      @change<span class="token operator">=</span><span class="token string">"handleChange"</span>
+    <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<h3 id="编写Disk的CSS"><a href="#编写Disk的CSS" class="headerlink" title="编写Disk的CSS"></a>编写Disk的CSS</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>style lang<span class="token operator">=</span><span class="token string">"scss"</span><span class="token operator">></span>
+<span class="token punctuation">.</span>disk <span class="token punctuation">{</span>
+  position<span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  padding<span class="token operator">-</span>top<span class="token punctuation">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  border<span class="token operator">-</span>radius<span class="token punctuation">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  overflow<span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  transform<span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">)</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">0.88</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  transform<span class="token operator">-</span>origin<span class="token punctuation">:</span> center bottom<span class="token punctuation">;</span>
+  transition<span class="token punctuation">:</span> all <span class="token number">0</span><span class="token punctuation">.</span>6s ease<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>disk input <span class="token punctuation">{</span>
+  display<span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>disk_cover <span class="token punctuation">{</span>
+  position<span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  top<span class="token punctuation">:</span> <span class="token operator">-</span>10px<span class="token punctuation">;</span>
+  left<span class="token punctuation">:</span> <span class="token operator">-</span>10px<span class="token punctuation">;</span>
+  right<span class="token punctuation">:</span> <span class="token operator">-</span>10px<span class="token punctuation">;</span>
+  bottom<span class="token punctuation">:</span> <span class="token operator">-</span>10px<span class="token punctuation">;</span>
+  background<span class="token operator">-</span>image<span class="token punctuation">:</span> radial<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> #<span class="token number">444</span> <span class="token number">0</span><span class="token operator">%</span><span class="token punctuation">,</span> #<span class="token number">333</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  background<span class="token operator">-</span>size<span class="token punctuation">:</span> cover<span class="token punctuation">;</span>
+  background<span class="token operator">-</span>position<span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>disk_cover<span class="token punctuation">:</span><span class="token punctuation">:</span>after <span class="token punctuation">{</span>
+  content<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  position<span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  top<span class="token punctuation">:</span> <span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  left<span class="token punctuation">:</span> <span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  margin<span class="token operator">-</span>left<span class="token punctuation">:</span> <span class="token operator">-</span>8px<span class="token punctuation">;</span>
+  margin<span class="token operator">-</span>top<span class="token punctuation">:</span> <span class="token operator">-</span>8px<span class="token punctuation">;</span>
+  width<span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  height<span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  border<span class="token operator">-</span>radius<span class="token punctuation">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>
+  background<span class="token operator">-</span>image<span class="token punctuation">:</span> linear<span class="token operator">-</span><span class="token function">gradient</span><span class="token punctuation">(</span>45deg<span class="token punctuation">,</span> white<span class="token punctuation">,</span> #dabad1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  box<span class="token operator">-</span>shadow<span class="token punctuation">:</span> <span class="token number">0</span> 1px 1px 1px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>disk__playing <span class="token punctuation">{</span>
+  transform<span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">50</span><span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  box<span class="token operator">-</span>shadow<span class="token punctuation">:</span> <span class="token number">0</span> 10px 30px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token number">0</span> 20px 20px <span class="token operator">-</span>10px <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token number">108</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">171</span><span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">.</span>disk__playing <span class="token punctuation">.</span>disk_cover <span class="token punctuation">{</span>
+  animation<span class="token punctuation">:</span> rotate infinite 6s linear<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+    @keyframes rotate <span class="token punctuation">{</span>
+  <span class="token keyword">from</span> <span class="token punctuation">{</span>
+    transform<span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  to <span class="token punctuation">{</span>
+    transform<span class="token punctuation">:</span> <span class="token function">rotate</span><span class="token punctuation">(</span>360deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span></code></pre>
+<h3 id="不懂的部分"><a href="#不懂的部分" class="headerlink" title="不懂的部分"></a>不懂的部分</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
 
-export default {
-  data () {
-    return {
-      stopMatrix: &#39;&#39;
-    }
-  },
-  computed: {
-    ...mapState([&#39;isPlaying&#39;, &#39;coverUrl&#39;])
-  },
-  watch: {
-    isPlaying (val) {
-      if (!val) {
-        this.stopMatrix = window.getComputedStyle(this.$refs.cover).transform
-      } else {
-        const matrix = this.stopMatrix
-        this.stopMatrix = &#39;&#39;
-        const match = matrix.match(/^matrix\(([^,]+),([^,]+)/)
-        const [, sin, cos] = match || [0, 0, 0]
-        const deg = ((Math.atan2(cos, sin) / 2 / Math.PI) * 360) % 360
-        const styles = [...document.styleSheets]
-        styles.forEach(style =&gt; {
-          const rules = [...style.cssRules]
-          rules.forEach(rule =&gt; {
-            if (rule.type === rule.KEYFRAMES_RULE &amp;&amp; rule.name === &#39;rotate&#39;) {
-              rule.cssRules[0].style.transform = `rotate(${deg}deg)`
-              rule.cssRules[1].style.transform = `rotate(${deg + 360}deg)`
-            }
-          })
-        })
-      }
-    }
-  },
-  methods: {
-    ...mapMutations([&#39;togglePlay&#39;, &#39;changeCover&#39;]),
-    async handleChange () {
-        }
-      }
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  data <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      stopMatrix<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying <span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>stopMatrix <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">getComputedStyle</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>cover<span class="token punctuation">)</span><span class="token punctuation">.</span>transform
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> matrix <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>stopMatrix
+        <span class="token keyword">this</span><span class="token punctuation">.</span>stopMatrix <span class="token operator">=</span> <span class="token string">''</span>
+        <span class="token keyword">const</span> match <span class="token operator">=</span> matrix<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex">/^matrix\(([^,]+),([^,]+)/</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> <span class="token punctuation">[</span><span class="token punctuation">,</span> sin<span class="token punctuation">,</span> cos<span class="token punctuation">]</span> <span class="token operator">=</span> match <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+        <span class="token keyword">const</span> deg <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">atan2</span><span class="token punctuation">(</span>cos<span class="token punctuation">,</span> sin<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">/</span> Math<span class="token punctuation">.</span>PI<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">360</span><span class="token punctuation">)</span> <span class="token operator">%</span> <span class="token number">360</span>
+        <span class="token keyword">const</span> styles <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span>styleSheets<span class="token punctuation">]</span>
+        styles<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>style <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> rules <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>style<span class="token punctuation">.</span>cssRules<span class="token punctuation">]</span>
+          rules<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>rule <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>rule<span class="token punctuation">.</span>type <span class="token operator">===</span> rule<span class="token punctuation">.</span>KEYFRAMES_RULE <span class="token operator">&amp;&amp;</span> rule<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'rotate'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              rule<span class="token punctuation">.</span>cssRules<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>transform <span class="token operator">=</span> <span class="token template-string"><span class="token string">`rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>deg<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)`</span></span>
+              rule<span class="token punctuation">.</span>cssRules<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>style<span class="token punctuation">.</span>transform <span class="token operator">=</span> <span class="token template-string"><span class="token string">`rotate(</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>deg <span class="token operator">+</span> <span class="token number">360</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">deg)`</span></span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">async</span> handleChange <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
 
-&lt;/script&gt;</code></pre><h2 id="编写player-js"><a href="#编写player-js" class="headerlink" title="编写player.js"></a>编写player.js</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Dispatcher</span> <span class="token punctuation">{</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<h2 id="编写player-js"><a href="#编写player-js" class="headerlink" title="编写player.js"></a>编写player.js</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Dispatcher</span> <span class="token punctuation">{</span>
   constructor <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">this</span><span class="token punctuation">.</span>handlers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
   <span class="token punctuation">}</span>
@@ -367,6 +312,70 @@ export default {
       <tags>
         <tag>api</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>BlinkFox常用配置</title>
+    <url>/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<pre><code>---
+ 标题：typora-vue-theme主题介绍
+日期：2018-09-07 09:25:00 
+作者：Qi Qi 
+img：/source/images/xxx.jpg 
+顶部：真实
+封面：真实
+封面图片
+：/ images / 1 .jpg 密码：8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 
+toc：错误
+mathjax：错误
+摘要：这是您的自定义帖子摘要的内容。如果此属性有一个值，则明信片摘要将显示文本，否则程序将自动截取部分帖子内容作为摘要。
+类别：Markdown 
+标签：
+  - Typora 
+  - 降价 
+---</code></pre><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">源码地址</a></p>
+]]></content>
+      <categories>
+        <category>Theme</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java学习路线（一）</title>
+    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<pre><code>基础语法
+面向对象
+接口
+容器
+异常
+泛型
+反射
+注释
+IO
+图形化（Swing）</code></pre><p>JVM </p>
+<pre><code>类加载机制 
+字节码执行机制
+JVM内存模型
+GC垃圾回收
+JVM性能监控与故障定位
+JVM调优</code></pre><p>并发多线程  </p>
+<pre><code>并发编程基础
+线程池
+锁
+并发容器
+原子类
+JUC并发工具 </code></pre>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>后端</tag>
       </tags>
   </entry>
 </search>
