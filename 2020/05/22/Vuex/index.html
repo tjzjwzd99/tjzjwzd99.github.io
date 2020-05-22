@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="BlinkFox常用配置, Hexo">
+    <meta name="keywords" content="Vuex, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>BlinkFox常用配置 | Hexo</title>
+    <title>Vuex | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">BlinkFox常用配置</h1>
+                    <h1 class="description center-align post-title">Vuex</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/Vuex/">
+                                <span class="chip bg-color">Vuex</span>
                             </a>
                         
-                            <a href="/tags/Blog/">
-                                <span class="chip bg-color">Blog</span>
+                            <a href="/tags/vue/">
+                                <span class="chip bg-color">vue</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Theme/" class="post-category">
-                                Theme
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
                             </a>
                         
                     </div>
@@ -459,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-21
+                    2020-05-22
                 </div>
                 
 
@@ -475,23 +475,52 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>---
- 标题：typora-vue-theme主题介绍
-日期：2018-09-07 09:25:00 
-作者：Qi Qi 
-img：/source/images/xxx.jpg 
-顶部：真实
-封面：真实
-封面图片
-：/ images / 1 .jpg 密码：8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92 
-toc：错误
-mathjax：错误
-摘要：这是您的自定义帖子摘要的内容。如果此属性有一个值，则明信片摘要将显示文本，否则程序将自动截取部分帖子内容作为摘要。
-类别：Markdown 
-标签：
-  - Typora 
-  - 降价 
----</code></pre><p><a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank" rel="noopener">源码地址</a></p>
+                <h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
+<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
+          <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
+<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+<ol>
+<li>从store.js中的mutaions导入到组件中</li>
+<li>将store中定义的函数映射到method里并调用</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+ methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span></code></pre>
+<ol>
+<li>访问state中的数据</li>
+<li>映射为当前组件的计算属性</li>
+</ol>
+<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
+<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
 
             </div>
             <hr/>
@@ -517,7 +546,7 @@ mathjax：错误
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">http://yoursite.com/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</a>
+                    <a href="http://yoursite.com/2020/05/22/Vuex/">http://yoursite.com/2020/05/22/Vuex/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -555,12 +584,12 @@ mathjax：错误
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/Vuex/">
+                                    <span class="chip bg-color">Vuex</span>
                                 </a>
                             
-                                <a href="/tags/Blog/">
-                                    <span class="chip bg-color">Blog</span>
+                                <a href="/tags/vue/">
+                                    <span class="chip bg-color">vue</span>
                                 </a>
                             
                         </div>
@@ -728,9 +757,10 @@ mathjax：错误
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/05/22/Vuex/">
                     <div class="card-image">
@@ -748,9 +778,9 @@ mathjax：错误
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -763,6 +793,7 @@ mathjax：错误
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -785,19 +816,19 @@ mathjax：错误
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/05/21/%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">
+                <a href="/2020/05/21/BlinkFox%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="音乐播放器">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="BlinkFox常用配置">
                         
-                        <span class="card-title">音乐播放器</span>
+                        <span class="card-title">BlinkFox常用配置</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            如何制作一个音乐播放器
+                            本篇讲述了有关BlinkFox的相关配置
                         
                     </div>
                     <div class="publish-info">
@@ -808,8 +839,8 @@ mathjax：错误
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/vue/" class="post-category">
-                                    vue
+                            <a href="/categories/Theme/" class="post-category">
+                                    Theme
                                 </a>
                             
                             
@@ -819,12 +850,12 @@ mathjax：错误
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/api/">
-                        <span class="chip bg-color">api</span>
+                    <a href="/tags/Hexo/">
+                        <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/Blog/">
+                        <span class="chip bg-color">Blog</span>
                     </a>
                     
                 </div>
