@@ -30,38 +30,61 @@ mathjax：错误
       </tags>
   </entry>
   <entry>
-    <title>Java学习路线（一）</title>
-    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>]]></content>
+    <title>Vuex</title>
+    <url>/2020/05/22/Vuex/</url>
+    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
+<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
+          <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
+<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+<ol>
+<li>从store.js中的mutaions导入到组件中</li>
+<li>将store中定义的函数映射到method里并调用</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+ methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span></code></pre>
+<ol>
+<li>访问state中的数据</li>
+<li>映射为当前组件的计算属性</li>
+</ol>
+<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
+<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
+]]></content>
       <categories>
-        <category>JAVA</category>
+        <category>前端</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>后端</tag>
+        <tag>Vuex</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
@@ -379,61 +402,78 @@ JUC并发工具 </code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>Vuex</title>
-    <url>/2020/05/22/Vuex/</url>
-    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
-<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
-        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
-          <span class="token keyword">break</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
-<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+    <title>Java学习路线（一）</title>
+    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<pre><code>基础语法
+面向对象
+接口
+容器
+异常
+泛型
+反射
+注释
+IO
+图形化（Swing）</code></pre><p>JVM </p>
+<pre><code>类加载机制 
+字节码执行机制
+JVM内存模型
+GC垃圾回收
+JVM性能监控与故障定位
+JVM调优</code></pre><p>并发多线程  </p>
+<pre><code>并发编程基础
+线程池
+锁
+并发容器
+原子类
+JUC并发工具 </code></pre>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>后端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>element</title>
+    <url>/2020/05/22/element/</url>
+    <content><![CDATA[<h1 id="导入Element-UI"><a href="#导入Element-UI" class="headerlink" title="导入Element UI"></a>导入Element UI</h1><p>通过<strong>vue ui</strong>创建的项目可以在初始化的时候选择element的插件</p>
+<h2 id="按需导入"><a href="#按需导入" class="headerlink" title="按需导入"></a>按需导入</h2><p>将plugin的<strong>element.js</strong>文件导入到<strong>main.js</strong>文件中</p>
+<p>在plugin中配置element ui</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button<span class="token punctuation">,</span> Select <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'element-ui'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span><span class="token punctuation">;</span>
+ Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Button<span class="token punctuation">)</span></code></pre>
+<p><strong>main.js</strong>中的配置</p>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  render<span class="token punctuation">:</span> h <span class="token operator">=</span><span class="token operator">></span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>最后在根页面或者组件中可直接使用</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>el<span class="token operator">-</span>row<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button<span class="token operator">></span>默认按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span><span class="token operator">></span>主要按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"success"</span><span class="token operator">></span>成功按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"info"</span><span class="token operator">></span>信息按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"warning"</span><span class="token operator">></span>警告按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"danger"</span><span class="token operator">></span>危险按钮<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>row<span class="token operator">></span></code></pre>
+<hr>
+<h1 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h1><p>在element组件已经使用的情况下，如何使布局填充是很关键的一个步骤，即所谓的美化。</p>
+<p>在这里首先需要借助另一个工具——<strong>谷歌控制台</strong></p>
 <ol>
-<li>从store.js中的mutaions导入到组件中</li>
-<li>将store中定义的函数映射到method里并调用</li>
+<li>通过elements找到出问题的地方，比如假如要使整个屏幕填充色彩，是谁哪个标签没有填充</li>
+<li>找到对应的类或者标签名，对标签添加自定义class</li>
 </ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
- methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span></code></pre>
-<ol>
-<li>访问state中的数据</li>
-<li>映射为当前组件的计算属性</li>
-</ol>
-<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
-<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
-<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
 ]]></content>
       <categories>
         <category>前端</category>
       </categories>
       <tags>
-        <tag>Vuex</tag>
-        <tag>vue</tag>
+        <tag>前端</tag>
+        <tag>UI库</tag>
       </tags>
   </entry>
 </search>
