@@ -65,6 +65,346 @@ JUC并发工具 </code></pre>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>HomePage</title>
+    <url>/2020/05/28/HomePage/</url>
+    <content><![CDATA[<h1 id="移动端主页的绘制"><a href="#移动端主页的绘制" class="headerlink" title="移动端主页的绘制"></a>移动端主页的绘制</h1><p>主要是为了学习主页的布局，以及图片的插入，简单css的控制，通过css调整页面的布局。熟悉div标签</p>
+<h2 id="业务"><a href="#业务" class="headerlink" title="业务"></a>业务</h2><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"height: 100%;width: 100%;overflow-y: auto;background-color: #f7f7f7"</span><span class="token operator">></span>
+
+    <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/homeHead.png"</span> style<span class="token operator">=</span><span class="token string">"width: 100%"</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+    <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;;position: relative;top: -50px"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 90%;margin: 0 auto;border-radius: 10px;background-color: white;padding-top: 17px;padding-bottom: 17px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-hangzhouyibaoka.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>健康医保卡<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-zhifuma.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>支付码<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yidongzhifu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>移动支付<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yibaozhanghu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>医保账户<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;margin-top: 20px"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-manxingbingfuzhen.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>慢性病复诊<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span> @click<span class="token operator">=</span><span class="token string">"shangBao"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-shangyebaoxian.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>商业保险<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-gengduo.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>更多<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+      <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;margin-top: 20px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 90%;margin: 0 auto"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 47%;display: inline-block"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/homeImg-dingdianyiyuan.png"</span> style<span class="token operator">=</span><span class="token string">"width: 100%"</span> <span class="token operator">/</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 6%;display: inline-block"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 47%;display: inline-block"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/homeImg-dingdianyaodian.png"</span> style<span class="token operator">=</span><span class="token string">"width: 100%"</span> <span class="token operator">/</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+      <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;margin-top: 16px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 90%;margin: 0 auto"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/homeImg-huodong.png"</span> style<span class="token operator">=</span><span class="token string">"width: 100%"</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+      <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;margin-top: 16px;text-align: center;font-size: 10px;font-family: 'PingFang SC';color: #999"</span><span class="token operator">></span>
+        —已经到底啦—
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span>mobile<span class="token operator">-</span>tabbar <span class="token punctuation">:</span>active<span class="token operator">=</span><span class="token string">"active"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>mobile<span class="token operator">-</span>tabbar<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">import</span> mobileTabbar <span class="token keyword">from</span> <span class="token string">'@/common/components/mobileTabbar'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>mobileTabbar<span class="token punctuation">}</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">'home'</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        active<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">shangBao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/productsList'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span class="token operator">&lt;</span>style scoped<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span></code></pre>
+<p>代码拆分：</p>
+<p>首先是头部图片</p>
+<pre class=" language-js"><code class="language-js">    <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/homeHead.png"</span> style<span class="token operator">=</span><span class="token string">"width: 100%"</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<p>宽度撑满100%，涉及的小知识是如何通过这个路径选择这个图片，从当前文件所在目录下，退出当前../，再退出一级../，这样再选择去对应的目录下去选择素材；</p>
+<p>接下来是选择不同的业务</p>
+<pre class=" language-js"><code class="language-js">      <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 90%;margin: 0 auto;border-radius: 10px;background-color: white;padding-top: 17px;padding-bottom: 17px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-hangzhouyibaoka.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>健康医保卡<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-zhifuma.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>支付码<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yidongzhifu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>移动支付<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yibaozhanghu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>医保账户<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;margin-top: 20px"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-manxingbingfuzhen.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>慢性病复诊<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span> @click<span class="token operator">=</span><span class="token string">"shangBao"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-shangyebaoxian.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>商业保险<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-gengduo.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>更多<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<p>其中这里又分为两级</p>
+<pre class=" language-js"><code class="language-js">        <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-hangzhouyibaoka.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>健康医保卡<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-zhifuma.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>支付码<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yidongzhifu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>移动支付<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 25%;display: inline-block;text-align: center"</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">";box-sizing: border-box;padding: 0px 10px 0px 10px"</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">"../../assets/img/ico-yibaozhanghu.png"</span> style<span class="token operator">=</span><span class="token string">"width: 50%"</span> <span class="token operator">/</span><span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+            <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;text-align: center;font-size: 14px"</span><span class="token operator">></span>医保账户<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code></pre>
+<p>这是最单元的一级，精确到图片</p>
+<pre><code>&lt;div style=&quot;width: 25%;display: inline-block;text-align: center&quot;&gt;
+     &lt;div style=&quot;;box-sizing: border-box;padding: 0px 10px 0px 10px&quot;&gt;
+     &lt;img src=&quot;../../assets/img/ico-hangzhouyibaoka.png&quot; style=&quot;width: 50%&quot; /&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;width: 100%;text-align: center;font-size: 14px&quot;&gt;健康医保卡&lt;/div&gt;
+ &lt;/div&gt;</code></pre><p>我们对这个进行分解：</p>
+<p>宽度25%即一个盒子里平着放可以放四个。display：inline即在一条直线上。text-align:ceter是文本对齐；但是经过实验之后是图片居中，所以这个文本对齐是否是可以使整个图片（或者整个box）也居中；</p>
+<p>从这里开始回溯，这四个小盒子（图标）在一个横线状的盒子里，这个横线盒子在一个盒子里有两个。宽度是在另一个盒子里撑满的</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%"</span><span class="token operator">></span></code></pre>
+<p>在这个盒子里有四个宽度有25％的小盒子；</p>
+<pre class=" language-js"><code class="language-js"> <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 90%;margin: 0 auto;border-radius: 10px;background-color: white;padding-top: 17px;padding-bottom: 17px"</span><span class="token operator">></span></code></pre>
+<p>之后就是宽度90％，不占满整个项目，边框为圆框，背景色为白色，上下间距为17px</p>
+<pre class=" language-js"><code class="language-js">    <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 100%;;position: relative;top: -50px"</span><span class="token operator">></span></code></pre>
+<p>上一行代码是外层的边框。</p>
+<p>总的来说</p>
+<p>全部外边嵌套了一个大边框1</p>
+<p>1中嵌入了4个边框，1、2、3、4</p>
+<p>1、是图片</p>
+<p>2、中套了各种图标其中带底色的是一个边框，不带底色的是最外层的边框，带底色中套了上下两个边框，上下两个边框中套了四个边框（图标），图标中套了两个边框分为图标和文字；</p>
+<p>还有一点需要注意的是，在商业保险的那一栏里绑定了一个方法</p>
+<pre class=" language-js"><code class="language-js">      <span class="token function">shangBao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/productsList'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span></code></pre>
+<p>我们已经将商保页面挂载到路由中</p>
+<pre class=" language-js"><code class="language-js"> <span class="token punctuation">{</span>
+      path<span class="token punctuation">:</span> <span class="token string">'/productsList'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'/productsList'</span><span class="token punctuation">,</span>
+      component<span class="token punctuation">:</span> resolve <span class="token operator">=</span><span class="token operator">></span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'./views/products/productsList.vue'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> resolve<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        title<span class="token punctuation">:</span> <span class="token string">'商保购买'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>这是整个这一块的逻辑结构</p>
+<p>通常我们需要导入一个</p>
+<p>底部的组件固定在页面的底部</p>
+<p>在底部插入Compent的组件，如<strong>代码所示，组件的名字变成了标签；</strong></p>
+<pre><code>  &lt;/div&gt;
+    &lt;mobile-tabbar :active=&quot;active&quot;&gt;&lt;/mobile-tabbar&gt;
+  &lt;/div&gt;</code></pre><p>我们导入这个组件</p>
+<pre class=" language-js"><code class="language-js"> <span class="token keyword">import</span> mobileTabbar <span class="token keyword">from</span> <span class="token string">'@/common/components/mobileTabbar'</span></code></pre>
+<p>定义这个组件</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">import</span> mobileTabbar <span class="token keyword">from</span> <span class="token string">'@/common/components/mobileTabbar'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+      <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>mobileTabbar<span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+    name<span class="token punctuation">:</span> <span class="token string">'home'</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+        active<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">shangBao</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/productsList'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<p>这是底部组件</p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"tabbar-page"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>van<span class="token operator">-</span>tabbar<span class="token operator">></span>
+            <span class="token operator">&lt;</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item to<span class="token operator">=</span><span class="token string">"/home"</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span>span <span class="token punctuation">:</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"active===0?fontActive:fontInActive"</span><span class="token operator">></span>首页<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+                <span class="token operator">&lt;</span>template #icon<span class="token operator">=</span><span class="token string">"props"</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span>img <span class="token punctuation">:</span>src<span class="token operator">=</span><span class="token string">"active===0 ? icon.home.active : icon.home.inactive"</span><span class="token operator">/</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item<span class="token operator">></span>
+            <span class="token operator">&lt;</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item to<span class="token operator">=</span><span class="token string">"/productsList"</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span>span <span class="token punctuation">:</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"active===1?fontActive:fontInActive"</span><span class="token operator">></span>产品<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+                <span class="token operator">&lt;</span>template #icon<span class="token operator">=</span><span class="token string">"props"</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span>img <span class="token punctuation">:</span>src<span class="token operator">=</span><span class="token string">"active===1 ? icon.products.active : icon.products.inactive"</span><span class="token operator">/</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item<span class="token operator">></span>
+            <span class="token operator">&lt;</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item to<span class="token operator">=</span><span class="token string">"/mine"</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span>span <span class="token punctuation">:</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"active===2?fontActive:fontInActive"</span><span class="token operator">></span>我的<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span>
+                <span class="token operator">&lt;</span>template #icon<span class="token operator">=</span><span class="token string">"props"</span><span class="token operator">></span>
+                    <span class="token operator">&lt;</span>img <span class="token punctuation">:</span>src<span class="token operator">=</span><span class="token string">"active===2 ? icon.mine.active : icon.mine.inactive"</span><span class="token operator">/</span><span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>tabbar<span class="token operator">-</span>item<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>van<span class="token operator">-</span>tabbar<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+    <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'MobileTabbar'</span><span class="token punctuation">,</span>
+        props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            active<span class="token punctuation">:</span> Number
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        components<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+                fontActive<span class="token punctuation">:</span> <span class="token string">'font-active'</span><span class="token punctuation">,</span>
+                fontInActive<span class="token punctuation">:</span> <span class="token string">'font-inactive'</span><span class="token punctuation">,</span>
+                icon<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                    home<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        active<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/home-active.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                        inactive<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/home-inactive.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    products<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        active<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/products-active.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                        inactive<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/products-inactive.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    mine<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                        active<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/mine-active.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                        inactive<span class="token punctuation">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../../assets/img/mine-inactive.png'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        methods<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>style<span class="token operator">></span>
+    <span class="token punctuation">.</span>tabbar<span class="token operator">-</span>page <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token punctuation">.</span>font<span class="token operator">-</span>active <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> #FE7923
+
+    <span class="token punctuation">}</span>
+
+    <span class="token punctuation">.</span>font<span class="token operator">-</span>inactive <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> #<span class="token number">666666</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
+</code></pre>
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vant</tag>
+        <tag>主页</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SubMit</title>
     <url>/2020/05/28/SubMit/</url>
     <content><![CDATA[<h1 id="Submit的使用"><a href="#Submit的使用" class="headerlink" title="Submit的使用"></a>Submit的使用</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>信息的录入</p>
@@ -711,6 +1051,64 @@ JUC并发工具 </code></pre>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>Vuex</title>
+    <url>/2020/05/22/Vuex/</url>
+    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
+<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
+          <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
+<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+<ol>
+<li>从store.js中的mutaions导入到组件中</li>
+<li>将store中定义的函数映射到method里并调用</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+ methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span></code></pre>
+<ol>
+<li>访问state中的数据</li>
+<li>映射为当前组件的计算属性</li>
+</ol>
+<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
+<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vuex</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>UPLOADIMAG</title>
     <url>/2020/05/28/UPLOADIMAG/</url>
     <content><![CDATA[<h1 id="UPloadimag"><a href="#UPloadimag" class="headerlink" title="UPloadimag"></a>UPloadimag</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>后台管理系统：商家入驻需要提交营业执照</p>
@@ -1095,64 +1493,6 @@ components<span class="token punctuation">:</span> <span class="token punctuatio
       <tags>
         <tag>UI库</tag>
         <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vuex</title>
-    <url>/2020/05/22/Vuex/</url>
-    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
-<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
-        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
-          <span class="token keyword">break</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
-<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
-<ol>
-<li>从store.js中的mutaions导入到组件中</li>
-<li>将store中定义的函数映射到method里并调用</li>
-</ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
- methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span></code></pre>
-<ol>
-<li>访问state中的数据</li>
-<li>映射为当前组件的计算属性</li>
-</ol>
-<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
-<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
-<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Vuex</tag>
-        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
