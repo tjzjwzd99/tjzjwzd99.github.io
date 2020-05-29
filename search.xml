@@ -30,38 +30,69 @@ mathjax：错误
       </tags>
   </entry>
   <entry>
-    <title>Java学习路线（一）</title>
-    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>]]></content>
+    <title>Dialog</title>
+    <url>/2020/05/29/Dialog/</url>
+    <content><![CDATA[<h1 id="有关Dialog的切换效果的应用"><a href="#有关Dialog的切换效果的应用" class="headerlink" title="有关Dialog的切换效果的应用"></a>有关Dialog的切换效果的应用</h1><h2 id="业务分析"><a href="#业务分析" class="headerlink" title="业务分析"></a>业务分析</h2><ol>
+<li><p>基础用法是对话框的弹出，用来嵌套各种组件来达到某种效果</p>
+</li>
+<li><p>在对话框中实现页面的切换</p>
+</li>
+<li><p>实际例子：登录界面账号密码登录和手机验证码登录两种方式的切换</p>
+<h2 id="Element-UI"><a href="#Element-UI" class="headerlink" title="Element UI"></a>Element UI</h2><pre class=" language-JS"><code class="language-JS"><el-button type="text" 
+@click="centerDialogVisible = true">点击打开 Dialog</el-button>
+
+<el-dialog
+  title="提示"
+  :visible.sync="centerDialogVisible"
+  width="30%"
+  center>
+  <span>需要注意的是内容是默认不居中的</span>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="centerDialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="centerDialogVisible = false">确 定</el-button>
+  </span>
+</el-dialog>
+
+<script>
+  export default {
+    data() {
+      return {
+        centerDialogVisible: false
+      };
+    }
+  };
+</script></code></pre>
+</li>
+</ol>
+<p>如上这是最基本的用法</p>
+<p> 将<code>center</code>设置为<code>true</code>即可使标题和底部居中。<code>center</code>仅影响标题和底部区域。Dialog 的内容是任意的，在一些情况下，内容并不适合居中布局。如果需要内容也水平居中，请自行为其添加 CSS。 </p>
+<h2 id="业务实现"><a href="#业务实现" class="headerlink" title="业务实现"></a>业务实现</h2><pre class=" language-js"><code class="language-js">     <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 260px"</span> <span class="token operator">></span>
+                <span class="token operator">&lt;</span>a <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"forget-acct-class"</span> @click<span class="token operator">=</span><span class="token string">"switchLoginType('msg')"</span> v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"!isMsgLogin"</span><span class="token operator">></span>短信快捷登录<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+                <span class="token operator">&lt;</span>a <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"forget-acct-class"</span> @click<span class="token operator">=</span><span class="token string">"switchLoginType('acc')"</span> v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"isMsgLogin"</span><span class="token operator">></span>账号密码登录<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">></span>
+                <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span><span class="token operator">&lt;</span>span <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"error-msg-class"</span> style<span class="token operator">=</span><span class="token string">"margin-left: 80px"</span><span class="token operator">></span>密码错误<span class="token operator">&lt;</span><span class="token operator">/</span>span<span class="token operator">></span><span class="token operator">--</span><span class="token operator">></span>
+              <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+                        data <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      unJoinMsgShow<span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      isMsgLogin<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+              <span class="token function">switchLoginType</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>unJoinMsgShow<span class="token operator">=</span><span class="token boolean">false</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>type<span class="token operator">===</span><span class="token string">'msg'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>isMsgLogin<span class="token operator">=</span><span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>isMsgLogin<span class="token operator">=</span><span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>如上述代码所示，假如只需要实现页面的切换效果这些代码已经足够。</p>
+]]></content>
       <categories>
-        <category>JAVA</category>
+        <category>vue</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>后端</tag>
+        <tag>ElementUI</tag>
+        <tag>Dialog</tag>
       </tags>
   </entry>
   <entry>
@@ -402,6 +433,41 @@ JUC并发工具 </code></pre>]]></content>
       <tags>
         <tag>vant</tag>
         <tag>主页</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java学习路线（一）</title>
+    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<pre><code>基础语法
+面向对象
+接口
+容器
+异常
+泛型
+反射
+注释
+IO
+图形化（Swing）</code></pre><p>JVM </p>
+<pre><code>类加载机制 
+字节码执行机制
+JVM内存模型
+GC垃圾回收
+JVM性能监控与故障定位
+JVM调优</code></pre><p>并发多线程  </p>
+<pre><code>并发编程基础
+线程池
+锁
+并发容器
+原子类
+JUC并发工具 </code></pre>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -1051,64 +1117,6 @@ JUC并发工具 </code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>Vuex</title>
-    <url>/2020/05/22/Vuex/</url>
-    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
-<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
-        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
-          <span class="token keyword">break</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
-<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
-<ol>
-<li>从store.js中的mutaions导入到组件中</li>
-<li>将store中定义的函数映射到method里并调用</li>
-</ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
- methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span></code></pre>
-<ol>
-<li>访问state中的数据</li>
-<li>映射为当前组件的计算属性</li>
-</ol>
-<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
-<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
-<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Vuex</tag>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>UPLOADIMAG</title>
     <url>/2020/05/28/UPLOADIMAG/</url>
     <content><![CDATA[<h1 id="UPloadimag"><a href="#UPloadimag" class="headerlink" title="UPloadimag"></a>UPloadimag</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>后台管理系统：商家入驻需要提交营业执照</p>
@@ -1453,6 +1461,64 @@ components<span class="token punctuation">:</span> <span class="token punctuatio
         <tag>组件</tag>
         <tag>UI库</tag>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuex</title>
+    <url>/2020/05/22/Vuex/</url>
+    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
+<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
+          <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
+<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+<ol>
+<li>从store.js中的mutaions导入到组件中</li>
+<li>将store中定义的函数映射到method里并调用</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+ methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span></code></pre>
+<ol>
+<li>访问state中的数据</li>
+<li>映射为当前组件的计算属性</li>
+</ol>
+<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
+<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vuex</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
