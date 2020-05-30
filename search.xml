@@ -30,6 +30,1282 @@ mathjax：错误
       </tags>
   </entry>
   <entry>
+    <title>CSS</title>
+    <url>/2020/05/30/CSS/</url>
+    <content><![CDATA[<h1 id="CSS配置"><a href="#CSS配置" class="headerlink" title="CSS配置"></a>CSS配置</h1><h2 id="动画属性"><a href="#动画属性" class="headerlink" title="动画属性"></a>动画属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-keyframes.html" target="_blank" rel="noopener">@keyframes</a></td>
+<td align="left">定义一个动画,@keyframes定义的动画名称用来被animation-name所使用。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation.html" target="_blank" rel="noopener">animation</a></td>
+<td align="left">复合属性。检索或设置对象所应用的动画特效。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-name.html" target="_blank" rel="noopener">animation-name</a></td>
+<td align="left">检索或设置对象所应用的动画名称 ,必须与规则@keyframes配合使用，因为动画名称由@keyframes定义</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-duration.html" target="_blank" rel="noopener">animation-duration</a></td>
+<td align="left">检索或设置对象动画的持续时间</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-timing-function.html" target="_blank" rel="noopener">animation-timing-function</a></td>
+<td align="left">检索或设置对象动画的过渡类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-delay.html" target="_blank" rel="noopener">animation-delay</a></td>
+<td align="left">检索或设置对象动画的延迟时间</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-iteration-count.html" target="_blank" rel="noopener">animation-iteration-count</a></td>
+<td align="left">检索或设置对象动画的循环次数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-direction.html" target="_blank" rel="noopener">animation-direction</a></td>
+<td align="left">检索或设置对象动画在循环中是否反向运动</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-play-state.html" target="_blank" rel="noopener">animation-play-state</a></td>
+<td align="left">检索或设置对象动画的状态</td>
+</tr>
+</tbody></table>
+<h2 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background.html" target="_blank" rel="noopener">background</a></td>
+<td align="left">复合属性。设置对象的背景特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-attachment.html" target="_blank" rel="noopener">background-attachment</a></td>
+<td align="left">设置或检索背景图像是随对象内容滚动还是固定的。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-color.html" target="_blank" rel="noopener">background-color</a></td>
+<td align="left">设置或检索对象的背景颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-image.html" target="_blank" rel="noopener">background-image</a></td>
+<td align="left">设置或检索对象的背景图像。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-position.html" target="_blank" rel="noopener">background-position</a></td>
+<td align="left">设置或检索对象的背景图像位置。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-repeat.html" target="_blank" rel="noopener">background-repeat</a></td>
+<td align="left">设置或检索对象的背景图像如何铺排填充。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-clip.html" target="_blank" rel="noopener">background-clip</a></td>
+<td align="left">指定对象的背景图像向外裁剪的区域。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-origin.html" target="_blank" rel="noopener">background-origin</a></td>
+<td align="left">S设置或检索对象的背景图像计算background-position时的参考原点(位置)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-size.html" target="_blank" rel="noopener">background-size</a></td>
+<td align="left">检索或设置对象的背景图像的尺寸大小。</td>
+</tr>
+</tbody></table>
+<h2 id="边框-Border-和-轮廓-Outline-属性"><a href="#边框-Border-和-轮廓-Outline-属性" class="headerlink" title="边框(Border) 和 轮廓(Outline) 属性"></a>边框(Border) 和 轮廓(Outline) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border.html" target="_blank" rel="noopener">border</a></td>
+<td align="left">复合属性。设置对象边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom.html" target="_blank" rel="noopener">border-bottom</a></td>
+<td align="left">复合属性。设置对象底部边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-color.html" target="_blank" rel="noopener">border-bottom-color</a></td>
+<td align="left">设置或检索对象的底部边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-style.html" target="_blank" rel="noopener">border-bottom-style</a></td>
+<td align="left">设置或检索对象的底部边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-width.html" target="_blank" rel="noopener">border-bottom-width</a></td>
+<td align="left">设置或检索对象的底部边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-color.html" target="_blank" rel="noopener">border-color</a></td>
+<td align="left">置或检索对象的边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left.html" target="_blank" rel="noopener">border-left</a></td>
+<td align="left">复合属性。设置对象左边边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-color.html" target="_blank" rel="noopener">border-left-color</a></td>
+<td align="left">设置或检索对象的左边边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-style.html" target="_blank" rel="noopener">border-left-style</a></td>
+<td align="left">设置或检索对象的左边边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-width.html" target="_blank" rel="noopener">border-left-width</a></td>
+<td align="left">设置或检索对象的左边边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right.html" target="_blank" rel="noopener">border-right</a></td>
+<td align="left">复合属性。设置对象右边边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-color.html" target="_blank" rel="noopener">border-right-color</a></td>
+<td align="left">设置或检索对象的右边边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-style.html" target="_blank" rel="noopener">border-right-style</a></td>
+<td align="left">设置或检索对象的右边边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-width.html" target="_blank" rel="noopener">border-right-width</a></td>
+<td align="left">设置或检索对象的右边边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-style.html" target="_blank" rel="noopener">border-style</a></td>
+<td align="left">设置或检索对象的边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top.html" target="_blank" rel="noopener">border-top</a></td>
+<td align="left">复合属性。设置对象顶部边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-color.html" target="_blank" rel="noopener">border-top-color</a></td>
+<td align="left">设置或检索对象的顶部边框颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-style.html" target="_blank" rel="noopener">border-top-style</a></td>
+<td align="left">设置或检索对象的顶部边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-width.html" target="_blank" rel="noopener">border-top-width</a></td>
+<td align="left">设置或检索对象的顶部边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-width.html" target="_blank" rel="noopener">border-width</a></td>
+<td align="left">设置或检索对象的边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline.html" target="_blank" rel="noopener">outline</a></td>
+<td align="left">复合属性。设置或检索对象外的线条轮廓。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-color.html" target="_blank" rel="noopener">outline-color</a></td>
+<td align="left">设置或检索对象外的线条轮廓的颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-style.html" target="_blank" rel="noopener">outline-style</a></td>
+<td align="left">设置或检索对象外的线条轮廓的样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-width.html" target="_blank" rel="noopener">outline-width</a></td>
+<td align="left">设置或检索对象外的线条轮廓的宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-bottom-left-radius.html" target="_blank" rel="noopener">border-bottom-left-radius</a></td>
+<td align="left">设置或检索对象的左下角圆角边框。提供2个参数，2个参数以空格分隔，每个参数允许设置1个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，如第2个参数省略，则默认等于第1个参数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-bottom-right-radius.html" target="_blank" rel="noopener">border-bottom-right-radius</a></td>
+<td align="left">设置或检索对象的右下角圆角边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image.html" target="_blank" rel="noopener">border-image</a></td>
+<td align="left">设置或检索对象的边框样式使用图像来填充。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-outset.html" target="_blank" rel="noopener">border-image-outset</a></td>
+<td align="left">规定边框图像超过边框的量。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-repeat.html" target="_blank" rel="noopener">border-image-repeat</a></td>
+<td align="left">规定图像边框是否应该被重复（repeated）、拉伸（stretched）或铺满（rounded）。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-slice.html" target="_blank" rel="noopener">border-image-slice</a></td>
+<td align="left">规定图像边框的向内偏移。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-source.html" target="_blank" rel="noopener">border-image-source</a></td>
+<td align="left">规定要使用的图像，代替 border-style 属性中设置的边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-width.html" target="_blank" rel="noopener">border-image-width</a></td>
+<td align="left">规定图像边框的宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-radius.html" target="_blank" rel="noopener">border-radius</a></td>
+<td align="left">设置或检索对象使用圆角边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-top-left-radius.html" target="_blank" rel="noopener">border-top-left-radius</a></td>
+<td align="left">定义左上角边框的形状。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-top-right-radius.html" target="_blank" rel="noopener">border-top-right-radius</a></td>
+<td align="left">定义右上角边框的形状。</td>
+</tr>
+<tr>
+<td align="left">box-decoration-break</td>
+<td align="left">规定行内元素被折行</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-shadow.html" target="_blank" rel="noopener">box-shadow</a></td>
+<td align="left">向方框添加一个或多个阴影。</td>
+</tr>
+</tbody></table>
+<h2 id="盒子-Box-属性"><a href="#盒子-Box-属性" class="headerlink" title="盒子(Box) 属性"></a>盒子(Box) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-x.html" target="_blank" rel="noopener">overflow-x</a></td>
+<td align="left">如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-y.html" target="_blank" rel="noopener">overflow-y</a></td>
+<td align="left">如果内容溢出了元素内容区域，是否对内容的上/下边缘进行裁剪。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-style.html" target="_blank" rel="noopener">overflow-style</a></td>
+<td align="left">规定溢出元素的首选滚动方法。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-rotation.html" target="_blank" rel="noopener">rotation</a></td>
+<td align="left">围绕由 rotation-point 属性定义的点对元素进行旋转。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-rotation-point.html" target="_blank" rel="noopener">rotation-point</a></td>
+<td align="left">定义距离上左边框边缘的偏移点。</td>
+</tr>
+</tbody></table>
+<h2 id="颜色-Color-属性"><a href="#颜色-Color-属性" class="headerlink" title="颜色(Color) 属性"></a>颜色(Color) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">color-profile</td>
+<td align="left">允许使用源的颜色配置文件的默认以外的规范</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-opacity.html" target="_blank" rel="noopener">opacity</a></td>
+<td align="left">设置一个元素的透明度级别</td>
+</tr>
+<tr>
+<td align="left">rendering-intent</td>
+<td align="left">允许超过默认颜色配置文件渲染意向的其他规范</td>
+</tr>
+</tbody></table>
+<h2 id="内边距-Padding-属性"><a href="#内边距-Padding-属性" class="headerlink" title="内边距(Padding) 属性"></a>内边距(Padding) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding.html" target="_blank" rel="noopener">padding</a></td>
+<td align="left">在一个声明中设置所有填充属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-bottom.html" target="_blank" rel="noopener">padding-bottom</a></td>
+<td align="left">设置元素的底填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-left.html" target="_blank" rel="noopener">padding-left</a></td>
+<td align="left">设置元素的左填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-right.html" target="_blank" rel="noopener">padding-right</a></td>
+<td align="left">设置元素的右填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-top.html" target="_blank" rel="noopener">padding-top</a></td>
+<td align="left">设置元素的顶部填充</td>
+</tr>
+</tbody></table>
+<h2 id="媒体页面内容属性"><a href="#媒体页面内容属性" class="headerlink" title="媒体页面内容属性"></a>媒体页面内容属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">bookmark-label</td>
+<td align="left">指定书签的标签</td>
+</tr>
+<tr>
+<td align="left">bookmark-level</td>
+<td align="left">指定了书签级别</td>
+</tr>
+<tr>
+<td align="left">bookmark-target</td>
+<td align="left">指定了书签链接的目标</td>
+</tr>
+<tr>
+<td align="left">float-offset</td>
+<td align="left">在相反的方向推动浮动元素，他们一直具有浮动</td>
+</tr>
+<tr>
+<td align="left">hyphenate-after</td>
+<td align="left">指定一个断字的单词断字字符后的最少字符数</td>
+</tr>
+<tr>
+<td align="left">hyphenate-before</td>
+<td align="left">指定一个断字的单词断字字符前的最少字符数</td>
+</tr>
+<tr>
+<td align="left">hyphenate-character</td>
+<td align="left">指定了当一个断字发生时，要显示的字符串</td>
+</tr>
+<tr>
+<td align="left">hyphenate-lines</td>
+<td align="left">表示连续断字的行在元素的最大数目</td>
+</tr>
+<tr>
+<td align="left">hyphenate-resource</td>
+<td align="left">外部资源指定一个逗号分隔的列表，可以帮助确定浏览器的断字点</td>
+</tr>
+<tr>
+<td align="left">hyphens</td>
+<td align="left">设置如何分割单词以改善该段的布局</td>
+</tr>
+<tr>
+<td align="left">image-resolution</td>
+<td align="left">指定了正确的图像分辨率</td>
+</tr>
+<tr>
+<td align="left">marks</td>
+<td align="left">将crop and/or cross标志添加到文档</td>
+</tr>
+<tr>
+<td align="left">string-set</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h2 id="尺寸-Dimension-属性"><a href="#尺寸-Dimension-属性" class="headerlink" title="尺寸(Dimension) 属性"></a>尺寸(Dimension) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-height.html" target="_blank" rel="noopener">height</a></td>
+<td align="left">设置元素的高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-max-height.html" target="_blank" rel="noopener">max-height</a></td>
+<td align="left">设置元素的最大高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-max-width.html" target="_blank" rel="noopener">max-width</a></td>
+<td align="left">设置元素的最大宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-min-height.html" target="_blank" rel="noopener">min-height</a></td>
+<td align="left">设置元素的最小高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-min-width.html" target="_blank" rel="noopener">min-width</a></td>
+<td align="left">设置元素的最小宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-width.html" target="_blank" rel="noopener">width</a></td>
+<td align="left">设置元素的宽度</td>
+</tr>
+</tbody></table>
+<h2 id="弹性盒子模型（Flexible-Box）-属性-新"><a href="#弹性盒子模型（Flexible-Box）-属性-新" class="headerlink" title="弹性盒子模型（Flexible Box） 属性(新)"></a>弹性盒子模型（Flexible Box） 属性(新)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex.html" target="_blank" rel="noopener">flex</a></td>
+<td align="left">复合属性。设置或检索弹性盒模型对象的子元素如何分配空间。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-grow.html" target="_blank" rel="noopener">flex-grow</a></td>
+<td align="left">设置或检索弹性盒的扩展比率。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-shrink.html" target="_blank" rel="noopener">flex-shrink</a></td>
+<td align="left">设置或检索弹性盒的收缩比率。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-basis.html" target="_blank" rel="noopener">flex-basis</a></td>
+<td align="left">设置或检索弹性盒伸缩基准值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-flow.html" target="_blank" rel="noopener">flex-flow</a></td>
+<td align="left">复合属性。设置或检索弹性盒模型对象的子元素排列方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-direction.html" target="_blank" rel="noopener">flex-direction</a></td>
+<td align="left">该属性通过定义flex容器的主轴方向来决定felx子项在flex容器中的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-wrap.html" target="_blank" rel="noopener">flex-wrap</a></td>
+<td align="left">该属性控制flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-content.html" target="_blank" rel="noopener">align-content</a></td>
+<td align="left">在弹性容器内的各项没有占用交叉轴上所有可用的空间时对齐容器内的各项（垂直）。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-items.html" target="_blank" rel="noopener">align-items</a></td>
+<td align="left">定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-self.html" target="_blank" rel="noopener">align-self</a></td>
+<td align="left">定义flex子项单独在侧轴（纵轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-justify-content.html" target="_blank" rel="noopener">justify-content</a></td>
+<td align="left">设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-order.html" target="_blank" rel="noopener">order</a></td>
+<td align="left">设置或检索弹性盒模型对象的子元素出现的順序。</td>
+</tr>
+</tbody></table>
+<h2 id="弹性盒子模型（Flexible-Box）-属性-旧"><a href="#弹性盒子模型（Flexible-Box）-属性-旧" class="headerlink" title="弹性盒子模型（Flexible Box） 属性(旧)"></a>弹性盒子模型（Flexible Box） 属性(旧)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-align.html" target="_blank" rel="noopener">box-align</a></td>
+<td align="left">指定如何对齐一个框的子元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-direction.html" target="_blank" rel="noopener">box-direction</a></td>
+<td align="left">指定在哪个方向，显示一个框的子元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-flex.html" target="_blank" rel="noopener">box-flex</a></td>
+<td align="left">指定一个框的子元素是否是灵活的或固定的大小</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-flex-group.html" target="_blank" rel="noopener">box-flex-group</a></td>
+<td align="left">指派灵活的元素到Flex组</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-lines.html" target="_blank" rel="noopener">box-lines</a></td>
+<td align="left">每当它在父框的空间运行时，是否指定将再上一个新的行列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-ordinal-group.html" target="_blank" rel="noopener">box-ordinal-group</a></td>
+<td align="left">指定一个框的子元素的显示顺序</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-orient.html" target="_blank" rel="noopener">box-orient</a></td>
+<td align="left">指定一个框的子元素是否在水平或垂直方向应铺设</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-pack.html" target="_blank" rel="noopener">box-pack</a></td>
+<td align="left">指定横向盒在垂直框的水平位置和垂直位置</td>
+</tr>
+</tbody></table>
+<h2 id="字体（Font）-属性"><a href="#字体（Font）-属性" class="headerlink" title="字体（Font） 属性"></a>字体（Font） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font.html" target="_blank" rel="noopener">font</a></td>
+<td align="left">在一个声明中设置所有字体属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-family.html" target="_blank" rel="noopener">font-family</a></td>
+<td align="left">规定文本的字体系列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-size.html" target="_blank" rel="noopener">font-size</a></td>
+<td align="left">规定文本的字体尺寸</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-style.html" target="_blank" rel="noopener">font-style</a></td>
+<td align="left">规定文本的字体样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-variant.html" target="_blank" rel="noopener">font-variant</a></td>
+<td align="left">规定文本的字体样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-weight.html" target="_blank" rel="noopener">font-weight</a></td>
+<td align="left">规定字体的粗细</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-face-rule.html" target="_blank" rel="noopener">@font-face</a></td>
+<td align="left">一个规则，允许网站下载并使用其他超过”Web- safe”字体的字体</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-size-adjust.html" target="_blank" rel="noopener">font-size-adjust</a></td>
+<td align="left">为元素规定 aspect 值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-stretch.html" target="_blank" rel="noopener">font-stretch</a></td>
+<td align="left">收缩或拉伸当前的字体系列</td>
+</tr>
+</tbody></table>
+<h2 id="内容生成属性-Generated-Content-Properties"><a href="#内容生成属性-Generated-Content-Properties" class="headerlink" title="内容生成属性(Generated Content Properties)"></a>内容生成属性(Generated Content Properties)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-content.html" target="_blank" rel="noopener">content</a></td>
+<td align="left">与 :before 以及 :after 伪元素配合使用，来插入生成内容</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-counter-increment.html" target="_blank" rel="noopener">counter-increment</a></td>
+<td align="left">递增或递减一个或多个计数器</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-counter-reset.html" target="_blank" rel="noopener">counter-reset</a></td>
+<td align="left">创建或重置一个或多个计数器</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-quotes.html" target="_blank" rel="noopener">quotes</a></td>
+<td align="left">设置嵌套引用的引号类型</td>
+</tr>
+<tr>
+<td align="left">crop</td>
+<td align="left">允许replaced元素只是作为一个对象代替整个对象的矩形区域</td>
+</tr>
+<tr>
+<td align="left">move-to</td>
+<td align="left">从流中删除元素，然后在文档中后面的点上重新插入。</td>
+</tr>
+<tr>
+<td align="left">page-policy</td>
+<td align="left">判定基于页面的给定元素的适用于计数器的字符串值</td>
+</tr>
+</tbody></table>
+<h2 id="网格（Grid）-属性"><a href="#网格（Grid）-属性" class="headerlink" title="网格（Grid） 属性"></a>网格（Grid） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-grid-columns.html" target="_blank" rel="noopener">grid-columns</a></td>
+<td align="left">指定在网格中每列的宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-grid-rows.html" target="_blank" rel="noopener">grid-rows</a></td>
+<td align="left">指定在网格中每列的高度</td>
+</tr>
+</tbody></table>
+<h2 id="超链接-Hyperlink-属性"><a href="#超链接-Hyperlink-属性" class="headerlink" title="超链接(Hyperlink) 属性"></a>超链接(Hyperlink) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target.html" target="_blank" rel="noopener">target</a></td>
+<td align="left">简写属性设置target-name, target-new,和target-position属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-name.html" target="_blank" rel="noopener">target-name</a></td>
+<td align="left">指定在何处打开链接（目标位置）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-new.html" target="_blank" rel="noopener">target-new</a></td>
+<td align="left">指定是否有新的目标链接打开一个新窗口或在现有窗口打开新标签</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-position.html" target="_blank" rel="noopener">target-position</a></td>
+<td align="left">指定应该放置新的目标链接的位置</td>
+</tr>
+</tbody></table>
+<h2 id="线框-Linebox-属性"><a href="#线框-Linebox-属性" class="headerlink" title="线框(Linebox) 属性"></a>线框(Linebox) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">alignment-adjust</td>
+<td align="left">允许更精确的元素的对齐方式</td>
+</tr>
+<tr>
+<td align="left">alignment-baseline</td>
+<td align="left">其父级指定的内联级别的元素如何对齐</td>
+</tr>
+<tr>
+<td align="left">baseline-shift</td>
+<td align="left">允许重新定位相对于dominant-baseline的dominant-baseline</td>
+</tr>
+<tr>
+<td align="left">dominant-baseline</td>
+<td align="left">指定scaled-baseline-table</td>
+</tr>
+<tr>
+<td align="left">drop-initial-after-adjust</td>
+<td align="left">设置下拉的主要连接点的初始对齐点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-after-align</td>
+<td align="left">校准行内的初始行的设置就是具有首字母的框使用初级连接点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-before-adjust</td>
+<td align="left">设置下拉的辅助连接点的初始对齐点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-before-align</td>
+<td align="left">校准行内的初始行的设置就是具有首字母的框使用辅助连接点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-size</td>
+<td align="left">控制局部的首字母下沉</td>
+</tr>
+<tr>
+<td align="left">drop-initial-value</td>
+<td align="left">激活一个下拉式的初步效果</td>
+</tr>
+<tr>
+<td align="left">inline-box-align</td>
+<td align="left">设置一个多行的内联块内的行具有前一个和后一个内联元素的对齐</td>
+</tr>
+<tr>
+<td align="left">line-stacking</td>
+<td align="left">一个速记属性设置line-stacking-strategy, line-stacking-ruby,和line-stacking-shift属性</td>
+</tr>
+<tr>
+<td align="left">line-stacking-ruby</td>
+<td align="left">设置包含Ruby注释元素的行对于块元素的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">line-stacking-shift</td>
+<td align="left">设置base-shift行中块元素包含元素的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">line-stacking-strategy</td>
+<td align="left">设置内部包含块元素的堆叠线框的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">text-height</td>
+<td align="left">行内框的文本内容区域设置block-progression维数</td>
+</tr>
+</tbody></table>
+<h2 id="列表-List-属性"><a href="#列表-List-属性" class="headerlink" title="列表(List) 属性"></a>列表(List) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style.html" target="_blank" rel="noopener">list-style</a></td>
+<td align="left">在一个声明中设置所有的列表属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-image.html" target="_blank" rel="noopener">list-style-image</a></td>
+<td align="left">将图象设置为列表项标记</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-position.html" target="_blank" rel="noopener">list-style-position</a></td>
+<td align="left">设置列表项标记的放置位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-type.html" target="_blank" rel="noopener">list-style-type</a></td>
+<td align="left">设置列表项标记的类型</td>
+</tr>
+</tbody></table>
+<h2 id="外边距-Margin-属性"><a href="#外边距-Margin-属性" class="headerlink" title="外边距(Margin) 属性"></a>外边距(Margin) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin.html" target="_blank" rel="noopener">margin</a></td>
+<td align="left">在一个声明中设置所有外边距属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-bottom.html" target="_blank" rel="noopener">margin-bottom</a></td>
+<td align="left">设置元素的下外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-left.html" target="_blank" rel="noopener">margin-left</a></td>
+<td align="left">设置元素的左外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-right.html" target="_blank" rel="noopener">margin-right</a></td>
+<td align="left">设置元素的右外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-top.html" target="_blank" rel="noopener">margin-top</a></td>
+<td align="left">设置元素的上外边距</td>
+</tr>
+</tbody></table>
+<h2 id="字幕-Marquee-属性"><a href="#字幕-Marquee-属性" class="headerlink" title="字幕(Marquee) 属性"></a>字幕(Marquee) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">marquee-direction</td>
+<td align="left">设置内容移动的方向</td>
+</tr>
+<tr>
+<td align="left">marquee-play-count</td>
+<td align="left">设置内容移动多少次</td>
+</tr>
+<tr>
+<td align="left">marquee-speed</td>
+<td align="left">设置内容滚动的速度有多快</td>
+</tr>
+<tr>
+<td align="left">marquee-style</td>
+<td align="left">设置内容移动的样式</td>
+</tr>
+</tbody></table>
+<h2 id="多列-Multi-column-属性"><a href="#多列-Multi-column-属性" class="headerlink" title="多列(Multi-column) 属性"></a>多列(Multi-column) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-count.html" target="_blank" rel="noopener">column-count</a></td>
+<td align="left">指定元素应该分为的列数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-fill.html" target="_blank" rel="noopener">column-fill</a></td>
+<td align="left">指定如何填充列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-gap.html" target="_blank" rel="noopener">column-gap</a></td>
+<td align="left">指定列之间的差距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule.html" target="_blank" rel="noopener">column-rule</a></td>
+<td align="left">对于设置所有column-rule-*属性的简写属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-color.html" target="_blank" rel="noopener">column-rule-color</a></td>
+<td align="left">指定列之间的颜色规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-style.html" target="_blank" rel="noopener">column-rule-style</a></td>
+<td align="left">指定列之间的样式规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-width.html" target="_blank" rel="noopener">column-rule-width</a></td>
+<td align="left">指定列之间的宽度规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-span.html" target="_blank" rel="noopener">column-span</a></td>
+<td align="left">指定元素应该跨越多少列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-width.html" target="_blank" rel="noopener">column-width</a></td>
+<td align="left">指定列的宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-columns.html" target="_blank" rel="noopener">columns</a></td>
+<td align="left">缩写属性设置列宽和列数</td>
+</tr>
+</tbody></table>
+<h2 id="页面媒体-Paged-Media-属性"><a href="#页面媒体-Paged-Media-属性" class="headerlink" title="页面媒体(Paged Media) 属性"></a>页面媒体(Paged Media) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">fit</td>
+<td align="left">如果其宽度和高度属性都不是auto给出一个提示，如何大规模替换元素</td>
+</tr>
+<tr>
+<td align="left">fit-position</td>
+<td align="left">判定方框内对象的对齐方式</td>
+</tr>
+<tr>
+<td align="left">image-orientation</td>
+<td align="left">指定用户代理适用于图像中的向右或顺时针方向的旋转</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="left">指定一个元素应显示的页面的特定类型</td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="left">指定含有BOX的页面内容的大小和方位</td>
+</tr>
+</tbody></table>
+<h2 id="定位（Positioning）-属性"><a href="#定位（Positioning）-属性" class="headerlink" title="定位（Positioning） 属性"></a>定位（Positioning） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-bottom.html" target="_blank" rel="noopener">bottom</a></td>
+<td align="left">设置定位元素下外边距边界与其包含块下边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-clear.html" target="_blank" rel="noopener">clear</a></td>
+<td align="left">规定元素的哪一侧不允许其他浮动元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-clip.html" target="_blank" rel="noopener">clip</a></td>
+<td align="left">剪裁绝对定位元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-cursor.html" target="_blank" rel="noopener">cursor</a></td>
+<td align="left">规定要显示的光标的类型（形状）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-display.html" target="_blank" rel="noopener">display</a></td>
+<td align="left">规定元素应该生成的框的类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-float.html" target="_blank" rel="noopener">float</a></td>
+<td align="left">规定框是否应该浮动</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-left.html" target="_blank" rel="noopener">left</a></td>
+<td align="left">设置定位元素左外边距边界与其包含块左边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-overflow.html" target="_blank" rel="noopener">overflow</a></td>
+<td align="left">规定当内容溢出元素框时发生的事情</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-position.html" target="_blank" rel="noopener">position</a></td>
+<td align="left">规定元素的定位类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-right.html" target="_blank" rel="noopener">right</a></td>
+<td align="left">设置定位元素右外边距边界与其包含块右边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-top.html" target="_blank" rel="noopener">top</a></td>
+<td align="left">设置定位元素的上外边距边界与其包含块上边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-visibility.html" target="_blank" rel="noopener">visibility</a></td>
+<td align="left">规定元素是否可见</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-z-index.html" target="_blank" rel="noopener">z-index</a></td>
+<td align="left">设置元素的堆叠顺序</td>
+</tr>
+</tbody></table>
+<h2 id="分页（Print）-属性"><a href="#分页（Print）-属性" class="headerlink" title="分页（Print） 属性"></a>分页（Print） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orphans</td>
+<td align="left">设置当元素内部发生分页时必须在页面底部保留的最少行数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pageba.html" target="_blank" rel="noopener">page-break-after</a></td>
+<td align="left">设置元素后的分页行为</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pagebb.html" target="_blank" rel="noopener">page-break-before</a></td>
+<td align="left">设置元素前的分页行为</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pagebi.html" target="_blank" rel="noopener">page-break-inside</a></td>
+<td align="left">设置元素内部的分页行为</td>
+</tr>
+<tr>
+<td align="left">widows</td>
+<td align="left">设置当元素内部发生分页时必须在页面顶部保留的最少行数</td>
+</tr>
+</tbody></table>
+<h2 id="Ruby-属性"><a href="#Ruby-属性" class="headerlink" title="Ruby 属性"></a>Ruby 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ruby-align</td>
+<td align="left">控制Ruby文本和Ruby基础内容相对彼此的文本对齐方式</td>
+</tr>
+<tr>
+<td align="left">ruby-overhang</td>
+<td align="left">当Ruby文本超过Ruby的基础宽，确定ruby文本是否允许局部悬置任意相邻的文本，除了自己的基础</td>
+</tr>
+<tr>
+<td align="left">ruby-position</td>
+<td align="left">它的base控制Ruby文本的位置</td>
+</tr>
+<tr>
+<td align="left">ruby-span</td>
+<td align="left">控制annotation 元素的跨越行为</td>
+</tr>
+</tbody></table>
+<h2 id="语音（Speech）-属性"><a href="#语音（Speech）-属性" class="headerlink" title="语音（Speech） 属性"></a>语音（Speech） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">mark</td>
+<td align="left">缩写属性设置mark-before和mark-after属性</td>
+</tr>
+<tr>
+<td align="left">mark-after</td>
+<td align="left">允许命名的标记连接到音频流</td>
+</tr>
+<tr>
+<td align="left">mark-before</td>
+<td align="left">允许命名的标记连接到音频流</td>
+</tr>
+<tr>
+<td align="left">phonemes</td>
+<td align="left">指定包含文本的相应元素中的一个音标发音</td>
+</tr>
+<tr>
+<td align="left">rest</td>
+<td align="left">一个缩写属性设置rest-before和rest-after属性</td>
+</tr>
+<tr>
+<td align="left">rest-after</td>
+<td align="left">一个元素的内容讲完之后，指定要休息一下或遵守韵律边界</td>
+</tr>
+<tr>
+<td align="left">rest-before</td>
+<td align="left">一个元素的内容讲完之前，指定要休息一下或遵守韵律边界</td>
+</tr>
+<tr>
+<td align="left">voice-balance</td>
+<td align="left">指定了左，右声道之间的平衡</td>
+</tr>
+<tr>
+<td align="left">voice-duration</td>
+<td align="left">指定应采取呈现所选元素的内容的长度</td>
+</tr>
+<tr>
+<td align="left">voice-pitch</td>
+<td align="left">指定平均说话的声音的音调（频率）</td>
+</tr>
+<tr>
+<td align="left">voice-pitch-range</td>
+<td align="left">指定平均间距的变化</td>
+</tr>
+<tr>
+<td align="left">voice-rate</td>
+<td align="left">控制语速</td>
+</tr>
+<tr>
+<td align="left">voice-stress</td>
+<td align="left">指示着重力度</td>
+</tr>
+<tr>
+<td align="left">voice-volume</td>
+<td align="left">语音合成是指波形输出幅度</td>
+</tr>
+</tbody></table>
+<h2 id="表格（Table）-属性"><a href="#表格（Table）-属性" class="headerlink" title="表格（Table） 属性"></a>表格（Table） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-collapse.html" target="_blank" rel="noopener">border-collapse</a></td>
+<td align="left">规定是否合并表格边框</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-spacing.html" target="_blank" rel="noopener">border-spacing</a></td>
+<td align="left">规定相邻单元格边框之间的距离</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-caption-side.html" target="_blank" rel="noopener">caption-side</a></td>
+<td align="left">规定表格标题的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-empty-cells.html" target="_blank" rel="noopener">empty-cells</a></td>
+<td align="left">规定是否显示表格中的空单元格上的边框和背景</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-table-layout.html" target="_blank" rel="noopener">table-layout</a></td>
+<td align="left">设置用于表格的布局算法</td>
+</tr>
+</tbody></table>
+<h2 id="文本（Text）-属性"><a href="#文本（Text）-属性" class="headerlink" title="文本（Text） 属性"></a>文本（Text） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-color.html" target="_blank" rel="noopener">color</a></td>
+<td align="left">设置文本的颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-direction.html" target="_blank" rel="noopener">direction</a></td>
+<td align="left">规定文本的方向 / 书写方向</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-letter-spacing.html" target="_blank" rel="noopener">letter-spacing</a></td>
+<td align="left">设置字符间距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-line-height.html" target="_blank" rel="noopener">line-height</a></td>
+<td align="left">设置行高</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-align.html" target="_blank" rel="noopener">text-align</a></td>
+<td align="left">规定文本的水平对齐方式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-decoration.html" target="_blank" rel="noopener">text-decoration</a></td>
+<td align="left">规定添加到文本的装饰效果</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-indent.html" target="_blank" rel="noopener">text-indent</a></td>
+<td align="left">规定文本块首行的缩进</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-transform.html" target="_blank" rel="noopener">text-transform</a></td>
+<td align="left">控制文本的大小写</td>
+</tr>
+<tr>
+<td align="left">unicode-bidi</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-vertical-align.html" target="_blank" rel="noopener">vertical-align</a></td>
+<td align="left">设置元素的垂直对齐方式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-white-space.html" target="_blank" rel="noopener">white-space</a></td>
+<td align="left">设置怎样给一元素控件留白</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-word-spacing.html" target="_blank" rel="noopener">word-spacing</a></td>
+<td align="left">设置单词间距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-emphasis.html" target="_blank" rel="noopener">text-emphasis</a></td>
+<td align="left">向元素的文本应用重点标记以及重点标记的前景色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-hanging-punctuation.html" target="_blank" rel="noopener">hanging-punctuation</a></td>
+<td align="left">指定一个标点符号是否可能超出行框</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-punctuation-trim.html" target="_blank" rel="noopener">punctuation-trim</a></td>
+<td align="left">指定一个标点符号是否要去掉</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-align-last.html" target="_blank" rel="noopener">text-align-last</a></td>
+<td align="left">当 text-align 设置为 justify 时，最后一行的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-justify.html" target="_blank" rel="noopener">text-justify</a></td>
+<td align="left">当 text-align 设置为 justify 时指定分散对齐的方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-outline.html" target="_blank" rel="noopener">text-outline</a></td>
+<td align="left">设置文字的轮廓。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-overflow.html" target="_blank" rel="noopener">text-overflow</a></td>
+<td align="left">指定当文本溢出包含的元素，应该发生什么</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-shadow.html" target="_blank" rel="noopener">text-shadow</a></td>
+<td align="left">为文本添加阴影</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-wrap.html" target="_blank" rel="noopener">text-wrap</a></td>
+<td align="left">指定文本换行规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-word-break.html" target="_blank" rel="noopener">word-break</a></td>
+<td align="left">指定非CJK文字的断行规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-word-wrap.html" target="_blank" rel="noopener">word-wrap</a></td>
+<td align="left">设置浏览器是否对过长的单词进行换行。</td>
+</tr>
+</tbody></table>
+<h2 id="2D-3D-转换属性"><a href="#2D-3D-转换属性" class="headerlink" title="2D/3D 转换属性"></a>2D/3D 转换属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform.html" target="_blank" rel="noopener">transform</a></td>
+<td align="left">适用于2D或3D转换的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform-origin.html" target="_blank" rel="noopener">transform-origin</a></td>
+<td align="left">允许您更改转化元素位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform-style.html" target="_blank" rel="noopener">transform-style</a></td>
+<td align="left">3D空间中的指定如何嵌套元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-perspective.html" target="_blank" rel="noopener">perspective</a></td>
+<td align="left">指定3D元素是如何查看透视图</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-perspective-origin.html" target="_blank" rel="noopener">perspective-origin</a></td>
+<td align="left">指定3D元素底部位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-backface-visibility.html" target="_blank" rel="noopener">backface-visibility</a></td>
+<td align="left">定义一个元素是否应该是可见的，不对着屏幕时</td>
+</tr>
+</tbody></table>
+<h2 id="过渡（Transition）-属性"><a href="#过渡（Transition）-属性" class="headerlink" title="过渡（Transition） 属性"></a>过渡（Transition） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition.html" target="_blank" rel="noopener">transition</a></td>
+<td align="left">此属性是 transition-property、transition-duration、transition-timing-function、transition-delay 的简写形式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-property.html" target="_blank" rel="noopener">transition-property</a></td>
+<td align="left">设置用来进行过渡的 CSS 属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-duration.html" target="_blank" rel="noopener">transition-duration</a></td>
+<td align="left">设置过渡进行的时间长度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-timing-function.html" target="_blank" rel="noopener">transition-timing-function</a></td>
+<td align="left">设置过渡进行的时序函数。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-delay.html" target="_blank" rel="noopener">transition-delay</a></td>
+<td align="left">指定过渡开始的时间。</td>
+</tr>
+</tbody></table>
+<h2 id="用户外观-User-interface-属性"><a href="#用户外观-User-interface-属性" class="headerlink" title="用户外观(User-interface) 属性"></a>用户外观(User-interface) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-appearance.html" target="_blank" rel="noopener">appearance</a></td>
+<td align="left">定义元素的外观样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-sizing.html" target="_blank" rel="noopener">box-sizing</a></td>
+<td align="left">允许您为了适应区域以某种方式定义某些元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-icon.html" target="_blank" rel="noopener">icon</a></td>
+<td align="left">为元素指定图标</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-down.html" target="_blank" rel="noopener">nav-down</a></td>
+<td align="left">指定用户按向下键时向下导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-index.html" target="_blank" rel="noopener">nav-index</a></td>
+<td align="left">指定导航（tab）顺序。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-left.html" target="_blank" rel="noopener">nav-left</a></td>
+<td align="left">指定用户按向左键时向左导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-right.html" target="_blank" rel="noopener">nav-right</a></td>
+<td align="left">指定用户按向右键时向左导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-up.html" target="_blank" rel="noopener">nav-up</a></td>
+<td align="left">指定用户按向上键时向上导航的位置a</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-outline-offset.html" target="_blank" rel="noopener">outline-offset</a></td>
+<td align="left">设置轮廓框架在 border 边缘外的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-resize.html" target="_blank" rel="noopener">resize</a></td>
+<td align="left">定义元素是否可以改变大小</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Dialog</title>
     <url>/2020/05/29/Dialog/</url>
     <content><![CDATA[<h1 id="有关Dialog的切换效果的应用"><a href="#有关Dialog的切换效果的应用" class="headerlink" title="有关Dialog的切换效果的应用"></a>有关Dialog的切换效果的应用</h1><h2 id="业务分析"><a href="#业务分析" class="headerlink" title="业务分析"></a>业务分析</h2><ol>
@@ -93,6 +1369,41 @@ mathjax：错误
       <tags>
         <tag>ElementUI</tag>
         <tag>Dialog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java学习路线（一）</title>
+    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
+<p>语言基础 </p>
+<pre><code>基础语法
+面向对象
+接口
+容器
+异常
+泛型
+反射
+注释
+IO
+图形化（Swing）</code></pre><p>JVM </p>
+<pre><code>类加载机制 
+字节码执行机制
+JVM内存模型
+GC垃圾回收
+JVM性能监控与故障定位
+JVM调优</code></pre><p>并发多线程  </p>
+<pre><code>并发编程基础
+线程池
+锁
+并发容器
+原子类
+JUC并发工具 </code></pre>]]></content>
+      <categories>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>后端</tag>
       </tags>
   </entry>
   <entry>
@@ -433,300 +1744,6 @@ mathjax：错误
       <tags>
         <tag>vant</tag>
         <tag>主页</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java学习路线（一）</title>
-    <url>/2020/05/21/Java%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="Java后端学习流程图之基础部分"><a href="#Java后端学习流程图之基础部分" class="headerlink" title="Java后端学习流程图之基础部分"></a>Java后端学习流程图之基础部分</h1><p>编程基础之Java语言 </p>
-<p>语言基础 </p>
-<pre><code>基础语法
-面向对象
-接口
-容器
-异常
-泛型
-反射
-注释
-IO
-图形化（Swing）</code></pre><p>JVM </p>
-<pre><code>类加载机制 
-字节码执行机制
-JVM内存模型
-GC垃圾回收
-JVM性能监控与故障定位
-JVM调优</code></pre><p>并发多线程  </p>
-<pre><code>并发编程基础
-线程池
-锁
-并发容器
-原子类
-JUC并发工具 </code></pre>]]></content>
-      <categories>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>后端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SubMit</title>
-    <url>/2020/05/28/SubMit/</url>
-    <content><![CDATA[<h1 id="Submit的使用"><a href="#Submit的使用" class="headerlink" title="Submit的使用"></a>Submit的使用</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>信息的录入</p>
-<h3 id="ElementUI"><a href="#ElementUI" class="headerlink" title="ElementUI"></a>ElementUI</h3><pre class=" language-js"><code class="language-js">  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span> @click<span class="token operator">=</span><span class="token string">"onSubmit"</span><span class="token operator">></span>立即创建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button<span class="token operator">></span>取消<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        form<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          region<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date1<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date2<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          delivery<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-          type<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-          resource<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          desc<span class="token punctuation">:</span> <span class="token string">''</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token function">onSubmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
-<p>带有<strong>规则验证</strong>的表单</p>
-<p> Form 组件提供了表单验证的功能，只需要通过 <code>rules</code> 属性传入约定的验证规则，并将 Form-Item 的 <code>prop</code> 属性设置为需校验的字段名即可。校验规则参见 <a href="https://github.com/yiminghe/async-validator" target="_blank" rel="noopener">async-validator</a> </p>
-<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>el<span class="token operator">-</span>form <span class="token punctuation">:</span>model<span class="token operator">=</span><span class="token string">"ruleForm"</span> <span class="token punctuation">:</span>rules<span class="token operator">=</span><span class="token string">"rules"</span> ref<span class="token operator">=</span><span class="token string">"ruleForm"</span> label<span class="token operator">-</span>width<span class="token operator">=</span><span class="token string">"100px"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"demo-ruleForm"</span><span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动名称"</span> prop<span class="token operator">=</span><span class="token string">"name"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.name"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动区域"</span> prop<span class="token operator">=</span><span class="token string">"region"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>select v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.region"</span> placeholder<span class="token operator">=</span><span class="token string">"请选择活动区域"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域一"</span> value<span class="token operator">=</span><span class="token string">"shanghai"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域二"</span> value<span class="token operator">=</span><span class="token string">"beijing"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>select<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动时间"</span> required<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item prop<span class="token operator">=</span><span class="token string">"date1"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker type<span class="token operator">=</span><span class="token string">"date"</span> placeholder<span class="token operator">=</span><span class="token string">"选择日期"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.date1"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"line"</span> <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"2"</span><span class="token operator">></span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item prop<span class="token operator">=</span><span class="token string">"date2"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker placeholder<span class="token operator">=</span><span class="token string">"选择时间"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.date2"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"即时配送"</span> prop<span class="token operator">=</span><span class="token string">"delivery"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span><span class="token keyword">switch</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.delivery"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span><span class="token keyword">switch</span><span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动性质"</span> prop<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.type"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"美食/餐厅线上活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"地推活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"线下主题活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"单纯品牌曝光"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"特殊资源"</span> prop<span class="token operator">=</span><span class="token string">"resource"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.resource"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线上品牌商赞助"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线下场地免费"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动形式"</span> prop<span class="token operator">=</span><span class="token string">"desc"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input type<span class="token operator">=</span><span class="token string">"textarea"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.desc"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span> @click<span class="token operator">=</span><span class="token string">"submitForm('ruleForm')"</span><span class="token operator">></span>立即创建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button @click<span class="token operator">=</span><span class="token string">"resetForm('ruleForm')"</span><span class="token operator">></span>重置<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">></span>
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        ruleForm<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          region<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date1<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date2<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          delivery<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-          type<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-          resource<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          desc<span class="token punctuation">:</span> <span class="token string">''</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        rules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          name<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入活动名称'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token punctuation">{</span> min<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'长度在 3 到 5 个字符'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          region<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择活动区域'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          date1<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择日期'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          date2<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择时间'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          type<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请至少选择一个活动性质'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          resource<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择活动资源'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          desc<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请填写活动形式'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span>
-          <span class="token punctuation">]</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token function">submitForm</span><span class="token punctuation">(</span>formName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>formName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error submit!!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token function">resetForm</span><span class="token punctuation">(</span>formName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>formName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">resetFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
-<h3 id="业务"><a href="#业务" class="headerlink" title="业务"></a>业务</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
-  <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 65%;margin: 0 auto"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>form <span class="token punctuation">:</span>model<span class="token operator">=</span><span class="token string">"form"</span>
-             ref<span class="token operator">=</span><span class="token string">"dataForm"</span>
-             size<span class="token operator">=</span><span class="token string">"mini"</span>
-             label<span class="token operator">-</span>width<span class="token operator">=</span><span class="token string">"100px"</span>
-             label<span class="token operator">-</span>position<span class="token operator">=</span><span class="token string">"right"</span>
-             style<span class="token operator">=</span><span class="token string">"margin-top: 10px"</span>
-             <span class="token punctuation">:</span>rules<span class="token operator">=</span><span class="token string">"rules"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"所属企业："</span>
-                    prop<span class="token operator">=</span><span class="token string">"branchId"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>select<span class="token operator">-</span>enterprise v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.branchId"</span>
-                           style<span class="token operator">=</span><span class="token string">"width: 50%;"</span>
-                           placeholder<span class="token operator">=</span><span class="token string">"请输入所属企业"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>select<span class="token operator">-</span>enterprise<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁编号："</span>
-                    prop<span class="token operator">=</span><span class="token string">"doorCode"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorCode"</span>
-                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁编号，请询问开发人员后添加"</span>
-                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁名称："</span>
-                    prop<span class="token operator">=</span><span class="token string">"doorName"</span>
-                    style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorName"</span>
-                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁名称"</span>
-                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁描述："</span>
-                    prop<span class="token operator">=</span><span class="token string">"doorDetail"</span>
-                    style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input type<span class="token operator">=</span><span class="token string">"textarea"</span>
-                  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorDetail"</span>
-                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁的描述"</span>
-                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span>
-                   @click<span class="token operator">=</span><span class="token string">"submit"</span>
-                   style<span class="token operator">=</span><span class="token string">"background-color: #4681ed;color: white;border-radius: 6px;"</span><span class="token operator">></span>确定新建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
-
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-  <span class="token keyword">import</span> selectEnterprise <span class="token keyword">from</span> <span class="token string">'../../components/selectEnterprise'</span>
-  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    name<span class="token punctuation">:</span> <span class="token string">'newDoor'</span><span class="token punctuation">,</span>
-    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      selectEnterprise
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-      <span class="token keyword">return</span><span class="token punctuation">{</span>
-        form<span class="token punctuation">:</span><span class="token punctuation">{</span>
-          branchId<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          doorCode<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          doorName<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          doorDetail<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        rules<span class="token punctuation">:</span><span class="token punctuation">{</span>
-          branchId<span class="token punctuation">:</span><span class="token punctuation">[</span>
-            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入所属企业'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          doorCode<span class="token punctuation">:</span><span class="token punctuation">[</span>
-            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入门禁编号'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-          doorName<span class="token punctuation">:</span><span class="token punctuation">[</span>
-            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入门禁名称'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
-          <span class="token punctuation">]</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
-      <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
-              doorCode<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>doorCode<span class="token punctuation">,</span>
-              doorName<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>doorName<span class="token punctuation">,</span>
-              doorDetail<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>doorDetail<span class="token punctuation">,</span>
-              branchId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>branchId
-          <span class="token punctuation">}</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c301021door/appendDoor'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
-            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
-          <span class="token punctuation">}</span><span class="token punctuation">)</span>
-          <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/door/doorManage'</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>branchId<span class="token punctuation">)</span>
-        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>dataForm<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
-          <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-            <span class="token keyword">return</span> <span class="token boolean">false</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span>
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
-
-<span class="token operator">&lt;</span>style scoped<span class="token operator">></span>
-
-<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
-</code></pre>
-<p><a href="https://www.bilibili.com/video/BV1EE411B7SU?p=19" target="_blank" rel="noopener">表单验证</a></p>
-<p><a href="https://www.bilibili.com/video/BV1EE411B7SU?p=57" target="_blank" rel="noopener">调用API完成添加操作</a></p>
-]]></content>
-      <categories>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>ElementUI</tag>
-        <tag>submit</tag>
       </tags>
   </entry>
   <entry>
@@ -1117,6 +2134,323 @@ JUC并发工具 </code></pre>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>SubMit</title>
+    <url>/2020/05/28/SubMit/</url>
+    <content><![CDATA[<h1 id="Submit的使用"><a href="#Submit的使用" class="headerlink" title="Submit的使用"></a>Submit的使用</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>信息的录入</p>
+<h3 id="ElementUI"><a href="#ElementUI" class="headerlink" title="ElementUI"></a>ElementUI</h3><pre class=" language-js"><code class="language-js">  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span> @click<span class="token operator">=</span><span class="token string">"onSubmit"</span><span class="token operator">></span>立即创建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button<span class="token operator">></span>取消<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        form<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          region<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          date1<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          date2<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          delivery<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          resource<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          desc<span class="token punctuation">:</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">onSubmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<p>带有<strong>规则验证</strong>的表单</p>
+<p> Form 组件提供了表单验证的功能，只需要通过 <code>rules</code> 属性传入约定的验证规则，并将 Form-Item 的 <code>prop</code> 属性设置为需校验的字段名即可。校验规则参见 <a href="https://github.com/yiminghe/async-validator" target="_blank" rel="noopener">async-validator</a> </p>
+<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>el<span class="token operator">-</span>form <span class="token punctuation">:</span>model<span class="token operator">=</span><span class="token string">"ruleForm"</span> <span class="token punctuation">:</span>rules<span class="token operator">=</span><span class="token string">"rules"</span> ref<span class="token operator">=</span><span class="token string">"ruleForm"</span> label<span class="token operator">-</span>width<span class="token operator">=</span><span class="token string">"100px"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"demo-ruleForm"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动名称"</span> prop<span class="token operator">=</span><span class="token string">"name"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.name"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动区域"</span> prop<span class="token operator">=</span><span class="token string">"region"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>select v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.region"</span> placeholder<span class="token operator">=</span><span class="token string">"请选择活动区域"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域一"</span> value<span class="token operator">=</span><span class="token string">"shanghai"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域二"</span> value<span class="token operator">=</span><span class="token string">"beijing"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>select<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动时间"</span> required<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item prop<span class="token operator">=</span><span class="token string">"date1"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker type<span class="token operator">=</span><span class="token string">"date"</span> placeholder<span class="token operator">=</span><span class="token string">"选择日期"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.date1"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"line"</span> <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"2"</span><span class="token operator">></span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item prop<span class="token operator">=</span><span class="token string">"date2"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker placeholder<span class="token operator">=</span><span class="token string">"选择时间"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.date2"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"即时配送"</span> prop<span class="token operator">=</span><span class="token string">"delivery"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span><span class="token keyword">switch</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.delivery"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span><span class="token keyword">switch</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动性质"</span> prop<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.type"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"美食/餐厅线上活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"地推活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"线下主题活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"单纯品牌曝光"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"特殊资源"</span> prop<span class="token operator">=</span><span class="token string">"resource"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.resource"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线上品牌商赞助"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线下场地免费"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动形式"</span> prop<span class="token operator">=</span><span class="token string">"desc"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input type<span class="token operator">=</span><span class="token string">"textarea"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"ruleForm.desc"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span> @click<span class="token operator">=</span><span class="token string">"submitForm('ruleForm')"</span><span class="token operator">></span>立即创建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button @click<span class="token operator">=</span><span class="token string">"resetForm('ruleForm')"</span><span class="token operator">></span>重置<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">></span>
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        ruleForm<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          region<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          date1<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          date2<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          delivery<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          resource<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          desc<span class="token punctuation">:</span> <span class="token string">''</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        rules<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+          name<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入活动名称'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span> min<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> max<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'长度在 3 到 5 个字符'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          region<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择活动区域'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          date1<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择日期'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          date2<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'date'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择时间'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          type<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> type<span class="token punctuation">:</span> <span class="token string">'array'</span><span class="token punctuation">,</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请至少选择一个活动性质'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          resource<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请选择活动资源'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'change'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          desc<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span> required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请填写活动形式'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">submitForm</span><span class="token punctuation">(</span>formName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>formName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error submit!!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">resetForm</span><span class="token punctuation">(</span>formName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">[</span>formName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">resetFields</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
+<h3 id="业务"><a href="#业务" class="headerlink" title="业务"></a>业务</h3><pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+  <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token string">"width: 65%;margin: 0 auto"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>el<span class="token operator">-</span>form <span class="token punctuation">:</span>model<span class="token operator">=</span><span class="token string">"form"</span>
+             ref<span class="token operator">=</span><span class="token string">"dataForm"</span>
+             size<span class="token operator">=</span><span class="token string">"mini"</span>
+             label<span class="token operator">-</span>width<span class="token operator">=</span><span class="token string">"100px"</span>
+             label<span class="token operator">-</span>position<span class="token operator">=</span><span class="token string">"right"</span>
+             style<span class="token operator">=</span><span class="token string">"margin-top: 10px"</span>
+             <span class="token punctuation">:</span>rules<span class="token operator">=</span><span class="token string">"rules"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"所属企业："</span>
+                    prop<span class="token operator">=</span><span class="token string">"branchId"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>select<span class="token operator">-</span>enterprise v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.branchId"</span>
+                           style<span class="token operator">=</span><span class="token string">"width: 50%;"</span>
+                           placeholder<span class="token operator">=</span><span class="token string">"请输入所属企业"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>select<span class="token operator">-</span>enterprise<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁编号："</span>
+                    prop<span class="token operator">=</span><span class="token string">"doorCode"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorCode"</span>
+                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁编号，请询问开发人员后添加"</span>
+                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁名称："</span>
+                    prop<span class="token operator">=</span><span class="token string">"doorName"</span>
+                    style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorName"</span>
+                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁名称"</span>
+                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"门禁描述："</span>
+                    prop<span class="token operator">=</span><span class="token string">"doorDetail"</span>
+                    style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>input type<span class="token operator">=</span><span class="token string">"textarea"</span>
+                  v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.doorDetail"</span>
+                  placeholder<span class="token operator">=</span><span class="token string">"请输入门禁的描述"</span>
+                  style<span class="token operator">=</span><span class="token string">"width: 50%"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+      <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item style<span class="token operator">=</span><span class="token string">"margin-top: 30px"</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span>
+                   @click<span class="token operator">=</span><span class="token string">"submit"</span>
+                   style<span class="token operator">=</span><span class="token string">"background-color: #4681ed;color: white;border-radius: 6px;"</span><span class="token operator">></span>确定新建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+  <span class="token keyword">import</span> selectEnterprise <span class="token keyword">from</span> <span class="token string">'../../components/selectEnterprise'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'newDoor'</span><span class="token punctuation">,</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      selectEnterprise
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">{</span>
+        form<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          branchId<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          doorCode<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          doorName<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          doorDetail<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        rules<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          branchId<span class="token punctuation">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入所属企业'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          doorCode<span class="token punctuation">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入门禁编号'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          doorName<span class="token punctuation">:</span><span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>required<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> message<span class="token punctuation">:</span> <span class="token string">'请输入门禁名称'</span><span class="token punctuation">,</span> trigger<span class="token punctuation">:</span> <span class="token string">'blur'</span><span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
+      <span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+              doorCode<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>doorCode<span class="token punctuation">,</span>
+              doorName<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>doorName<span class="token punctuation">,</span>
+              doorDetail<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>doorDetail<span class="token punctuation">,</span>
+              branchId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>branchId
+          <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c301021door/appendDoor'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/door/doorManage'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>form<span class="token punctuation">.</span>branchId<span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>dataForm<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>style scoped<span class="token operator">></span>
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">></span>
+</code></pre>
+<p><a href="https://www.bilibili.com/video/BV1EE411B7SU?p=19" target="_blank" rel="noopener">表单验证</a></p>
+<p><a href="https://www.bilibili.com/video/BV1EE411B7SU?p=57" target="_blank" rel="noopener">调用API完成添加操作</a></p>
+]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>ElementUI</tag>
+        <tag>submit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuex</title>
+    <url>/2020/05/22/Vuex/</url>
+    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
+<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
+          <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
+<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
+<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
+<ol>
+<li>从store.js中的mutaions导入到组件中</li>
+<li>将store中定义的函数映射到method里并调用</li>
+</ol>
+<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+ methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span></code></pre>
+<ol>
+<li>访问state中的数据</li>
+<li>映射为当前组件的计算属性</li>
+</ol>
+<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
+<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
+<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>Vuex</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>UPLOADIMAG</title>
     <url>/2020/05/28/UPLOADIMAG/</url>
     <content><![CDATA[<h1 id="UPloadimag"><a href="#UPloadimag" class="headerlink" title="UPloadimag"></a>UPloadimag</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>后台管理系统：商家入驻需要提交营业执照</p>
@@ -1464,64 +2798,6 @@ components<span class="token punctuation">:</span> <span class="token punctuatio
       </tags>
   </entry>
   <entry>
-    <title>Vuex</title>
-    <url>/2020/05/22/Vuex/</url>
-    <content><![CDATA[<h1 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span></code></pre>
-<h1 id="store-js"><a href="#store-js" class="headerlink" title="store.js"></a>store.js</h1><pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
-<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
-Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  state<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    isPlaying<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-    coverUrl<span class="token punctuation">:</span> <span class="token string">''</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  getters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-  mutations<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    togglePlay <span class="token punctuation">(</span>state<span class="token punctuation">,</span> toggle<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      state<span class="token punctuation">.</span>isPlaying <span class="token operator">=</span> toggle <span class="token operator">!==</span> undefined <span class="token operator">?</span> toggle <span class="token punctuation">:</span> <span class="token operator">!</span>state<span class="token punctuation">.</span>isPlaying
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    changeCover <span class="token punctuation">(</span>state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> index <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">)</span>
-        <span class="token keyword">const</span> coverUrl <span class="token operator">=</span> COVER_URL<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span>coverUrl <span class="token operator">!==</span> state<span class="token punctuation">.</span>coverUrl<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          state<span class="token punctuation">.</span>coverUrl <span class="token operator">=</span> coverUrl
-          <span class="token keyword">break</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-  actions<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
-<p>使用<u><strong>mutations</strong></u>中的函数修改 <strong><u>state</u></strong>中的数据</p>
-<p>在<strong><u>store.js</u></strong>中定义<strong><u>state</u></strong>和<u><strong>mutations</strong></u>,在组件中method</p>
-<ol>
-<li>从store.js中的mutaions导入到组件中</li>
-<li>将store中定义的函数映射到method里并调用</li>
-</ol>
-<pre class=" language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> mapState<span class="token punctuation">,</span> mapMutations <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
- methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-        <span class="token operator">...</span><span class="token function">mapMutations</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'togglePlay'</span><span class="token punctuation">,</span> <span class="token string">'changeCover'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span></code></pre>
-<ol>
-<li>访问state中的数据</li>
-<li>映射为当前组件的计算属性</li>
-</ol>
-<pre class=" language-js"><code class="language-js">computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'isPlaying'</span><span class="token punctuation">,</span> <span class="token string">'coverUrl'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre>
-<p>通过<strong>this</strong>直接调用当前组件中的函数</p>
-<pre><code></code></pre><p><a href="https://www.bilibili.com/video/BV1D7411o7zh?p=10" target="_blank" rel="noopener">视频</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>Vuex</tag>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Element</title>
     <url>/2020/05/22/element/</url>
     <content><![CDATA[<h1 id="导入Element-UI"><a href="#导入Element-UI" class="headerlink" title="导入Element UI"></a>导入Element UI</h1><p>通过<strong>vue ui</strong>创建的项目可以在初始化的时候选择element的插件</p>
@@ -1557,8 +2833,8 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
         <category>前端</category>
       </categories>
       <tags>
-        <tag>UI库</tag>
         <tag>前端</tag>
+        <tag>UI库</tag>
       </tags>
   </entry>
   <entry>

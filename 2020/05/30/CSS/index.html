@@ -1,0 +1,2416 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="CSS, Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>CSS | Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">CSS</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/css/">
+                                <span class="chip bg-color">css</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/CSS/" class="post-category">
+                                CSS
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-05-30
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="CSS配置"><a href="#CSS配置" class="headerlink" title="CSS配置"></a>CSS配置</h1><h2 id="动画属性"><a href="#动画属性" class="headerlink" title="动画属性"></a>动画属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-keyframes.html" target="_blank" rel="noopener">@keyframes</a></td>
+<td align="left">定义一个动画,@keyframes定义的动画名称用来被animation-name所使用。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation.html" target="_blank" rel="noopener">animation</a></td>
+<td align="left">复合属性。检索或设置对象所应用的动画特效。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-name.html" target="_blank" rel="noopener">animation-name</a></td>
+<td align="left">检索或设置对象所应用的动画名称 ,必须与规则@keyframes配合使用，因为动画名称由@keyframes定义</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-duration.html" target="_blank" rel="noopener">animation-duration</a></td>
+<td align="left">检索或设置对象动画的持续时间</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-timing-function.html" target="_blank" rel="noopener">animation-timing-function</a></td>
+<td align="left">检索或设置对象动画的过渡类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-delay.html" target="_blank" rel="noopener">animation-delay</a></td>
+<td align="left">检索或设置对象动画的延迟时间</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-iteration-count.html" target="_blank" rel="noopener">animation-iteration-count</a></td>
+<td align="left">检索或设置对象动画的循环次数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-direction.html" target="_blank" rel="noopener">animation-direction</a></td>
+<td align="left">检索或设置对象动画在循环中是否反向运动</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-animation-play-state.html" target="_blank" rel="noopener">animation-play-state</a></td>
+<td align="left">检索或设置对象动画的状态</td>
+</tr>
+</tbody></table>
+<h2 id="背景属性"><a href="#背景属性" class="headerlink" title="背景属性"></a>背景属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background.html" target="_blank" rel="noopener">background</a></td>
+<td align="left">复合属性。设置对象的背景特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-attachment.html" target="_blank" rel="noopener">background-attachment</a></td>
+<td align="left">设置或检索背景图像是随对象内容滚动还是固定的。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-color.html" target="_blank" rel="noopener">background-color</a></td>
+<td align="left">设置或检索对象的背景颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-image.html" target="_blank" rel="noopener">background-image</a></td>
+<td align="left">设置或检索对象的背景图像。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-position.html" target="_blank" rel="noopener">background-position</a></td>
+<td align="left">设置或检索对象的背景图像位置。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-background-repeat.html" target="_blank" rel="noopener">background-repeat</a></td>
+<td align="left">设置或检索对象的背景图像如何铺排填充。必须先指定background-image属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-clip.html" target="_blank" rel="noopener">background-clip</a></td>
+<td align="left">指定对象的背景图像向外裁剪的区域。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-origin.html" target="_blank" rel="noopener">background-origin</a></td>
+<td align="left">S设置或检索对象的背景图像计算background-position时的参考原点(位置)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-background-size.html" target="_blank" rel="noopener">background-size</a></td>
+<td align="left">检索或设置对象的背景图像的尺寸大小。</td>
+</tr>
+</tbody></table>
+<h2 id="边框-Border-和-轮廓-Outline-属性"><a href="#边框-Border-和-轮廓-Outline-属性" class="headerlink" title="边框(Border) 和 轮廓(Outline) 属性"></a>边框(Border) 和 轮廓(Outline) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border.html" target="_blank" rel="noopener">border</a></td>
+<td align="left">复合属性。设置对象边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom.html" target="_blank" rel="noopener">border-bottom</a></td>
+<td align="left">复合属性。设置对象底部边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-color.html" target="_blank" rel="noopener">border-bottom-color</a></td>
+<td align="left">设置或检索对象的底部边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-style.html" target="_blank" rel="noopener">border-bottom-style</a></td>
+<td align="left">设置或检索对象的底部边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-bottom-width.html" target="_blank" rel="noopener">border-bottom-width</a></td>
+<td align="left">设置或检索对象的底部边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-color.html" target="_blank" rel="noopener">border-color</a></td>
+<td align="left">置或检索对象的边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left.html" target="_blank" rel="noopener">border-left</a></td>
+<td align="left">复合属性。设置对象左边边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-color.html" target="_blank" rel="noopener">border-left-color</a></td>
+<td align="left">设置或检索对象的左边边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-style.html" target="_blank" rel="noopener">border-left-style</a></td>
+<td align="left">设置或检索对象的左边边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-left-width.html" target="_blank" rel="noopener">border-left-width</a></td>
+<td align="left">设置或检索对象的左边边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right.html" target="_blank" rel="noopener">border-right</a></td>
+<td align="left">复合属性。设置对象右边边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-color.html" target="_blank" rel="noopener">border-right-color</a></td>
+<td align="left">设置或检索对象的右边边框颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-style.html" target="_blank" rel="noopener">border-right-style</a></td>
+<td align="left">设置或检索对象的右边边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-right-width.html" target="_blank" rel="noopener">border-right-width</a></td>
+<td align="left">设置或检索对象的右边边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-style.html" target="_blank" rel="noopener">border-style</a></td>
+<td align="left">设置或检索对象的边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top.html" target="_blank" rel="noopener">border-top</a></td>
+<td align="left">复合属性。设置对象顶部边框的特性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-color.html" target="_blank" rel="noopener">border-top-color</a></td>
+<td align="left">设置或检索对象的顶部边框颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-style.html" target="_blank" rel="noopener">border-top-style</a></td>
+<td align="left">设置或检索对象的顶部边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-top-width.html" target="_blank" rel="noopener">border-top-width</a></td>
+<td align="left">设置或检索对象的顶部边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-width.html" target="_blank" rel="noopener">border-width</a></td>
+<td align="left">设置或检索对象的边框宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline.html" target="_blank" rel="noopener">outline</a></td>
+<td align="left">复合属性。设置或检索对象外的线条轮廓。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-color.html" target="_blank" rel="noopener">outline-color</a></td>
+<td align="left">设置或检索对象外的线条轮廓的颜色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-style.html" target="_blank" rel="noopener">outline-style</a></td>
+<td align="left">设置或检索对象外的线条轮廓的样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-outline-width.html" target="_blank" rel="noopener">outline-width</a></td>
+<td align="left">设置或检索对象外的线条轮廓的宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-bottom-left-radius.html" target="_blank" rel="noopener">border-bottom-left-radius</a></td>
+<td align="left">设置或检索对象的左下角圆角边框。提供2个参数，2个参数以空格分隔，每个参数允许设置1个参数值，第1个参数表示水平半径，第2个参数表示垂直半径，如第2个参数省略，则默认等于第1个参数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-bottom-right-radius.html" target="_blank" rel="noopener">border-bottom-right-radius</a></td>
+<td align="left">设置或检索对象的右下角圆角边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image.html" target="_blank" rel="noopener">border-image</a></td>
+<td align="left">设置或检索对象的边框样式使用图像来填充。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-outset.html" target="_blank" rel="noopener">border-image-outset</a></td>
+<td align="left">规定边框图像超过边框的量。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-repeat.html" target="_blank" rel="noopener">border-image-repeat</a></td>
+<td align="left">规定图像边框是否应该被重复（repeated）、拉伸（stretched）或铺满（rounded）。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-slice.html" target="_blank" rel="noopener">border-image-slice</a></td>
+<td align="left">规定图像边框的向内偏移。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-source.html" target="_blank" rel="noopener">border-image-source</a></td>
+<td align="left">规定要使用的图像，代替 border-style 属性中设置的边框样式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-image-width.html" target="_blank" rel="noopener">border-image-width</a></td>
+<td align="left">规定图像边框的宽度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-radius.html" target="_blank" rel="noopener">border-radius</a></td>
+<td align="left">设置或检索对象使用圆角边框。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-top-left-radius.html" target="_blank" rel="noopener">border-top-left-radius</a></td>
+<td align="left">定义左上角边框的形状。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-border-top-right-radius.html" target="_blank" rel="noopener">border-top-right-radius</a></td>
+<td align="left">定义右上角边框的形状。</td>
+</tr>
+<tr>
+<td align="left">box-decoration-break</td>
+<td align="left">规定行内元素被折行</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-shadow.html" target="_blank" rel="noopener">box-shadow</a></td>
+<td align="left">向方框添加一个或多个阴影。</td>
+</tr>
+</tbody></table>
+<h2 id="盒子-Box-属性"><a href="#盒子-Box-属性" class="headerlink" title="盒子(Box) 属性"></a>盒子(Box) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-x.html" target="_blank" rel="noopener">overflow-x</a></td>
+<td align="left">如果内容溢出了元素内容区域，是否对内容的左/右边缘进行裁剪。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-y.html" target="_blank" rel="noopener">overflow-y</a></td>
+<td align="left">如果内容溢出了元素内容区域，是否对内容的上/下边缘进行裁剪。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-overflow-style.html" target="_blank" rel="noopener">overflow-style</a></td>
+<td align="left">规定溢出元素的首选滚动方法。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-rotation.html" target="_blank" rel="noopener">rotation</a></td>
+<td align="left">围绕由 rotation-point 属性定义的点对元素进行旋转。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-rotation-point.html" target="_blank" rel="noopener">rotation-point</a></td>
+<td align="left">定义距离上左边框边缘的偏移点。</td>
+</tr>
+</tbody></table>
+<h2 id="颜色-Color-属性"><a href="#颜色-Color-属性" class="headerlink" title="颜色(Color) 属性"></a>颜色(Color) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">color-profile</td>
+<td align="left">允许使用源的颜色配置文件的默认以外的规范</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-opacity.html" target="_blank" rel="noopener">opacity</a></td>
+<td align="left">设置一个元素的透明度级别</td>
+</tr>
+<tr>
+<td align="left">rendering-intent</td>
+<td align="left">允许超过默认颜色配置文件渲染意向的其他规范</td>
+</tr>
+</tbody></table>
+<h2 id="内边距-Padding-属性"><a href="#内边距-Padding-属性" class="headerlink" title="内边距(Padding) 属性"></a>内边距(Padding) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding.html" target="_blank" rel="noopener">padding</a></td>
+<td align="left">在一个声明中设置所有填充属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-bottom.html" target="_blank" rel="noopener">padding-bottom</a></td>
+<td align="left">设置元素的底填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-left.html" target="_blank" rel="noopener">padding-left</a></td>
+<td align="left">设置元素的左填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-right.html" target="_blank" rel="noopener">padding-right</a></td>
+<td align="left">设置元素的右填充</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-padding-top.html" target="_blank" rel="noopener">padding-top</a></td>
+<td align="left">设置元素的顶部填充</td>
+</tr>
+</tbody></table>
+<h2 id="媒体页面内容属性"><a href="#媒体页面内容属性" class="headerlink" title="媒体页面内容属性"></a>媒体页面内容属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">bookmark-label</td>
+<td align="left">指定书签的标签</td>
+</tr>
+<tr>
+<td align="left">bookmark-level</td>
+<td align="left">指定了书签级别</td>
+</tr>
+<tr>
+<td align="left">bookmark-target</td>
+<td align="left">指定了书签链接的目标</td>
+</tr>
+<tr>
+<td align="left">float-offset</td>
+<td align="left">在相反的方向推动浮动元素，他们一直具有浮动</td>
+</tr>
+<tr>
+<td align="left">hyphenate-after</td>
+<td align="left">指定一个断字的单词断字字符后的最少字符数</td>
+</tr>
+<tr>
+<td align="left">hyphenate-before</td>
+<td align="left">指定一个断字的单词断字字符前的最少字符数</td>
+</tr>
+<tr>
+<td align="left">hyphenate-character</td>
+<td align="left">指定了当一个断字发生时，要显示的字符串</td>
+</tr>
+<tr>
+<td align="left">hyphenate-lines</td>
+<td align="left">表示连续断字的行在元素的最大数目</td>
+</tr>
+<tr>
+<td align="left">hyphenate-resource</td>
+<td align="left">外部资源指定一个逗号分隔的列表，可以帮助确定浏览器的断字点</td>
+</tr>
+<tr>
+<td align="left">hyphens</td>
+<td align="left">设置如何分割单词以改善该段的布局</td>
+</tr>
+<tr>
+<td align="left">image-resolution</td>
+<td align="left">指定了正确的图像分辨率</td>
+</tr>
+<tr>
+<td align="left">marks</td>
+<td align="left">将crop and/or cross标志添加到文档</td>
+</tr>
+<tr>
+<td align="left">string-set</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h2 id="尺寸-Dimension-属性"><a href="#尺寸-Dimension-属性" class="headerlink" title="尺寸(Dimension) 属性"></a>尺寸(Dimension) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-height.html" target="_blank" rel="noopener">height</a></td>
+<td align="left">设置元素的高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-max-height.html" target="_blank" rel="noopener">max-height</a></td>
+<td align="left">设置元素的最大高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-max-width.html" target="_blank" rel="noopener">max-width</a></td>
+<td align="left">设置元素的最大宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-min-height.html" target="_blank" rel="noopener">min-height</a></td>
+<td align="left">设置元素的最小高度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-min-width.html" target="_blank" rel="noopener">min-width</a></td>
+<td align="left">设置元素的最小宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-width.html" target="_blank" rel="noopener">width</a></td>
+<td align="left">设置元素的宽度</td>
+</tr>
+</tbody></table>
+<h2 id="弹性盒子模型（Flexible-Box）-属性-新"><a href="#弹性盒子模型（Flexible-Box）-属性-新" class="headerlink" title="弹性盒子模型（Flexible Box） 属性(新)"></a>弹性盒子模型（Flexible Box） 属性(新)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex.html" target="_blank" rel="noopener">flex</a></td>
+<td align="left">复合属性。设置或检索弹性盒模型对象的子元素如何分配空间。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-grow.html" target="_blank" rel="noopener">flex-grow</a></td>
+<td align="left">设置或检索弹性盒的扩展比率。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-shrink.html" target="_blank" rel="noopener">flex-shrink</a></td>
+<td align="left">设置或检索弹性盒的收缩比率。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-basis.html" target="_blank" rel="noopener">flex-basis</a></td>
+<td align="left">设置或检索弹性盒伸缩基准值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-flow.html" target="_blank" rel="noopener">flex-flow</a></td>
+<td align="left">复合属性。设置或检索弹性盒模型对象的子元素排列方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-direction.html" target="_blank" rel="noopener">flex-direction</a></td>
+<td align="left">该属性通过定义flex容器的主轴方向来决定felx子项在flex容器中的位置。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-flex-wrap.html" target="_blank" rel="noopener">flex-wrap</a></td>
+<td align="left">该属性控制flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-content.html" target="_blank" rel="noopener">align-content</a></td>
+<td align="left">在弹性容器内的各项没有占用交叉轴上所有可用的空间时对齐容器内的各项（垂直）。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-items.html" target="_blank" rel="noopener">align-items</a></td>
+<td align="left">定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-align-self.html" target="_blank" rel="noopener">align-self</a></td>
+<td align="left">定义flex子项单独在侧轴（纵轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-justify-content.html" target="_blank" rel="noopener">justify-content</a></td>
+<td align="left">设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-order.html" target="_blank" rel="noopener">order</a></td>
+<td align="left">设置或检索弹性盒模型对象的子元素出现的順序。</td>
+</tr>
+</tbody></table>
+<h2 id="弹性盒子模型（Flexible-Box）-属性-旧"><a href="#弹性盒子模型（Flexible-Box）-属性-旧" class="headerlink" title="弹性盒子模型（Flexible Box） 属性(旧)"></a>弹性盒子模型（Flexible Box） 属性(旧)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-align.html" target="_blank" rel="noopener">box-align</a></td>
+<td align="left">指定如何对齐一个框的子元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-direction.html" target="_blank" rel="noopener">box-direction</a></td>
+<td align="left">指定在哪个方向，显示一个框的子元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-flex.html" target="_blank" rel="noopener">box-flex</a></td>
+<td align="left">指定一个框的子元素是否是灵活的或固定的大小</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-flex-group.html" target="_blank" rel="noopener">box-flex-group</a></td>
+<td align="left">指派灵活的元素到Flex组</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-lines.html" target="_blank" rel="noopener">box-lines</a></td>
+<td align="left">每当它在父框的空间运行时，是否指定将再上一个新的行列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-ordinal-group.html" target="_blank" rel="noopener">box-ordinal-group</a></td>
+<td align="left">指定一个框的子元素的显示顺序</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-orient.html" target="_blank" rel="noopener">box-orient</a></td>
+<td align="left">指定一个框的子元素是否在水平或垂直方向应铺设</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-pack.html" target="_blank" rel="noopener">box-pack</a></td>
+<td align="left">指定横向盒在垂直框的水平位置和垂直位置</td>
+</tr>
+</tbody></table>
+<h2 id="字体（Font）-属性"><a href="#字体（Font）-属性" class="headerlink" title="字体（Font） 属性"></a>字体（Font） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font.html" target="_blank" rel="noopener">font</a></td>
+<td align="left">在一个声明中设置所有字体属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-family.html" target="_blank" rel="noopener">font-family</a></td>
+<td align="left">规定文本的字体系列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-size.html" target="_blank" rel="noopener">font-size</a></td>
+<td align="left">规定文本的字体尺寸</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-style.html" target="_blank" rel="noopener">font-style</a></td>
+<td align="left">规定文本的字体样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-font-variant.html" target="_blank" rel="noopener">font-variant</a></td>
+<td align="left">规定文本的字体样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-font-weight.html" target="_blank" rel="noopener">font-weight</a></td>
+<td align="left">规定字体的粗细</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-face-rule.html" target="_blank" rel="noopener">@font-face</a></td>
+<td align="left">一个规则，允许网站下载并使用其他超过”Web- safe”字体的字体</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-size-adjust.html" target="_blank" rel="noopener">font-size-adjust</a></td>
+<td align="left">为元素规定 aspect 值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-font-stretch.html" target="_blank" rel="noopener">font-stretch</a></td>
+<td align="left">收缩或拉伸当前的字体系列</td>
+</tr>
+</tbody></table>
+<h2 id="内容生成属性-Generated-Content-Properties"><a href="#内容生成属性-Generated-Content-Properties" class="headerlink" title="内容生成属性(Generated Content Properties)"></a>内容生成属性(Generated Content Properties)</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-content.html" target="_blank" rel="noopener">content</a></td>
+<td align="left">与 :before 以及 :after 伪元素配合使用，来插入生成内容</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-counter-increment.html" target="_blank" rel="noopener">counter-increment</a></td>
+<td align="left">递增或递减一个或多个计数器</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-counter-reset.html" target="_blank" rel="noopener">counter-reset</a></td>
+<td align="left">创建或重置一个或多个计数器</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-gen-quotes.html" target="_blank" rel="noopener">quotes</a></td>
+<td align="left">设置嵌套引用的引号类型</td>
+</tr>
+<tr>
+<td align="left">crop</td>
+<td align="left">允许replaced元素只是作为一个对象代替整个对象的矩形区域</td>
+</tr>
+<tr>
+<td align="left">move-to</td>
+<td align="left">从流中删除元素，然后在文档中后面的点上重新插入。</td>
+</tr>
+<tr>
+<td align="left">page-policy</td>
+<td align="left">判定基于页面的给定元素的适用于计数器的字符串值</td>
+</tr>
+</tbody></table>
+<h2 id="网格（Grid）-属性"><a href="#网格（Grid）-属性" class="headerlink" title="网格（Grid） 属性"></a>网格（Grid） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-grid-columns.html" target="_blank" rel="noopener">grid-columns</a></td>
+<td align="left">指定在网格中每列的宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-grid-rows.html" target="_blank" rel="noopener">grid-rows</a></td>
+<td align="left">指定在网格中每列的高度</td>
+</tr>
+</tbody></table>
+<h2 id="超链接-Hyperlink-属性"><a href="#超链接-Hyperlink-属性" class="headerlink" title="超链接(Hyperlink) 属性"></a>超链接(Hyperlink) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target.html" target="_blank" rel="noopener">target</a></td>
+<td align="left">简写属性设置target-name, target-new,和target-position属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-name.html" target="_blank" rel="noopener">target-name</a></td>
+<td align="left">指定在何处打开链接（目标位置）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-new.html" target="_blank" rel="noopener">target-new</a></td>
+<td align="left">指定是否有新的目标链接打开一个新窗口或在现有窗口打开新标签</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-target-position.html" target="_blank" rel="noopener">target-position</a></td>
+<td align="left">指定应该放置新的目标链接的位置</td>
+</tr>
+</tbody></table>
+<h2 id="线框-Linebox-属性"><a href="#线框-Linebox-属性" class="headerlink" title="线框(Linebox) 属性"></a>线框(Linebox) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">alignment-adjust</td>
+<td align="left">允许更精确的元素的对齐方式</td>
+</tr>
+<tr>
+<td align="left">alignment-baseline</td>
+<td align="left">其父级指定的内联级别的元素如何对齐</td>
+</tr>
+<tr>
+<td align="left">baseline-shift</td>
+<td align="left">允许重新定位相对于dominant-baseline的dominant-baseline</td>
+</tr>
+<tr>
+<td align="left">dominant-baseline</td>
+<td align="left">指定scaled-baseline-table</td>
+</tr>
+<tr>
+<td align="left">drop-initial-after-adjust</td>
+<td align="left">设置下拉的主要连接点的初始对齐点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-after-align</td>
+<td align="left">校准行内的初始行的设置就是具有首字母的框使用初级连接点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-before-adjust</td>
+<td align="left">设置下拉的辅助连接点的初始对齐点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-before-align</td>
+<td align="left">校准行内的初始行的设置就是具有首字母的框使用辅助连接点</td>
+</tr>
+<tr>
+<td align="left">drop-initial-size</td>
+<td align="left">控制局部的首字母下沉</td>
+</tr>
+<tr>
+<td align="left">drop-initial-value</td>
+<td align="left">激活一个下拉式的初步效果</td>
+</tr>
+<tr>
+<td align="left">inline-box-align</td>
+<td align="left">设置一个多行的内联块内的行具有前一个和后一个内联元素的对齐</td>
+</tr>
+<tr>
+<td align="left">line-stacking</td>
+<td align="left">一个速记属性设置line-stacking-strategy, line-stacking-ruby,和line-stacking-shift属性</td>
+</tr>
+<tr>
+<td align="left">line-stacking-ruby</td>
+<td align="left">设置包含Ruby注释元素的行对于块元素的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">line-stacking-shift</td>
+<td align="left">设置base-shift行中块元素包含元素的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">line-stacking-strategy</td>
+<td align="left">设置内部包含块元素的堆叠线框的堆叠方法</td>
+</tr>
+<tr>
+<td align="left">text-height</td>
+<td align="left">行内框的文本内容区域设置block-progression维数</td>
+</tr>
+</tbody></table>
+<h2 id="列表-List-属性"><a href="#列表-List-属性" class="headerlink" title="列表(List) 属性"></a>列表(List) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style.html" target="_blank" rel="noopener">list-style</a></td>
+<td align="left">在一个声明中设置所有的列表属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-image.html" target="_blank" rel="noopener">list-style-image</a></td>
+<td align="left">将图象设置为列表项标记</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-position.html" target="_blank" rel="noopener">list-style-position</a></td>
+<td align="left">设置列表项标记的放置位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-list-style-type.html" target="_blank" rel="noopener">list-style-type</a></td>
+<td align="left">设置列表项标记的类型</td>
+</tr>
+</tbody></table>
+<h2 id="外边距-Margin-属性"><a href="#外边距-Margin-属性" class="headerlink" title="外边距(Margin) 属性"></a>外边距(Margin) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin.html" target="_blank" rel="noopener">margin</a></td>
+<td align="left">在一个声明中设置所有外边距属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-bottom.html" target="_blank" rel="noopener">margin-bottom</a></td>
+<td align="left">设置元素的下外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-left.html" target="_blank" rel="noopener">margin-left</a></td>
+<td align="left">设置元素的左外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-right.html" target="_blank" rel="noopener">margin-right</a></td>
+<td align="left">设置元素的右外边距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-margin-top.html" target="_blank" rel="noopener">margin-top</a></td>
+<td align="left">设置元素的上外边距</td>
+</tr>
+</tbody></table>
+<h2 id="字幕-Marquee-属性"><a href="#字幕-Marquee-属性" class="headerlink" title="字幕(Marquee) 属性"></a>字幕(Marquee) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">marquee-direction</td>
+<td align="left">设置内容移动的方向</td>
+</tr>
+<tr>
+<td align="left">marquee-play-count</td>
+<td align="left">设置内容移动多少次</td>
+</tr>
+<tr>
+<td align="left">marquee-speed</td>
+<td align="left">设置内容滚动的速度有多快</td>
+</tr>
+<tr>
+<td align="left">marquee-style</td>
+<td align="left">设置内容移动的样式</td>
+</tr>
+</tbody></table>
+<h2 id="多列-Multi-column-属性"><a href="#多列-Multi-column-属性" class="headerlink" title="多列(Multi-column) 属性"></a>多列(Multi-column) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-count.html" target="_blank" rel="noopener">column-count</a></td>
+<td align="left">指定元素应该分为的列数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-fill.html" target="_blank" rel="noopener">column-fill</a></td>
+<td align="left">指定如何填充列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-gap.html" target="_blank" rel="noopener">column-gap</a></td>
+<td align="left">指定列之间的差距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule.html" target="_blank" rel="noopener">column-rule</a></td>
+<td align="left">对于设置所有column-rule-*属性的简写属性</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-color.html" target="_blank" rel="noopener">column-rule-color</a></td>
+<td align="left">指定列之间的颜色规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-style.html" target="_blank" rel="noopener">column-rule-style</a></td>
+<td align="left">指定列之间的样式规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-rule-width.html" target="_blank" rel="noopener">column-rule-width</a></td>
+<td align="left">指定列之间的宽度规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-span.html" target="_blank" rel="noopener">column-span</a></td>
+<td align="left">指定元素应该跨越多少列</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-column-width.html" target="_blank" rel="noopener">column-width</a></td>
+<td align="left">指定列的宽度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-columns.html" target="_blank" rel="noopener">columns</a></td>
+<td align="left">缩写属性设置列宽和列数</td>
+</tr>
+</tbody></table>
+<h2 id="页面媒体-Paged-Media-属性"><a href="#页面媒体-Paged-Media-属性" class="headerlink" title="页面媒体(Paged Media) 属性"></a>页面媒体(Paged Media) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">fit</td>
+<td align="left">如果其宽度和高度属性都不是auto给出一个提示，如何大规模替换元素</td>
+</tr>
+<tr>
+<td align="left">fit-position</td>
+<td align="left">判定方框内对象的对齐方式</td>
+</tr>
+<tr>
+<td align="left">image-orientation</td>
+<td align="left">指定用户代理适用于图像中的向右或顺时针方向的旋转</td>
+</tr>
+<tr>
+<td align="left">page</td>
+<td align="left">指定一个元素应显示的页面的特定类型</td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="left">指定含有BOX的页面内容的大小和方位</td>
+</tr>
+</tbody></table>
+<h2 id="定位（Positioning）-属性"><a href="#定位（Positioning）-属性" class="headerlink" title="定位（Positioning） 属性"></a>定位（Positioning） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-bottom.html" target="_blank" rel="noopener">bottom</a></td>
+<td align="left">设置定位元素下外边距边界与其包含块下边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-clear.html" target="_blank" rel="noopener">clear</a></td>
+<td align="left">规定元素的哪一侧不允许其他浮动元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-clip.html" target="_blank" rel="noopener">clip</a></td>
+<td align="left">剪裁绝对定位元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-cursor.html" target="_blank" rel="noopener">cursor</a></td>
+<td align="left">规定要显示的光标的类型（形状）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-display.html" target="_blank" rel="noopener">display</a></td>
+<td align="left">规定元素应该生成的框的类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-float.html" target="_blank" rel="noopener">float</a></td>
+<td align="left">规定框是否应该浮动</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-left.html" target="_blank" rel="noopener">left</a></td>
+<td align="left">设置定位元素左外边距边界与其包含块左边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-overflow.html" target="_blank" rel="noopener">overflow</a></td>
+<td align="left">规定当内容溢出元素框时发生的事情</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-position.html" target="_blank" rel="noopener">position</a></td>
+<td align="left">规定元素的定位类型</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-right.html" target="_blank" rel="noopener">right</a></td>
+<td align="left">设置定位元素右外边距边界与其包含块右边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-top.html" target="_blank" rel="noopener">top</a></td>
+<td align="left">设置定位元素的上外边距边界与其包含块上边界之间的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-class-visibility.html" target="_blank" rel="noopener">visibility</a></td>
+<td align="left">规定元素是否可见</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-z-index.html" target="_blank" rel="noopener">z-index</a></td>
+<td align="left">设置元素的堆叠顺序</td>
+</tr>
+</tbody></table>
+<h2 id="分页（Print）-属性"><a href="#分页（Print）-属性" class="headerlink" title="分页（Print） 属性"></a>分页（Print） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">orphans</td>
+<td align="left">设置当元素内部发生分页时必须在页面底部保留的最少行数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pageba.html" target="_blank" rel="noopener">page-break-after</a></td>
+<td align="left">设置元素后的分页行为</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pagebb.html" target="_blank" rel="noopener">page-break-before</a></td>
+<td align="left">设置元素前的分页行为</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-print-pagebi.html" target="_blank" rel="noopener">page-break-inside</a></td>
+<td align="left">设置元素内部的分页行为</td>
+</tr>
+<tr>
+<td align="left">widows</td>
+<td align="left">设置当元素内部发生分页时必须在页面顶部保留的最少行数</td>
+</tr>
+</tbody></table>
+<h2 id="Ruby-属性"><a href="#Ruby-属性" class="headerlink" title="Ruby 属性"></a>Ruby 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">ruby-align</td>
+<td align="left">控制Ruby文本和Ruby基础内容相对彼此的文本对齐方式</td>
+</tr>
+<tr>
+<td align="left">ruby-overhang</td>
+<td align="left">当Ruby文本超过Ruby的基础宽，确定ruby文本是否允许局部悬置任意相邻的文本，除了自己的基础</td>
+</tr>
+<tr>
+<td align="left">ruby-position</td>
+<td align="left">它的base控制Ruby文本的位置</td>
+</tr>
+<tr>
+<td align="left">ruby-span</td>
+<td align="left">控制annotation 元素的跨越行为</td>
+</tr>
+</tbody></table>
+<h2 id="语音（Speech）-属性"><a href="#语音（Speech）-属性" class="headerlink" title="语音（Speech） 属性"></a>语音（Speech） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">mark</td>
+<td align="left">缩写属性设置mark-before和mark-after属性</td>
+</tr>
+<tr>
+<td align="left">mark-after</td>
+<td align="left">允许命名的标记连接到音频流</td>
+</tr>
+<tr>
+<td align="left">mark-before</td>
+<td align="left">允许命名的标记连接到音频流</td>
+</tr>
+<tr>
+<td align="left">phonemes</td>
+<td align="left">指定包含文本的相应元素中的一个音标发音</td>
+</tr>
+<tr>
+<td align="left">rest</td>
+<td align="left">一个缩写属性设置rest-before和rest-after属性</td>
+</tr>
+<tr>
+<td align="left">rest-after</td>
+<td align="left">一个元素的内容讲完之后，指定要休息一下或遵守韵律边界</td>
+</tr>
+<tr>
+<td align="left">rest-before</td>
+<td align="left">一个元素的内容讲完之前，指定要休息一下或遵守韵律边界</td>
+</tr>
+<tr>
+<td align="left">voice-balance</td>
+<td align="left">指定了左，右声道之间的平衡</td>
+</tr>
+<tr>
+<td align="left">voice-duration</td>
+<td align="left">指定应采取呈现所选元素的内容的长度</td>
+</tr>
+<tr>
+<td align="left">voice-pitch</td>
+<td align="left">指定平均说话的声音的音调（频率）</td>
+</tr>
+<tr>
+<td align="left">voice-pitch-range</td>
+<td align="left">指定平均间距的变化</td>
+</tr>
+<tr>
+<td align="left">voice-rate</td>
+<td align="left">控制语速</td>
+</tr>
+<tr>
+<td align="left">voice-stress</td>
+<td align="left">指示着重力度</td>
+</tr>
+<tr>
+<td align="left">voice-volume</td>
+<td align="left">语音合成是指波形输出幅度</td>
+</tr>
+</tbody></table>
+<h2 id="表格（Table）-属性"><a href="#表格（Table）-属性" class="headerlink" title="表格（Table） 属性"></a>表格（Table） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-collapse.html" target="_blank" rel="noopener">border-collapse</a></td>
+<td align="left">规定是否合并表格边框</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-border-spacing.html" target="_blank" rel="noopener">border-spacing</a></td>
+<td align="left">规定相邻单元格边框之间的距离</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-caption-side.html" target="_blank" rel="noopener">caption-side</a></td>
+<td align="left">规定表格标题的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-empty-cells.html" target="_blank" rel="noopener">empty-cells</a></td>
+<td align="left">规定是否显示表格中的空单元格上的边框和背景</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-tab-table-layout.html" target="_blank" rel="noopener">table-layout</a></td>
+<td align="left">设置用于表格的布局算法</td>
+</tr>
+</tbody></table>
+<h2 id="文本（Text）-属性"><a href="#文本（Text）-属性" class="headerlink" title="文本（Text） 属性"></a>文本（Text） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-color.html" target="_blank" rel="noopener">color</a></td>
+<td align="left">设置文本的颜色</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-direction.html" target="_blank" rel="noopener">direction</a></td>
+<td align="left">规定文本的方向 / 书写方向</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-letter-spacing.html" target="_blank" rel="noopener">letter-spacing</a></td>
+<td align="left">设置字符间距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-dim-line-height.html" target="_blank" rel="noopener">line-height</a></td>
+<td align="left">设置行高</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-align.html" target="_blank" rel="noopener">text-align</a></td>
+<td align="left">规定文本的水平对齐方式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-decoration.html" target="_blank" rel="noopener">text-decoration</a></td>
+<td align="left">规定添加到文本的装饰效果</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-indent.html" target="_blank" rel="noopener">text-indent</a></td>
+<td align="left">规定文本块首行的缩进</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-text-transform.html" target="_blank" rel="noopener">text-transform</a></td>
+<td align="left">控制文本的大小写</td>
+</tr>
+<tr>
+<td align="left">unicode-bidi</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-pos-vertical-align.html" target="_blank" rel="noopener">vertical-align</a></td>
+<td align="left">设置元素的垂直对齐方式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-white-space.html" target="_blank" rel="noopener">white-space</a></td>
+<td align="left">设置怎样给一元素控件留白</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/pr-text-word-spacing.html" target="_blank" rel="noopener">word-spacing</a></td>
+<td align="left">设置单词间距</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-emphasis.html" target="_blank" rel="noopener">text-emphasis</a></td>
+<td align="left">向元素的文本应用重点标记以及重点标记的前景色。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-hanging-punctuation.html" target="_blank" rel="noopener">hanging-punctuation</a></td>
+<td align="left">指定一个标点符号是否可能超出行框</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-punctuation-trim.html" target="_blank" rel="noopener">punctuation-trim</a></td>
+<td align="left">指定一个标点符号是否要去掉</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-align-last.html" target="_blank" rel="noopener">text-align-last</a></td>
+<td align="left">当 text-align 设置为 justify 时，最后一行的对齐方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-justify.html" target="_blank" rel="noopener">text-justify</a></td>
+<td align="left">当 text-align 设置为 justify 时指定分散对齐的方式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-outline.html" target="_blank" rel="noopener">text-outline</a></td>
+<td align="left">设置文字的轮廓。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-overflow.html" target="_blank" rel="noopener">text-overflow</a></td>
+<td align="left">指定当文本溢出包含的元素，应该发生什么</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-shadow.html" target="_blank" rel="noopener">text-shadow</a></td>
+<td align="left">为文本添加阴影</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-text-wrap.html" target="_blank" rel="noopener">text-wrap</a></td>
+<td align="left">指定文本换行规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-word-break.html" target="_blank" rel="noopener">word-break</a></td>
+<td align="left">指定非CJK文字的断行规则</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-word-wrap.html" target="_blank" rel="noopener">word-wrap</a></td>
+<td align="left">设置浏览器是否对过长的单词进行换行。</td>
+</tr>
+</tbody></table>
+<h2 id="2D-3D-转换属性"><a href="#2D-3D-转换属性" class="headerlink" title="2D/3D 转换属性"></a>2D/3D 转换属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform.html" target="_blank" rel="noopener">transform</a></td>
+<td align="left">适用于2D或3D转换的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform-origin.html" target="_blank" rel="noopener">transform-origin</a></td>
+<td align="left">允许您更改转化元素位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transform-style.html" target="_blank" rel="noopener">transform-style</a></td>
+<td align="left">3D空间中的指定如何嵌套元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-perspective.html" target="_blank" rel="noopener">perspective</a></td>
+<td align="left">指定3D元素是如何查看透视图</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-perspective-origin.html" target="_blank" rel="noopener">perspective-origin</a></td>
+<td align="left">指定3D元素底部位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-backface-visibility.html" target="_blank" rel="noopener">backface-visibility</a></td>
+<td align="left">定义一个元素是否应该是可见的，不对着屏幕时</td>
+</tr>
+</tbody></table>
+<h2 id="过渡（Transition）-属性"><a href="#过渡（Transition）-属性" class="headerlink" title="过渡（Transition） 属性"></a>过渡（Transition） 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition.html" target="_blank" rel="noopener">transition</a></td>
+<td align="left">此属性是 transition-property、transition-duration、transition-timing-function、transition-delay 的简写形式。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-property.html" target="_blank" rel="noopener">transition-property</a></td>
+<td align="left">设置用来进行过渡的 CSS 属性。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-duration.html" target="_blank" rel="noopener">transition-duration</a></td>
+<td align="left">设置过渡进行的时间长度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-timing-function.html" target="_blank" rel="noopener">transition-timing-function</a></td>
+<td align="left">设置过渡进行的时序函数。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-transition-delay.html" target="_blank" rel="noopener">transition-delay</a></td>
+<td align="left">指定过渡开始的时间。</td>
+</tr>
+</tbody></table>
+<h2 id="用户外观-User-interface-属性"><a href="#用户外观-User-interface-属性" class="headerlink" title="用户外观(User-interface) 属性"></a>用户外观(User-interface) 属性</h2><table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-appearance.html" target="_blank" rel="noopener">appearance</a></td>
+<td align="left">定义元素的外观样式</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-box-sizing.html" target="_blank" rel="noopener">box-sizing</a></td>
+<td align="left">允许您为了适应区域以某种方式定义某些元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-icon.html" target="_blank" rel="noopener">icon</a></td>
+<td align="left">为元素指定图标</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-down.html" target="_blank" rel="noopener">nav-down</a></td>
+<td align="left">指定用户按向下键时向下导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-index.html" target="_blank" rel="noopener">nav-index</a></td>
+<td align="left">指定导航（tab）顺序。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-left.html" target="_blank" rel="noopener">nav-left</a></td>
+<td align="left">指定用户按向左键时向左导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-right.html" target="_blank" rel="noopener">nav-right</a></td>
+<td align="left">指定用户按向右键时向左导航的位置</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-nav-up.html" target="_blank" rel="noopener">nav-up</a></td>
+<td align="left">指定用户按向上键时向上导航的位置a</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-outline-offset.html" target="_blank" rel="noopener">outline-offset</a></td>
+<td align="left">设置轮廓框架在 border 边缘外的偏移</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.runoob.com/cssref/css3-pr-resize.html" target="_blank" rel="noopener">resize</a></td>
+<td align="left">定义元素是否可以改变大小</td>
+</tr>
+</tbody></table>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">SweetWind</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yoursite.com/2020/05/30/CSS/">http://yoursite.com/2020/05/30/CSS/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">SweetWind</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/css/">
+                                    <span class="chip bg-color">css</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/05/30/CSS/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CSS">
+                        
+                        <span class="card-title">CSS</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本篇讲述了有关CSS的相关配置
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/CSS/" class="post-category">
+                                    CSS
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/">
+                        <span class="chip bg-color">css</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/05/29/Dialog/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Dialog">
+                        
+                        <span class="card-title">Dialog</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            本篇讲述了有关Dialog的相关配置
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-29
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/vue/" class="post-category">
+                                    vue
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/ElementUI/">
+                        <span class="chip bg-color">ElementUI</span>
+                    </a>
+                    
+                    <a href="/tags/Dialog/">
+                        <span class="chip bg-color">Dialog</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">微笑的风</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"search":null,"path":"search.xml","field":"post","format":"html","limit":10000,"log":false});</script></body>
+
+</html>
