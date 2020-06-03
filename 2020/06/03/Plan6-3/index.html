@@ -778,353 +778,353 @@
 <td></td>
 </tr>
 </tbody></table>
-<pre class=" language-vue"><code class="language-vue"><template>
-  <div>
-    <el-form inline
-             size="mini">
-      <el-form-item label="审核状态：" >
-        <el-select v-model="state">
-          <el-option label="全部"
-                     value=""></el-option>
-          <el-option label="未审核"
-                     value="1"></el-option>
-          <el-option label="审核中"
-                     value="2"></el-option>
-          <el-option label="审核未通过"
-                     value="3"></el-option>
-          <el-option label="审核通过"
-                     value="4"></el-option>
-        </el-select>
-      </el-form-item>
-      <el-form-item label="关键词："
-                    style="margin-left: 30px">
-        <el-input v-model="inBranchName"
-                  placeholder="请输入渠道商名称"></el-input>
-      </el-form-item>
-      <el-form-item style="margin-left: 13px">
-        <el-button @click="clickSearch"
-                   style="background-color: #4681ed;color: white;border-radius: 6px;margin-left: 10px">一键搜索</el-button>
-      </el-form-item>
-      <el-form-item style="float: right">
-        <el-button type="primary"
-                   plain
-                   @click="showImport = true"
-                   style="background-color: #4681ed;color: white;border-radius: 6px">导入</el-button>
-      </el-form-item>
-      <el-form-item style="float: right">
-        <el-button type="primary"
-                   plain
-                   @click="$router.push('/channel/channelAdd');url1"
-                   style="background-color: #4681ed;color: white;border-radius: 6px">新增</el-button>
-      </el-form-item>
-    </el-form>
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form</span> <span class="token attr-name">inline</span>
+             <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核状态：<span class="token punctuation">"</span></span> <span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-select</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>state<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-option</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>全部<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-option</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-option</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>未审核<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-option</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-option</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核中<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-option</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-option</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核未通过<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-option</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-option</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核通过<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-option</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-select</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>关键词：<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                    <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">30</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-input</span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>inBranchName<span class="token punctuation">"</span></span>
+                  <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>请输入渠道商名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-input</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">13</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>clickSearch<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                   <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#4681ed</span><span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px<span class="token punctuation">;</span><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">10</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>一键搜索<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">float</span><span class="token punctuation">:</span> right</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span>
+                   <span class="token attr-name">plain</span>
+                   <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>showImport <span class="token punctuation">=</span> true<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                   <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#4681ed</span><span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>导入<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-form-item</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">float</span><span class="token punctuation">:</span> right</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span>
+                   <span class="token attr-name">plain</span>
+                   <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>$router.push(<span class="token punctuation">'</span>/channel/channelAdd<span class="token punctuation">'</span>);url1<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                   <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#4681ed</span><span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>新增<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form-item</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-form</span><span class="token punctuation">></span></span>
 -------------------------------------------------------------------------------------------------------
       以上是审核状态选择器和关键词搜索框以及新增按钮和导出按钮
-    <el-table :data="channelList"
-              border
-              :header-cell-style="tableHeaderStyle"
-              :cell-style="tableStyle"
-              :row-class-name="addEvenRowClass"
-              style="width: 100%;margin-top: 20px">
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span> <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>channelList<span class="token punctuation">"</span></span>
+              <span class="token attr-name">border</span>
+              <span class="token attr-name">:header-cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableHeaderStyle</span><span class="token punctuation">"</span></span>
+              <span class="token attr-name">:cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableStyle</span><span class="token punctuation">"</span></span>
+              <span class="token attr-name">:row-class-name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>addEvenRowClass<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+              <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span><span class="token punctuation">;</span><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">20</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
         这一部分是表格的头部样式
         -------------------------------------------------------------------
 
-      <el-table-column prop="id"
-                       label="ID"></el-table-column>
-      <el-table-column prop="branchName"
-                       label="渠道商名称"></el-table-column>
-      <!--<el-table-column prop="channelType" label="渠道商类型"></el-table-column>-->
-      <el-table-column prop="contactName"
-                       label="联系人姓名"></el-table-column>
-      <el-table-column prop="contactTelephone"
-                       label="联系人电话"
-                       width="100"></el-table-column>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ID<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>branchName<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>渠道商名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+      <span class="token comment" spellcheck="true">&lt;!--&lt;el-table-column prop="channelType" label="渠道商类型">&lt;/el-table-column>--></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contactName<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>联系人姓名<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>contactTelephone<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>联系人电话<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
         ----------------------------------------------------------
         scope是插槽的意思，需要根据状态来实时绑定，区别是公司的名称是写死的，状态不是，比如渠道商的名称是不会变的
         联系人姓名是不会变的，联系人电话是不会变的。
-      <el-table-column prop="examineState"
-                       label="审核状态">
-        <template slot-scope="scope">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>examineState<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核状态<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
           {{applyStatusTxt[scope.row.examineState]}}
-        </template>
-      </el-table-column>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
 -----------------------------------------------------------------------------------
-      <el-table-column label="操作"
-                       fixed="right"
-                       width="220">
-        <template slot-scope="scope">
-          <el-button type="text"
-                     size="mini"
-                     @click="view(scope.row)">查看</el-button>
-          <!--<el-button type="text"-->
-          <!--size="mini"-->
-          <!--@click="edit(scope.row)">编辑</el-button>-->
-          <!--<el-button type="text"-->
-          <!--size="mini"-->
-          <!--@click="auditing(scope.row.id)"-->
-          <!--v-show="scope.row.examineState === '1' || scope.row.examineState === '2'">审核</el-button>-->
-          <!--<el-button type="text"-->
-          <!--size="mini"-->
-          <!--@click="retPad(scope.row.userId)">重置</el-button>-->
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>操作<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">fixed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span>
+                       <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>220<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>view(scope.row)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>查看<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+          <span class="token comment" spellcheck="true">&lt;!--&lt;el-button type="text"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--size="mini"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--@click="edit(scope.row)">编辑&lt;/el-button>--></span>
+          <span class="token comment" spellcheck="true">&lt;!--&lt;el-button type="text"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--size="mini"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--@click="auditing(scope.row.id)"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--v-show="scope.row.examineState === '1' || scope.row.examineState === '2'">审核&lt;/el-button>--></span>
+          <span class="token comment" spellcheck="true">&lt;!--&lt;el-button type="text"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--size="mini"--></span>
+          <span class="token comment" spellcheck="true">&lt;!--@click="retPad(scope.row.userId)">重置&lt;/el-button>--></span>
 ------------------------------------------------------------------------------
-          <el-dropdown
-            style="margin-left: 20px"
-            trigger="click"
-            @command="command">
-            <el-button size="mini" type="text">
-              更多<i class="el-icon-arrow-down el-icon--right" />
-            </el-button>
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item :command="{type:1,data:scope.row}">
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown</span><span class="token style-attr language-css"><span class="token attr-name">
+            <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">20</span>px</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">trigger</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>click<span class="token punctuation">"</span></span>
+            <span class="token attr-name">@command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>command<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              更多<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>el-icon-arrow-down el-icon--right<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-menu</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dropdown<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-item</span> <span class="token attr-name">:command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{type:1,data:scope.row}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
                 编辑
-              </el-dropdown-item>
-              <el-dropdown-item
-                v-if="scope.row.examineState === '1' || scope.row.examineState === '2'"
-                :command="{type:2,data:scope.row.id}">
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-item</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-item</span>
+                <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope.row.examineState <span class="token punctuation">=</span><span class="token punctuation">=</span><span class="token punctuation">=</span> <span class="token punctuation">'</span>1<span class="token punctuation">'</span> || scope.row.examineState <span class="token punctuation">=</span><span class="token punctuation">=</span><span class="token punctuation">=</span> <span class="token punctuation">'</span>2<span class="token punctuation">'</span><span class="token punctuation">"</span></span>
+                <span class="token attr-name">:command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{type:2,data:scope.row.id}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
                 审核
-              </el-dropdown-item>
-              <el-dropdown-item :command="{type:3,data:scope.row.userId}">
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-item</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dropdown-item</span> <span class="token attr-name">:command</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{type:3,data:scope.row.userId}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
                 重置
-              </el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-item</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown-menu</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dropdown</span><span class="token punctuation">></span></span>
 
-        </template>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
           这个template接的是操作插槽
           ---------------------------------------------------------
-      </el-table-column>
-    </el-table>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">></span></span>
 ----------------------------------------------------------
 以下是提示框
-    <el-dialog title="审核状态"
-               :visible.sync="dialogVisible"
-               width="300px"
-               style="margin-top: 10%">
-      <el-button type="primary"
-                 size="mini"
-                 @click="assign1"
-                 style="background-color: #4681ed;color: white;border-radius: 6px;margin-left: 60px">通过</el-button>
-      <el-button type="primary"
-                 size="mini"
-                 @click="assign2"
-                 style="margin-left: 20px;background-color: #4681ed;color: white;border-radius: 6px;">不通过</el-button>
-    </el-dialog>
-    <el-pagination
-      @size-change="getChannelList"
-      @current-change="getChannelList"
-      :current-page.sync="pageNum"
-      :page-sizes="[5,10,20,30]"
-      :page-size.sync="pageSize"
-      layout="total, sizes, prev, pager, next, jumper"
-      :total="total"
-      align="right"
-      style="margin-top: 40px">
-    </el-pagination>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dialog</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>审核状态<span class="token punctuation">"</span></span>
+               <span class="token attr-name">:visible.sync</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dialogVisible<span class="token punctuation">"</span></span>
+               <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>300px<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+               <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">10%</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span>
+                 <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span>
+                 <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>assign1<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                 <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#4681ed</span><span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px<span class="token punctuation">;</span><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">60</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>通过<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span>
+                 <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span>
+                 <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>assign2<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+                 <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span><span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#4681ed</span><span class="token punctuation">;</span><span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span><span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">6</span>px<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>不通过<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dialog</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-pagination</span>
+      <span class="token attr-name">@size-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>getChannelList<span class="token punctuation">"</span></span>
+      <span class="token attr-name">@current-change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>getChannelList<span class="token punctuation">"</span></span>
+      <span class="token attr-name">:current-page.sync</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pageNum<span class="token punctuation">"</span></span>
+      <span class="token attr-name">:page-sizes</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>[5,10,20,30]<span class="token punctuation">"</span></span>
+      <span class="token attr-name">:page-size.sync</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pageSize<span class="token punctuation">"</span></span>
+      <span class="token attr-name">layout</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>total, sizes, prev, pager, next, jumper<span class="token punctuation">"</span></span>
+      <span class="token attr-name">:total</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>total<span class="token punctuation">"</span></span>
+      <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+      <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token number">40</span>px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-pagination</span><span class="token punctuation">></span></span>
 ----------------------------------------------------------------------------------
-    <el-dialog
-      v-if="showImport"
-      title="渠道商信息导入"
-      :visible.sync="showImport"
-      width="50%"
-      center>
-      <span slot="footer" class="dialog-footer">
-        <upload-file upload-url="/branchInfo/batchImport"
-                     download-file="file/渠道商信息导入模板.xlsx"
-                     @uploadSuccess="uploadSuccess"
-                     fileName="渠道商信息导入模板表.xlsx">
-        </upload-file>
-      </span>
-    </el-dialog>
-  </div>
-</template>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-dialog</span>
+      <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>showImport<span class="token punctuation">"</span></span>
+      <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>渠道商信息导入<span class="token punctuation">"</span></span>
+      <span class="token attr-name">:visible.sync</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>showImport<span class="token punctuation">"</span></span>
+      <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span>
+      <span class="token attr-name">center</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">slot</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>footer<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>dialog-footer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>upload-file</span> <span class="token attr-name">upload-url</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/branchInfo/batchImport<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">download-file</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>file/渠道商信息导入模板.xlsx<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">@uploadSuccess</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>uploadSuccess<span class="token punctuation">"</span></span>
+                     <span class="token attr-name">fileName</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>渠道商信息导入模板表.xlsx<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>upload-file</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-dialog</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
 ------------------------------------------------------------------------------------------------------
-<script>
-  import {mapGetters} from 'vuex'
-  import uploadFile from '../../components/uploadFile'
-  export default {
-    name: 'channelManage',
-    components: {
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+  <span class="token keyword">import</span> <span class="token punctuation">{</span>mapGetters<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+  <span class="token keyword">import</span> uploadFile <span class="token keyword">from</span> <span class="token string">'../../components/uploadFile'</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'channelManage'</span><span class="token punctuation">,</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
       uploadFile
-    },
-    data: function () {
-      return {
-        state:'',
-        channelList: [],
-        inBranchName: '',
-        showImport: false,
-        visible: false,
-        pageNum: 1,
-        pageSize: 10,
-        total: 0,
-        dialogVisible: false,
-        form:{
-          id: '',
-          branchName: '',
-          numPersonnel: '',
-          contactName: '',
-          contactTelephone: '',
-          examineState: '',
-        },
-        applyStatusTxt:{
-          '1': '通过',
-          '2': '驳回',
-          '3': '待审核',
-        },
-        auditingId: '',
-      }
-    },
-    computed:{
-      ...mapGetters(['user'])
-    },
-    created() {
-      this.getChannelList()
-    },
-    methods: {
-      command(command) {
-        if (command.type === 1) {
-          this.edit(command.data)
-        } else if (command.type === 2) {
-          this.auditing(command.data)
-        } else {
-          this.retPad(command.data)
-        }
-      },
-      assign1(){
-        let params = {
-          id: this.auditingId,
-          examineState:'4'
-        }
-        this.$http.post('/c621060branchinfo/check',params).then(res=>{
-          this.$message({
-            message: res.msg,
-            type: 'success'
-          })
-          this.dialogVisible = false
-          this.getChannelList()
-        },error=>{
-          console.log(error)
-        })
-      },
-      assign2(){
-        let params = {
-          id: this.auditingId,
-          examineState:'3'
-        }
-        this.$http.post('/c621060branchinfo/check',params).then(res=>{
-          this.$message({
-            message: res.msg,
-            type: 'success'
-          })
-          this.dialogVisible = false
-          this.getChannelList()
-        },error=>{
-          console.log(error)
-        })
-      },
-      url1(){
-        let params = {
-          upfile:this.upfile
-        }
-        this.$http.post('/c621060branchinfo/list', params).then(res => {
-          this.channelList = res.ls
-          this.total = res.page.resultCount
-        }, error => {
-          console.log(error)
-        })
-      },
-      clickSearch(){
-        this.pageNum = 1
-        this.getChannelList()
-      },
-      getChannelList() {
-        let params = {
-          examineState: this.state,
-          branchName:this.inBranchName,
-          pageCurrent:this.pageNum,
-          pageLimit:this.pageSize
-        }
-        this.$http.post('/c621060branchinfo/list', params).then(res => {
-          this.channelList = res.data
-          this.total = res.page.resultCount
-          console.log(res.data)
-        }, error => {
-          console.log(error)
-        })
-      },
-      gotoPage(path) {
-        this.$router.push(path)
-      },
-      cellStyle() {
-        return 'text-align:left'
-      },
-      view(item){
-        this.$router.push({path: '/channel/channelView', query: item})
-      },
-      edit(item) {
-        this.$router.push({path: '/channel/edit', query: item})
-      },
-      toon() {
-        let params = {
-          id: this.branchName,
-          examineState: this.examineState,
-        }
-        this.$http.post('/c621060branchinfo/check', params).then(res => {
-          this.$message({
-            message: res.msg,
-            type: 'success'
-          })
-          this.getChannelList()
-        }, error => {
-          console.log(error)
-        })
-      },
-      tableHeaderStyle(){
-        return 'background-color: #e3ecfc;font-size: 14px;font-weight: 600;color: #2d4667;text-align: center;'
-      },
-      tableStyle(){
-        return 'text-align: center;font-size: 12px;color: #707070;'
-      },
-      addEvenRowClass({row,rowIndex}){
-        if((rowIndex%2) !== 0){
-          return 'evenRow'
-        }
-      },
-      auditing(id){
-        this.auditingId = id
-        this.dialogVisible = true
-      },
-      retPad(id){
-        let params = {
-          id: id
-        }
-        this.$http.post('/user/resetPwd', params).then(res => {
-          this.$message({
-            message: res.msg,
-            type: 'success'
-          })
-        }, error => {
-          console.log(error)
-        })
-      },
-      uploadSuccess(){
-        this.showImport = false
-        this.getChannelList()
-      }
-    }
-  }
-</script>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        state<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        channelList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        inBranchName<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        showImport<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        visible<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        pageNum<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        pageSize<span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+        total<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        dialogVisible<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        form<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          id<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          branchName<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          numPersonnel<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          contactName<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          contactTelephone<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          examineState<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        applyStatusTxt<span class="token punctuation">:</span><span class="token punctuation">{</span>
+          <span class="token string">'1'</span><span class="token punctuation">:</span> <span class="token string">'通过'</span><span class="token punctuation">,</span>
+          <span class="token string">'2'</span><span class="token punctuation">:</span> <span class="token string">'驳回'</span><span class="token punctuation">,</span>
+          <span class="token string">'3'</span><span class="token punctuation">:</span> <span class="token string">'待审核'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        auditingId<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed<span class="token punctuation">:</span><span class="token punctuation">{</span>
+      <span class="token operator">...</span><span class="token function">mapGetters</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'user'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function">command</span><span class="token punctuation">(</span>command<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>command<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">edit</span><span class="token punctuation">(</span>command<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>command<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">auditing</span><span class="token punctuation">(</span>command<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">retPad</span><span class="token punctuation">(</span>command<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">assign1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          id<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>auditingId<span class="token punctuation">,</span>
+          examineState<span class="token punctuation">:</span><span class="token string">'4'</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c621060branchinfo/check'</span><span class="token punctuation">,</span>params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>dialogVisible <span class="token operator">=</span> <span class="token boolean">false</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>error<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">assign2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          id<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>auditingId<span class="token punctuation">,</span>
+          examineState<span class="token punctuation">:</span><span class="token string">'3'</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c621060branchinfo/check'</span><span class="token punctuation">,</span>params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>dialogVisible <span class="token operator">=</span> <span class="token boolean">false</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>error<span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">url1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          upfile<span class="token punctuation">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>upfile
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c621060branchinfo/list'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>channelList <span class="token operator">=</span> res<span class="token punctuation">.</span>ls
+          <span class="token keyword">this</span><span class="token punctuation">.</span>total <span class="token operator">=</span> res<span class="token punctuation">.</span>page<span class="token punctuation">.</span>resultCount
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">clickSearch</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>pageNum <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          examineState<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">,</span>
+          branchName<span class="token punctuation">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>inBranchName<span class="token punctuation">,</span>
+          pageCurrent<span class="token punctuation">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>pageNum<span class="token punctuation">,</span>
+          pageLimit<span class="token punctuation">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>pageSize
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c621060branchinfo/list'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>channelList <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+          <span class="token keyword">this</span><span class="token punctuation">.</span>total <span class="token operator">=</span> res<span class="token punctuation">.</span>page<span class="token punctuation">.</span>resultCount
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">gotoPage</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">cellStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'text-align:left'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">view</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>path<span class="token punctuation">:</span> <span class="token string">'/channel/channelView'</span><span class="token punctuation">,</span> query<span class="token punctuation">:</span> item<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">edit</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>path<span class="token punctuation">:</span> <span class="token string">'/channel/edit'</span><span class="token punctuation">,</span> query<span class="token punctuation">:</span> item<span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">toon</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          id<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>branchName<span class="token punctuation">,</span>
+          examineState<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>examineState<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/c621060branchinfo/check'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">tableHeaderStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'background-color: #e3ecfc;font-size: 14px;font-weight: 600;color: #2d4667;text-align: center;'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">tableStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'text-align: center;font-size: 12px;color: #707070;'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">addEvenRowClass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>row<span class="token punctuation">,</span>rowIndex<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>rowIndex<span class="token operator">%</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token string">'evenRow'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">auditing</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>auditingId <span class="token operator">=</span> id
+        <span class="token keyword">this</span><span class="token punctuation">.</span>dialogVisible <span class="token operator">=</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">retPad</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+          id<span class="token punctuation">:</span> id
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/user/resetPwd'</span><span class="token punctuation">,</span> params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$message</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            message<span class="token punctuation">:</span> res<span class="token punctuation">.</span>msg<span class="token punctuation">,</span>
+            type<span class="token punctuation">:</span> <span class="token string">'success'</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">uploadSuccess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>showImport <span class="token operator">=</span> <span class="token boolean">false</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getChannelList</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
 -------------------------------------------------------------------------------------------------
-<style scoped>
-    label{
-        padding: 0px !important;
-        color: #222 !important;
-    }
-</style>
-<style>
-  .el-table .evenRow{
-    background-color: #fafbfc;
-  }
-</style>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css">
+    <span class="token selector">label</span><span class="token punctuation">{</span>
+        <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0</span>px <span class="token important">!important</span><span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode">#222</span> <span class="token important">!important</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+  <span class="token selector"><span class="token class">.el-table</span> <span class="token class">.evenRow</span></span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fafbfc</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre>
 <p><strong>data:return:form表单中需要有各个表单项；表单中</strong></p>
 <table>
@@ -1192,236 +1192,236 @@
 </tr>
 </tbody></table>
 <p>首先是产品供应商编辑页面，分为查询框和编辑框（操作框）</p>
-<pre class=" language-vue"><code class="language-vue"><template>
-  <div>
-    <div>
-      <div style="">
+<pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
           --------------------
-        <el-input style="width: 300px" prefix-icon="el-icon-search" v-model="MerchantName" placeholder="输入商家名称"></el-input>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-input</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">300</span>px</span><span class="token punctuation">"</span></span> <span class="token attr-name">prefix-icon</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>el-icon-search<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>MerchantName<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>输入商家名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-input</span><span class="token punctuation">></span></span>
           ---------------------
 
-        <el-button style="margin-left:30px" type="primary" @click="Search">搜索</el-button></div>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">margin-left</span><span class="token punctuation">:</span><span class="token number">30</span>px</span><span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>primary<span class="token punctuation">"</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Search<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>搜索<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
         ----------------
         关于多项表格的选择（？）
-      <el-tabs style="width: 100%" v-model="activeName" @tab-click="handleClick">
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-tabs</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span></span><span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>activeName<span class="token punctuation">"</span></span> <span class="token attr-name">@tab-click</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>handleClick<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
           ----------------------
-        <el-tab-pane label="健康险" name="first">
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-tab-pane</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>健康险<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>first<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
             --------------------------------
             以下是表格内容
-          <el-table
-            :data="ProductList1"
-            border
-            :header-cell-style="tableHeaderStyle"
-            :cell-style="tableStyle"
-            :row-class-name="addEvenRowClass"
-            style="width: 100%">
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span>
+            <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ProductList1<span class="token punctuation">"</span></span>
+            <span class="token attr-name">border</span>
+            <span class="token attr-name">:header-cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableHeaderStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:row-class-name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>addEvenRowClass<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+            <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
               表头
               --------------------------------------
-            <el-table-column
-              prop="name"
-              label="公司名称">
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>公司名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
               静态
               ------------------------------------
-            <el-table-column
-              prop="type"
-              label="类型">
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>type<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>类型<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
               静态
               --------------------------------
-            <el-table-column
-              prop="time"
-              label="投保时间">
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>time<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>投保时间<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
               静态
               -----------------------------------
-            <el-table-column
-              prop="nianling"
-              label="年龄范围">
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nianling<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>年龄范围<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
               静态
               ---------------------------------
-            <el-table-column
-              prop="baoxian"
-              label="保险金额">
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>baoxian<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>保险金额<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
               静态
               ------------------------------------------------
               插槽，动态
-            <el-table-column
-              label="操作"
-              width="110px"
-              fixed="right">
-              <template slot-scope="scope">
-                <el-button type="text" size="mini">编辑</el-button>
-              </template>
-            </el-table-column>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>操作<span class="token punctuation">"</span></span>
+              <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>110px<span class="token punctuation">"</span></span>
+              <span class="token attr-name">fixed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>编辑<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
 ----------------------------------------------------
-          </el-table>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">></span></span>
 --------------------------------------------------------------
-        </el-tab-pane>
-        <el-tab-pane label="意外险" name="second">
-          <el-table
-            :data="ProductList1"
-            border
-            :header-cell-style="tableHeaderStyle"
-            :cell-style="tableStyle"
-            :row-class-name="addEvenRowClass"
-            style="width: 100%">
-            <el-table-column
-              prop="name"
-              label="公司名称">
-            </el-table-column>
-            <el-table-column
-              prop="type"
-              label="类型">
-            </el-table-column>
-            <el-table-column
-              prop="time"
-              label="投保时间">
-            </el-table-column>
-            <el-table-column
-              prop="nianling"
-              label="年龄范围">
-            </el-table-column>
-            <el-table-column
-              prop="baoxian"
-              label="保险金额">
-            </el-table-column>
-            <el-table-column
-              label="操作"
-              width="110px"
-              fixed="right">
-              <template slot-scope="scope">
-                <el-button type="text" size="mini">编辑</el-button>
-              </template>
-            </el-table-column>
-          </el-table>
-        </el-tab-pane>
-        <el-tab-pane label="财产险" name="third">
-          <el-table
-            :data="ProductList1"
-            border
-            :header-cell-style="tableHeaderStyle"
-            :cell-style="tableStyle"
-            :row-class-name="addEvenRowClass"
-            style="width: 100%">
-            <el-table-column
-              prop="name"
-              label="公司名称">
-            </el-table-column>
-            <el-table-column
-              prop="type"
-              label="类型">
-            </el-table-column>
-            <el-table-column
-              prop="time"
-              label="投保时间">
-            </el-table-column>
-            <el-table-column
-              prop="nianling"
-              label="年龄范围">
-            </el-table-column>
-            <el-table-column
-              prop="baoxian"
-              label="保险金额">
-            </el-table-column>
-            <el-table-column
-              label="操作"
-              width="110px"
-              fixed="right">
-              <template slot-scope="scope">
-                <el-button type="text" size="mini">编辑</el-button>
-              </template>
-            </el-table-column>
-          </el-table>
-        </el-tab-pane>
-      </el-tabs></div>
-    <!--    <div>-->
-    <!--      <el-input style="width: 300px;float: right" prefix-icon="el-icon-search" v-model="input" placeholder="请输入商家名称"></el-input>-->
-    <!--      <el-button style="margin-left:1000px" type="primary">搜索</el-button></div></div>-->
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-tab-pane</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-tab-pane</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>意外险<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>second<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span>
+            <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ProductList1<span class="token punctuation">"</span></span>
+            <span class="token attr-name">border</span>
+            <span class="token attr-name">:header-cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableHeaderStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:row-class-name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>addEvenRowClass<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+            <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>公司名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>type<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>类型<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>time<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>投保时间<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nianling<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>年龄范围<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>baoxian<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>保险金额<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>操作<span class="token punctuation">"</span></span>
+              <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>110px<span class="token punctuation">"</span></span>
+              <span class="token attr-name">fixed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>编辑<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-tab-pane</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-tab-pane</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>财产险<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>third<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table</span>
+            <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>ProductList1<span class="token punctuation">"</span></span>
+            <span class="token attr-name">border</span>
+            <span class="token attr-name">:header-cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableHeaderStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:cell-</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value">tableStyle</span><span class="token punctuation">"</span></span>
+            <span class="token attr-name">:row-class-name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>addEvenRowClass<span class="token punctuation">"</span></span><span class="token style-attr language-css"><span class="token attr-name">
+            <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">100%</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>公司名称<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>type<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>类型<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>time<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>投保时间<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>nianling<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>年龄范围<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">prop</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>baoxian<span class="token punctuation">"</span></span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>保险金额<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-table-column</span>
+              <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>操作<span class="token punctuation">"</span></span>
+              <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>110px<span class="token punctuation">"</span></span>
+              <span class="token attr-name">fixed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">slot-scope</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>scope<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">size</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>mini<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>编辑<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">></span></span>
+              <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table-column</span><span class="token punctuation">></span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-table</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-tab-pane</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-tabs</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token comment" spellcheck="true">&lt;!--    &lt;div>--></span>
+    <span class="token comment" spellcheck="true">&lt;!--      &lt;el-input style="width: 300px;float: right" prefix-icon="el-icon-search" v-model="input" placeholder="请输入商家名称">&lt;/el-input>--></span>
+    <span class="token comment" spellcheck="true">&lt;!--      &lt;el-button style="margin-left:1000px" type="primary">搜索&lt;/el-button>&lt;/div>&lt;/div>--></span>
 
 
-    <!--    <div class="btn">-->
+    <span class="token comment" spellcheck="true">&lt;!--    &lt;div class="btn">--></span>
 
-    <!--      <el-button type="primary" style="float: right">搜索</el-button></div>-->
-  </div>
-</template>
-<script>
-  export default {
-    name: 'index',
-    components: {},
-    data() {
-      return {
-        name:'',
-        activeName:'first',
-        MerchantName:'',
-        ProductList1:[{
-                        name: '车辆意外险',
-                        type:'意外险',
-                        time: '1年',
-                        nianling:'28天-4岁',
-                        baoxian:'778',
-                      },
-                      {
-                        name: '人生意外险',
-                        type:'意外险',
-                        time: '1年',
-                        nianling:'2岁-4岁',
-                        baoxian:'388',
+    <span class="token comment" spellcheck="true">&lt;!--      &lt;el-button type="primary" style="float: right">搜索&lt;/el-button>&lt;/div>--></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'index'</span><span class="token punctuation">,</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        activeName<span class="token punctuation">:</span><span class="token string">'first'</span><span class="token punctuation">,</span>
+        MerchantName<span class="token punctuation">:</span><span class="token string">''</span><span class="token punctuation">,</span>
+        ProductList1<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+                        name<span class="token punctuation">:</span> <span class="token string">'车辆意外险'</span><span class="token punctuation">,</span>
+                        type<span class="token punctuation">:</span><span class="token string">'意外险'</span><span class="token punctuation">,</span>
+                        time<span class="token punctuation">:</span> <span class="token string">'1年'</span><span class="token punctuation">,</span>
+                        nianling<span class="token punctuation">:</span><span class="token string">'28天-4岁'</span><span class="token punctuation">,</span>
+                        baoxian<span class="token punctuation">:</span><span class="token string">'778'</span><span class="token punctuation">,</span>
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                      <span class="token punctuation">{</span>
+                        name<span class="token punctuation">:</span> <span class="token string">'人生意外险'</span><span class="token punctuation">,</span>
+                        type<span class="token punctuation">:</span><span class="token string">'意外险'</span><span class="token punctuation">,</span>
+                        time<span class="token punctuation">:</span> <span class="token string">'1年'</span><span class="token punctuation">,</span>
+                        nianling<span class="token punctuation">:</span><span class="token string">'2岁-4岁'</span><span class="token punctuation">,</span>
+                        baoxian<span class="token punctuation">:</span><span class="token string">'388'</span><span class="token punctuation">,</span>
 
-                      },{
-                        name: '车生意外险',
-                        type:'意外险',
-                        time: '1年',
-                        nianling:'4岁-8岁',
-                        baoxian:'258',
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+                        name<span class="token punctuation">:</span> <span class="token string">'车生意外险'</span><span class="token punctuation">,</span>
+                        type<span class="token punctuation">:</span><span class="token string">'意外险'</span><span class="token punctuation">,</span>
+                        time<span class="token punctuation">:</span> <span class="token string">'1年'</span><span class="token punctuation">,</span>
+                        nianling<span class="token punctuation">:</span><span class="token string">'4岁-8岁'</span><span class="token punctuation">,</span>
+                        baoxian<span class="token punctuation">:</span><span class="token string">'258'</span><span class="token punctuation">,</span>
 
-                      },
-        ],
-          ----------------------------------------
-        tableHeaderStyle(){
-          return 'background-color: #e3ecfc;font-size: 14px;font-weight: 600;color: #2d4667;text-align: center;'
-        },
-        tableStyle(){
-          return 'text-align: center;font-size: 12px;color: #707070;'
-        },
-        addEvenRowClass({row,rowIndex}){
-          if((rowIndex%2) !== 0){
-            return 'evenRow'
-          }
-        }
-      }
-    },
+                      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+        <span class="token function">tableHeaderStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token string">'background-color: #e3ecfc;font-size: 14px;font-weight: 600;color: #2d4667;text-align: center;'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">tableStyle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token string">'text-align: center;font-size: 12px;color: #707070;'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">addEvenRowClass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>row<span class="token punctuation">,</span>rowIndex<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>rowIndex<span class="token operator">%</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">'evenRow'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
       表格样式
-      -----------------------------------------------------------------------
-    created() {
-    },
-    methods: {
-        ---------------------------------------
-      Search(){
-        console.log(this.MerchantName)
-        this.ProductList1= this.ProductList1.filter((item)=>{
-          return item.name.includes(this.MerchantName)
-        },error => {
-          console.log('error')
-        })
-      },
-      handleClick(tab, event) {
-        console.log(tab, event)
-      }
-    },
-  }
-  ----------------------------------------------------------
-</script>
-<style scoped>
+      <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+      <span class="token function">Search</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>MerchantName<span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>ProductList1<span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ProductList1<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token operator">=</span><span class="token operator">></span><span class="token punctuation">{</span>
+          <span class="token keyword">return</span> item<span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>MerchantName<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>error <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">handleClick</span><span class="token punctuation">(</span>tab<span class="token punctuation">,</span> event<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tab<span class="token punctuation">,</span> event<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">scoped</span><span class="token punctuation">></span></span><span class="token style language-css">
 
-</style>
-<style>
-  .el-table .evenRow{
-    background-color: #fafbfc;
-  }
-</style>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+  <span class="token selector"><span class="token class">.el-table</span> <span class="token class">.evenRow</span></span><span class="token punctuation">{</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token hexcode">#fafbfc</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
 </code></pre>
 <hr>
 
