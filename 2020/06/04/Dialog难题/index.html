@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Form表单, Hexo">
+    <meta name="keywords" content="Dialog难题, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Form表单 | Hexo</title>
+    <title>Dialog难题 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Form表单</h1>
+                    <h1 class="description center-align post-title">Dialog难题</h1>
                 </div>
             </div>
         </div>
@@ -430,12 +430,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ElementUI/">
-                                <span class="chip bg-color">ElementUI</span>
-                            </a>
-                        
-                            <a href="/tags/Form%E8%A1%A8%E5%8D%95/">
-                                <span class="chip bg-color">Form表单</span>
+                            <a href="/tags/%E9%9A%BE%E9%A2%98/">
+                                <span class="chip bg-color">难题</span>
                             </a>
                         
                     </div>
@@ -446,8 +442,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
-                                前端
+                            <a href="/categories/Dialog/" class="post-category">
+                                Dialog
                             </a>
                         
                     </div>
@@ -459,7 +455,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-01
+                    2020-06-04
                 </div>
                 
 
@@ -475,127 +471,10 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Form表单"><a href="#Form表单" class="headerlink" title="Form表单"></a>Form表单</h1><h2 id="业务需求"><a href="#业务需求" class="headerlink" title="业务需求"></a>业务需求</h2><p>不管是需要上传信息，还是需要进行搜索，都需要表单的支持</p>
-<h2 id="ElementUI"><a href="#ElementUI" class="headerlink" title="ElementUI"></a>ElementUI</h2><ul>
-<li><p><strong>Radio——————————单选框</strong></p>
-</li>
-<li><p><strong>Checkbox————————多选框</strong></p>
-</li>
-<li><p><strong>Input——————————输入框</strong></p>
-</li>
-<li><p><strong>InputNumber——————计数器</strong></p>
-</li>
-<li><p><strong>Select——————————选择器</strong></p>
-</li>
-<li><p><strong>Cascader————————级联选择器</strong></p>
-</li>
-<li><p><strong>Switch—————————开关</strong></p>
-</li>
-<li><p><strong>Slider—————————滑块</strong></p>
-</li>
-<li><p><strong>TimePicker———————时间选择器</strong></p>
-</li>
-<li><p><strong>DataPicker————————日期选择器</strong></p>
-</li>
-<li><p><strong>Upload————————————上传</strong></p>
-</li>
-<li><p><strong>Rate————————————评分</strong></p>
-</li>
-<li><p><strong>ColorPicker——————————颜色选择器</strong></p>
-</li>
-<li><p><strong>Transfer————————————穿梭框</strong></p>
-</li>
-<li><p><strong>Form——————————————表单</strong></p>
-<p>在 Form 组件中，每一个表单域由一个 Form-Item 组件构成，表单域中可以放置各种类型的表单控件，包括 Input、Select、Checkbox、Radio、Switch、DatePicker、TimePicker </p>
-</li>
-</ul>
-<pre class=" language-js"><code class="language-js"><span class="token operator">&lt;</span>el<span class="token operator">-</span>form ref<span class="token operator">=</span><span class="token string">"form"</span> <span class="token punctuation">:</span>model<span class="token operator">=</span><span class="token string">"form"</span> label<span class="token operator">-</span>width<span class="token operator">=</span><span class="token string">"80px"</span><span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动名称"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.name"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动区域"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>select v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.region"</span> placeholder<span class="token operator">=</span><span class="token string">"请选择活动区域"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域一"</span> value<span class="token operator">=</span><span class="token string">"shanghai"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>option label<span class="token operator">=</span><span class="token string">"区域二"</span> value<span class="token operator">=</span><span class="token string">"beijing"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>option<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>select<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动时间"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker type<span class="token operator">=</span><span class="token string">"date"</span> placeholder<span class="token operator">=</span><span class="token string">"选择日期"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.date1"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>date<span class="token operator">-</span>picker<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"line"</span> <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"2"</span><span class="token operator">></span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>col <span class="token punctuation">:</span>span<span class="token operator">=</span><span class="token string">"11"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker placeholder<span class="token operator">=</span><span class="token string">"选择时间"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.date2"</span> style<span class="token operator">=</span><span class="token string">"width: 100%;"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>time<span class="token operator">-</span>picker<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>col<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"即时配送"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span><span class="token keyword">switch</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.delivery"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span><span class="token keyword">switch</span><span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动性质"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.type"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"美食/餐厅线上活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"地推活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"线下主题活动"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>checkbox label<span class="token operator">=</span><span class="token string">"单纯品牌曝光"</span> name<span class="token operator">=</span><span class="token string">"type"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>checkbox<span class="token operator">-</span>group<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"特殊资源"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.resource"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线上品牌商赞助"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
-      <span class="token operator">&lt;</span>el<span class="token operator">-</span>radio label<span class="token operator">=</span><span class="token string">"线下场地免费"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">></span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>radio<span class="token operator">-</span>group<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item label<span class="token operator">=</span><span class="token string">"活动形式"</span><span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>input type<span class="token operator">=</span><span class="token string">"textarea"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"form.desc"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>input<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-  <span class="token operator">&lt;</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button type<span class="token operator">=</span><span class="token string">"primary"</span> @click<span class="token operator">=</span><span class="token string">"onSubmit"</span><span class="token operator">></span>立即创建<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-    <span class="token operator">&lt;</span>el<span class="token operator">-</span>button<span class="token operator">></span>取消<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
-  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">-</span>item<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>form<span class="token operator">></span>
-<span class="token operator">&lt;</span>script<span class="token operator">></span>
-  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token punctuation">{</span>
-        form<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          region<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date1<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          date2<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          delivery<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-          type<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-          resource<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
-          desc<span class="token punctuation">:</span> <span class="token string">''</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-      <span class="token function">onSubmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'submit!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-  <span class="token punctuation">}</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code></pre>
-<table>
-<thead>
-<tr>
-<th align="left">需求</th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>名称</strong>的添加</td>
-<td><strong>输入框/选择器</strong></td>
-</tr>
-<tr>
-<td align="left"><strong>类型</strong>的选择</td>
-<td><strong>单选框/多选框</strong></td>
-</tr>
-<tr>
-<td align="left"><strong>起止日期</strong>的选择</td>
-<td>两个<strong>日期选择器</strong>/一个<strong>日期期限选择器</strong></td>
-</tr>
-</tbody></table>
+                <h3 id="项目需求描述"><a href="#项目需求描述" class="headerlink" title="项目需求描述"></a>项目需求描述</h3><p>自动上架页面。点击上架按钮需要弹出提示框，提示框里分别是产品上架标题，上架和取消的按钮。</p>
+<p>且在这个提示框需要显示产品自动上架按钮，按下之后需要弹出日期选择控件，控件旁边有图标，可以更改上架时间。</p>
+<hr>
+<p>项目未解决</p>
 
             </div>
             <hr/>
@@ -621,7 +500,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/06/01/Form%E8%A1%A8%E5%8D%95/">http://yoursite.com/2020/06/01/Form%E8%A1%A8%E5%8D%95/</a>
+                    <a href="http://yoursite.com/2020/06/04/Dialog%E9%9A%BE%E9%A2%98/">http://yoursite.com/2020/06/04/Dialog%E9%9A%BE%E9%A2%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -659,12 +538,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ElementUI/">
-                                    <span class="chip bg-color">ElementUI</span>
-                                </a>
-                            
-                                <a href="/tags/Form%E8%A1%A8%E5%8D%95/">
-                                    <span class="chip bg-color">Form表单</span>
+                                <a href="/tags/%E9%9A%BE%E9%A2%98/">
+                                    <span class="chip bg-color">难题</span>
                                 </a>
                             
                         </div>
@@ -832,29 +707,80 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/06/01/Plan6-2/">
+                <a href="/2020/06/04/Dialog%E9%9A%BE%E9%A2%98/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Plan6.2">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Dialog难题">
                         
-                        <span class="card-title">Plan6.2</span>
+                        <span class="card-title">Dialog难题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            6.2日计划
+                            本篇讨论在项目中遇到的实际问题
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-01
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Dialog/" class="post-category">
+                                    Dialog
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9A%BE%E9%A2%98/">
+                        <span class="chip bg-color">难题</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/06/03/Plan6-3/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Plan6.3">
+                        
+                        <span class="card-title">Plan6.3</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            6.3日计划
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -872,59 +798,6 @@
                     
                     <a href="/tags/Plan/">
                         <span class="chip bg-color">Plan</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/05/30/CSS/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CSS">
-                        
-                        <span class="card-title">CSS</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            本篇讲述了有关CSS的相关配置
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-30
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/CSS/" class="post-category">
-                                    CSS
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/css/">
-                        <span class="chip bg-color">css</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
                     </a>
                     
                 </div>
